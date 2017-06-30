@@ -118,7 +118,6 @@ a, a:active, a:hover, a:link, a:visited {
 
 .header-area {
     padding: 30px 0;
-    position: absolute;
     width: 100%;
     top: 0;
     left: 0;
@@ -128,6 +127,7 @@ a, a:active, a:hover, a:link, a:visited {
     -moz-transition: all .5s ease 0s;
     -ms-transition: all .5s ease 0s;
     transition: all .5s ease 0s;
+    background-color: #000;
 }
 
 @media (max-width: 480px) {
@@ -329,12 +329,12 @@ a.nav-order-btn, a.nav-order-btn:hover {
 
 #home {
     width: 100%;
-    height: 100%;
+
     overflow: hidden;
 
     z-index: 10;
-    min-height: 850px;
-    background: url('bg.png');
+
+    background: url('bg.png') no-repeat #000 center;
 }
 
 .for-sin-page, .pg-canvas {
@@ -342,9 +342,8 @@ a.nav-order-btn, a.nav-order-btn:hover {
 }
 
 .cont-area {
-    position: absolute;
-    left: 0;
-    top: 33%;
+    margin-top: 10px;
+
     padding: 0 20px;
     width: 100%;
     text-align: center;
@@ -353,9 +352,9 @@ a.nav-order-btn, a.nav-order-btn:hover {
 }
 
 .cont-flags {
-    position: absolute;
-    left: 0;
-    top: 10%;
+    margin-top: 10px;
+
+
     padding: 0 20px;
     width: 100%;
     text-align: center;
@@ -484,22 +483,17 @@ a.nav-order-btn, a.nav-order-btn:hover {
 }
 
 .about-top-area .top-float-img {
-    padding: 0 0 100px;
+
     margin: 0 0 60px;
     position: relative;
     text-align: center;
 }
 
-.about-top-area .top-float-img .image-container {
-    margin-top: -426px;
+.image-container {
+    padding-top: 40px;
     width: 100%;
     z-index: 500;
-}
-
-.about-top-area .top-float-img .image-container img {
-
-    width: 100%;
-    max-width: 1087px;
+    max-width: 1117px;
 }
 
 /* icons */
@@ -524,7 +518,7 @@ hr.special {
     #logo_md {
         height: 150px;
     }
-    
+
 }
 
 @media (max-width: 380px) {
@@ -828,8 +822,7 @@ hr.special {
     background-position: -1002px 0px;
 }
 
-
-.block-image{
+.block-image {
     display: inline-block;
     width: 155px;
 
