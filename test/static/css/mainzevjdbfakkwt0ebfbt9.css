@@ -451,110 +451,6 @@ html, body {
           align-items: flex-end;
 }
 
-.indexbg {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
-  z-index: -100;
-  -webkit-transform: translateX(-50%) translateY(-50%);
-          transform: translateX(-50%) translateY(-50%);
-}
-
-.head-menu {
-  width: 688px;
-  position: relative;
-}
-
-.menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.menu-item {
-  display: inline;
-}
-
-.menu-item a {
-  text-align: center;
-  text-decoration: none;
-  padding: 0 10px;
-  color: #fff;
-  -webkit-transition: color 0.4s ease 0s;
-  transition: color 0.4s ease 0s;
-  font-size: 10px;
-}
-
-.menu-item a:hover {
-  color: #eb6608;
-}
-
-.social {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  position: absolute;
-  top: -76px;
-  right: -130px;
-}
-
-.social-item {
-  list-style: none;
-  width: 27px;
-}
-
-.social--presentation, .social--contacts, .social--in, .social--vk, .social--youtube {
-  background-size: cover;
-  background-position: center top;
-  margin-bottom: 10px;
-}
-
-.social--presentation {
-  height: 76px;
-  background-image: url("../../static/img/general/d.png");
-}
-
-.social--contacts, .social--in, .social--vk, .social--youtube {
-  height: 27px;
-}
-
-.social--in {
-  background-image: url("../../static/img/general/in.png");
-}
-
-.social--vk {
-  background-image: url("../../static/img/general/vk.png");
-}
-
-.social--youtube {
-  background-image: url("../../static/img/general/yut.png");
-}
-
-.social--contacts {
-  background-image: url("../../static/img/general/cont.png");
-}
-
-@media screen and (max-width: 960px) {
-  .head-menu {
-    width: 500px;
-  }
-  .social {
-    right: -40px;
-  }
-}
-
 .slide1 {
   height: 100vh;
   min-height: 720px;
@@ -667,4 +563,106 @@ html, body {
   }
 }
 
-/*# sourceMappingURL=main.css.map */
+.indexbg {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+}
+
+.head-menu {
+  width: 688px;
+  position: relative;
+}
+
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.menu-item {
+  display: inline;
+}
+
+.menu-item a {
+  text-align: center;
+  text-decoration: none;
+  padding: 0 10px;
+  color: #fff;
+  -webkit-transition: color 0.4s ease 0s;
+  transition: color 0.4s ease 0s;
+  font-size: 10px;
+}
+
+.menu-item a:hover {
+  color: #eb6608;
+}
+
+.social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+  top: -76px;
+  right: -130px;
+}
+
+.social-item {
+  list-style: none;
+  width: 27px;
+}
+
+.social--presentation, .social--contacts, .social--in, .social--vk, .social--youtube {
+  background-size: cover;
+  background-position: center top;
+  margin-bottom: 10px;
+}
+
+.social--presentation {
+  height: 76px;
+  background-image: url("../../static/img/general/d.png");
+}
+
+.social--contacts, .social--in, .social--vk, .social--youtube {
+  height: 27px;
+}
+
+.social--in {
+  background-image: url("../../static/img/general/in.png");
+}
+
+.social--vk {
+  background-image: url("../../static/img/general/vk.png");
+}
+
+.social--youtube {
+  background-image: url("../../static/img/general/yut.png");
+}
+
+.social--contacts {
+  background-image: url("../../static/img/general/cont.png");
+}
+
+@media screen and (max-width: 960px) {
+  .head-menu {
+    width: 500px;
+  }
+  .social {
+    right: -40px;
+  }
+}
