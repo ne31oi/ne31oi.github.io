@@ -427,6 +427,10 @@ body {
   font-family: Roboto;
 }
 
+#app {
+  overflow-x: hidden;
+}
+
 * html .page__wrapper {
   height: 100%;
 }
@@ -567,6 +571,133 @@ h1 .h1-2 {
   line-height: 17px;
   margin-top: 10px;
   margin-left: 10px;
+}
+
+.pt20 {
+  padding-top: 20px;
+}
+
+.w20p {
+  width: 20%;
+}
+
+.w40p {
+  width: calc(40% + 37px);
+}
+
+.w50p {
+  width: 50%;
+}
+
+.jce {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.lk .head-red {
+  margin-bottom: 34px;
+  letter-spacing: -0.2px;
+}
+
+.lk-green-box {
+  width: 100%;
+  background-color: #dee8e1;
+  padding: 30px 40px;
+  position: relative;
+}
+
+.lk-green-box .fa-pencil-alt {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.lk-main {
+  padding-right: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.lk-gray {
+  padding-left: 60px;
+}
+
+.lk-gray input {
+  background-color: #ffffff;
+  border: solid 1px #e7f0e9;
+  padding: 12px 20px;
+  margin-bottom: 10px;
+  font-family: Roboto;
+  font-size: 15px;
+  color: #717c74;
+}
+
+.lk-gray .btn {
+  font-size: 20px !important;
+  height: 38px !important;
+}
+
+.lk .info-blocks {
+  padding-left: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.lk .info-blocks .text {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  border-bottom: 2px solid #87be9b;
+}
+
+.lk .fa-pencil-alt {
+  background-color: #87be9b;
+}
+
+.lk .fas.fa-caret-down {
+  background-color: #dee8e1;
+}
+
+.lk .fas {
+  font-size: 12px;
+  width: 48px;
+  height: 48px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #fff;
+}
+
+.lk .c-5 {
+  margin-left: -60px;
+  width: calc(62.5% + 60px);
+}
+
+.head-red {
+  font-family: ProximaNova;
+  font-size: 28px;
+  font-weight: 600;
+  color: #eb514c;
+}
+
+.bg-white {
+  background-color: #fff;
 }
 
 .bg-img {
