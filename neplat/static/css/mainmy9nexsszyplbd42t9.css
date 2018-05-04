@@ -561,10 +561,10 @@ h1 .h1-2 {
   width: 20px;
   height: 20px;
   font-weight: 900;
-  font-size: 16px;
+  font-size: 25px;
   color: #191921;
   text-align: center;
-  line-height: 15px;
+  line-height: 17px;
   margin-top: 10px;
   margin-left: 10px;
 }
@@ -1066,8 +1066,8 @@ h1 .h1-2 {
   }
   header {
     padding-top: 40px;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 30px;
+    padding-right: 30px;
     padding-bottom: 0;
   }
   header .menu {
@@ -1095,8 +1095,8 @@ h1 .h1-2 {
     padding-right: 40px;
   }
   main .container {
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
   main .mob-table-head {
     background: rgba(244, 244, 244, 0.8);
