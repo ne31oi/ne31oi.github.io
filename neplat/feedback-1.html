@@ -106,7 +106,7 @@
                 </div>
             </header>
             <section class="page__wrapper">
-                <main class="lk">
+                <main class="feed">
                     <div class="container">
                         <div class="row fr">
                             <div class="c-1 line-lr flex fdc jcb ais mob-c8">
@@ -115,48 +115,27 @@
                                     <div class="c-8 blr">© неплательщик.рф</div>
                                 </div>
                             </div>
-                            <div class="c-2 line-lr lk-main bg-white pt20">
-                                <div>
-                                    <div class="head-red">Личный кабинет</div>
-                                    <div class="lk-green-box"><i class="fas fa-pencil-alt"></i>
-                                        <div class="head">Личные данные</div>
-                                        <div class="text"><span class="fa-stack">  <i class="fa fa-globe fa-fw"></i></span>Россия </div>
-                                        <div class="text"><span class="fa-stack">  <i class="fa fa-map-marker fa-fw"></i></span>Санкт-Петербург </div>
-                                        <div class="text"><span class="fa-stack">  <i class="fa fa-user-circle-o fa-fw"></i></span>Константин </div>
-                                        <div class="text"><span class="fa-stack"><i class="fa fa-user-circle-o fa-fw"></i></span>Константинопольский </div>
-                                        <div class="text"><span class="fa-stack"><i class="fa fa-circle-thin fa-fw fa-stack-2x"> </i><i class="fa fa-phone fa-fw fa-stack-1x"></i></span>+7 928 123 45 67 </div>
-                                        <div class="text"><span class="fa-stack"><i class="fa fa-circle-thin fa-fw fa-stack-2x">  </i><i class="fa fa-envelope-o fa-fw fa-stack-1x"></i></span>kostyan@mail.ru</div>
-                                    </div>
-                                    <div class="info-blocks">
-                                        <div class="text">Информация об организации</div><i class="fas fa-pencil-alt"></i><i class="fas fa-caret-down"></i>
-                                    </div>
-                                    <div class="info-blocks">
-                                        <div class="text">Отзывы</div><i class="fas fa-pencil-alt"></i><i class="fas fa-caret-down"></i>
-                                    </div>
-                                    <div class="info-blocks">
-                                        <div class="text">
-                                            Ваши подписки
-                                            <div class="plus">+</div>
-                                        </div><i class="fas fa-pencil-alt"></i><i class="fas fa-caret-down"></i>
-                                    </div>
-                                    <div class="info-blocks">
-                                        <div class="text">Обратная связь</div><i class="fas fa-pencil-alt"></i><i class="fas fa-caret-down"></i>
-                                    </div>
-                                </div><span class="delete"><i class="far fa-times-circle"></i>Удалить профиль</span>
-                            </div>
+                            <div class="c-1 bg-img pt20 mob-c8 bg-gray"></div>
                             <div class="c-5 bg-img pt20 mob-c8 bg-gray">
-                                <div class="w40p flex fdc lk-gray">
-                                    <div class="head-red">Изменение пароля</div>
-                                    <input placeholder="Введите старый пароль">
-                                    <input placeholder="Введите новый пароль">
-                                    <input placeholder="Повторите пароль">
-                                    <div class="row jce">
-                                        <div class="w50p">
-                                            <button class="btn btn-green lk-gray-btn">ПРИМЕНИТЬ</button>
-                                        </div>
+                                <div class="flex fdc lk-gray">
+                                    <div class="head-red">Обратная связь</div>
+                                    <div class="standart-text">Тип обращения</div>
+                                    <div class="w40pn">
+                                        <v-select :options="['Комментарий','Комментарий','Комментарий','HEКомментарий']" placeholder="Комментарий"></v-select>
+                                    </div>
+                                    <div class="w40pn">
+                                        <input placeholder="Тема обращения">
+                                    </div>
+                                    <div class="w60p">
+                                        <textarea placeholder="Сообщение"></textarea>
+                                    </div>
+                                    <div class="row">
+                                        <button class="btn btn-green lk-gray-btn send w20p">Отправить</button>
+                                        <button class="btn btn-green lk-gray-btn load"> <i class="fa fa-download"></i>Загрузить файл</button><span class="load2 w20p"> <i class="fa fa-check"></i>Загружено</span>
                                     </div>
                                 </div>
                             </div>
+                            <div class="c-1 bg-img pt20 mob-c8 bg-gray"></div>
                         </div>
                     </div>
                 </main>

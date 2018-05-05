@@ -142,17 +142,111 @@
                                     <div class="info-blocks">
                                         <div class="text">Обратная связь</div><i class="fas fa-pencil-alt"></i><i class="fas fa-caret-down"></i>
                                     </div>
-                                </div><span class="delete"><i class="far fa-times-circle"></i>Удалить профиль</span>
+                                </div>
+                                <div class="flex"><span class="change flex"><span class="fa-stack"><i class="fa fa-circle-thin fa-fw fa-stack-2x">  </i><i class="fa fa-lock fa-fw fa-stack-1x"></i></span>Сменить пароль</span><span class="delete flex"><span class="fa-stack"><i class="far fa-times-circle"></i></span>Удалить
+                                    профиль</span>
+                                </div>
                             </div>
                             <div class="c-5 bg-img pt20 mob-c8 bg-gray">
-                                <div class="w40p flex fdc lk-gray">
-                                    <div class="head-red">Изменение пароля</div>
-                                    <input placeholder="Введите старый пароль">
-                                    <input placeholder="Введите новый пароль">
-                                    <input placeholder="Повторите пароль">
-                                    <div class="row jce">
-                                        <div class="w50p">
-                                            <button class="btn btn-green lk-gray-btn">ПРИМЕНИТЬ</button>
+                                <div class="row">
+                                    <div class="w40p flex fdc lk-gray">
+                                        <div class="head-red">Подписаться на новости фирмы</div>
+                                        <div class="gray-text">Если вы не нашли нтересующую вас организацию, то вы можете подписаться на нее и мы оповестим вас по Email</div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="w40p flex fdc lk-gray">
+                                        <div class="flex jcb">
+                                            <div class="w20p">
+                                                <v-select :options="['Комментарий','Комментарий','Комментарий','HEКомментарий']" placeholder=""></v-select>
+                                            </div>
+                                            <div class="w75p">
+                                                <input placeholder="Название без кавычек">
+                                            </div>
+                                        </div>
+                                        <v-select :options="['Комментарий','Комментарий','Комментарий','HEКомментарий']" placeholder="ИНН"></v-select>
+                                        <v-select :options="['Комментарий','Комментарий','Комментарий','HEКомментарий']" placeholder="Страна"></v-select>
+                                        <v-select :options="['Комментарий','Комментарий','Комментарий','HEКомментарий']" placeholder="Город"></v-select>
+                                        <input placeholder="Фамилия Имя Отчество">
+                                        <div class="flex jcb">
+                                            <div class="w90p">
+                                                <input placeholder="Мобильный">
+                                            </div>
+                                            <div class="w10p flex jcc aic pb10">
+                                                <div class="plus">+</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="w40pa flex fdc lk-gray pl20i">
+                                        <div class="flex jcb">
+                                            <div class="w90p">
+                                                <input placeholder="Городской">
+                                            </div>
+                                            <div class="w10p flex jcc aic pb10">
+                                                <div class="plus">+</div>
+                                            </div>
+                                        </div>
+                                        <div class="flex jcb">
+                                            <div class="w90p">
+                                                <input placeholder="Email">
+                                            </div>
+                                            <div class="w10p flex jcc aic pb10">
+                                                <div class="plus">+</div>
+                                            </div>
+                                        </div>
+                                        <div class="flex jcb">
+                                            <div class="w90p">
+                                                <input placeholder="ICQ">
+                                            </div>
+                                            <div class="w10p flex jcc aic pb10">
+                                                <div class="plus">+</div>
+                                            </div>
+                                        </div>
+                                        <div class="flex jcb">
+                                            <div class="w90p">
+                                                <input placeholder="Skype">
+                                            </div>
+                                            <div class="w10p flex jcc aic pb10">
+                                                <div class="plus">+</div>
+                                            </div>
+                                        </div>
+                                        <div class="flex jcb">
+                                            <div class="w90p">
+                                                <input placeholder="Сайт">
+                                            </div>
+                                            <div class="w10p flex jcc aic pb10">
+                                                <div class="plus">+</div>
+                                            </div>
+                                        </div>
+                                        <div class="flex jcb">
+                                            <div class="w90p cards-container">
+                                                <input placeholder="Номер кошелька без пробелов">
+                                                <div class="cards">
+                                                    <img src="static/img/general/yandex.png">
+                                                    <img src="static/img/general/wm.png">
+                                                </div>
+                                            </div>
+                                            <div class="w10p flex jcc aic pb10">
+                                                <div class="plus">+</div>
+                                            </div>
+                                        </div>
+                                        <div class="flex jcb">
+                                            <div class="w90p cards-container">
+                                                <input placeholder="Номер карты без пробелов">
+                                                <div class="cards">
+                                                    <img src="static/img/general/visa.png">
+                                                    <img src="static/img/general/mc.png">
+                                                </div>
+                                            </div>
+                                            <div class="w10p flex jcc aic pb10">
+                                                <div class="plus">+</div>
+                                            </div>
+                                        </div>
+                                        <div class="row jce">
+                                            <div class="w50p">
+                                                <button class="btn btn-green lk-gray-btn">ПРИМЕНИТЬ</button>
+                                            </div>
+                                            <div class="w50p"></div>
                                         </div>
                                     </div>
                                 </div>
