@@ -12,7 +12,7 @@
         <meta name="HandheldFriendly" content="true">
 
         <!--[if (gt IE 9)|!(IE)]><!-->
-        <link href="static/css/main2g0orkj79iy3sni5dn29.min.css" rel="stylesheet" type="text/css">
+        <link href="static/css/mainh5dzqo4zddr6smqdunmi.min.css" rel="stylesheet" type="text/css">
         <!--<![endif]-->
         <meta property="og:title" content="#{data.title}">
         <meta property="og:title" content="">
@@ -119,15 +119,18 @@
                 <main class="lk">
                     <div class="container">
                         <div class="row fr">
-                            <div class="c-1 line-lr flex fdc jcb ais mob-c8">
+                            <div class="c-1 line-lr flex fdc jcb ais mob-c8 mob-hide">
                                 <h1></h1>
                                 <div class="copy">
                                     <div class="c-8 blr">© неплательщик.рф</div>
                                 </div>
                             </div>
-                            <div class="c-2 line-lr lk-main bg-white pt20">
+                            <div class="c-2 line-lr lk-main bg-white pt20" :class="{'lk-show':lk}">
+                                <div class="lk-tab" @click="lk=!lk">
+                                    <div>Личный кабинет</div>
+                                </div>
                                 <div>
-                                    <div class="head-red">Личный кабинет</div>
+                                    <div class="head-red mob-hide">Личный кабинет</div>
                                     <div class="lk-green-box"><i class="fas fa-pencil-alt"></i>
                                         <div class="head">Личные данные</div>
                                         <div class="text"><span class="fa-stack">  <i class="fa fa-globe fa-fw"></i></span>Россия </div>
@@ -159,7 +162,7 @@
                             </div>
                             <div class="c-5 bg-img pt20 mob-c8 bg-gray">
                                 <div class="row">
-                                    <div class="w40pa flex fdc lk-gray pl20i">
+                                    <div class="w40pa flex fdc lk-gray pl20i mob-hide">
                                         <div class="head-red">Данные по сделке</div>
                                         <div class="gray-text"></div>
                                     </div>
@@ -169,7 +172,7 @@
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <div class="w40pa flex fdc lk-gray pl20i mt-32">
+                                    <div class="w40pa flex fdc lk-gray pl20i mt-32 mob-hide">
                                         <v-select :options="['Комментарий','Комментарий','Комментарий','HEКомментарий']" placeholder="Реализация товара (без предоплаты)"></v-select>
                                         <input placeholder="Наим-е товара или услуги">
                                         <div class="flex jcb">
@@ -288,7 +291,7 @@
                                         <div class="head-red">Контакты по сделке</div>
                                         <div class="gray-text"></div>
                                     </div>
-                                    <div class="w40p flex fdc lk-gray">
+                                    <div class="w40p flex fdc lk-gray mob-hide">
                                         <div class="head-red">Отзыв</div>
                                         <div class="gray-text"></div>
                                     </div>
@@ -362,7 +365,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="w40p flex fdc lk-gray">
+                                    <div class="w40p flex fdc lk-gray mob-hide">
                                         <textarea style="height:calc(100% - 50px)"></textarea>
                                         <div class="row jce aic">
                                             <div class="mr10">
@@ -405,7 +408,7 @@
         </div>
 
 
-        <script src="static/js/main2g0orkj79iy3sni5dn29.min.js"></script>
+        <script src="static/js/mainh5dzqo4zddr6smqdunmi.min.js"></script>
     </body>
 
 </html>
