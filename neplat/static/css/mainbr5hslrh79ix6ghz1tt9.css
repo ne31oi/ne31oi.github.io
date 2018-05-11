@@ -1502,7 +1502,7 @@ h1 .h1-2 {
   padding: 3px;
   color: #C2DAC9;
   color: #87be9b;
-  background-color: #C2DAC9;
+  background-color: #dee8e1;
 }
 
 .header .search input {
@@ -1529,7 +1529,7 @@ h1 .h1-2 {
           justify-content: center;
   font-size: 12px;
   color: #87be9b;
-  background-color: #C2DAC9;
+  background-color: #dee8e1;
   width: 4px;
 }
 
@@ -1567,15 +1567,15 @@ h1 .h1-2 {
 }
 
 .line-lr {
-  border-left: 1px solid #C2DAC9;
+  border-left: 1px solid rgba(194, 218, 201, 0.4);
 }
 
 .line-l {
-  border-left: 1px solid #C2DAC9;
+  border-left: 1px solid rgba(194, 218, 201, 0.4);
 }
 
 .line-r {
-  border-right: 1px solid #C2DAC9;
+  border-right: 1px solid rgba(194, 218, 201, 0.4);
 }
 
 .row {
