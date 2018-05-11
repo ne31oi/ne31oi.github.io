@@ -12,7 +12,7 @@
         <meta name="HandheldFriendly" content="true">
 
         <!--[if (gt IE 9)|!(IE)]><!-->
-        <link href="static/css/mainzxapv8c86tee3vqdunmi.min.css" rel="stylesheet" type="text/css">
+        <link href="static/css/mainob93rpujoty4b49529.min.css" rel="stylesheet" type="text/css">
         <!--<![endif]-->
         <meta property="og:title" content="#{data.title}">
         <meta property="og:title" content="">
@@ -27,11 +27,14 @@
         <link rel="icon" type="image/x-icon" href="favicon.ico">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="static/css/separate-css/onepage-scroll.css">
         <script src="https://unpkg.com/vue-select@latest"></script>
         <script src="https://unpkg.com/vuejs-datepicker"></script>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pretty-checkbox@3.0/dist/pretty-checkbox.min.css">
         <script src="https://cdn.jsdelivr.net/npm/pretty-checkbox-vue@1.1/dist/pretty-checkbox-vue.min.js"></script>
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+        <script src="static/js/separate-js/jquery.onepage-scroll.min.js"></script>
         <script>
             (function(H){H.className=H.className.replace(/\bno-js\b/,'js')})(document.documentElement)
         </script>
@@ -108,7 +111,7 @@
                     </div>
                 </div>
             </header>
-            <section class="page__wrapper">
+            <div class="page__wrapper">
                 <main class="feed">
                     <div class="container">
                         <div class="row fr">
@@ -120,52 +123,61 @@
                             </div>
                             <div class="c-1 bg-img pt20 mob-c8 bg-gray mob-hide"></div>
                             <div class="c-5 bg-img pt20 mob-c8 bg-gray">
-                                <div class="flex fdc lk-gray">
-                                    <div class="head-red">Ошибки в отзывах</div>
-                                    <div class="w80p flex jcb">
-                                        <div class="standart-text">Вы</div>
-                                        <div class="standart-text date">22 Июня 2018 22:14</div>
-                                    </div>
-                                    <div class="w80p">
-                                        <div class="arrow-up"></div>
-                                        <div class="message">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</div>
-                                    </div>
-                                    <div class="w80p flex">
-                                        <div class="w25p"></div>
-                                        <div class="w75p jcb flex">
-                                            <div class="standart-text">Администратор</div>
+                                <div class="scroll">
+                                    <div class="flex fdc lk-gray">
+                                        <div class="head-red">Ошибки в отзывах</div>
+                                        <div class="w80p flex jcb">
+                                            <div class="standart-text">Вы</div>
                                             <div class="standart-text date">22 Июня 2018 22:14</div>
                                         </div>
-                                    </div>
-                                    <div class="w80p flex">
-                                        <div class="w25p"></div>
-                                        <div class="w75p jcb">
+                                        <div class="w80p">
                                             <div class="arrow-up"></div>
                                             <div class="message">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</div>
                                         </div>
-                                    </div>
-                                    <div class="w80p flex jcb">
-                                        <div class="standart-text">Вы</div>
-                                        <div class="standart-text date">22 Июня 2018 22:14</div>
-                                    </div>
-                                    <div class="w80p">
-                                        <div class="arrow-up"></div>
-                                        <div class="message">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</div>
-                                    </div>
-                                    <div class="w80p flex jcb">
-                                        <div class="standart-text">Вы</div>
-                                        <div class="standart-text date">22 Июня 2018 22:14</div>
-                                    </div>
-                                    <div class="w80p">
-                                        <div class="arrow-up"></div>
-                                        <div class="message">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. .</div>
-                                    </div>
-                                    <div class="w80p">
-                                        <textarea placeholder="Сообщение"></textarea>
-                                    </div>
-                                    <div class="row feed-row">
-                                        <button class="btn btn-green lk-gray-btn send w20p">Отправить</button>
-                                        <button class="btn btn-green lk-gray-btn load"> <i class="fa fa-download"></i>Загрузить файл</button><span class="load2 w20p"> <i class="fa fa-check"></i>Загружено</span>
+                                        <div class="w80p flex">
+                                            <div class="w25p"></div>
+                                            <div class="w75p jcb flex">
+                                                <div class="standart-text">Администратор</div>
+                                                <div class="standart-text date">22 Июня 2018 22:14</div>
+                                            </div>
+                                        </div>
+                                        <div class="w80p flex">
+                                            <div class="w25p"></div>
+                                            <div class="w75p jcb">
+                                                <div class="arrow-up"></div>
+                                                <div class="message">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</div>
+                                            </div>
+                                        </div>
+                                        <div class="w80p flex jcb">
+                                            <div class="standart-text">Вы</div>
+                                            <div class="standart-text date">22 Июня 2018 22:14</div>
+                                        </div>
+                                        <div class="w80p">
+                                            <div class="arrow-up"></div>
+                                            <div class="message">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</div>
+                                        </div>
+                                        <div class="w80p flex jcb">
+                                            <div class="standart-text">Вы</div>
+                                            <div class="standart-text date">22 Июня 2018 22:14</div>
+                                        </div>
+                                        <div class="w80p">
+                                            <div class="arrow-up"></div>
+                                            <div class="message">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. .</div>
+                                        </div>
+                                        <div class="w80p">
+                                            <textarea placeholder="Сообщение"></textarea>
+                                        </div>
+                                        <div class="row feed-row">
+                                            <button class="btn btn-green lk-gray-btn send w20p">Отправить</button>
+                                            <button class="btn btn-green lk-gray-btn load"> <i class="fa fa-download"></i>Загрузить файл</button><span class="load2 w20p"> <i class="fa fa-check"></i>Загружено</span>
+                                        </div>
+                                        <div class="scroll-bar scroll-barr">
+                                            <div class="scroll-line"></div>
+                                            <div class="scroll-button">
+                                                <div class="b"><span><</span><span>></span>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -183,7 +195,7 @@
                     <div class="c-1 line-lr"></div>
                     <div class="c-1 line-lr"></div>
                 </div>
-            </section>
+            </div>
             <div class="container"></div>
             <footer class="footer">
                 <div class="container">
@@ -202,7 +214,7 @@
         </div>
 
 
-        <script src="static/js/mainzxapv8c86tee3vqdunmi.min.js"></script>
+        <script src="static/js/mainob93rpujoty4b49529.min.js"></script>
     </body>
 
 </html>

@@ -12,7 +12,7 @@
         <meta name="HandheldFriendly" content="true">
 
         <!--[if (gt IE 9)|!(IE)]><!-->
-        <link href="static/css/mainzxapv8c86tee3vqdunmi.min.css" rel="stylesheet" type="text/css">
+        <link href="static/css/mainob93rpujoty4b49529.min.css" rel="stylesheet" type="text/css">
         <!--<![endif]-->
         <meta property="og:title" content="#{data.title}">
         <meta property="og:title" content="">
@@ -27,11 +27,14 @@
         <link rel="icon" type="image/x-icon" href="favicon.ico">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="static/css/separate-css/onepage-scroll.css">
         <script src="https://unpkg.com/vue-select@latest"></script>
         <script src="https://unpkg.com/vuejs-datepicker"></script>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pretty-checkbox@3.0/dist/pretty-checkbox.min.css">
         <script src="https://cdn.jsdelivr.net/npm/pretty-checkbox-vue@1.1/dist/pretty-checkbox-vue.min.js"></script>
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+        <script src="static/js/separate-js/jquery.onepage-scroll.min.js"></script>
         <script>
             (function(H){H.className=H.className.replace(/\bno-js\b/,'js')})(document.documentElement)
         </script>
@@ -115,7 +118,7 @@
                     </div>
                 </div>
             </header>
-            <section class="page__wrapper">
+            <div class="page__wrapper">
                 <main class="lk">
                     <div class="container">
                         <div class="row fr">
@@ -244,155 +247,197 @@
                             </div>
                             <div class="c-5 bg-img pt20 mob-c8 bg-gray">
                                 <div class="lk-gray mob-tab">
-                                    <div class="row">
+                                    <div class="scroll">
+                                        <div class="row"></div>
                                         <div class="w80p flex">
                                             <div class="w25p standart-text">Дата</div>
                                             <div class="w25p standart-text">Контрагент</div>
                                             <div class="w25p standart-text">Данные по сделке</div>
                                             <div class="w25p standart-text"></div>
                                         </div>
-                                    </div>
-                                    <div class="row table">
-                                        <div class="w80p flex table-row">
-                                            <div class="w25p flex fdc ais mt10">
-                                                <div class="gray-texts mt10">23.05.2017</div>
-                                                <div class="flex mt10"><i class="gray-texts fa fa-pencil mr10"></i>
-                                                    <div class="tdu">Редактировать </div>
+                                        <div class="row table">
+                                            <div class="w80p flex table-row">
+                                                <div class="w25p flex fdc ais mt10">
+                                                    <div class="gray-texts mt10">23.05.2017</div>
+                                                    <div class="flex mt10"><i class="gray-texts fa fa-pencil mr10"></i>
+                                                        <div class="tdu">Редактировать </div>
+                                                    </div>
+                                                    <div class="flex mt10"><i class="gray-texts fa fa-eye mr10"></i>
+                                                        <div class="tdu">Просмотреть </div>
+                                                    </div>
+                                                    <div class="flex mt10"><i class="gray-texts fa fa-trash mr10"></i>
+                                                        <div class="tdu">Удалить</div>
+                                                    </div>
+                                                    <div class="flex mt10">
+                                                        <div class="green-text2 mt10"><i class="gray-texts fa fa-check mr10"></i>Подтверждено</div>
+                                                    </div>
                                                 </div>
-                                                <div class="flex mt10"><i class="gray-texts fa fa-eye mr10"></i>
-                                                    <div class="tdu">Просмотреть </div>
-                                                </div>
-                                                <div class="flex mt10"><i class="gray-texts fa fa-trash mr10"></i>
-                                                    <div class="tdu">Удалить</div>
-                                                </div>
-                                                <div class="flex mt10">
-                                                    <div class="green-text mt10"><i class="gray-texts fa fa-check mr10"></i>Подтверждено</div>
-                                                </div>
-                                            </div>
-                                            <div class="w25p standart-text mt10 tdu">ООО Промавтоматика</div>
-                                            <div class="w50p flex fdc ais mt10">
-                                                <div class="row mt10">
-                                                    <div class="flex w50p gray-texts">Реализация товара (без предоплаты)</div>
-                                                    <div class="flex w50p">Сеялка</div>
-                                                </div>
-                                                <div class="row mt10">
-                                                    <div class="flex w50p gray-texts">Сумма сделки</div>
-                                                    <div class="flex w50p">122 000 руб.</div>
-                                                </div>
-                                                <div class="row mt10">
-                                                    <div class="flex w50p gray-texts">Просрочка</div>
-                                                    <div class="flex w50p">c 12.06.17</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row table">
-                                        <div class="w80p flex table-row">
-                                            <div class="w25p flex fdc ais mt10">
-                                                <div class="gray-texts mt10">23.05.2017</div>
-                                                <div class="flex mt10"><i class="gray-texts fa fa-pencil mr10"></i>
-                                                    <div class="tdu">Редактировать </div>
-                                                </div>
-                                                <div class="flex mt10"><i class="gray-texts fa fa-eye mr10"></i>
-                                                    <div class="tdu">Просмотреть </div>
-                                                </div>
-                                                <div class="flex mt10"><i class="gray-texts fa fa-trash mr10"></i>
-                                                    <div class="tdu">Удалить</div>
-                                                </div>
-                                                <div class="flex mt10">
-                                                    <div class="green-text mt10"><i class="gray-texts fa fa-check mr10"></i>Подтверждено</div>
-                                                </div>
-                                            </div>
-                                            <div class="w25p standart-text mt10 tdu">ООО Промавтоматика</div>
-                                            <div class="w50p flex fdc ais mt10">
-                                                <div class="row mt10">
-                                                    <div class="flex w50p gray-texts">Реализация товара (без предоплаты)</div>
-                                                    <div class="flex w50p">Сеялка</div>
-                                                </div>
-                                                <div class="row mt10">
-                                                    <div class="flex w50p gray-texts">Сумма сделки</div>
-                                                    <div class="flex w50p">122 000 руб.</div>
-                                                </div>
-                                                <div class="row mt10">
-                                                    <div class="flex w50p gray-texts">Просрочка</div>
-                                                    <div class="flex w50p">c 12.06.17</div>
+                                                <div class="w25p standart-text mt10 tdu">ООО Промавтоматика</div>
+                                                <div class="w50p flex fdc ais mt10">
+                                                    <div class="row mt10">
+                                                        <div class="flex w50p gray-texts">Реализация товара (без предоплаты)</div>
+                                                        <div class="flex w50p">Сеялка</div>
+                                                    </div>
+                                                    <div class="row mt10">
+                                                        <div class="flex w50p gray-texts">Сумма сделки</div>
+                                                        <div class="flex w50p">122 000 руб.</div>
+                                                    </div>
+                                                    <div class="row mt10">
+                                                        <div class="flex w50p gray-texts">Просрочка</div>
+                                                        <div class="flex w50p">c 12.06.17</div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="row table">
-                                        <div class="w80p flex table-row">
-                                            <div class="w25p flex fdc ais mt10">
-                                                <div class="gray-texts mt10">23.05.2017</div>
-                                                <div class="flex mt10"><i class="gray-texts fa fa-pencil mr10"></i>
-                                                    <div class="tdu">Редактировать </div>
+                                        <div class="row table">
+                                            <div class="w80p flex table-row">
+                                                <div class="w25p flex fdc ais mt10">
+                                                    <div class="gray-texts mt10">23.05.2017</div>
+                                                    <div class="flex mt10"><i class="gray-texts fa fa-pencil mr10"></i>
+                                                        <div class="tdu">Редактировать </div>
+                                                    </div>
+                                                    <div class="flex mt10"><i class="gray-texts fa fa-eye mr10"></i>
+                                                        <div class="tdu">Просмотреть </div>
+                                                    </div>
+                                                    <div class="flex mt10"><i class="gray-texts fa fa-trash mr10"></i>
+                                                        <div class="tdu">Удалить</div>
+                                                    </div>
+                                                    <div class="flex mt10">
+                                                        <div class="green-text2 mt10"><i class="gray-texts fa fa-check mr10"></i>Подтверждено</div>
+                                                    </div>
                                                 </div>
-                                                <div class="flex mt10"><i class="gray-texts fa fa-eye mr10"></i>
-                                                    <div class="tdu">Просмотреть </div>
-                                                </div>
-                                                <div class="flex mt10"><i class="gray-texts fa fa-trash mr10"></i>
-                                                    <div class="tdu">Удалить</div>
-                                                </div>
-                                                <div class="flex mt10">
-                                                    <div class="green-text mt10"><i class="gray-texts fa fa-check mr10"></i>Подтверждено</div>
-                                                </div>
-                                            </div>
-                                            <div class="w25p standart-text mt10 tdu">ООО Промавтоматика</div>
-                                            <div class="w50p flex fdc ais mt10">
-                                                <div class="row mt10">
-                                                    <div class="flex w50p gray-texts">Реализация товара (без предоплаты)</div>
-                                                    <div class="flex w50p">Сеялка</div>
-                                                </div>
-                                                <div class="row mt10">
-                                                    <div class="flex w50p gray-texts">Сумма сделки</div>
-                                                    <div class="flex w50p">122 000 руб.</div>
-                                                </div>
-                                                <div class="row mt10">
-                                                    <div class="flex w50p gray-texts">Просрочка</div>
-                                                    <div class="flex w50p">c 12.06.17</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row table">
-                                        <div class="w80p flex table-row">
-                                            <div class="w25p flex fdc ais mt10">
-                                                <div class="gray-texts mt10">23.05.2017</div>
-                                                <div class="flex mt10"><i class="gray-texts fa fa-pencil mr10"></i>
-                                                    <div class="tdu">Редактировать </div>
-                                                </div>
-                                                <div class="flex mt10"><i class="gray-texts fa fa-eye mr10"></i>
-                                                    <div class="tdu">Просмотреть </div>
-                                                </div>
-                                                <div class="flex mt10"><i class="gray-texts fa fa-trash mr10"></i>
-                                                    <div class="tdu">Удалить</div>
-                                                </div>
-                                                <div class="flex mt10">
-                                                    <div class="green-text mt10"><i class="gray-texts fa fa-check mr10"></i>Подтверждено</div>
-                                                </div>
-                                            </div>
-                                            <div class="w25p standart-text mt10 tdu">ООО Промавтоматика</div>
-                                            <div class="w50p flex fdc ais mt10">
-                                                <div class="row mt10">
-                                                    <div class="flex w50p gray-texts">Реализация товара (без предоплаты)</div>
-                                                    <div class="flex w50p">Сеялка</div>
-                                                </div>
-                                                <div class="row mt10">
-                                                    <div class="flex w50p gray-texts">Сумма сделки</div>
-                                                    <div class="flex w50p">122 000 руб.</div>
-                                                </div>
-                                                <div class="row mt10">
-                                                    <div class="flex w50p gray-texts">Просрочка</div>
-                                                    <div class="flex w50p">c 12.06.17</div>
+                                                <div class="w25p standart-text mt10 tdu">ООО Промавтоматика</div>
+                                                <div class="w50p flex fdc ais mt10">
+                                                    <div class="row mt10">
+                                                        <div class="flex w50p gray-texts">Реализация товара (без предоплаты)</div>
+                                                        <div class="flex w50p">Сеялка</div>
+                                                    </div>
+                                                    <div class="row mt10">
+                                                        <div class="flex w50p gray-texts">Сумма сделки</div>
+                                                        <div class="flex w50p">122 000 руб.</div>
+                                                    </div>
+                                                    <div class="row mt10">
+                                                        <div class="flex w50p gray-texts">Просрочка</div>
+                                                        <div class="flex w50p">c 12.06.17</div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="row mt10">
-                                        <div class="w80p flex mt10">
-                                            <div class="w75p"></div>
-                                            <div class="w25p flex">
-                                                <div class="w50p flex jcb mt10"><a class="pages pages-active" href>1</a><a class="pages" href>2</a><a class="pages" href>3</a><a class="pages" href>4</a>
+                                        <div class="row table">
+                                            <div class="w80p flex table-row">
+                                                <div class="w25p flex fdc ais mt10">
+                                                    <div class="gray-texts mt10">23.05.2017</div>
+                                                    <div class="flex mt10"><i class="gray-texts fa fa-pencil mr10"></i>
+                                                        <div class="tdu">Редактировать </div>
+                                                    </div>
+                                                    <div class="flex mt10"><i class="gray-texts fa fa-eye mr10"></i>
+                                                        <div class="tdu">Просмотреть </div>
+                                                    </div>
+                                                    <div class="flex mt10"><i class="gray-texts fa fa-trash mr10"></i>
+                                                        <div class="tdu">Удалить</div>
+                                                    </div>
+                                                    <div class="flex mt10">
+                                                        <div class="green-text2 mt10"><i class="gray-texts fa fa-check mr10"></i>Подтверждено</div>
+                                                    </div>
+                                                </div>
+                                                <div class="w25p standart-text mt10 tdu">ООО Промавтоматика</div>
+                                                <div class="w50p flex fdc ais mt10">
+                                                    <div class="row mt10">
+                                                        <div class="flex w50p gray-texts">Реализация товара (без предоплаты)</div>
+                                                        <div class="flex w50p">Сеялка</div>
+                                                    </div>
+                                                    <div class="row mt10">
+                                                        <div class="flex w50p gray-texts">Сумма сделки</div>
+                                                        <div class="flex w50p">122 000 руб.</div>
+                                                    </div>
+                                                    <div class="row mt10">
+                                                        <div class="flex w50p gray-texts">Просрочка</div>
+                                                        <div class="flex w50p">c 12.06.17</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row table">
+                                            <div class="w80p flex table-row">
+                                                <div class="w25p flex fdc ais mt10">
+                                                    <div class="gray-texts mt10">23.05.2017</div>
+                                                    <div class="flex mt10"><i class="gray-texts fa fa-pencil mr10"></i>
+                                                        <div class="tdu">Редактировать </div>
+                                                    </div>
+                                                    <div class="flex mt10"><i class="gray-texts fa fa-eye mr10"></i>
+                                                        <div class="tdu">Просмотреть </div>
+                                                    </div>
+                                                    <div class="flex mt10"><i class="gray-texts fa fa-trash mr10"></i>
+                                                        <div class="tdu">Удалить</div>
+                                                    </div>
+                                                    <div class="flex mt10">
+                                                        <div class="green-text2 mt10"><i class="gray-texts fa fa-check mr10"></i>Подтверждено</div>
+                                                    </div>
+                                                </div>
+                                                <div class="w25p standart-text mt10 tdu">ООО Промавтоматика</div>
+                                                <div class="w50p flex fdc ais mt10">
+                                                    <div class="row mt10">
+                                                        <div class="flex w50p gray-texts">Реализация товара (без предоплаты)</div>
+                                                        <div class="flex w50p">Сеялка</div>
+                                                    </div>
+                                                    <div class="row mt10">
+                                                        <div class="flex w50p gray-texts">Сумма сделки</div>
+                                                        <div class="flex w50p">122 000 руб.</div>
+                                                    </div>
+                                                    <div class="row mt10">
+                                                        <div class="flex w50p gray-texts">Просрочка</div>
+                                                        <div class="flex w50p">c 12.06.17</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row table">
+                                            <div class="w80p flex table-row">
+                                                <div class="w25p flex fdc ais mt10">
+                                                    <div class="gray-texts mt10">23.05.2017</div>
+                                                    <div class="flex mt10"><i class="gray-texts fa fa-pencil mr10"></i>
+                                                        <div class="tdu">Редактировать </div>
+                                                    </div>
+                                                    <div class="flex mt10"><i class="gray-texts fa fa-eye mr10"></i>
+                                                        <div class="tdu">Просмотреть </div>
+                                                    </div>
+                                                    <div class="flex mt10"><i class="gray-texts fa fa-trash mr10"></i>
+                                                        <div class="tdu">Удалить</div>
+                                                    </div>
+                                                    <div class="flex mt10">
+                                                        <div class="green-text2 mt10"><i class="gray-texts fa fa-check mr10"></i>Подтверждено</div>
+                                                    </div>
+                                                </div>
+                                                <div class="w25p standart-text mt10 tdu">ООО Промавтоматика</div>
+                                                <div class="w50p flex fdc ais mt10">
+                                                    <div class="row mt10">
+                                                        <div class="flex w50p gray-texts">Реализация товара (без предоплаты)</div>
+                                                        <div class="flex w50p">Сеялка</div>
+                                                    </div>
+                                                    <div class="row mt10">
+                                                        <div class="flex w50p gray-texts">Сумма сделки</div>
+                                                        <div class="flex w50p">122 000 руб.</div>
+                                                    </div>
+                                                    <div class="row mt10">
+                                                        <div class="flex w50p gray-texts">Просрочка</div>
+                                                        <div class="flex w50p">c 12.06.17</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row mt10">
+                                            <div class="w80p flex mt10">
+                                                <div class="w75p"></div>
+                                                <div class="w25p flex">
+                                                    <div class="w50p flex jcb mt10"><a class="pages pages-active" href>1</a><a class="pages" href>2</a><a class="pages" href>3</a><a class="pages" href>4</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="scroll-bar scroll-barr">
+                                            <div class="scroll-line"></div>
+                                            <div class="scroll-button">
+                                                <div class="b"><span><</span><span>></span>
                                                 </div>
                                             </div>
                                         </div>
@@ -412,7 +457,7 @@
                     <div class="c-1 line-lr"></div>
                     <div class="c-1 line-lr"></div>
                 </div>
-            </section>
+            </div>
             <div class="container"></div>
             <footer class="footer">
                 <div class="container">
@@ -431,7 +476,7 @@
         </div>
 
 
-        <script src="static/js/mainzxapv8c86tee3vqdunmi.min.js"></script>
+        <script src="static/js/mainob93rpujoty4b49529.min.js"></script>
     </body>
 
 </html>

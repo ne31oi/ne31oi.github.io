@@ -12,7 +12,7 @@
         <meta name="HandheldFriendly" content="true">
 
         <!--[if (gt IE 9)|!(IE)]><!-->
-        <link href="static/css/mainzxapv8c86tee3vqdunmi.min.css" rel="stylesheet" type="text/css">
+        <link href="static/css/mainob93rpujoty4b49529.min.css" rel="stylesheet" type="text/css">
         <!--<![endif]-->
         <meta property="og:title" content="#{data.title}">
         <meta property="og:title" content="">
@@ -27,11 +27,14 @@
         <link rel="icon" type="image/x-icon" href="favicon.ico">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="static/css/separate-css/onepage-scroll.css">
         <script src="https://unpkg.com/vue-select@latest"></script>
         <script src="https://unpkg.com/vuejs-datepicker"></script>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pretty-checkbox@3.0/dist/pretty-checkbox.min.css">
         <script src="https://cdn.jsdelivr.net/npm/pretty-checkbox-vue@1.1/dist/pretty-checkbox-vue.min.js"></script>
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+        <script src="static/js/separate-js/jquery.onepage-scroll.min.js"></script>
         <script>
             (function(H){H.className=H.className.replace(/\bno-js\b/,'js')})(document.documentElement)
         </script>
@@ -115,7 +118,7 @@
                     </div>
                 </div>
             </header>
-            <section class="page__wrapper">
+            <div class="page__wrapper">
                 <main class="lk">
                     <div class="container">
                         <div class="row fr">
@@ -163,217 +166,226 @@
                                 </div>
                             </div>
                             <div class="c-5 bg-img pt20 mob-c8 bg-gray">
-                                <div class="row">
-                                    <div class="w40pa flex fdc lk-gray pl20i mob-hide">
-                                        <div class="head-red">Данные по сделке</div>
-                                        <div class="gray-text"></div>
+                                <div class="scroll">
+                                    <div class="row">
+                                        <div class="w40pa flex fdc lk-gray pl20i mob-hide">
+                                            <div class="head-red">Данные по сделке</div>
+                                            <div class="gray-text"></div>
+                                        </div>
+                                        <div class="w40p flex fdc lk-gray">
+                                            <div class="head-red">Неплательщик</div>
+                                            <div class="gray-text">Пожалуйста, постарайтесь заполнить поля максимально подробно. Это позволит более точно и быстрее найти неплательщика.</div>
+                                        </div>
                                     </div>
-                                    <div class="w40p flex fdc lk-gray">
-                                        <div class="head-red">Неплательщик</div>
-                                        <div class="gray-text">Пожалуйста, постарайтесь заполнить поля максимально подробно. Это позволит более точно и быстрее найти неплательщика.</div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="w40pa flex fdc lk-gray pl20i mt-32 mob-hide">
-                                        <v-select :options="['Комментарий','Комментарий','Комментарий','HEКомментарий']" placeholder="Реализация товара (без предоплаты)"></v-select>
-                                        <input placeholder="Наим-е товара или услуги">
-                                        <div class="flex jcb">
-                                            <div class="w75p">
-                                                <input placeholder="Сумма сделки">
-                                            </div>
-                                            <div class="w20p">
-                                                <v-select :options="['Комментарий','Комментарий','Комментарий','HEКомментарий']" placeholder=""></v-select>
-                                            </div>
-                                        </div>
-                                        <vuejs-datepicker></vuejs-datepicker>
-                                        <div class="flex jcb fww mt20">
-                                            <div class="row fs0 fww">
-                                                <div class="standart-text">Документы по сделке:</div>
-                                            </div>
-                                            <div class="w30p">
-                                                <button class="btn btn-green lk-gray-btn">Товарная накладная</button>
-                                            </div>
-                                            <div class="w30p flex jcs aic pb10">
-                                                <div class="green-text">Загружен</div><i class="red-text fa fa-trash-o"> </i>
-                                            </div>
-                                            <div class="w30p"></div>
-                                        </div>
-                                        <div class="flex jcb fww mt20">
-                                            <div class="w30p">
-                                                <button class="btn btn-green lk-gray-btn">ТТН</button>
-                                            </div>
-                                            <div class="w30p flex jcs aic">
-                                                <div class="gray-texts">Не добавлен</div>
-                                            </div>
-                                            <div class="w30p"></div>
-                                        </div>
-                                        <div class="flex jcb fww mt20">
-                                            <div class="w30p">
-                                                <button class="btn btn-green lk-gray-btn">Другое</button>
-                                            </div>
-                                            <div class="w30p flex jcs aic">
-                                                <input placeholder="Название">
-                                            </div>
-                                            <div class="w30p flex jcs aic pb10">
-                                                <div class="gray-texts">Не добавлен</div>
-                                            </div>
-                                        </div>
-                                        <div class="flex jcb fww">
-                                            <div class="row fs0 fww">
-                                                <div class="green-text tdu">Добавить</div>
-                                            </div>
-                                        </div>
-                                        <div class="flex jcb fww mt20">
-                                            <div class="row fs0 fww flex jcb">
-                                                <div class="standart-text">Отзыв от имени</div>
-                                                <div class="mt10">
-                                                    <p-radio name="radio1" color="success-o">Физ. лица</p-radio>
+                                    <div class="row">
+                                        <div class="w40pa flex fdc lk-gray pl20i mt-32 mob-hide">
+                                            <v-select :options="['Комментарий','Комментарий','Комментарий','HEКомментарий']" placeholder="Реализация товара (без предоплаты)"></v-select>
+                                            <input placeholder="Наим-е товара или услуги">
+                                            <div class="flex jcb">
+                                                <div class="w75p">
+                                                    <input placeholder="Сумма сделки">
                                                 </div>
-                                                <div class="mt10">
-                                                    <p-radio name="radio1" color="success-o">Юр. лица</p-radio>
+                                                <div class="w20p">
+                                                    <v-select :options="['Комментарий','Комментарий','Комментарий','HEКомментарий']" placeholder=""></v-select>
                                                 </div>
                                             </div>
-                                        </div>
-                                    </div>
-                                    <div class="w40p flex fdc lk-gray">
-                                        <v-select :options="['Комментарий','Комментарий','Комментарий','HEКомментарий']" placeholder="ИНН"></v-select>
-                                        <div class="flex jcb">
-                                            <div class="w20p">
-                                                <v-select :options="['Комментарий','Комментарий','Комментарий','HEКомментарий']" placeholder=""></v-select>
+                                            <vuejs-datepicker></vuejs-datepicker>
+                                            <div class="flex jcb fww mt20">
+                                                <div class="row fs0 fww">
+                                                    <div class="standart-text">Документы по сделке:</div>
+                                                </div>
+                                                <div class="w30p">
+                                                    <button class="btn btn-green lk-gray-btn">Товарная накладная</button>
+                                                </div>
+                                                <div class="w30p flex jcs aic pb10">
+                                                    <div class="green-text">Загружен</div><i class="red-text fa fa-trash-o"> </i>
+                                                </div>
+                                                <div class="w30p"></div>
                                             </div>
-                                            <div class="w75p">
-                                                <input placeholder="Название без кавычек">
+                                            <div class="flex jcb fww mt20">
+                                                <div class="w30p">
+                                                    <button class="btn btn-green lk-gray-btn">ТТН</button>
+                                                </div>
+                                                <div class="w30p flex jcs aic">
+                                                    <div class="gray-texts">Не добавлен</div>
+                                                </div>
+                                                <div class="w30p"></div>
                                             </div>
-                                        </div>
-                                        <input placeholder="ОГРН">
-                                        <v-select :options="['Комментарий','Комментарий','Комментарий','HEКомментарий']" placeholder="Страна"></v-select>
-                                        <v-select :options="['Комментарий','Комментарий','Комментарий','HEКомментарий']" placeholder="Город"></v-select>
-                                        <div class="flex jcb">
-                                            <div class="w20p">
-                                                <input placeholder="Индекс">
+                                            <div class="flex jcb fww mt20">
+                                                <div class="w30p">
+                                                    <button class="btn btn-green lk-gray-btn">Другое</button>
+                                                </div>
+                                                <div class="w30p flex jcs aic">
+                                                    <input placeholder="Название">
+                                                </div>
+                                                <div class="w30p flex jcs aic pb10">
+                                                    <div class="gray-texts">Не добавлен</div>
+                                                </div>
                                             </div>
-                                            <div class="w75p">
-                                                <input placeholder="Улица">
+                                            <div class="flex jcb fww">
+                                                <div class="row fs0 fww">
+                                                    <div class="green-text tdu">Добавить</div>
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="flex jcb">
-                                            <div class="w30p">
-                                                <input placeholder="Дом">
-                                            </div>
-                                            <div class="w30p">
-                                                <input placeholder="Корпус">
-                                            </div>
-                                            <div class="w30p">
-                                                <input placeholder="Квартира/офис">
-                                            </div>
-                                        </div>
-                                        <input placeholder="р/с">
-                                        <div class="flex jcb">
-                                            <div class="cards-container">
-                                                <input placeholder="Номер кошелька">
-                                                <div class="cards">
-                                                    <img src="static/img/general/yandex.png">
-                                                    <img src="static/img/general/wm.png">
+                                            <div class="flex jcb fww mt20">
+                                                <div class="row fs0 fww flex jcb">
+                                                    <div class="standart-text">Отзыв от имени</div>
+                                                    <div class="mt10">
+                                                        <p-radio name="radio1" color="success-o">Физ. лица</p-radio>
+                                                    </div>
+                                                    <div class="mt10">
+                                                        <p-radio name="radio1" color="success-o">Юр. лица</p-radio>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="flex jcb">
-                                            <div class="cards-container">
-                                                <input placeholder="Номер карты">
-                                                <div class="cards">
-                                                    <img src="static/img/general/visa.png">
-                                                    <img src="static/img/general/mc.png">
+                                        <div class="w40p flex fdc lk-gray">
+                                            <v-select :options="['Комментарий','Комментарий','Комментарий','HEКомментарий']" placeholder="ИНН"></v-select>
+                                            <div class="flex jcb">
+                                                <div class="w20p">
+                                                    <v-select :options="['Комментарий','Комментарий','Комментарий','HEКомментарий']" placeholder=""></v-select>
+                                                </div>
+                                                <div class="w75p">
+                                                    <input placeholder="Название без кавычек">
+                                                </div>
+                                            </div>
+                                            <input placeholder="ОГРН">
+                                            <v-select :options="['Комментарий','Комментарий','Комментарий','HEКомментарий']" placeholder="Страна"></v-select>
+                                            <v-select :options="['Комментарий','Комментарий','Комментарий','HEКомментарий']" placeholder="Город"></v-select>
+                                            <div class="flex jcb">
+                                                <div class="w20p">
+                                                    <input placeholder="Индекс">
+                                                </div>
+                                                <div class="w75p">
+                                                    <input placeholder="Улица">
+                                                </div>
+                                            </div>
+                                            <div class="flex jcb">
+                                                <div class="w30p">
+                                                    <input placeholder="Дом">
+                                                </div>
+                                                <div class="w30p">
+                                                    <input placeholder="Корпус">
+                                                </div>
+                                                <div class="w30p">
+                                                    <input placeholder="Квартира/офис">
+                                                </div>
+                                            </div>
+                                            <input placeholder="р/с">
+                                            <div class="flex jcb">
+                                                <div class="cards-container">
+                                                    <input placeholder="Номер кошелька">
+                                                    <div class="cards">
+                                                        <img src="static/img/general/yandex.png">
+                                                        <img src="static/img/general/wm.png">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="flex jcb">
+                                                <div class="cards-container">
+                                                    <input placeholder="Номер карты">
+                                                    <div class="cards">
+                                                        <img src="static/img/general/visa.png">
+                                                        <img src="static/img/general/mc.png">
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="row mt60">
-                                    <div class="w40pa flex fdc lk-gray pl20i">
-                                        <div class="head-red">Контакты по сделке</div>
-                                        <div class="gray-text"></div>
-                                    </div>
-                                    <div class="w40p flex fdc lk-gray mob-hide">
-                                        <div class="head-red">Отзыв</div>
-                                        <div class="gray-text"></div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="w40pa flex fdc lk-gray pl20i mt-32">
-                                        <div class="flex jcb fww">
-                                            <div class="row fs0 fww">
-                                                <div class="standart-text">Контакт №1</div>
-                                            </div>
-                                            <div class="w90p">
-                                                <input placeholder="Фамилия Имя Отчество">
-                                            </div>
-                                            <div class="w10p flex jcc aic pb10">
-                                                <div class="plus">+</div>
-                                            </div>
+                                    <div class="row mt60">
+                                        <div class="w40pa flex fdc lk-gray pl20i">
+                                            <div class="head-red">Контакты по сделке</div>
+                                            <div class="gray-text"></div>
                                         </div>
-                                        <div class="flex jcb fww">
-                                            <div class="row fs0 fww">
-                                                <div class="standart-text">В соцсетях 1</div>
-                                            </div>
-                                            <div class="w90p">
-                                                <input placeholder="Ссылка">
-                                            </div>
-                                            <div class="w10p flex jcc aic pb10">
-                                                <div class="plus">+</div>
-                                            </div>
-                                        </div>
-                                        <div class="flex jcb fww">
-                                            <div class="row fs0 fww">
-                                                <div class="standart-text">Мобильный 1</div>
-                                            </div>
-                                            <div class="w90p">
-                                                <input placeholder="+7">
-                                            </div>
-                                            <div class="w10p flex jcc aic pb10">
-                                                <div class="plus">+</div>
-                                            </div>
-                                        </div>
-                                        <div class="flex jcb fww">
-                                            <div class="row fs0 fww">
-                                                <div class="standart-text">ICQ 1</div>
-                                            </div>
-                                            <div class="w90p">
-                                                <input placeholder="">
-                                            </div>
-                                            <div class="w10p flex jcc aic pb10">
-                                                <div class="plus">+</div>
-                                            </div>
-                                        </div>
-                                        <div class="flex jcb fww">
-                                            <div class="row fs0 fww">
-                                                <div class="standart-text">Skype 1</div>
-                                            </div>
-                                            <div class="w90p">
-                                                <input placeholder="">
-                                            </div>
-                                            <div class="w10p flex jcc aic pb10">
-                                                <div class="plus">+</div>
-                                            </div>
-                                        </div>
-                                        <div class="flex jcb fww">
-                                            <div class="row fs0 fww">
-                                                <div class="standart-text">Сайт 2</div>
-                                            </div>
-                                            <div class="w90p">
-                                                <input placeholder="">
-                                            </div>
-                                            <div class="w10p flex jcc aic pb10">
-                                                <div class="plus">+</div>
-                                            </div>
+                                        <div class="w40p flex fdc lk-gray mob-hide">
+                                            <div class="head-red">Отзыв</div>
+                                            <div class="gray-text"></div>
                                         </div>
                                     </div>
-                                    <div class="w40p flex fdc lk-gray mob-hide">
-                                        <textarea style="height:calc(100% - 50px)"></textarea>
-                                        <div class="row jce aic">
-                                            <div class="mr10">
-                                                <p-check name="check" color="success" class='p-default'>Пользовательское соглашение</p-check>
+                                    <div class="row">
+                                        <div class="w40pa flex fdc lk-gray pl20i mt-32">
+                                            <div class="flex jcb fww">
+                                                <div class="row fs0 fww">
+                                                    <div class="standart-text">Контакт №1</div>
+                                                </div>
+                                                <div class="w90p">
+                                                    <input placeholder="Фамилия Имя Отчество">
+                                                </div>
+                                                <div class="w10p flex jcc aic pb10">
+                                                    <div class="plus">+</div>
+                                                </div>
                                             </div>
-                                            <button class="btn btn-green lk-gray-btn">Добавить отзыв</button>
+                                            <div class="flex jcb fww">
+                                                <div class="row fs0 fww">
+                                                    <div class="standart-text">В соцсетях 1</div>
+                                                </div>
+                                                <div class="w90p">
+                                                    <input placeholder="Ссылка">
+                                                </div>
+                                                <div class="w10p flex jcc aic pb10">
+                                                    <div class="plus">+</div>
+                                                </div>
+                                            </div>
+                                            <div class="flex jcb fww">
+                                                <div class="row fs0 fww">
+                                                    <div class="standart-text">Мобильный 1</div>
+                                                </div>
+                                                <div class="w90p">
+                                                    <input placeholder="+7">
+                                                </div>
+                                                <div class="w10p flex jcc aic pb10">
+                                                    <div class="plus">+</div>
+                                                </div>
+                                            </div>
+                                            <div class="flex jcb fww">
+                                                <div class="row fs0 fww">
+                                                    <div class="standart-text">ICQ 1</div>
+                                                </div>
+                                                <div class="w90p">
+                                                    <input placeholder="">
+                                                </div>
+                                                <div class="w10p flex jcc aic pb10">
+                                                    <div class="plus">+</div>
+                                                </div>
+                                            </div>
+                                            <div class="flex jcb fww">
+                                                <div class="row fs0 fww">
+                                                    <div class="standart-text">Skype 1</div>
+                                                </div>
+                                                <div class="w90p">
+                                                    <input placeholder="">
+                                                </div>
+                                                <div class="w10p flex jcc aic pb10">
+                                                    <div class="plus">+</div>
+                                                </div>
+                                            </div>
+                                            <div class="flex jcb fww">
+                                                <div class="row fs0 fww">
+                                                    <div class="standart-text">Сайт 2</div>
+                                                </div>
+                                                <div class="w90p">
+                                                    <input placeholder="">
+                                                </div>
+                                                <div class="w10p flex jcc aic pb10">
+                                                    <div class="plus">+</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="w40p flex fdc lk-gray mob-hide">
+                                            <textarea style="height:calc(100% - 50px)"></textarea>
+                                            <div class="row jce aic">
+                                                <div class="mr10">
+                                                    <p-check name="check" color="success" class='p-default'>Пользовательское соглашение</p-check>
+                                                </div>
+                                                <button class="btn btn-green lk-gray-btn">Добавить отзыв</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="scroll-bar scroll-barr">
+                                        <div class="scroll-line"></div>
+                                        <div class="scroll-button">
+                                            <div class="b"><span><</span><span>></span>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -391,7 +403,7 @@
                     <div class="c-1 line-lr"></div>
                     <div class="c-1 line-lr"></div>
                 </div>
-            </section>
+            </div>
             <div class="container"></div>
             <footer class="footer">
                 <div class="container">
@@ -410,7 +422,7 @@
         </div>
 
 
-        <script src="static/js/mainzxapv8c86tee3vqdunmi.min.js"></script>
+        <script src="static/js/mainob93rpujoty4b49529.min.js"></script>
     </body>
 
 </html>

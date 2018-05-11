@@ -12,7 +12,7 @@
         <meta name="HandheldFriendly" content="true">
 
         <!--[if (gt IE 9)|!(IE)]><!-->
-        <link href="static/css/mainzxapv8c86tee3vqdunmi.min.css" rel="stylesheet" type="text/css">
+        <link href="static/css/mainob93rpujoty4b49529.min.css" rel="stylesheet" type="text/css">
         <!--<![endif]-->
         <meta property="og:title" content="#{data.title}">
         <meta property="og:title" content="">
@@ -27,11 +27,14 @@
         <link rel="icon" type="image/x-icon" href="favicon.ico">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="static/css/separate-css/onepage-scroll.css">
         <script src="https://unpkg.com/vue-select@latest"></script>
         <script src="https://unpkg.com/vuejs-datepicker"></script>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pretty-checkbox@3.0/dist/pretty-checkbox.min.css">
         <script src="https://cdn.jsdelivr.net/npm/pretty-checkbox-vue@1.1/dist/pretty-checkbox-vue.min.js"></script>
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+        <script src="static/js/separate-js/jquery.onepage-scroll.min.js"></script>
         <script>
             (function(H){H.className=H.className.replace(/\bno-js\b/,'js')})(document.documentElement)
         </script>
@@ -115,7 +118,7 @@
                     </div>
                 </div>
             </header>
-            <section class="page__wrapper">
+            <div class="page__wrapper">
                 <main class="re">
                     <div class="container">
                         <div class="row fr">
@@ -127,142 +130,151 @@
                             </div>
                             <div class="c-1 bg-img pt20 mob-c8 bg-gray mob-hide"></div>
                             <div class="c-5 bg-img mob-c8 bg-gray">
-                                <div class="lk-gray mob-tab">
-                                    <div class="row mob-hide">
-                                        <div class="w40pn sov">
-                                            <div class="gray-texts">Найдены совпадения:</div>
-                                            <div class="red-text">Рако</div>в Н.В.
+                                <div class="scroll">
+                                    <div class="lk-gray mob-tab">
+                                        <div class="row mob-hide">
+                                            <div class="w40pn sov">
+                                                <div class="gray-texts">Найдены совпадения:</div>
+                                                <div class="red-text">Рако</div>в Н.В.
+                                            </div>
+                                        </div>
+                                        <div class="row mt60 table">
+                                            <div class="w20p">
+                                                <div class="standart-text">Неплательщик </div>
+                                            </div>
+                                            <div class="w20p">
+                                                <div class="standart-text">Покупатель</div>
+                                            </div>
+                                            <div class="w20p">
+                                                <div class="standart-text">Данные по сделке</div>
+                                            </div>
+                                            <div class="w20p">
+                                                <div class="standart-text">Сумма / Просрочка </div>
+                                            </div>
+                                            <div class="w20p">
+                                                <div class="standart-text">Файлы</div>
+                                            </div>
+                                        </div>
+                                        <div class="row mt60 table">
+                                            <div class="w20p flex fdc mt10">
+                                                <div class="flex standart-text tdu">Физ. лицо Раков Н.В. </div>
+                                                <div class="flex gray-texts mt10">ИНН 123456789</div>
+                                                <div class="flex gray-texts mt10"> Россия, Москва </div><a class="flex red-text mt10 tdu" href> Подробнее </a>
+                                            </div>
+                                            <div class="w20p flex fdc mt10">
+                                                <div class="flex standart-text tdu">Неплательщик.рф </div>
+                                                <div class="flex gray-texts mt10">ИНН 1234567890 </div>
+                                                <div class="flex gray-texts mt10"> Россия, Казань</div>
+                                            </div>
+                                            <div class="w20p flex mt10">
+                                                <div class="w50p">Реализация  услуги (без  предоплаты) </div>
+                                                <div class="w50p"> Подряд на строительст- во </div>
+                                            </div>
+                                            <div class="w20p flex mt10 fdc">
+                                                <div class="row flex">
+                                                    <div class="w50p">
+                                                        <div class="fdc">Сумма сделки  </div>
+                                                    </div>
+                                                    <div class="w50p line-l">
+                                                        <div class="fdc">12 300 руб  </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row flex">
+                                                    <div class="w50p">
+                                                        <div class="fdc">Прострочка с</div>
+                                                    </div>
+                                                    <div class="w50p line-l">
+                                                        <div class="fdc">12.11.2016</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="w20p flex fdc"><a class="flex standart-text tdu" href>Договор.jpeg </a><a class="flex standart-text tdu" href>Cчет.jpeg </a>
+                                            </div>
+                                        </div>
+                                        <div class="row mt60 table">
+                                            <div class="w20p flex fdc mt10">
+                                                <div class="flex standart-text tdu">Физ. лицо Раков Н.В. </div>
+                                                <div class="flex gray-texts mt10">ИНН 123456789</div>
+                                                <div class="flex gray-texts mt10"> Россия, Москва </div><a class="flex red-text mt10 tdu" href> Подробнее </a>
+                                            </div>
+                                            <div class="w20p flex fdc mt10">
+                                                <div class="flex standart-text tdu">Неплательщик.рф </div>
+                                                <div class="flex gray-texts mt10">ИНН 1234567890 </div>
+                                                <div class="flex gray-texts mt10"> Россия, Казань</div>
+                                            </div>
+                                            <div class="w20p flex mt10">
+                                                <div class="w50p">Реализация  услуги (без  предоплаты) </div>
+                                                <div class="w50p"> Подряд на строительст- во </div>
+                                            </div>
+                                            <div class="w20p flex mt10 fdc">
+                                                <div class="row flex">
+                                                    <div class="w50p">
+                                                        <div class="fdc">Сумма сделки  </div>
+                                                    </div>
+                                                    <div class="w50p line-l">
+                                                        <div class="fdc">12 300 руб  </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row flex">
+                                                    <div class="w50p">
+                                                        <div class="fdc">Прострочка с</div>
+                                                    </div>
+                                                    <div class="w50p line-l">
+                                                        <div class="fdc">12.11.2016</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="w20p flex fdc"><a class="flex standart-text tdu" href>Договор.jpeg </a><a class="flex standart-text tdu" href>Cчет.jpeg </a>
+                                            </div>
+                                        </div>
+                                        <div class="row mt60 table">
+                                            <div class="w20p flex fdc mt10">
+                                                <div class="flex standart-text tdu">Физ. лицо Раков Н.В. </div>
+                                                <div class="flex gray-texts mt10">ИНН 123456789</div>
+                                                <div class="flex gray-texts mt10"> Россия, Москва </div><a class="flex red-text mt10 tdu" href> Подробнее </a>
+                                            </div>
+                                            <div class="w20p flex fdc mt10">
+                                                <div class="flex standart-text tdu">Неплательщик.рф </div>
+                                                <div class="flex gray-texts mt10">ИНН 1234567890 </div>
+                                                <div class="flex gray-texts mt10"> Россия, Казань</div>
+                                            </div>
+                                            <div class="w20p flex mt10">
+                                                <div class="w50p">Реализация  услуги (без  предоплаты) </div>
+                                                <div class="w50p"> Подряд на строительст- во </div>
+                                            </div>
+                                            <div class="w20p flex mt10 fdc">
+                                                <div class="row flex">
+                                                    <div class="w50p">
+                                                        <div class="fdc">Сумма сделки  </div>
+                                                    </div>
+                                                    <div class="w50p line-l">
+                                                        <div class="fdc">12 300 руб  </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row flex">
+                                                    <div class="w50p">
+                                                        <div class="fdc">Прострочка с</div>
+                                                    </div>
+                                                    <div class="w50p line-l">
+                                                        <div class="fdc">12.11.2016</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="w20p flex fdc"><a class="flex standart-text tdu" href>Договор.jpeg </a><a class="flex standart-text tdu" href>Cчет.jpeg </a>
+                                            </div>
+                                        </div>
+                                        <div class="row mt10">
+                                            <div class="w80p"></div>
+                                            <div class="w20p flex">
+                                                <div class="w50p flex jcb mt10"><a class="pages pages-active" href>1</a><a class="pages" href>2</a><a class="pages" href>3</a><a class="pages" href>4</a>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="row mt60 table">
-                                        <div class="w20p">
-                                            <div class="standart-text">Неплательщик </div>
-                                        </div>
-                                        <div class="w20p">
-                                            <div class="standart-text">Покупатель</div>
-                                        </div>
-                                        <div class="w20p">
-                                            <div class="standart-text">Данные по сделке</div>
-                                        </div>
-                                        <div class="w20p">
-                                            <div class="standart-text">Сумма / Просрочка </div>
-                                        </div>
-                                        <div class="w20p">
-                                            <div class="standart-text">Файлы</div>
-                                        </div>
-                                    </div>
-                                    <div class="row mt60 table">
-                                        <div class="w20p flex fdc mt10">
-                                            <div class="flex standart-text tdu">Физ. лицо Раков Н.В. </div>
-                                            <div class="flex grey-texts mt10">ИНН 123456789</div>
-                                            <div class="flex grey-texts mt10"> Россия, Москва </div><a class="flex red-text mt10 tdu" href> Подробнее </a>
-                                        </div>
-                                        <div class="w20p flex fdc mt10">
-                                            <div class="flex standart-text tdu">Неплательщик.рф </div>
-                                            <div class="flex grey-texts mt10">ИНН 1234567890 </div>
-                                            <div class="flex grey-texts mt10"> Россия, Казань</div>
-                                        </div>
-                                        <div class="w20p flex mt10">
-                                            <div class="w50p">Реализация  услуги (без  предоплаты) </div>
-                                            <div class="w50p"> Подряд на строительст- во </div>
-                                        </div>
-                                        <div class="w20p flex mt10 fdc">
-                                            <div class="row flex">
-                                                <div class="w50p">
-                                                    <div class="fdc">Сумма сделки  </div>
-                                                </div>
-                                                <div class="w50p line-l">
-                                                    <div class="fdc">12 300 руб  </div>
-                                                </div>
-                                            </div>
-                                            <div class="row flex">
-                                                <div class="w50p">
-                                                    <div class="fdc">Прострочка с</div>
-                                                </div>
-                                                <div class="w50p line-l">
-                                                    <div class="fdc">12.11.2016</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="w20p flex fdc"><a class="flex standart-text tdu" href>Договор.jpeg </a><a class="flex standart-text tdu" href>Cчет.jpeg </a>
-                                        </div>
-                                    </div>
-                                    <div class="row mt60 table">
-                                        <div class="w20p flex fdc mt10">
-                                            <div class="flex standart-text tdu">Физ. лицо Раков Н.В. </div>
-                                            <div class="flex grey-texts mt10">ИНН 123456789</div>
-                                            <div class="flex grey-texts mt10"> Россия, Москва </div><a class="flex red-text mt10 tdu" href> Подробнее </a>
-                                        </div>
-                                        <div class="w20p flex fdc mt10">
-                                            <div class="flex standart-text tdu">Неплательщик.рф </div>
-                                            <div class="flex grey-texts mt10">ИНН 1234567890 </div>
-                                            <div class="flex grey-texts mt10"> Россия, Казань</div>
-                                        </div>
-                                        <div class="w20p flex mt10">
-                                            <div class="w50p">Реализация  услуги (без  предоплаты) </div>
-                                            <div class="w50p"> Подряд на строительст- во </div>
-                                        </div>
-                                        <div class="w20p flex mt10 fdc">
-                                            <div class="row flex">
-                                                <div class="w50p">
-                                                    <div class="fdc">Сумма сделки  </div>
-                                                </div>
-                                                <div class="w50p line-l">
-                                                    <div class="fdc">12 300 руб  </div>
-                                                </div>
-                                            </div>
-                                            <div class="row flex">
-                                                <div class="w50p">
-                                                    <div class="fdc">Прострочка с</div>
-                                                </div>
-                                                <div class="w50p line-l">
-                                                    <div class="fdc">12.11.2016</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="w20p flex fdc"><a class="flex standart-text tdu" href>Договор.jpeg </a><a class="flex standart-text tdu" href>Cчет.jpeg </a>
-                                        </div>
-                                    </div>
-                                    <div class="row mt60 table">
-                                        <div class="w20p flex fdc mt10">
-                                            <div class="flex standart-text tdu">Физ. лицо Раков Н.В. </div>
-                                            <div class="flex grey-texts mt10">ИНН 123456789</div>
-                                            <div class="flex grey-texts mt10"> Россия, Москва </div><a class="flex red-text mt10 tdu" href> Подробнее </a>
-                                        </div>
-                                        <div class="w20p flex fdc mt10">
-                                            <div class="flex standart-text tdu">Неплательщик.рф </div>
-                                            <div class="flex grey-texts mt10">ИНН 1234567890 </div>
-                                            <div class="flex grey-texts mt10"> Россия, Казань</div>
-                                        </div>
-                                        <div class="w20p flex mt10">
-                                            <div class="w50p">Реализация  услуги (без  предоплаты) </div>
-                                            <div class="w50p"> Подряд на строительст- во </div>
-                                        </div>
-                                        <div class="w20p flex mt10 fdc">
-                                            <div class="row flex">
-                                                <div class="w50p">
-                                                    <div class="fdc">Сумма сделки  </div>
-                                                </div>
-                                                <div class="w50p line-l">
-                                                    <div class="fdc">12 300 руб  </div>
-                                                </div>
-                                            </div>
-                                            <div class="row flex">
-                                                <div class="w50p">
-                                                    <div class="fdc">Прострочка с</div>
-                                                </div>
-                                                <div class="w50p line-l">
-                                                    <div class="fdc">12.11.2016</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="w20p flex fdc"><a class="flex standart-text tdu" href>Договор.jpeg </a><a class="flex standart-text tdu" href>Cчет.jpeg </a>
-                                        </div>
-                                    </div>
-                                    <div class="row mt10">
-                                        <div class="w80p"></div>
-                                        <div class="w20p flex">
-                                            <div class="w50p flex jcb mt10"><a class="pages pages-active" href>1</a><a class="pages" href>2</a><a class="pages" href>3</a><a class="pages" href>4</a>
+                                    <div class="scroll-bar scroll-barr">
+                                        <div class="scroll-line"></div>
+                                        <div class="scroll-button">
+                                            <div class="b"><span><</span><span>></span>
                                             </div>
                                         </div>
                                     </div>
@@ -282,7 +294,7 @@
                     <div class="c-1 line-lr"></div>
                     <div class="c-1 line-lr"></div>
                 </div>
-            </section>
+            </div>
             <div class="container"></div>
             <footer class="footer">
                 <div class="container">
@@ -301,7 +313,7 @@
         </div>
 
 
-        <script src="static/js/mainzxapv8c86tee3vqdunmi.min.js"></script>
+        <script src="static/js/mainob93rpujoty4b49529.min.js"></script>
     </body>
 
 </html>
