@@ -1819,6 +1819,10 @@ h1 .h1-2 {
   height: 100vh !important;
 }
 
+.ccopy {
+  padding-right: 0 !important;
+}
+
 @media only screen and (max-width: 1624px) {
   h1 {
     font-size: 42px;
