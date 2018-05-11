@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ru">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>default title</title>
+        <meta content="" name="description">
+        <meta content="" name="keywords">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta content="telephone=no" name="format-detection">
+        <meta name="HandheldFriendly" content="true">
+
+        <!--[if (gt IE 9)|!(IE)]><!-->
+        <link href="static/css/main2qvnf23p7ea9mx3whfr.min.css" rel="stylesheet" type="text/css">
+        <!--<![endif]-->
+        <meta property="og:title" content="#{data.title}">
+        <meta property="og:title" content="">
+        <meta property="og:url" content="">
+        <meta property="og:description" content="">
+        <meta property="og:image" content="">
+        <meta property="og:image:type" content="image/jpeg">
+        <meta property="og:image:width" content="500">
+        <meta property="og:image:height" content="300">
+        <meta property="twitter:description" content="">
+        <link rel="image_src" href="">
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="static/css/separate-css/onepage-scroll.css">
+        <script src="https://unpkg.com/vue-select@latest"></script>
+        <script src="https://unpkg.com/vuejs-datepicker"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pretty-checkbox@3.0/dist/pretty-checkbox.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/pretty-checkbox-vue@1.1/dist/pretty-checkbox-vue.min.js"></script>
+        <script src="static/js/separate-js/jquery-1.9.1.js"></script>
+        <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+        <script src="static/js/separate-js/jquery.onepage-scroll.min.js"></script>
+        <script>
+            (function(H){H.className=H.className.replace(/\bno-js\b/,'js')})(document.documentElement)
+        </script>
+    </head>
+
+    <body class="page">
+        <div id="app">
+            <header class="header">
+                <div class="container">
+                    <div class="row fr mob-hide">
+                        <div class="c-1 line-lr"></div>
+                        <div class="c-1 line-lr"></div>
+                        <div class="c-1 line-lr">
+                            <a class="menu-item" href="#">
+                                <div class="block block-num block-active">01</div>
+                                <div class="text">Главная</div>
+                            </a>
+                        </div>
+                        <div class="c-1 line-lr">
+                            <a class="menu-item" href="#">
+                                <div class="block block-num">02</div>
+                                <div class="text">О нас</div>
+                            </a>
+                        </div>
+                        <div class="c-1 line-lr">
+                            <a class="menu-item" href="#">
+                                <div class="block block-num">03</div>
+                                <div class="text">Помощь</div>
+                            </a>
+                        </div>
+                        <div class="c-1 line-lr">
+                            <a class="menu-item" href="#">
+                                <div class="block block-num">04</div>
+                                <div class="text">Новости</div>
+                            </a>
+                        </div>
+                        <div class="c-1 line-lr">
+                            <a class="menu-item" href="#">
+                                <div class="block block-yc"></div>
+                                <div class="text">Обратная связь</div>
+                            </a>
+                        </div>
+                        <div class="c-1 line-lr">
+                            <a class="menu-item" href="#">
+                                <div class="block block-rc"></div>
+                                <div class="text">Регистрация</div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="c-1 line-lr mob-c8">
+                            <img class="logo" src="static/img/general/logo.png">
+                            <div class="mob-vis menu">
+                                <div class="fas fa-search"></div>
+                                <div class="fas fa-bars"></div>
+                            </div>
+                        </div>
+                        <div class="c-1 line-lr mob-hide"></div>
+                        <div class="c-2 line-lr mob-hide">
+                            <div class="search mob-hide">
+                                <div class="fas fa-search"></div>
+                                <input placeholder="Быстрый поиск | Наименование или ИНН">
+                            </div>
+                        </div>
+                        <div class="c-1 line-lr mob-hide"></div>
+                        <div class="c-1 line-lr mob-hide"></div>
+                        <div class="c-1 line-lr mob-hide"></div>
+                        <div class="c-1 line-lr mob-hide">
+                            <a class="menu-item" href="#">
+                                <div class="block block-gc"></div>
+                                <div class="text">Вход</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div class="page__wrapper">
+                <main class="lk">
+                    <div class="container">
+                        <div class="row fr">
+                            <div class="c-1 line-lr flex fdc jcb ais mob-c8 mob-hide">
+                                <h1></h1>
+                                <div class="copy">
+                                    <div class="c-8 blr">© неплательщик.рф</div>
+                                </div>
+                            </div>
+                            <div class="c-2 line-lr lk-main bg-white pt20" :class="{'lk-show':lk}">
+                                <div class="lk-tab" @click="lk=!lk">
+                                    <div>Личный кабинет</div>
+                                </div>
+                                <div>
+                                    <div class="head-red mob-hide">Личный кабинет</div>
+                                    <div class="lk-scroll">
+                                        <div class="lk-green-box"><i class="fas fa-pencil-alt"></i>
+                                            <div class="head">Личные данные</div>
+                                            <div class="text"><span class="fa-stack">  <i class="fa fa-globe fa-fw"></i></span>Россия </div>
+                                            <div class="text"><span class="fa-stack">  <i class="fa fa-map-marker fa-fw"></i></span>Санкт-Петербург </div>
+                                            <div class="text"><span class="fa-stack">  <i class="fa fa-user-circle-o fa-fw"></i></span>Константин </div>
+                                            <div class="text"><span class="fa-stack"><i class="fa fa-user-circle-o fa-fw"></i></span>Константинопольский </div>
+                                            <div class="text"><span class="fa-stack"><i class="fa fa-circle-thin fa-fw fa-stack-2x"> </i><i class="fa fa-phone fa-fw fa-stack-1x"></i></span>+7 928 123 45 67 </div>
+                                            <div class="text"><span class="fa-stack"><i class="fa fa-circle-thin fa-fw fa-stack-2x">  </i><i class="fa fa-envelope-o fa-fw fa-stack-1x"></i></span>kostyan@mail.ru</div>
+                                        </div>
+                                        <div class="info-blocks">
+                                            <div class="text">Информация об организации</div><i class="fas fa-pencil-alt"></i><i class="fas fa-caret-down"></i>
+                                        </div>
+                                        <div class="info-blocks">
+                                            <div class="text">Отзывы</div><i class="fas fa-pencil-alt"></i><i class="fas fa-caret-down"></i>
+                                        </div>
+                                        <div class="info-blocks">
+                                            <div class="text">
+                                                Ваши подписки
+                                                <div class="plus">+</div>
+                                            </div><i class="fas fa-pencil-alt"></i><i class="fas fa-caret-down"></i>
+                                        </div>
+                                        <div class="info-blocks">
+                                            <div class="text">Обратная связь</div><i class="fas fa-pencil-alt"></i><i class="fas fa-caret-down"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flex"><span class="change flex"><span class="fa-stack"><i class="fa fa-circle-thin fa-fw fa-stack-2x">  </i><i class="fa fa-lock fa-fw fa-stack-1x"></i></span>Сменить пароль</span><span class="delete flex"><span class="fa-stack"><i class="far fa-times-circle"></i></span>Удалить
+                                    профиль</span>
+                                </div>
+                            </div>
+                            <div class="c-5 bg-img pt20 mob-c8 bg-gray">
+                                <div class="scroll">
+                                    <div class="row">
+                                        <div class="w40p flex fdc lk-gray">
+                                            <div class="head-red">Подписаться на новости фирмы</div>
+                                            <div class="gray-text">Если вы не нашли нтересующую вас организацию, то вы можете подписаться на нее и мы оповестим вас по Email</div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="w40p flex fdc lk-gray">
+                                            <div class="flex jcb">
+                                                <div class="w20p">
+                                                    <v-select :options="['Комментарий','Комментарий','Комментарий','HEКомментарий']" placeholder=""></v-select>
+                                                </div>
+                                                <div class="w75p">
+                                                    <input placeholder="Название без кавычек">
+                                                </div>
+                                            </div>
+                                            <v-select :options="['Комментарий','Комментарий','Комментарий','HEКомментарий']" placeholder="ИНН"></v-select>
+                                            <v-select :options="['Комментарий','Комментарий','Комментарий','HEКомментарий']" placeholder="Страна"></v-select>
+                                            <v-select :options="['Комментарий','Комментарий','Комментарий','HEКомментарий']" placeholder="Город"></v-select>
+                                            <input placeholder="Фамилия Имя Отчество">
+                                            <div class="flex jcb">
+                                                <div class="w90p">
+                                                    <input placeholder="Мобильный">
+                                                </div>
+                                                <div class="w10p flex jcc aic pb10">
+                                                    <div class="plus">+</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="w40pa flex fdc lk-gray pl20i">
+                                            <div class="flex jcb">
+                                                <div class="w90p">
+                                                    <input placeholder="Городской">
+                                                </div>
+                                                <div class="w10p flex jcc aic pb10">
+                                                    <div class="plus">+</div>
+                                                </div>
+                                            </div>
+                                            <div class="flex jcb">
+                                                <div class="w90p">
+                                                    <input placeholder="Email">
+                                                </div>
+                                                <div class="w10p flex jcc aic pb10">
+                                                    <div class="plus">+</div>
+                                                </div>
+                                            </div>
+                                            <div class="flex jcb">
+                                                <div class="w90p">
+                                                    <input placeholder="ICQ">
+                                                </div>
+                                                <div class="w10p flex jcc aic pb10">
+                                                    <div class="plus">+</div>
+                                                </div>
+                                            </div>
+                                            <div class="flex jcb">
+                                                <div class="w90p">
+                                                    <input placeholder="Skype">
+                                                </div>
+                                                <div class="w10p flex jcc aic pb10">
+                                                    <div class="plus">+</div>
+                                                </div>
+                                            </div>
+                                            <div class="flex jcb">
+                                                <div class="w90p">
+                                                    <input placeholder="Сайт">
+                                                </div>
+                                                <div class="w10p flex jcc aic pb10">
+                                                    <div class="plus">+</div>
+                                                </div>
+                                            </div>
+                                            <div class="flex jcb">
+                                                <div class="w90p cards-container">
+                                                    <input placeholder="Номер кошелька без пробелов">
+                                                    <div class="cards">
+                                                        <img src="static/img/general/yandex.png">
+                                                        <img src="static/img/general/wm.png">
+                                                    </div>
+                                                </div>
+                                                <div class="w10p flex jcc aic pb10">
+                                                    <div class="plus">+</div>
+                                                </div>
+                                            </div>
+                                            <div class="flex jcb">
+                                                <div class="w90p cards-container">
+                                                    <input placeholder="Номер карты без пробелов">
+                                                    <div class="cards">
+                                                        <img src="static/img/general/visa.png">
+                                                        <img src="static/img/general/mc.png">
+                                                    </div>
+                                                </div>
+                                                <div class="w10p flex jcc aic pb10">
+                                                    <div class="plus">+</div>
+                                                </div>
+                                            </div>
+                                            <div class="row jce">
+                                                <div class="w50p">
+                                                    <button class="btn btn-green lk-gray-btn">ПРИМЕНИТЬ</button>
+                                                </div>
+                                                <div class="w50p"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="scroll-bar scroll-barr">
+                                        <div class="scroll-line"></div>
+                                        <div class="scroll-button">
+                                            <div class="b"><span><</span><span>></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+                <div class="row">
+                    <div class="c-1 line-lr"></div>
+                    <div class="c-1 line-lr"></div>
+                    <div class="c-1 line-lr"></div>
+                    <div class="c-1 line-lr"></div>
+                    <div class="c-1 line-lr"></div>
+                    <div class="c-1 line-lr"></div>
+                    <div class="c-1 line-lr"></div>
+                    <div class="c-1 line-lr"></div>
+                </div>
+            </div>
+            <div class="container"></div>
+            <footer class="footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="c-1 line-lr"></div>
+                        <div class="c-1 line-lr"></div>
+                        <div class="c-1 line-lr"></div>
+                        <div class="c-1 line-lr"></div>
+                        <div class="c-1 line-lr"></div>
+                        <div class="c-1 line-lr"></div>
+                        <div class="c-1 line-lr"></div>
+                        <div class="c-1 line-lr"></div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+
+        <script src="static/js/main2qvnf23p7ea9mx3whfr.min.js"></script>
+    </body>
+
+</html>
