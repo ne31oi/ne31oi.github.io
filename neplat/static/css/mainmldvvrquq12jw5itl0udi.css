@@ -2349,6 +2349,97 @@ h1 .h1-2 {
   }
 }
 
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px), only screen and (min-device-width: 375px) and (max-device-width: 812px), only screen and (min-device-width: 375px) and (max-device-width: 667px), only screen and (min-device-width: 414px) and (max-device-width: 736px), only screen and (min-device-width: 320px) and (max-device-width: 568px) {
+  .bg-img1,
+  .bg-img2 {
+    height: 20%;
+  }
+  h1 {
+    font-size: 21px;
+  }
+  h1 .h1-1 {
+    font-size: 15px;
+  }
+  h1 .h1-2 {
+    font-size: 20px;
+  }
+  .table-menu h2 a {
+    font-size: 18px;
+  }
+  .table-menu h2 .text-red {
+    font-size: 20px;
+  }
+  .pt70 {
+    padding-top: 40px;
+  }
+  .fullpage .sec1 {
+    margin-left: 0;
+    padding-top: 290px;
+  }
+  .link {
+    font-size: 16px;
+  }
+  .link .arrow {
+    font-size: 12px;
+  }
+  header .menu {
+    font-size: 14px;
+  }
+  .pages {
+    font-size: 9px;
+  }
+  body,
+  html,
+  .scroll {
+    overflow: scroll !important;
+  }
+  .lk .head-red {
+    margin-bottom: 17px;
+    font-size: 20px;
+  }
+  .lk-gray input,
+  .lk-gray textarea {
+    font-size: 10px !important;
+  }
+  .plus {
+    margin-top: 15px;
+    font-size: 12px;
+  }
+  .lk-gray .btn {
+    font-size: 14px !important;
+  }
+  .lk-tab {
+    right: -170px;
+  }
+  .lk .fas {
+    font-size: 7px;
+  }
+  .lk-green-box .head {
+    font-size: 12px;
+  }
+  .fa {
+    font-size: 12px;
+  }
+  .lk-green-box .text {
+    font-size: 12px;
+  }
+  .btn {
+    height: auto;
+  }
+  .feed .text-t {
+    font-size: 12px;
+  }
+  .head-red {
+    font-size: 14px;
+  }
+  .feed .head-red {
+    margin-bottom: 0;
+  }
+  .feed .message {
+    font-size: 12px;
+  }
+}
+
 /* Plugins, which is used in current project. */
 /* Components, which is used in current project. */
 /* Additional style files. */
