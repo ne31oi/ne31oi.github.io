@@ -221,7 +221,7 @@ body {
 .main a:hover,
 .header a:hover,
 .footer a:hover {
-  opacity: 0.9;
+  opacity: 0.8;
 }
 .main {
   min-height: calc(100vh - 200px);
@@ -256,10 +256,10 @@ body {
 }
 .header .logo {
   width: 99px;
-  height: 41px;
+  height: 47px;
   background-image: url("../img/general/logo.svg");
   background-size: 100%;
-  background-position-y: 50%;
+  background-position-y: 55%;
 }
 .header .logo,
 .header .menu-span {
@@ -353,6 +353,7 @@ body {
   top: 0;
 }
 .header .container-menu {
+  z-index: 9999;
   -webkit-transition: margin 1s;
   transition: margin 1s;
   margin-top: -100%;
@@ -582,10 +583,10 @@ body {
 }
 .footer .container .top .menus .info .logo {
   width: 150px;
-  height: 55px;
+  height: 57px;
   background-image: url("../img/general/logo.svg");
   background-size: 100%;
-  background-position-y: 50%;
+  background-position-y: 54%;
   margin-bottom: 80px;
 }
 .footer .container .top .map {
@@ -710,7 +711,8 @@ body {
   font-size: 30px;
   background-position: center center;
   background-size: 20px;
-  background-image: url("../img/general/arrow-up.svg");
+  background-repeat: no-repeat;
+  background-image: url("../img/general/up-arrow.svg");
 }
 .main .section1 {
   height: 861px;
@@ -1058,6 +1060,9 @@ body {
   border: none;
   border-radius: 0;
   border-bottom: solid #da0812 1px;
+}
+.section4 .container .form .v-select .open-indicator::before {
+  border-color: #da0812;
 }
 .section4 .container .form .btn {
   width: 156px;
