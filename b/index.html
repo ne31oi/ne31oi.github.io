@@ -13,7 +13,7 @@
         <link rel="stylesheet" href="https://use.typekit.net/wds2vlt.css">
 
         <!--[if (gt IE 9)|!(IE)]><!-->
-        <link href="static/css/mainbfh0ji.min.css" rel="stylesheet" type="text/css">
+        <link href="static/css/main1pimro.min.css" rel="stylesheet" type="text/css">
         <!--<![endif]-->
         <meta property="og:title" content="#{data.title}">
         <meta property="og:title" content="">
@@ -27,6 +27,8 @@
         <link rel="image_src" href="">
         <link rel="icon" type="image/x-icon" href="favicon.ico">
         <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+        <script src="https://unpkg.com/vue-select@latest"></script>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
         <script>
             (function(H){H.className=H.className.replace(/\bno-js\b/,'js')})(document.documentElement)
         </script>
@@ -41,30 +43,47 @@
                         <div class="menu-span">КАТАЛОГ</div>
                     </div>
                     <div class="logo"></div>
-                    <div class="header-menu2">
+                    <div class="header-menu2" v-on:click="openMenu2">
                         <div class="menu-span">МЕНЮ</div>
                         <div class="menu-right">
-                            <div class="menu active back" id="menu2" v-on:click="openMenu2"><span class="bar"></span>
+                            <div class="menu"><span class="bar"></span>
                                 <span class="bar"></span>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="container-menu">
-                    <div class="close">Закрыть
-                        <div class="close_btn"></div>
+                <div class="container-menu" id="menu2">
+                    <div class="close">
+                        <div class="close_area" v-on:click="closeMenu2">Закрыть
+                            <div class="close_btn"></div>
+                        </div>
                     </div>
                     <div class="menu_big">
-                        <div class="menu_content"><a class="link1" href="">О компании</a><a class="link2" href="">Акции и новости</a><a class="link3" href="">Отзывы</a><a class="link4" href="">Контакты</a>
+                        <div class="menu_content">
+                            <a href=""> <span>О компании</span>
+                                <div class="link1 link"></div>
+                            </a>
+                            <a href=""> <span>Акции и новости</span>
+                                <div class="link2 link"></div>
+                            </a>
+                            <a href=""> <span>Отзывы</span>
+                                <div class="link3 link"></div>
+                            </a>
+                            <a href=""> <span>Контакты</span>
+                                <div class="link4 link"></div>
+                            </a>
                         </div>
                         <div class="menu_footer">
                             <div class="line1 line"><a href="">Наши магазины</a><a href="">Сертификаты и допуски</a><a href="">Отчеты о производственном тестировании</a><a href="">Поиск аналогов </a><a href="">Обратная связь</a>
                             </div>
                             <div class="line2 line">
-                                <div class="socials">
-                                    <div class="in soc"></div>
-                                    <div class="vk soc"></div>
-                                    <div class="fb soc"></div>
+                                <div class="socl">
+                                    <div class="in soc"><i class="fab fa-instagram"></i>
+                                    </div>
+                                    <div class="vk soc"><i class="fab fa-vk"></i>
+                                    </div>
+                                    <div class="fb soc"><i class="fab fa-facebook-f"></i>
+                                    </div>
                                 </div>
                             </div>
                             <div class="line3 line"><a href="">Политика Конфидициальности</a><a href="">Условия доставки</a><a href="">Гарантия и возврат</a><a href="">Стать дистрибьютером</a>
@@ -73,11 +92,159 @@
                     </div>
                 </div>
             </header>
-            <footer class="footer"></footer>
+            <div class="main">
+                <section class="section1">
+                    <div class="container">
+                        <div class="submenu"><a class="submenu-item item1" href="">Спецтехника и транспорт</a><a class="submenu-item item2" href=""> Автомобили и СТО</a><a class="submenu-item item3" href=""> Металлообработка</a><a class="submenu-item item4" href="">Машиностроение и производство</a>
+                            <a
+                            class="submenu-item item5" href="">Пластичные смазки</a>
+                        </div>
+                    </div>
+                </section>
+                <section class="section2">
+                    <div class="container">
+                        <h2>
+               КАТАНА - японские смазочные технологии<br>последнего поколения</h2>
+                        <div class="introduction">
+                            <div class="left">
+                                <div class="in-item">
+                                    <div class="head">Увеличение периода безотказной работы</div>
+                                    <div class="text">Хорошие противоизносные и EP свойства, идеальные низко- и высоко-температурные свойства</div>
+                                </div>
+                                <div class="in-item">
+                                    <div class="head">Стабильность свойств во всех режимах</div>
+                                    <div class="text">Синтетическая форула на основе сложных эфиров защитит при самых тяжелых режимах эксплуатации</div>
+                                </div>
+                                <div class="in-item">
+                                    <div class="head">Снижение эксплуатационных и сервисных затрат</div>
+                                    <div class="text">Превосходная липкость, отсутствие вытеканий и увеличенный межсервисный период замены</div>
+                                </div>
+                            </div>
+                            <div class="right">
+                                <div class="in-item">
+                                    <div class="head">Традиционное японское качество</div>
+                                    <div class="text">Идеальное сочетание цена:качество и соответствие современным требованиями OEM</div>
+                                </div>
+                                <div class="in-item">
+                                    <div class="head">Снижение износа оборудования</div>
+                                    <div class="text">Усовершенствованная формула предотвращает накопление осадка.</div>
+                                </div>
+                                <div class="in-item">
+                                    <div class="head">Надежность для лидеров отрасли</div>
+                                    <div class="text">Сертификация ISO 9000 и 14001 и большой опыт работы гарантируют надежность масел КАТАНА</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="in-btn">Подобрать подходящий продукти сократить расходы на 31%</div>
+                    </div>
+                </section>
+                <section class="section3">
+                    <div class="container">
+                        <div class="top">
+                            <div class="left">
+                                <div class="head">О компании</div>
+                                <div class="subhead">Wti Oil Price</div>
+                                <div class="text">Since 1997 the primary goal of KIREI Chemical Co. has been to continually develop and deliver chemical products, specifically chemical components foradditive companies, independent blenders, refineries and chemical suppliers
+                                    around Asia who make products that are useful for everyday life.</div>
+                            </div>
+                            <div class="right">
+                                <div class="text">We provide a variety of materials and metal-working solutions - including fuels and lub additives, base oils and polymers - for a wide range of industrial applications. At KIREI Chemical, our philosophy has always been
+                                    to develop a good partnership with our suppliers as well as our customers. In order to exceed our partners’ expectations, KIREI Chemical is committed to continuous</div>
+                            </div>
+                        </div>
+                        <div class="bottom">
+                            <h2 class="h2">У нас много преимуществ</h2>
+                            <div class="items">
+                                <div class="item">
+                                    <div class="icon icon1"></div>
+                                    <div class="head">Более 300 наименований</div>
+                                    <div class="text">Широкий выбор масел и смазочных жидкостей</div>
+                                </div>
+                                <div class="item">
+                                    <div class="icon icon2"></div>
+                                    <div class="head">Рассрочка искидки партнерам</div>
+                                    <div class="text">Гибкая система скидок и возможность рассрочки</div>
+                                </div>
+                                <div class="item">
+                                    <div class="icon icon3"></div>
+                                    <div class="head">Технические консультации</div>
+                                    <div class="text">Консультации, презентации и обучающие семинары</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="section4">
+                    <div class="container">
+                        <h2>Хотите снизить расходы на  эксплуатацию?</h2>
+                        <div class="box"></div>
+                        <div class="text">Бесплатная развернутая консультация: в течение 1 часа подберем</div>
+                        <div class="form">
+                            <v-select v-model="select1" :options="['foo','bar']" placeholder="Для каких целей нужен продукт?"></v-select>
+                            <input class="name" type="text" placeholder="Имя:">
+                            <input class="tel" type="tel" placeholder="Телефон:">
+                            <div class="btn">ЗАКАЗАТЬ КОНСУЛЬТАЦИЮ</div>
+                            <div class="shur1"></div>
+                            <div class="shur2"></div>
+                            <div class="shur3"></div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <footer class="footer">
+                <div class="container">
+                    <div class="top">
+                        <div class="menus">
+                            <div class="info">
+                                <div class="logo"></div>
+                                <div class="inform">
+                                    <div>инн 123768999812397</div>
+                                    <div>огрн 128971239176</div>
+                                </div>
+                            </div>
+                            <div class="menu">
+                                <div class="line"></div><a class="menu-item hover-red" href="">Магазин</a><a class="menu-item hover-red" href="">Партнерска</a><a class="menu-item hover-red" href="">О компании</a><a class="menu-item hover-red" href="">Команда</a><a class="menu-item hover-red"
+                                href="">Вакансии</a><a class="menu-item hover-red" href="">Отзывы</a>
+                            </div>
+                            <div class="menu">
+                                <div class="line"></div><a class="menu-item hover-red" href="">Поддержка</a><a class="menu-item hover-red" href="">Вопрос-Ответ</a><a class="menu-item hover-red" href="">Новости</a><a class="menu-item hover-red" href="">Статьи</a><a class="menu-item hover-red"
+                                href="">Контакты</a><a class="menu-item hover-red" href="">Сертификаты</a>
+                            </div>
+                        </div>
+                        <div class="other">
+                            <div class="info">
+                                <div class="text">Электронные платежи защищены
+                                    <br>Посмотреть <a class="red" href="">e-commerce rules</a>
+                                </div>
+                                <div class="pays">
+                                    <div class="pp pay"></div>
+                                    <div class="visa pay"></div>
+                                    <div class="mc pay"></div>
+                                </div>
+                            </div>
+                            <div class="contact">
+                                <div class="head">Как нас найти</div>
+                                <div class="text">
+                                    г. Москва, ул. 2-я Бухвостова, 17к1, оф. 165,
+                                    <br>ежедневно с 10.00 до 19.00</div>
+                            </div>
+                            <div class="map"></div>
+                        </div>
+                    </div>
+                    <div class="bottom">
+                        <div class="copy">&copy; PayWin, 2018</div>
+                        <div class="soc">
+                            <div class="socl"><a class="vk link hover-red" href="">Vkontakte</a><a class="fb link hover-red" href="">Facebook</a><a class="in link hover-red" href="">Instagram</a>
+                            </div>
+                            <div class="soc-totop"></div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
         </div>
 
 
-        <script src="static/js/mainbfh0ji.min.js"></script>
+        <script src="static/js/main1pimro.min.js"></script>
     </body>
 
 </html>
