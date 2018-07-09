@@ -13,7 +13,7 @@
         <link rel="stylesheet" href="https://use.typekit.net/wds2vlt.css">
 
         <!--[if (gt IE 9)|!(IE)]><!-->
-        <link href="static/css/mainare15r.min.css" rel="stylesheet" type="text/css">
+        <link href="static/css/mainiennor.min.css" rel="stylesheet" type="text/css">
         <!--<![endif]-->
         <meta property="og:title" content="#{data.title}">
         <meta property="og:title" content="">
@@ -36,6 +36,14 @@
 
     <body class="page">
         <div id="app">
+            <div class="ww">
+                <div v-on:click="showWin(1)">окно1</div>
+                <div v-on:click="showWin(2)">окно2</div>
+                <div v-on:click="showWin(3)">окно3</div>
+                <div v-on:click="showWin(4)">окно4</div>
+                <div v-on:click="showWin(5)">окно5</div>
+                <div v-on:click="showWin(6)">окно6</div>
+            </div>
             <div class="window" v-if="win1">
                 <div class="win-out" v-on:click="closeWindows"></div>
                 <div class="win">
@@ -141,14 +149,29 @@
             </div>
             <div class="window" v-if="win6">
                 <div class="win-out" v-on:click="closeWindows"></div>
-                <div class="win">
+                <div class="win prod">
                     <div class="head">
-                        <div class="text">Восстановление пароля</div>
+                        <div class="text">Вы добавили товар в корзину</div>
                         <div class="close" v-on:click="closeWindows"></div>
                     </div>
                     <div class="content">
-                        <input class="input" type="email" placeholder="Введите ваш E-mail">
-                        <div class="btn">Восстановить</div>
+                        <div class="tovar">
+                            <img class="img" src="static/img/general/tovar1.png">
+                            <div class="op">
+                                <div class="t">Гидравлическое масло KATANA KISSAKI CLP 68</div>
+                                <div class="pay">6 432&nbsp;<span>P</span>
+                                </div>
+                                <div class="num">
+                                    <div class="i" v-on:click="win6minus">-</div>
+                                    <div class="nums">{{ win6num}}</div>
+                                    <div class="i" v-on:click="win6plus">+</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="btn-div">
+                            <div class="btn white">Продолжить покупки</div>
+                            <div class="btn">Перейти в корзину</div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -374,7 +397,7 @@
         </div>
 
 
-        <script src="static/js/mainare15r.min.js"></script>
+        <script src="static/js/mainiennor.min.js"></script>
     </body>
 
 </html>
