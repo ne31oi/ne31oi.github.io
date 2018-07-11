@@ -13,7 +13,7 @@
         <link rel="stylesheet" href="https://use.typekit.net/wds2vlt.css">
 
         <!--[if (gt IE 9)|!(IE)]><!-->
-        <link href="static/css/mains4c4bat.min.css" rel="stylesheet" type="text/css">
+        <link href="static/css/main44twqmvgdvswdj5ah5mi.min.css" rel="stylesheet" type="text/css">
         <!--<![endif]-->
         <meta property="og:title" content="#{data.title}">
         <meta property="og:title" content="">
@@ -29,6 +29,9 @@
         <script src="https://cdn.jsdelivr.net/npm/vue"></script>
         <script src="https://unpkg.com/vue-select@latest"></script>
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pretty-checkbox@3.0/dist/pretty-checkbox.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/pretty-checkbox-vue@1.1/dist/pretty-checkbox-vue.min.js"></script>
+        <script src="https://nightcatsama.github.io/vue-slider-component/dist/index.js"></script>
         <script>
             (function(H){H.className=H.className.replace(/\bno-js\b/,'js')})(document.documentElement)
         </script>
@@ -93,7 +96,126 @@
                     </div>
                 </div>
             </header>
-            <div class="main"></div>
+            <div class="main compare">
+                <div class="container m">
+                    <div class="top-menu">
+                        <div class="left"><a class="link" href="index.html">Главная                 </a><a class="link" href="company.html">Магазин</a><a class="last-link" href="articles.html">Жидкости для обработки металлов</a>
+                        </div>
+                        <div class="right"><a class="btn" href="">ВХОД ДЛЯ КЛИЕНТОВ  </a>
+                        </div>
+                    </div>
+                    <h2 class="top-header-text">Сравнение: KATANA KISSAKI CLP 68 и Lukoil genesis armortech 5w-40</h2>
+                </div>
+                <section class="section1 wsection">
+                    <div class="container">
+                        <div class="head-text">Подобрать аналог</div>
+                        <div class="form">
+                            <v-select v-model="select1" :options="['foo','bar']" placeholder="Выберите марку"></v-select>
+                            <v-select v-model="select1" :options="['foo','bar']" placeholder="Выберите продукт"></v-select>
+                            <div class="search">
+                                <input class="name" type="text" placeholder="Поиск по названию продукта"><i class="fas fa-search"></i>
+                            </div>
+                            <div class="btn">ПОДОБРАТЬ АНАЛОГ</div>
+                        </div>
+                        <div class="subhead">Аналог Lukoil genesis armortech 5w-40 - KATANA KISSAKI CLP 68.</div>
+                        <div class="items">
+                            <div class="item bad">
+                                <div class="head">Lukoil genesis armortech 5w-40</div>
+                                <img class="img" src="static/img/general/rating1.png">
+                                <div class="rating">
+                                    <div class="num">Рейтинг: 102</div>
+                                    <div class="btn">Заказать</div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="head">LKATANA KISSAKI CLP 68</div>
+                                <img class="img" src="static/img/general/rating1.png">
+                                <div class="rating">
+                                    <div class="num">Рейтинг: 102</div>
+                                    <div class="btn">Заказать</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="section3 wsection srav">
+                    <div class="container">
+                        <div class="table">
+                            <div class="th">
+                                <div class="td">Индикатор</div>
+                                <div class="td">Метод измерения</div>
+                                <div class="td">Типичное масло HVLP 68</div>
+                                <div class="td">Sutorimu HVLP 68</div>
+                                <div class="td">Преимущества от использования</div>
+                            </div>
+                            <div class="tr">
+                                <div class="td">Кинематическая вязкость при 40 С, cS</div>
+                                <div class="td">ASTM D445</div>
+                                <div class="td">68</div>
+                                <div class="td greenbg">445</div>
+                                <div class="td">Повышает динамические свойства</div>
+                            </div>
+                            <div class="tr">
+                                <div class="td">Кинематическая вязкость при 40 С, cS</div>
+                                <div class="td">ASTM D445</div>
+                                <div class="td">68</div>
+                                <div class="td">445</div>
+                                <div class="td">Повышает динамические свойства</div>
+                            </div>
+                            <div class="tr">
+                                <div class="td">Кинематическая вязкость при 40 С, cS</div>
+                                <div class="td">ASTM D445</div>
+                                <div class="td">68</div>
+                                <div class="td redbg">445</div>
+                                <div class="td">Повышает динамические свойства</div>
+                            </div>
+                            <div class="tr">
+                                <div class="td">Кинематическая вязкость при 40 С, cS</div>
+                                <div class="td">ASTM D445</div>
+                                <div class="td">68</div>
+                                <div class="td">445</div>
+                                <div class="td">Повышает динамические свойства</div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="section2 ofcompany">
+                    <div class="container">
+                        <div class="top">
+                            <div class="left">
+                                <div class="head">О компании</div>
+                                <div class="subhead">Wti Oil Price</div>
+                                <div class="text">Since 1997 the primary goal of KIREI Chemical Co. has been to continually develop and deliver chemical products, specifically chemical components foradditive companies, independent blenders, refineries and chemical suppliers
+                                    around Asia who make products that are useful for everyday life.</div>
+                            </div>
+                            <div class="right">
+                                <div class="text">We provide a variety of materials and metal-working solutions - including fuels and lub additives, base oils and polymers - for a wide range of industrial applications. At KIREI Chemical, our philosophy has always been
+                                    to develop a good partnership with our suppliers as well as our customers. In order to exceed our partners’ expectations, KIREI Chemical is committed to continuous</div>
+                            </div>
+                        </div>
+                        <div class="bottom">
+                            <h2 class="h2">У нас много преимуществ</h2>
+                            <div class="items">
+                                <div class="item">
+                                    <div class="icon icon1"></div>
+                                    <div class="head">Более 300 наименований</div>
+                                    <div class="text">Широкий выбор масел и смазочных жидкостей</div>
+                                </div>
+                                <div class="item">
+                                    <div class="icon icon2"></div>
+                                    <div class="head">Рассрочка искидки партнерам</div>
+                                    <div class="text">Гибкая система скидок и возможность рассрочки</div>
+                                </div>
+                                <div class="item">
+                                    <div class="icon icon3"></div>
+                                    <div class="head">Технические консультации</div>
+                                    <div class="text">Консультации, презентации и обучающие семинары</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
             <footer class="footer">
                 <div class="container">
                     <div class="top">
@@ -137,11 +259,11 @@
                         </div>
                     </div>
                     <div class="bottom">
-                        <div class="copy">&copy; PayWin, 2018</div>
+                        <div class="copy">&copy; JoyWin, 2018</div>
                         <div class="soc">
                             <div class="socl"><a class="vk link hover-red" href="#">Vkontakte</a><a class="fb link hover-red" href="#">Facebook</a><a class="in link hover-red" href="#">Instagram</a>
                             </div>
-                            <div class="soc-totop"></div>
+                            <div class="soc-totop" v-on:click="scrollToTop"></div>
                         </div>
                     </div>
                 </div>
@@ -149,7 +271,7 @@
         </div>
 
 
-        <script src="static/js/mains4c4bat.min.js"></script>
+        <script src="static/js/main44twqmvgdvswdj5ah5mi.min.js"></script>
     </body>
 
 </html>

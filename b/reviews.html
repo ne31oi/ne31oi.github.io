@@ -13,7 +13,7 @@
         <link rel="stylesheet" href="https://use.typekit.net/wds2vlt.css">
 
         <!--[if (gt IE 9)|!(IE)]><!-->
-        <link href="static/css/mains4c4bat.min.css" rel="stylesheet" type="text/css">
+        <link href="static/css/main44twqmvgdvswdj5ah5mi.min.css" rel="stylesheet" type="text/css">
         <!--<![endif]-->
         <meta property="og:title" content="#{data.title}">
         <meta property="og:title" content="">
@@ -29,6 +29,9 @@
         <script src="https://cdn.jsdelivr.net/npm/vue"></script>
         <script src="https://unpkg.com/vue-select@latest"></script>
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pretty-checkbox@3.0/dist/pretty-checkbox.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/pretty-checkbox-vue@1.1/dist/pretty-checkbox-vue.min.js"></script>
+        <script src="https://nightcatsama.github.io/vue-slider-component/dist/index.js"></script>
         <script>
             (function(H){H.className=H.className.replace(/\bno-js\b/,'js')})(document.documentElement)
         </script>
@@ -155,84 +158,290 @@
                         </div>
                     </div>
                 </section>
-                <section class="section3 wsection">
+                <section class="section3 wsection slide">
                     <div class="container">
                         <div class="head-text">
                             <div class="text">Отчеты о <span class="before-red">&nbsp;производственном&nbsp;</span>
                                 <br>тестировании</div>
                             <div class="btns">
-                                <div class="btn"></div>
-                                <div class="btn r"></div>
+                                <div class="btn" v-on:click="review_slide--;if(review_slide&lt;0)review_slide=0;"></div>
+                                <div class="btn r" v-on:click="review_slide++;if(review_slide&gt;3)review_slide=3;"></div>
                             </div>
                         </div>
-                        <div class="items">
-                            <div class="item">
-                                <div class="img">
-                                    <img class="image" src="static/img/general/req-01.png">
+                        <transition name="component-fade" mode="out-in">
+                            <div class="items" v-if="review_slide==0" key="r1">
+                                <div class="item">
+                                    <div class="img">
+                                        <img class="image" src="static/img/general/req-01.png">
+                                    </div>
+                                    <div class="head">НПО "Машиностроение"</div>
+                                    <div class="text">Lore111m ipsum dolor sit amet, consectetur adipiscing elit. Aenean</div>
+                                    <div class="subtext">
+                                        <div class="link">Смотреть</div>
+                                        <div class="size">(PDF, 2,2Mb)</div>
+                                    </div>
                                 </div>
-                                <div class="head">НПО "Машиностроение"</div>
-                                <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean</div>
-                                <div class="subtext">
-                                    <div class="link">Смотреть</div>
-                                    <div class="size">(PDF, 2,2Mb)</div>
+                                <div class="item">
+                                    <div class="img">
+                                        <img class="image" src="static/img/general/req-01.png">
+                                    </div>
+                                    <div class="head">НПО "Машиностроение"</div>
+                                    <div class="text">Lore111m ipsum dolor sit amet, consectetur adipiscing elit. Aenean</div>
+                                    <div class="subtext">
+                                        <div class="link">Смотреть</div>
+                                        <div class="size">(PDF, 2,2Mb)</div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="img">
+                                        <img class="image" src="static/img/general/req-01.png">
+                                    </div>
+                                    <div class="head">НПО "Машиностроение"</div>
+                                    <div class="text">Lore111m ipsum dolor sit amet, consectetur adipiscing elit. Aenean</div>
+                                    <div class="subtext">
+                                        <div class="link">Смотреть</div>
+                                        <div class="size">(PDF, 2,2Mb)</div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="img">
+                                        <img class="image" src="static/img/general/req-01.png">
+                                    </div>
+                                    <div class="head">НПО "Машиностроение"</div>
+                                    <div class="text">Lore111m ipsum dolor sit amet, consectetur adipiscing elit. Aenean</div>
+                                    <div class="subtext">
+                                        <div class="link">Смотреть</div>
+                                        <div class="size">(PDF, 2,2Mb)</div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="img">
+                                        <img class="image" src="static/img/general/req-01.png">
+                                    </div>
+                                    <div class="head">НПО "Машиностроение"</div>
+                                    <div class="text">Lore111m ipsum dolor sit amet, consectetur adipiscing elit. Aenean</div>
+                                    <div class="subtext">
+                                        <div class="link">Смотреть</div>
+                                        <div class="size">(PDF, 2,2Mb)</div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="img">
+                                        <img class="image" src="static/img/general/req-01.png">
+                                    </div>
+                                    <div class="head">НПО "Машиностроение"</div>
+                                    <div class="text">Lore111m ipsum dolor sit amet, consectetur adipiscing elit. Aenean</div>
+                                    <div class="subtext">
+                                        <div class="link">Смотреть</div>
+                                        <div class="size">(PDF, 2,2Mb)</div>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="item">
-                                <div class="img">
-                                    <img class="image" src="static/img/general/req-01.png">
+                            <div class="items" v-if="review_slide==1" key="r2">
+                                <div class="item">
+                                    <div class="img">
+                                        <img class="image" src="static/img/general/req-01.png">
+                                    </div>
+                                    <div class="head">НПО "Машиностроение"</div>
+                                    <div class="text">Lorem ips222um dolor sit amet, consectetur adipiscing elit. Aenean</div>
+                                    <div class="subtext">
+                                        <div class="link">Смотреть</div>
+                                        <div class="size">(PDF, 2,2Mb)</div>
+                                    </div>
                                 </div>
-                                <div class="head">НПО "Машиностроение"</div>
-                                <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean</div>
-                                <div class="subtext">
-                                    <div class="link">Смотреть</div>
-                                    <div class="size">(PDF, 2,2Mb)</div>
+                                <div class="item">
+                                    <div class="img">
+                                        <img class="image" src="static/img/general/req-01.png">
+                                    </div>
+                                    <div class="head">НПО "Машиностроение"</div>
+                                    <div class="text">Lorem ips222um dolor sit amet, consectetur adipiscing elit. Aenean</div>
+                                    <div class="subtext">
+                                        <div class="link">Смотреть</div>
+                                        <div class="size">(PDF, 2,2Mb)</div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="img">
+                                        <img class="image" src="static/img/general/req-01.png">
+                                    </div>
+                                    <div class="head">НПО "Машиностроение"</div>
+                                    <div class="text">Lorem ips222um dolor sit amet, consectetur adipiscing elit. Aenean</div>
+                                    <div class="subtext">
+                                        <div class="link">Смотреть</div>
+                                        <div class="size">(PDF, 2,2Mb)</div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="img">
+                                        <img class="image" src="static/img/general/req-01.png">
+                                    </div>
+                                    <div class="head">НПО "Машиностроение"</div>
+                                    <div class="text">Lorem ips222um dolor sit amet, consectetur adipiscing elit. Aenean</div>
+                                    <div class="subtext">
+                                        <div class="link">Смотреть</div>
+                                        <div class="size">(PDF, 2,2Mb)</div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="img">
+                                        <img class="image" src="static/img/general/req-01.png">
+                                    </div>
+                                    <div class="head">НПО "Машиностроение"</div>
+                                    <div class="text">Lorem ips222um dolor sit amet, consectetur adipiscing elit. Aenean</div>
+                                    <div class="subtext">
+                                        <div class="link">Смотреть</div>
+                                        <div class="size">(PDF, 2,2Mb)</div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="img">
+                                        <img class="image" src="static/img/general/req-01.png">
+                                    </div>
+                                    <div class="head">НПО "Машиностроение"</div>
+                                    <div class="text">Lorem ips222um dolor sit amet, consectetur adipiscing elit. Aenean</div>
+                                    <div class="subtext">
+                                        <div class="link">Смотреть</div>
+                                        <div class="size">(PDF, 2,2Mb)</div>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="item">
-                                <div class="img">
-                                    <img class="image" src="static/img/general/req-01.png">
+                            <div class="items" v-if="review_slide==2" key="r3">
+                                <div class="item">
+                                    <div class="img">
+                                        <img class="image" src="static/img/general/req-01.png">
+                                    </div>
+                                    <div class="head">НПО "Машиностроение"</div>
+                                    <div class="text">Lorem ipsu33m dolor sit amet, consectetur adipiscing elit. Aenean</div>
+                                    <div class="subtext">
+                                        <div class="link">Смотреть</div>
+                                        <div class="size">(PDF, 2,2Mb)</div>
+                                    </div>
                                 </div>
-                                <div class="head">НПО "Машиностроение"</div>
-                                <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean</div>
-                                <div class="subtext">
-                                    <div class="link">Смотреть</div>
-                                    <div class="size">(PDF, 2,2Mb)</div>
+                                <div class="item">
+                                    <div class="img">
+                                        <img class="image" src="static/img/general/req-01.png">
+                                    </div>
+                                    <div class="head">НПО "Машиностроение"</div>
+                                    <div class="text">Lorem ipsu33m dolor sit amet, consectetur adipiscing elit. Aenean</div>
+                                    <div class="subtext">
+                                        <div class="link">Смотреть</div>
+                                        <div class="size">(PDF, 2,2Mb)</div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="img">
+                                        <img class="image" src="static/img/general/req-01.png">
+                                    </div>
+                                    <div class="head">НПО "Машиностроение"</div>
+                                    <div class="text">Lorem ipsu33m dolor sit amet, consectetur adipiscing elit. Aenean</div>
+                                    <div class="subtext">
+                                        <div class="link">Смотреть</div>
+                                        <div class="size">(PDF, 2,2Mb)</div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="img">
+                                        <img class="image" src="static/img/general/req-01.png">
+                                    </div>
+                                    <div class="head">НПО "Машиностроение"</div>
+                                    <div class="text">Lorem ipsu33m dolor sit amet, consectetur adipiscing elit. Aenean</div>
+                                    <div class="subtext">
+                                        <div class="link">Смотреть</div>
+                                        <div class="size">(PDF, 2,2Mb)</div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="img">
+                                        <img class="image" src="static/img/general/req-01.png">
+                                    </div>
+                                    <div class="head">НПО "Машиностроение"</div>
+                                    <div class="text">Lorem ipsu33m dolor sit amet, consectetur adipiscing elit. Aenean</div>
+                                    <div class="subtext">
+                                        <div class="link">Смотреть</div>
+                                        <div class="size">(PDF, 2,2Mb)</div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="img">
+                                        <img class="image" src="static/img/general/req-01.png">
+                                    </div>
+                                    <div class="head">НПО "Машиностроение"</div>
+                                    <div class="text">Lorem ipsu33m dolor sit amet, consectetur adipiscing elit. Aenean</div>
+                                    <div class="subtext">
+                                        <div class="link">Смотреть</div>
+                                        <div class="size">(PDF, 2,2Mb)</div>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="item">
-                                <div class="img">
-                                    <img class="image" src="static/img/general/req-01.png">
+                            <div class="items" v-if="review_slide==3" key="r4">
+                                <div class="item">
+                                    <div class="img">
+                                        <img class="image" src="static/img/general/req-01.png">
+                                    </div>
+                                    <div class="head">НПО "Машиностроение"</div>
+                                    <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean</div>
+                                    <div class="subtext">
+                                        <div class="link">Смотреть</div>
+                                        <div class="size">(PDF, 2,2Mb)</div>
+                                    </div>
                                 </div>
-                                <div class="head">НПО "Машиностроение"</div>
-                                <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean</div>
-                                <div class="subtext">
-                                    <div class="link">Смотреть</div>
-                                    <div class="size">(PDF, 2,2Mb)</div>
+                                <div class="item">
+                                    <div class="img">
+                                        <img class="image" src="static/img/general/req-01.png">
+                                    </div>
+                                    <div class="head">НПО "Машиностроение"</div>
+                                    <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean</div>
+                                    <div class="subtext">
+                                        <div class="link">Смотреть</div>
+                                        <div class="size">(PDF, 2,2Mb)</div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="img">
+                                        <img class="image" src="static/img/general/req-01.png">
+                                    </div>
+                                    <div class="head">НПО "Машиностроение"</div>
+                                    <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean</div>
+                                    <div class="subtext">
+                                        <div class="link">Смотреть</div>
+                                        <div class="size">(PDF, 2,2Mb)</div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="img">
+                                        <img class="image" src="static/img/general/req-01.png">
+                                    </div>
+                                    <div class="head">НПО "Машиностроение"</div>
+                                    <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean</div>
+                                    <div class="subtext">
+                                        <div class="link">Смотреть</div>
+                                        <div class="size">(PDF, 2,2Mb)</div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="img">
+                                        <img class="image" src="static/img/general/req-01.png">
+                                    </div>
+                                    <div class="head">НПО "Машиностроение"</div>
+                                    <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean</div>
+                                    <div class="subtext">
+                                        <div class="link">Смотреть</div>
+                                        <div class="size">(PDF, 2,2Mb)</div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="img">
+                                        <img class="image" src="static/img/general/req-01.png">
+                                    </div>
+                                    <div class="head">НПО "Машиностроение"</div>
+                                    <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean</div>
+                                    <div class="subtext">
+                                        <div class="link">Смотреть</div>
+                                        <div class="size">(PDF, 2,2Mb)</div>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="item">
-                                <div class="img">
-                                    <img class="image" src="static/img/general/req-01.png">
-                                </div>
-                                <div class="head">НПО "Машиностроение"</div>
-                                <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean</div>
-                                <div class="subtext">
-                                    <div class="link">Смотреть</div>
-                                    <div class="size">(PDF, 2,2Mb)</div>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="img">
-                                    <img class="image" src="static/img/general/req-01.png">
-                                </div>
-                                <div class="head">НПО "Машиностроение"</div>
-                                <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean</div>
-                                <div class="subtext">
-                                    <div class="link">Смотреть</div>
-                                    <div class="size">(PDF, 2,2Mb)</div>
-                                </div>
-                            </div>
-                        </div>
+                        </transition>
                     </div>
                 </section>
             </div>
@@ -279,11 +488,11 @@
                         </div>
                     </div>
                     <div class="bottom">
-                        <div class="copy">&copy; PayWin, 2018</div>
+                        <div class="copy">&copy; JoyWin, 2018</div>
                         <div class="soc">
                             <div class="socl"><a class="vk link hover-red" href="#">Vkontakte</a><a class="fb link hover-red" href="#">Facebook</a><a class="in link hover-red" href="#">Instagram</a>
                             </div>
-                            <div class="soc-totop"></div>
+                            <div class="soc-totop" v-on:click="scrollToTop"></div>
                         </div>
                     </div>
                 </div>
@@ -291,7 +500,7 @@
         </div>
 
 
-        <script src="static/js/mains4c4bat.min.js"></script>
+        <script src="static/js/main44twqmvgdvswdj5ah5mi.min.js"></script>
     </body>
 
 </html>

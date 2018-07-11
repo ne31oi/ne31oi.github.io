@@ -13,7 +13,7 @@
         <link rel="stylesheet" href="https://use.typekit.net/wds2vlt.css">
 
         <!--[if (gt IE 9)|!(IE)]><!-->
-        <link href="static/css/mains4c4bat.min.css" rel="stylesheet" type="text/css">
+        <link href="static/css/main44twqmvgdvswdj5ah5mi.min.css" rel="stylesheet" type="text/css">
         <!--<![endif]-->
         <meta property="og:title" content="#{data.title}">
         <meta property="og:title" content="">
@@ -29,6 +29,9 @@
         <script src="https://cdn.jsdelivr.net/npm/vue"></script>
         <script src="https://unpkg.com/vue-select@latest"></script>
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pretty-checkbox@3.0/dist/pretty-checkbox.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/pretty-checkbox-vue@1.1/dist/pretty-checkbox-vue.min.js"></script>
+        <script src="https://nightcatsama.github.io/vue-slider-component/dist/index.js"></script>
         <script>
             (function(H){H.className=H.className.replace(/\bno-js\b/,'js')})(document.documentElement)
         </script>
@@ -93,7 +96,54 @@
                     </div>
                 </div>
             </header>
-            <div class="main"></div>
+            <div class="main contact_page">
+                <div class="container m">
+                    <div class="top-menu">
+                        <div class="left"><a class="link" href="index.html">  Главная    </a><a class="link" href="company.html">О компании</a><a class="last-link" href="articles.html">Контакты</a>
+                        </div>
+                        <div class="right"><a class="btn" href="">ВХОД ДЛЯ КЛИЕНТОВ  </a>
+                        </div>
+                    </div>
+                </div>
+                <section class="section1">
+                    <div class="container">
+                        <div class="head-t">Вы сможете нас найти</div>
+                        <div class="content">
+                            <div class="text">
+                                <div class="line">
+                                    <div class="head">Адрес</div>
+                                    <div class="subhead">Москва, ул. Пушкина 19</div>
+                                </div>
+                                <div class="line">
+                                    <div class="head">Телефон</div>
+                                    <div class="subhead">+7 (495) 000-00-00</div>
+                                    <div class="subhead">8 800 000-00-01</div>
+                                </div>
+                                <div class="line">
+                                    <div class="head">Email</div>
+                                    <div class="subhead">info@katana-oil.ru</div>
+                                    <div class="subhead">partner@katana-oil.ru</div>
+                                </div>
+                            </div>
+                            <div class="message">
+                                <div class="head">Задать вопрос:</div>
+                                <div class="form">
+                                    <input class="tel" type="tel" placeholder="Ваш телефон:">
+                                    <input class="name" type="text" placeholder="Имя:">
+                                    <input class="tel" type="text" placeholder="Сообщение:">
+                                    <div class="input">
+                                        <input type="checkbox" id="check" value="check">
+                                        <label for="check">Ознакомлен с Политикой конфиденциальности и даю согласие на
+                                            <br>обработку ПД.</label>
+                                    </div>
+                                    <div class="btn">ОТПРАВИТЬ ВОПРОС</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="map"></section>
+            </div>
             <footer class="footer">
                 <div class="container">
                     <div class="top">
@@ -137,11 +187,11 @@
                         </div>
                     </div>
                     <div class="bottom">
-                        <div class="copy">&copy; PayWin, 2018</div>
+                        <div class="copy">&copy; JoyWin, 2018</div>
                         <div class="soc">
                             <div class="socl"><a class="vk link hover-red" href="#">Vkontakte</a><a class="fb link hover-red" href="#">Facebook</a><a class="in link hover-red" href="#">Instagram</a>
                             </div>
-                            <div class="soc-totop"></div>
+                            <div class="soc-totop" v-on:click="scrollToTop"></div>
                         </div>
                     </div>
                 </div>
@@ -149,7 +199,7 @@
         </div>
 
 
-        <script src="static/js/mains4c4bat.min.js"></script>
+        <script src="static/js/main44twqmvgdvswdj5ah5mi.min.js"></script>
     </body>
 
 </html>
