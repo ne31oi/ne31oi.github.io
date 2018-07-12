@@ -13,7 +13,7 @@
         <link rel="stylesheet" href="https://use.typekit.net/wds2vlt.css">
 
         <!--[if (gt IE 9)|!(IE)]><!-->
-        <link href="static/css/main44twqmvgdvswdj5ah5mi.min.css" rel="stylesheet" type="text/css">
+        <link href="static/css/mainmpf4p.min.css" rel="stylesheet" type="text/css">
         <!--<![endif]-->
         <meta property="og:title" content="#{data.title}">
         <meta property="og:title" content="">
@@ -55,7 +55,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="container-menu" id="menu2">
+                <div class="container-menu" id="menu2" v-if="m2">
                     <div class="close">
                         <div class="close_area" v-on:click="closeMenu2">Закрыть
                             <div class="close_btn"><i class="fas fa-times"></i>
@@ -111,9 +111,9 @@
                             <div class="aside-menu">
                                 <div class="item">Доставка</div>
                                 <div class="item">Как сделать заказ</div>
-                                <div class="item">Отптовые скидки</div>
-                                <div class="item">Публичная аферта</div>
-                                <div class="item">Политика Конфидициальности</div>
+                                <div class="item">Оптовые скидки</div>
+                                <div class="item">Публичная оферта</div>
+                                <div class="item">Политика конфидециальности</div>
                             </div>
                             <div class="aside-action">
                                 <div class="head">Акции</div>
@@ -157,9 +157,8 @@
                                 <div class="head">Подпишитесь</div>
                                 <div class="text">Оформите подписку, чтобы оставаться в курсе новостей компании</div>
                                 <input class="email" type="email" placeholder="Введите ваш E-mail:">
-                                <div class="input">
-                                    <input type="checkbox" id="check" value="check">
-                                    <label for="check">Даю разрешение на обработку моих данных</label>
+                                <div class="div">
+                                    <p-check color="danger">Даю разрешение на обработку моих данных</p-check>
                                 </div>
                                 <div class="btn">ПОДПИСАТЬСЯ</div>
                             </div>
@@ -267,7 +266,7 @@
         </div>
 
 
-        <script src="static/js/main44twqmvgdvswdj5ah5mi.min.js"></script>
+        <script src="static/js/mainmpf4p.min.js"></script>
     </body>
 
 </html>
