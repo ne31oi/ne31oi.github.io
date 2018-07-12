@@ -2838,6 +2838,48 @@ span.before-red:before {
   font-size: 20.83px;
   font-weight: 700;
 }
+.katalog_page .section10 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.katalog_page .section10 .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+.katalog_page .section10 .container .btn {
+  height: 64px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: center;
+  width: 16%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  box-sizing: border-box;
+  border: 1px solid #181818;
+  background: #181818;
+}
+.katalog_page .section10 .container .btn:hover {
+  background: #da0812;
+  border: 1px solid #da0812;
+}
+.katalog_page .section10 .container .last {
+  border: 1px solid #da0812;
+}
 .katalog_page .section8 {
   padding-top: 40px;
 }
@@ -2880,6 +2922,17 @@ span.before-red:before {
   padding: 30px;
   font-family: PtSans;
   font-size: 13px;
+  position: relative;
+}
+.katalog_page .section8 .container .aside .search .head:before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 2px;
+  top: 50%;
+  left: 10px;
+  background-color: #fff;
+  z-index: 2;
 }
 .katalog_page .section8 .container .aside .search .block {
   background-color: #fff;
@@ -3076,13 +3129,16 @@ span.before-red:before {
   font-family: PtSans;
   font-size: 17px;
   margin-top: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   font-weight: 600;
+  color: #111;
 }
 .katalog_page .section8 .container .content .item .subtext {
   font-weight: 400;
   text-align: center;
   width: 200px;
+  margin-bottom: 20px;
+  color: #111;
 }
 .katalog_page .section8 .container .content .item .new {
   position: absolute;
@@ -3105,6 +3161,17 @@ span.before-red:before {
       -ms-flex-align: center;
           align-items: center;
   background-color: #121212;
+  z-index: 1;
+}
+.katalog_page .section8 .container .content .item .new:before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 2px;
+  top: 0;
+  right: 35px;
+  background-color: #da0812;
+  z-index: 2;
 }
 .katalog_page .section8 .container .content .item .bottom {
   display: -moz-flex;
@@ -3146,7 +3213,7 @@ span.before-red:before {
 }
 .katalog_page .section8 .container .content .item .bottom .btn {
   height: 55px;
-  background-color: #da0812;
+  background-color: #121213;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3168,7 +3235,7 @@ span.before-red:before {
   top: 0;
   width: 55px;
   height: 55px;
-  background-color: #121213;
+  background-color: #da0812;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3260,7 +3327,7 @@ span.before-red:before {
   background-position: 0 0;
   padding-top: 80px;
   padding-bottom: 80px;
-  padding-left: 10%;
+  padding-left: 20%;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
@@ -4011,11 +4078,26 @@ span.before-red:before {
   height: 50px;
 }
 .compare .section1 .form .v-select .dropdown-menu {
+  overflow-y: none;
   border: none;
   border-radius: 0;
 }
 .compare .section1 .form .v-select .dropdown-menu>.highlight>a {
   background: #da0812;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.compare .section1 .form .vs2 {
+  width: 100%;
+  margin-right: 23px;
+}
+.compare .section1 .form .vs2 .v-select .open-indicator {
+  background-color: #111;
 }
 .compare .section1 .form .search {
   height: inherit;
@@ -4030,6 +4112,7 @@ span.before-red:before {
   width: 100%;
   border: none;
   color: #121212;
+  padding-left: 10px;
 }
 .compare .section1 .form .search .fa-search {
   position: absolute;
@@ -4105,7 +4188,7 @@ span.before-red:before {
   margin-top: 40px;
   color: #121213;
   font-family: PtSans;
-  font-style: 25px;
+  font-size: 25px;
   font-weight: 400;
   margin-bottom: 30px;
 }
@@ -4514,6 +4597,7 @@ span.before-red:before {
       -ms-flex-align: center;
           align-items: center;
   margin-right: 20px;
+  text-transform: uppercase;
 }
 .card .section2 .bot .btn .pdf {
   position: absolute;
@@ -4529,11 +4613,6 @@ span.before-red:before {
 .card .section2 .bot .text .link {
   color: #da0812;
   text-decoration: underline;
-}
-.contact_page .section1 .container {
-  background-image: url("../img/general/contactbg.png");
-  background-position: center center;
-  background-size: cover;
 }
 .contact_page .section1 .container .head-t {
   color: #fff;
@@ -4554,6 +4633,7 @@ span.before-red:before {
 }
 .contact_page .section1 .container .content .text .line {
   margin-top: 30px;
+  padding-left: 30px;
 }
 .contact_page .section1 .container .content .text .line .head {
   font-family: AkzidenzGroteskPro;
@@ -4568,7 +4648,12 @@ span.before-red:before {
   color: #fff;
 }
 .contact_page .section1 .container .content .message {
+  background-image: url("../img/general/contactbg.png");
+  background-position: center center;
   width: 65%;
+}
+.contact_page .section1 .container .content .message background-size cover {
+  margin-top: -30px;
 }
 .contact_page .section1 .container .content .message .head {
   font-family: AkzidenzGroteskPro;
@@ -4596,7 +4681,7 @@ span.before-red:before {
   font-size: 12.5px;
   font-weight: 400;
 }
-.contact_page .section1 .container .content .message .form .input {
+.contact_page .section1 .container .content .message .form .pretty {
   font-size: 12.5px;
   color: #424242;
   font-weight: 400;
@@ -4604,8 +4689,9 @@ span.before-red:before {
   font-family: PtSans;
   margin-top: 20px;
 }
-.contact_page .section1 .container .content .message .form .input label {
-  margin-left: 20px;
+.contact_page .section1 .container .content .message .form .pretty .state label::after,
+.contact_page .section1 .container .content .message .form .pretty .state label::before {
+  top: 0;
 }
 .contact_page .section1 .container .content .message .form .btn {
   width: 119px;
@@ -4619,6 +4705,7 @@ span.before-red:before {
   padding-bottom: 10px;
   border-bottom: solid #da0812 1px;
   position: relative;
+  margin-top: -20px;
 }
 .contact_page .section1 .container .content .message .form .btn:before {
   content: "";

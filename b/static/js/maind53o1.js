@@ -16,6 +16,7 @@ var app = new Vue({
         win5: false,
         win6: false,
         win6num: 0,
+        katalog_aside:true,
         review_slide: 1,
         slide2: 0,
         demo3: {

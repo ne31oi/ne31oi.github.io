@@ -13,7 +13,7 @@
         <link rel="stylesheet" href="https://use.typekit.net/wds2vlt.css">
 
         <!--[if (gt IE 9)|!(IE)]><!-->
-        <link href="static/css/mainmpf4p.min.css" rel="stylesheet" type="text/css">
+        <link href="static/css/maind53o1.min.css" rel="stylesheet" type="text/css">
         <!--<![endif]-->
         <meta property="og:title" content="#{data.title}">
         <meta property="og:title" content="">
@@ -105,12 +105,22 @@
                         </div>
                     </div>
                 </div>
+                <section class="section10">
+                    <div class="container">
+                        <div class="btn">Спецтехника и транспорт</div>
+                        <div class="btn">Автомобили и СТО</div>
+                        <div class="btn">Жидкости для обработки металлов</div>
+                        <div class="btn">Производство и машиностроение</div>
+                        <div class="btn">Пластичные смазки</div>
+                        <div class="btn last">Подбор АНАЛОГОВ по известной марке</div>
+                    </div>
+                </section>
                 <section class="section8 wsection">
                     <div class="container">
                         <aside class="aside">
                             <div class="search">
-                                <div class="head">Поиск по фильтру</div>
-                                <div class="block">
+                                <div class="head" v-on:click="katalog_aside=!katalog_aside">Поиск по фильтру</div>
+                                <div class="block" v-if="katalog_aside">
                                     <div class="line">
                                         <div class="pay">Цена</div>
                                         <vue-slider ref="slider3" v-bind="demo3" v-model="demo3.value"></vue-slider>
@@ -144,14 +154,14 @@
                                         <p-check color="danger">Вязкость 1</p-check>
                                     </div>
                                     <div class="btns">
-                                        <div class="clear">Сбросить</div>
-                                        <div class="sear">Искать</div>
+                                        <div class="btn clear">Сбросить</div>
+                                        <div class="btn sear">Искать</div>
                                     </div>
                                 </div>
                             </div>
                             <div class="reklama">
-                                <div class="more">Подробнее</div>
-                                <div class="name">KATANA HABAKi TO-4 10w</div>
+                                <div class="btn more">Подробнее</div>
+                                <div class="btn name">KATANA HABAKi TO-4 10w</div>
                             </div>
                         </aside>
                         <div class="content">
@@ -657,7 +667,7 @@
         </div>
 
 
-        <script src="static/js/mainmpf4p.min.js"></script>
+        <script src="static/js/maind53o1.min.js"></script>
     </body>
 
 </html>
