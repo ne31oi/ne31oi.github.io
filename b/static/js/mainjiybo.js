@@ -19,6 +19,7 @@ var app = new Vue({
         katalog_aside:true,
         review_slide: 1,
         slide2: 0,
+        menu2show:0,
         demo3: {
             value: [1200, 12000],
             width: '100%',
@@ -46,14 +47,17 @@ var app = new Vue({
         },
     },
     methods: {
-        openMenu1: function(event) {},
+        openMenu1: function(event) {
+            this.m1 = true
+        },
         openMenu2: function(event) {
             this.m2 = true
             //var item = document.getElementById('menu2')
             //item.style.marginTop = '0px'
         },
-        closeMenu2: function(event) {
+        closeMenu: function(event) {
             this.m2 = false
+            this.m1 = false
             //var item = document.getElementById('menu2')
             //item.style.marginTop = '-300%'
         },
