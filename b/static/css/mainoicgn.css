@@ -1328,6 +1328,7 @@ body {
   padding-top: 220px;
   padding-bottom: 290px;
   position: relative;
+  overflow: hidden;
 }
 .company .top-header-text .t {
   font-size: 41.67px;
