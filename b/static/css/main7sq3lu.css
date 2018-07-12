@@ -350,7 +350,7 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   background-image: url("../img/general/katalogbg.png");
-  background-size: cover;
+  background-size: 197%;
   background-position: center center;
 }
 .header .katalog_menu .close {
