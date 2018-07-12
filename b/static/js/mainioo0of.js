@@ -16,10 +16,10 @@ var app = new Vue({
         win5: false,
         win6: false,
         win6num: 0,
-        katalog_aside:true,
+        katalog_aside: true,
         review_slide: 1,
         slide2: 0,
-        menu2show:0,
+        menu2show: 0,
         demo3: {
             value: [1200, 12000],
             width: '100%',
@@ -99,8 +99,21 @@ var app = new Vue({
             if (this.win6num > 0)
                 this.win6num--;
         },
+        totop: function(t) {
+            var that = this;
+            if (t > 0) {
+                setTimeout(function() {
+                    document.documentElement.scrollTop=document.documentElement.scrollTop - 10
+                    that.totop(document.documentElement.scrollTop)
+                }, 1)
+            }
+        },
+
         scrollToTop: function() {
-            document.documentElement.scrollTop = 0;
+
+             
+            this.totop(document.documentElement.scrollTop)
+            //document.documentElement.scrollTop = 0;
         },
         slidePlus: function(slide) {
             if (slide < 3)

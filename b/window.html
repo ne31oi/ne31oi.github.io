@@ -13,7 +13,7 @@
         <link rel="stylesheet" href="https://use.typekit.net/wds2vlt.css">
 
         <!--[if (gt IE 9)|!(IE)]><!-->
-        <link href="static/css/main7sq3lu.min.css" rel="stylesheet" type="text/css">
+        <link href="static/css/mainioo0of.min.css" rel="stylesheet" type="text/css">
         <!--<![endif]-->
         <meta property="og:title" content="#{data.title}">
         <meta property="og:title" content="">
@@ -38,146 +38,13 @@
     </head>
 
     <body class="page">
-        <div id="app">
-            <div class="ww">
-                <div v-on:click="showWin(1)">окно1</div>
-                <div v-on:click="showWin(2)">окно2</div>
-                <div v-on:click="showWin(3)">окно3</div>
-                <div v-on:click="showWin(4)">окно4</div>
-                <div v-on:click="showWin(5)">окно5</div>
-                <div v-on:click="showWin(6)">окно6</div>
-            </div>
-            <div class="window" v-if="win1">
-                <div class="win-out" v-on:click="closeWindows"></div>
-                <div class="win">
-                    <div class="head">
-                        <div class="text">Восстановление пароля</div>
-                        <div class="close" v-on:click="closeWindows"></div>
-                    </div>
-                    <div class="content">
-                        <input class="input" type="email" placeholder="Введите ваш E-mail">
-                        <div class="btn">Восстановить</div>
-                    </div>
-                </div>
-            </div>
-            <div class="window" v-if="win2">
-                <div class="win-out" v-on:click="closeWindows"></div>
-                <div class="win">
-                    <div class="head">
-                        <div class="text">Обратный звонок</div>
-                        <div class="close" v-on:click="closeWindows"></div>
-                    </div>
-                    <div class="content">
-                        <input class="input" type="email" placeholder="Введите ваш E-mail">
-                        <input class="input" type="tel" placeholder="Введите ваш телефон">
-                        <div class="btn">Восстановить</div>
-                    </div>
-                </div>
-            </div>
-            <div class="window" v-if="win3">
-                <div class="win-out" v-on:click="closeWindows"></div>
-                <div class="win">
-                    <div class="head">
-                        <div class="thnx">
-                            <i class="far fa-check-circle"></i>
-                            <div class="text">Спасибо, вам на почту придет уведомление</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="window" v-if="win4">
-                <div class="win-out" v-on:click="closeWindows"></div>
-                <div class="win enter">
-                    <div class="head">
-                        <div class="text">Войти</div>
-                        <div class="close" v-on:click="closeWindows"></div>
-                    </div>
-                    <div class="content">
-                        <input class="input" type="email" placeholder="Введите ваш E-mail">
-                        <input class="input" type="password" placeholder="Введите ваш пароль">
-                        <div class="btn-div">
-                            <div class="lost">Забыли свой пароль?</div>
-                            <div class="btn">Восстановить</div>
-                        </div>
-                    </div>
-                    <div class="soc">
-                        <div class="text">У вас нет аккаунта?</div>
-                        <div class="text">Пройдите процедуру&nbsp;<span class="red">Регистрации</span>&nbsp;Это займет меньше одной минуты</div>
-                        <div class="soc-btns">
-                            <div class="soc-head">Вход через соц сети:</div>
-                            <div class="icons">
-                                <div class="icon vk"><i class="fab fa-vk"></i>
-                                </div>
-                                <div class="icon fb"><i class="fab fa-facebook-f"></i>
-                                </div>
-                                <div class="icon email"><i class="fas fa-at"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="window" v-if="win5">
-                <div class="win-out" v-on:click="closeWindows"></div>
-                <div class="win enter">
-                    <div class="head">
-                        <div class="text">Регистрация</div>
-                        <div class="close" v-on:click="closeWindows"></div>
-                    </div>
-                    <div class="content">
-                        <input class="input" type="text" placeholder="Ф.И.О:">
-                        <input class="input" type="email" placeholder="E-mail:">
-                        <input class="input" type="text" placeholder="Название компании:">
-                        <input class="input" type="tel" placeholder="Телефон:">
-                        <input class="input" type="number" placeholder="ИНН:">
-                        <input class="input" type="text" placeholder="Ссылка на сайт">
-                        <div class="btn">Регистрация</div>
-                    </div>
-                    <div class="soc">
-                        <div class="text">У вас уже есть аккаунт?</div>
-                        <div class="text">Тогда&nbsp;<span class="red">войдите</span>&nbsp;под своим логином и паролем.</div>
-                        <div class="soc-btns">
-                            <div class="soc-head">Вход через соц сети:</div>
-                            <div class="icons">
-                                <div class="icon vk"><i class="fab fa-vk"></i>
-                                </div>
-                                <div class="icon fb"><i class="fab fa-facebook-f"></i>
-                                </div>
-                                <div class="icon email"><i class="fas fa-at"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="window" v-if="win6">
-                <div class="win-out" v-on:click="closeWindows"></div>
-                <div class="win prod">
-                    <div class="head">
-                        <div class="text">Вы добавили товар в корзину</div>
-                        <div class="close" v-on:click="closeWindows"></div>
-                    </div>
-                    <div class="content">
-                        <div class="tovar">
-                            <img class="img" src="static/img/general/tovar1.png">
-                            <div class="op">
-                                <div class="t">Гидравлическое масло KATANA KISSAKI CLP 68</div>
-                                <div class="pay">6 432&nbsp;<span>P</span>
-                                </div>
-                                <div class="num">
-                                    <div class="i" v-on:click="win6minus">-</div>
-                                    <div class="nums">{{ win6num}}</div>
-                                    <div class="i" v-on:click="win6plus">+</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="btn-div">
-                            <div class="btn white">Продолжить покупки</div>
-                            <div class="btn">Перейти в корзину</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="ww" id="app">
+            <div v-on:click="showWin(1)">окно1</div>
+            <div v-on:click="showWin(2)">окно2</div>
+            <div v-on:click="showWin(3)">окно3</div>
+            <div v-on:click="showWin(4)">окно4</div>
+            <div v-on:click="showWin(5)">окно5</div>
+            <div v-on:click="showWin(6)">окно6</div>
             <header class="header">
                 <div class="container">
                     <div class="header-menu1" v-on:click="openMenu1">
@@ -281,7 +148,7 @@
                                 </div>
                             </div>
                             <div class="right">
-                                <div class="show" v-if="menu2show==1">
+                                <div class="show1" v-if="menu2show==1">
                                     <div class="head-text">Широкий выбор1</div>
                                     <div class="btn item">Специальные пластичные смазки</div>
                                     <div class="btn item">Масла для ДВС</div>
@@ -295,7 +162,7 @@
                                     <div class="btn item">Пожаробезопасные гидравлические жидкости;</div>
                                     <div class="btn item">Компрессионные масла</div>
                                 </div>
-                                <div class="show" v-if="menu2show==2">
+                                <div class="show1" v-if="menu2show==2">
                                     <div class="head-text">Широкий выбор2</div>
                                     <div class="btn item">Специальные пластичные смазки</div>
                                     <div class="btn item">Масла для ДВС</div>
@@ -309,7 +176,7 @@
                                     <div class="btn item">Пожаробезопасные гидравлические жидкости;</div>
                                     <div class="btn item">Компрессионные масла</div>
                                 </div>
-                                <div class="show" v-if="menu2show==3">
+                                <div class="show1" v-if="menu2show==3">
                                     <div class="head-text">Широкий выбор3</div>
                                     <div class="btn item">Специальные пластичные смазки</div>
                                     <div class="btn item">Масла для ДВС</div>
@@ -323,7 +190,7 @@
                                     <div class="btn item">Пожаробезопасные гидравлические жидкости;</div>
                                     <div class="btn item">Компрессионные масла</div>
                                 </div>
-                                <div class="show" v-if="menu2show==4">
+                                <div class="show1" v-if="menu2show==4">
                                     <div class="head-text">Широкий выбор4</div>
                                     <div class="btn item">Специальные пластичные смазки</div>
                                     <div class="btn item">Масла для ДВС</div>
@@ -337,7 +204,7 @@
                                     <div class="btn item">Пожаробезопасные гидравлические жидкости;</div>
                                     <div class="btn item">Компрессионные масла</div>
                                 </div>
-                                <div class="show" v-if="menu2show==5">
+                                <div class="show1" v-if="menu2show==5">
                                     <div class="head-text">Широкий выбор5</div>
                                     <div class="btn item">Специальные пластичные смазки</div>
                                     <div class="btn item">Масла для ДВС</div>
@@ -351,7 +218,7 @@
                                     <div class="btn item">Пожаробезопасные гидравлические жидкости;</div>
                                     <div class="btn item">Компрессионные масла</div>
                                 </div>
-                                <div class="show" v-if="menu2show==6">
+                                <div class="show1" v-if="menu2show==6">
                                     <div class="head-text">Широкий выбор</div>
                                     <div class="btn item">Специальные пластичные смазки</div>
                                     <div class="btn item">Масла для ДВС</div>
@@ -492,7 +359,7 @@
                                 </div>
                             </div>
                             <div class="menu">
-                                <div class="line"></div><a class="menu-item hover-red" href="#">Магазин</a><a class="menu-item hover-red" href="#">Партнерска</a><a class="menu-item hover-red" href="company.html">О компании</a><a class="menu-item hover-red" href="#">Команда</a>
+                                <div class="line"></div><a class="menu-item hover-red" href="#">Магазин</a><a class="menu-item hover-red" href="#">Партнерам</a><a class="menu-item hover-red" href="company.html">О компании</a><a class="menu-item hover-red" href="#">Команда</a>
                                 <a
                                 class="menu-item hover-red" href="#">Вакансии</a><a class="menu-item hover-red" href="reviews.html">Отзывы</a>
                             </div>
@@ -535,7 +402,7 @@
         </div>
 
 
-        <script src="static/js/main7sq3lu.min.js"></script>
+        <script src="static/js/mainioo0of.min.js"></script>
     </body>
 
 </html>

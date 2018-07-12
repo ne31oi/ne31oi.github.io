@@ -176,12 +176,16 @@ blockquote {
   margin: 0;
 }
 @font-face {
-  font-family: 'PtSans';
-  src: url("../fonts/Pt Sans/PT_Sans-Web-Regular.ttf");
+  font-family: 'PT Sans';
+  src: url("../PtSans/PTSans-Regular.eot");
+  src: url("../PtSans/PTSans-Regular.eot?#iefix") format('embedded-opentype'), url("../PtSans/PTSans-Regular.woff2") format('woff2'), url("../PtSans/PTSans-Regular.woff") format('woff'), url("../PtSans/PTSans-Regular.ttf") format('truetype'), url("../PtSans/PTSans-Regular.svg#PTSans-Regular") format('svg');
+  font-weight: normal;
+  font-style: normal;
 }
 @font-face {
-  font-family: 'AkzidenzGroteskPro';
-  src: url("../fonts/Akzidenz-Grotesk/AkzidenzGroteskPro-Regular.eot?#iefix") format('embedded-opentype'), url("../fonts/Akzidenz-Grotesk/AkzidenzGroteskPro-Regular.otf") format('opentype'), url("../fonts/Akzidenz-Grotesk/AkzidenzGroteskPro-Regular.woff") format('woff'), url("../fonts/Akzidenz-Grotesk/AkzidenzGroteskPro-Regular.ttf") format('truetype'), url("../fonts/Akzidenz-Grotesk/AkzidenzGroteskPro-Regular.svg#AkzidenzGroteskPro-Regular") format('svg');
+  font-family: 'Akzidenz-Grotesk Pro';
+  src: url("../fonts/Akzidenz-Grotesk/AkzidenzGroteskPro-Regular.eot");
+  src: url("../fonts/Akzidenz-Grotesk/AkzidenzGroteskPro-Regular.eot?#iefix") format('embedded-opentype'), url("../fonts/Akzidenz-Grotesk/AkzidenzGroteskPro-Regular.woff2") format('woff2'), url("../fonts/Akzidenz-Grotesk/AkzidenzGroteskPro-Regular.woff") format('woff'), url("../fonts/Akzidenz-Grotesk/AkzidenzGroteskPro-Regular.ttf") format('truetype'), url("../fonts/Akzidenz-Grotesk/AkzidenzGroteskPro-Regular.svg#AkzidenzGroteskPro-Regular") format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -190,7 +194,7 @@ body {
   height: 100%;
   background: #080808;
   color: #fff;
-  font-family: PTSans;
+  font-family: PT Sans;
   font-weight: 400;
 }
 .ww {
@@ -201,6 +205,24 @@ body {
   z-index: 99999999999;
   color: #121212;
   cursor: pointer;
+}
+.v-select .dropdown-toggle .clear {
+  display: none;
+}
+.v-select .dropdown-menu {
+  overflow-y: none !important;
+  border: none !important;
+  border-radius: 0 !important;
+}
+.v-select .dropdown-menu>.highlight>a {
+  background: #da0812 !important;
+  height: 40px !important;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-align: center !important;
+      -ms-flex-align: center !important;
+          align-items: center !important;
 }
 .vue-slider-component .vue-slider-dot {
   border-radius: 0 !important;
@@ -227,6 +249,19 @@ body {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
 }
+.katalog_page .section8 .container .aside .search .block .v-select .open-indicator:after {
+  border-color: #eff0f2;
+  border-style: solid;
+  border-width: 0px 15px 0 0;
+  content: "";
+  height: 14px;
+  vertical-align: top;
+  -webkit-transform: rotate(133deg);
+  transform: rotate(0);
+  position: absolute;
+  top: 5px;
+  left: 9px;
+}
 .pretty.p-default .state label::after {
   -webkit-transform: scale(0.4) !important;
           transform: scale(0.4) !important;
@@ -250,7 +285,7 @@ body {
 .main,
 .header,
 .footer {
-  font-family: PTSans;
+  font-family: PT Sans;
 }
 .main *,
 .header *,
@@ -294,6 +329,30 @@ body {
 }
 .header {
   position: relative;
+}
+.header .header-menu2:hover:before,
+.header .header-menu1:hover:before {
+  background-color: #da0812;
+}
+.header .header-menu1:before {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 1px;
+  left: 0px;
+  bottom: -20px;
+  background-color: transporent;
+  z-index: 2;
+}
+.header .header-menu2:before {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 1px;
+  right: 0px;
+  bottom: -20px;
+  background-color: transporent;
+  z-index: 2;
 }
 .header .container {
   -webkit-box-orient: horizontal;
@@ -401,7 +460,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-family: AkzidenzGroteskPro;
+  font-family: Akzidenz-Grotesk Pro;
   font-size: 25px;
   font-weight: 700;
 }
@@ -445,7 +504,7 @@ body {
   padding-right: 30px;
 }
 .header .katalog_menu .content .right .head-text {
-  font-family: AkzidenzGroteskPro;
+  font-family: Akzidenz-Grotesk Pro;
   color: #fefefe;
   font-size: 25px;
   font-weight: 700;
@@ -569,7 +628,7 @@ body {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  font-family: AkzidenzGroteskPro;
+  font-family: Akzidenz-Grotesk Pro;
   font-weight: 700;
   font-size: 25px;
   -webkit-box-align: center;
@@ -599,7 +658,7 @@ body {
 }
 .header .container-menu .menu_big a {
   color: #e0e0e0;
-  font-family: PtSans;
+  font-family: PT Sans;
 }
 .header .container-menu .menu_big a:hover {
   color: #fff;
@@ -627,7 +686,7 @@ body {
   width: 100%;
   height: 137px;
   text-transform: uppercase;
-  font-family: AkzidenzGroteskPro;
+  font-family: Akzidenz-Grotesk Pro;
   font-size: 25px;
   font-weight: 700;
   position: relative;
@@ -733,7 +792,7 @@ body {
 .footer {
   font-size: 12.5px;
   font-weight: 400;
-  font-family: PTSans;
+  font-family: PT Sans;
 }
 .footer .container {
   background-color: #121212;
@@ -922,6 +981,9 @@ body {
 .wsection {
   background: #eff0f2;
 }
+.index .v-select .selected-tag {
+  color: #fff;
+}
 .index .section1 {
   height: 861px;
   background-image: url("../img/general/index-head.png");
@@ -943,7 +1005,7 @@ body {
   background: #0d0d0d;
   top: 0;
   left: 0;
-  font-family: PTSans;
+  font-family: PT Sans;
   font-size: 12.5px;
   position: absolute;
   height: 100%;
@@ -1021,7 +1083,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-family: AkzidenzGroteskPro;
+  font-family: Akzidenz-Grotesk Pro;
   color: #fff;
   font-size: 17px;
   background-color: #080808;
@@ -1066,7 +1128,7 @@ body {
 }
 .index .section2 h2 {
   text-align: center;
-  font-family: AkzidenzGroteskPro;
+  font-family: Akzidenz-Grotesk Pro;
   font-size: 30px;
   margin-top: 170px;
   margin-bottom: 70px;
@@ -1120,7 +1182,7 @@ body {
   width: 380px;
 }
 .index .section2 .introduction .in-item .head {
-  font-family: AkzidenzGroteskPro;
+  font-family: Akzidenz-Grotesk Pro;
   color: #d7d8de;
   font-size: 25px;
   margin-bottom: 30px;
@@ -1134,7 +1196,7 @@ body {
   background-color: #da0812;
   width: 430px;
   padding: 12px 20px;
-  font-family: AkzidenzGroteskPro;
+  font-family: Akzidenz-Grotesk Pro;
   font-size: 20px;
   text-align: center;
 }
@@ -1164,7 +1226,7 @@ body {
   top: 0;
   right: 0;
   cursor: pointer;
-  font-family: PTSans;
+  font-family: PT Sans;
   font-size: 12.5px;
   position: absolute;
   height: 100%;
@@ -1221,6 +1283,7 @@ body {
 .index .section4 .container .text {
   text-align: center;
   font-size: 20px;
+  width: 630px;
 }
 .index .section4 .container .form {
   margin-top: 50px;
@@ -1240,11 +1303,20 @@ body {
           flex-direction: column;
   position: relative;
 }
+.index .section4 .container .form input::-webkit-input-placeholder {
+  color: #fff;
+}
+.index .section4 .container .form input:-ms-input-placeholder {
+  color: #fff;
+}
+.index .section4 .container .form input::placeholder {
+  color: #fff;
+}
 .index .section4 .container .form .name,
 .index .section4 .container .form .tel {
   margin-top: 10px;
   border: none;
-  border-bottom: 1px solid #da0812;
+  border-bottom: 1px solid #fff;
   background: none;
   color: #fff;
   padding: 5px 0;
@@ -1256,7 +1328,7 @@ body {
 .index .section4 .container .form .v-select .dropdown-toggle {
   border: none;
   border-radius: 0;
-  border-bottom: solid #da0812 1px;
+  border-bottom: solid #fff 1px;
 }
 .index .section4 .container .form .v-select .open-indicator::before {
   border-color: #da0812;
@@ -1266,7 +1338,7 @@ body {
   -ms-flex-item-align: end;
       align-self: flex-end;
   margin-top: 20px;
-  font-family: PTSans;
+  font-family: PT Sans;
   font-size: 12.5px;
   cursor: pointer;
   height: 30px;
@@ -1330,7 +1402,7 @@ body {
   padding-top: 40px;
 }
 .ofcompany .top .left .head {
-  font-family: AkzidenzGroteskPro;
+  font-family: Akzidenz-Grotesk Pro;
   font-size: 45.83px;
   font-weight: 700;
   margin-bottom: 20px;
@@ -1367,7 +1439,7 @@ body {
 }
 .ofcompany .top .right .text {
   padding: 40px;
-  font-family: PTSans;
+  font-family: PT Sans;
   color: #fff;
   font-size: 18px;
   font-weight: 400;
@@ -1387,7 +1459,7 @@ body {
           flex-direction: column;
 }
 .ofcompany .bottom .h2 {
-  font-family: AkzidenzGroteskPro;
+  font-family: Akzidenz-Grotesk Pro;
   color: #0d0d0d;
   font-size: 45.83px;
   font-weight: 700;
@@ -1418,7 +1490,7 @@ body {
   width: 100%;
 }
 .ofcompany .bottom .items .item {
-  font-family: PTSans;
+  font-family: PT Sans;
   color: #0d0d0d;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1491,7 +1563,7 @@ body {
   background: #fff;
   padding: 50px;
   color: #121213;
-  font-family: PtSans;
+  font-family: PT Sans;
   font-size: 17px;
   margin-top: -100px;
   margin-bottom: 30px;
@@ -1540,7 +1612,7 @@ body {
 }
 .company .section3 .container .req .head,
 .company .section3 .container .message .head {
-  font-family: AkzidenzGroteskPro;
+  font-family: Akzidenz-Grotesk Pro;
   font-size: 33.33px;
   font-weight: 700;
   margin-top: 70px;
@@ -1551,7 +1623,7 @@ body {
   background-size: auto 100%;
   background-image: url("../img/general/req.png");
   padding: 20px 40px;
-  font-family: PtSans;
+  font-family: PT Sans;
   font-size: 17px;
   font-weight: 400;
   line-height: 21px;
@@ -1576,12 +1648,18 @@ body {
   font-size: 12.5px;
   font-weight: 400;
 }
+.company .section3 .container .message .form .pretty .state label:before {
+  background: #da0812 !important;
+}
+.company .section3 .container .message .form .pretty.p-default input:checked~.state label:after {
+  background: #fff !important;
+}
 .company .section3 .container .message .form .input {
   font-size: 12.5px;
   color: #424242;
   font-weight: 400;
   line-height: 16.667px;
-  font-family: PtSans;
+  font-family: PT Sans;
   margin-top: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1602,7 +1680,7 @@ body {
   -ms-flex-item-align: end;
       align-self: flex-end;
   margin-top: 20px;
-  font-family: PTSans;
+  font-family: PT Sans;
   font-size: 12.5px;
   cursor: pointer;
   height: 30px;
@@ -1678,20 +1756,20 @@ span.before-red:before {
 .reviews .section1 .item .head {
   margin-top: 25px;
   font-weight: 700;
-  font-family: AkzidenzGroteskPro;
+  font-family: Akzidenz-Grotesk Pro;
   font-size: 25px;
 }
 .reviews .section1 .item .subhead {
   margin: 15px 0;
   font-weight: 600;
   font-size: 16.67px;
-  font-family: PtSans;
+  font-family: PT Sans;
 }
 .reviews .section1 .item .text {
   line-height: 25px;
   font-weight: 400;
   font-size: 16.67px;
-  font-family: PtSans;
+  font-family: PT Sans;
 }
 .reviews .section3 {
   background-color: #fff;
@@ -1701,7 +1779,7 @@ span.before-red:before {
 }
 .reviews .section2 .head-text {
   margin-top: 80px;
-  font-family: AkzidenzGroteskPro;
+  font-family: Akzidenz-Grotesk Pro;
   font-size: 45.83px;
   font-weight: 700;
   margin-bottom: 50px;
@@ -1750,7 +1828,7 @@ span.before-red:before {
   background-image: url("../img/general/articles2.png");
 }
 .reviews .more {
-  font-family: AkzidenzGroteskPro;
+  font-family: Akzidenz-Grotesk Pro;
   font-size: 25px;
   font-weight: 700;
   background-color: #da0812;
@@ -1814,13 +1892,13 @@ span.before-red:before {
   max-width: 145px;
 }
 .slide .container .item .head {
-  font-family: AkzidenzGroteskPro;
+  font-family: Akzidenz-Grotesk Pro;
   margin-top: 25px;
   font-size: 16.67px;
   font-weight: 700;
 }
 .slide .container .item .text {
-  font-family: PtSans;
+  font-family: PT Sans;
   font-size: 16.67px;
   font-weight: 400;
   margin-top: 15px;
@@ -1862,7 +1940,7 @@ span.before-red:before {
   margin-bottom: 40px;
 }
 .slide .container .head-text .text {
-  font-family: AkzidenzGroteskPro;
+  font-family: Akzidenz-Grotesk Pro;
   color: #000;
   font-size: 45.83px;
   font-weight: 700;
@@ -1902,7 +1980,7 @@ span.before-red:before {
   width: 115px;
 }
 .prem .h2 {
-  font-family: AkzidenzGroteskPro;
+  font-family: Akzidenz-Grotesk Pro;
   color: #0d0d0d;
   font-size: 45.83px;
   font-weight: 700;
@@ -1934,7 +2012,7 @@ span.before-red:before {
   width: 100%;
 }
 .prem .items .item {
-  font-family: PTSans;
+  font-family: PT Sans;
   color: #0d0d0d;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2004,7 +2082,7 @@ span.before-red:before {
   font-weight: 400;
   margin-right: 30px;
   position: relative;
-  font-family: PtSans;
+  font-family: PT Sans;
 }
 .top-menu .left .link:before {
   content: "";
@@ -2021,7 +2099,7 @@ span.before-red:before {
   border: 1px solid #da0812;
   font-size: 14px;
   color: #fff;
-  font-family: PtSans;
+  font-family: PT Sans;
   font-weight: 300;
   position: relative;
 }
@@ -2112,7 +2190,7 @@ span.before-red:before {
   font-size: 17px;
   color: #121213;
   font-weight: 400;
-  font-family: PtSans;
+  font-family: PT Sans;
   position: relative;
 }
 .article .section1 .aside .aside-menu .item:before {
@@ -2138,7 +2216,7 @@ span.before-red:before {
 }
 .article .section1 .aside .aside-action .head,
 .article .section1 .aside .aside-action .item .text .t {
-  font-family: AkzidenzGroteskPro;
+  font-family: Akzidenz-Grotesk Pro;
   color: #121213;
   font-size: 17px;
   font-weight: 700;
@@ -2195,7 +2273,7 @@ span.before-red:before {
           align-items: flex-start;
 }
 .article .section1 .aside .aside-action .item .text .date {
-  font-family: PtSans;
+  font-family: PT Sans;
   font-size: 12px;
   color: #757575;
   margin-top: 10px;
@@ -2215,7 +2293,7 @@ span.before-red:before {
   background-size: auto 100%;
 }
 .article .section1 .aside .aside-scsr .head {
-  font-family: AkzidenzGroteskPro;
+  font-family: Akzidenz-Grotesk Pro;
   color: #fff;
   font-size: 25px;
   font-weight: 700;
@@ -2228,7 +2306,7 @@ span.before-red:before {
 .article .section1 .aside .aside-scsr .input label {
   font-weight: 400;
   font-size: 13px;
-  font-family: PtSans;
+  font-family: PT Sans;
   margin-top: 15px;
   margin-bottom: 15px;
 }
@@ -2239,7 +2317,7 @@ span.before-red:before {
   color: #121213;
   width: 100%;
   font-size: 12px;
-  font-family: PtSans;
+  font-family: PT Sans;
 }
 .article .section1 .aside .aside-scsr .input {
   display: -webkit-box;
@@ -2291,16 +2369,16 @@ span.before-red:before {
   margin-bottom: 60px;
 }
 .article .section1 .content .content-top .head .h2 {
-  font-family: AkzidenzGroteskPro;
+  font-family: Akzidenz-Grotesk Pro;
   font-size: 33px;
   font-weight: 700;
 }
 .article .section1 .content .content-top .head .date {
-  font-family: PtSans;
+  font-family: PT Sans;
   font-size: 13px;
 }
 .article .section1 .content .content-top .text {
-  font-family: PtSans;
+  font-family: PT Sans;
   font-size: 17px;
   text-align: left;
 }
@@ -2321,7 +2399,7 @@ span.before-red:before {
   margin-right: 20px;
 }
 .article .section1 .content .content-main .head {
-  font-family: AkzidenzGroteskPro;
+  font-family: Akzidenz-Grotesk Pro;
   font-size: 33px;
 }
 .article .section1 .content .sub {
@@ -2335,7 +2413,7 @@ span.before-red:before {
       -ms-flex-pack: end;
           justify-content: flex-end;
   color: #818181;
-  font-family: PtSans;
+  font-family: PT Sans;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -2409,7 +2487,6 @@ span.before-red:before {
 }
 .articles .section1 .item .image {
   position: relative;
-  height: 100%;
   overflow: hidden;
 }
 .articles .section1 .item .image .img {
@@ -2419,7 +2496,6 @@ span.before-red:before {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   min-width: auto;
-  height: 100%;
 }
 .articles .section1 .item .image .text {
   display: -webkit-box;
@@ -2436,7 +2512,7 @@ span.before-red:before {
           align-items: flex-end;
   font-size: 25px;
   font-weight: 700;
-  font-family: AkzidenzGroteskPro;
+  font-family: Akzidenz-Grotesk Pro;
   position: relative;
 }
 .articles .section1 .item .image .text .t {
@@ -2456,7 +2532,7 @@ span.before-red:before {
   margin-top: 28px;
   font-size: 17px;
   font-weight: 400;
-  font-family: PtSans;
+  font-family: PT Sans;
   letter-spacing: 1.6px;
   color: #121213;
   margin-bottom: 20px;
@@ -2531,7 +2607,7 @@ span.before-red:before {
   font-size: 25px;
   padding: 18px 41px;
   color: #fff;
-  font-family: AkzidenzGroteskPro;
+  font-family: Akzidenz-Grotesk Pro;
   background: #da0812;
 }
 .articles .section1 .subscribe {
@@ -2558,7 +2634,7 @@ span.before-red:before {
 }
 .articles .section1 .subscribe .in .head {
   color: #121213;
-  font-family: AkzidenzGroteskPro;
+  font-family: Akzidenz-Grotesk Pro;
   font-weight: 700;
   font-size: 25px;
   text-align: center;
@@ -2616,13 +2692,13 @@ span.before-red:before {
 .articles .section1 .subscribe .in .text {
   color: #121213;
   font-size: 13px;
-  font-family: PtSans;
+  font-family: PT Sans;
   font-weight: 400;
   margin-top: 20px;
   text-align: center;
 }
 .basket .section1 .zakaz_head {
-  font-family: AkzidenzGroteskPro;
+  font-family: Akzidenz-Grotesk Pro;
   color: #121213;
   font-size: 25px;
   font-weight: 700;
@@ -2653,7 +2729,7 @@ span.before-red:before {
   width: 100%;
 }
 .basket .section1 .table .table-head {
-  font-family: AkzidenzGroteskPro;
+  font-family: Akzidenz-Grotesk Pro;
   font-size: 16.67px;
   font-weight: 700;
   height: 67px;
@@ -2720,8 +2796,10 @@ span.before-red:before {
 }
 .basket .section1 .table .cell .form .i {
   width: 47px;
-  font-size: 40px;
+  font-size: 30px;
   cursor: pointer;
+  font-weight: 100;
+  font-family: SANS-SERIF;
 }
 .basket .section1 .table .cell .form .n {
   width: 120px;
@@ -2785,12 +2863,12 @@ span.before-red:before {
 }
 .basket .section1 .table .table-row {
   color: #121213;
-  font-family: PtSans;
+  font-family: PT Sans;
   background: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  widows: 100%;
+  width: 100%;
   margin-bottom: 10px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -2873,7 +2951,7 @@ span.before-red:before {
   cursor: pointer;
 }
 .basket .section1 .send_to_email .sum {
-  font-family: PtSans;
+  font-family: PT Sans;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2972,7 +3050,7 @@ span.before-red:before {
 }
 .basket .section1 .send_to_email .send .head,
 .basket .section1 .send2 .send .head {
-  font-family: AkzidenzGroteskPro;
+  font-family: Akzidenz-Grotesk Pro;
   color: #121213;
   font-size: 20.83px;
   font-weight: 700;
@@ -3059,7 +3137,7 @@ span.before-red:before {
           align-items: center;
   color: #fff;
   padding: 30px;
-  font-family: PtSans;
+  font-family: PT Sans;
   font-size: 13px;
   position: relative;
 }
@@ -3075,7 +3153,7 @@ span.before-red:before {
 }
 .katalog_page .section8 .container .aside .search .block {
   background-color: #fff;
-  font-family: PtSans;
+  font-family: PT Sans;
   color: #121213;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3119,6 +3197,7 @@ span.before-red:before {
 .katalog_page .section8 .container .aside .search .block .v-select .open-indicator::before {
   margin-top: 23px;
   border-color: #da0812;
+  border-width: 10px 3px 0 0;
   margin-left: 10px;
   -webkit-transform: rotate(133deg) translate(-8px, 5px);
           transform: rotate(133deg) translate(-8px, 5px);
@@ -3131,6 +3210,9 @@ span.before-red:before {
 .katalog_page .section8 .container .aside .search .block .v-select .dropdown-menu {
   border: none;
   border-radius: 0;
+}
+.katalog_page .section8 .container .aside .search .block .v-select .dropdown-menu>.highlight>a {
+  background: #da0812;
 }
 .katalog_page .section8 .container .aside .search .block .line {
   width: 100%;
@@ -3265,7 +3347,7 @@ span.before-red:before {
 }
 .katalog_page .section8 .container .content .item .text {
   text-align: center;
-  font-family: PtSans;
+  font-family: PT Sans;
   font-size: 17px;
   margin-top: 10px;
   margin-bottom: 5px;
@@ -3343,7 +3425,7 @@ span.before-red:before {
 }
 .katalog_page .section8 .container .content .item .bottom .left .t {
   color: #121213;
-  font-family: PtSans;
+  font-family: PT Sans;
   font-size: 12px;
 }
 .katalog_page .section8 .container .content .item .bottom .left .b {
@@ -3470,7 +3552,7 @@ span.before-red:before {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  font-family: PtSans;
+  font-family: PT Sans;
   font-weight: 400;
 }
 .katalog_page .section3 .container .head {
@@ -3483,7 +3565,7 @@ span.before-red:before {
 }
 .katalog_page .section7 .head-text {
   color: #121213;
-  font-family: AkzidenzGroteskPro;
+  font-family: Akzidenz-Grotesk Pro;
   font-size: 45.83px;
   font-weight: 700;
   margin-top: 90px;
@@ -3566,7 +3648,7 @@ span.before-red:before {
 }
 .katalog_page .section7 .clients .item .hover .text {
   text-align: center;
-  font-family: PtSans;
+  font-family: PT Sans;
   font-size: 17px;
   color: #121213;
   margin-top: 30px;
@@ -3587,7 +3669,7 @@ span.before-red:before {
           flex-direction: column;
 }
 .katalog_page .section2 .bottom .h2 {
-  font-family: AkzidenzGroteskPro;
+  font-family: Akzidenz-Grotesk Pro;
   color: #fff;
   font-size: 45.83px;
   font-weight: 700;
@@ -3607,7 +3689,7 @@ span.before-red:before {
   width: 100%;
 }
 .katalog_page .section2 .bottom .items .item {
-  font-family: PTSans;
+  font-family: PT Sans;
   color: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3674,14 +3756,14 @@ span.before-red:before {
   padding-right: 40px;
 }
 .katalog_page .section4 .container .text .head {
-  font-family: AkzidenzGroteskPro;
+  font-family: Akzidenz-Grotesk Pro;
   color: #121213;
   font-weight: 700;
   font-size: 44px;
   margin-bottom: 40px;
 }
 .katalog_page .section4 .container .text .subhead {
-  font-family: AkzidenzGroteskPro;
+  font-family: Akzidenz-Grotesk Pro;
   color: #121213;
   font-size: 25px;
   font-weight: 700;
@@ -3731,7 +3813,7 @@ span.before-red:before {
   -ms-flex-item-align: end;
       align-self: flex-end;
   margin-top: 20px;
-  font-family: PTSans;
+  font-family: PT Sans;
   font-size: 12.5px;
   cursor: pointer;
   height: 30px;
@@ -3796,8 +3878,10 @@ span.before-red:before {
 }
 .formi .i {
   width: 47px;
-  font-size: 40px;
+  font-size: 30px;
   cursor: pointer;
+  font-weight: 100;
+  font-family: SANS-SERIF;
 }
 .formi .n {
   width: 120px;
@@ -3813,6 +3897,11 @@ span.before-red:before {
   background: #121213;
   border-color: #121213;
 }
+.show {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+}
 .window {
   position: fixed;
   top: 0;
@@ -3820,9 +3909,7 @@ span.before-red:before {
   width: 100vw;
   height: 100vh;
   z-index: 9999;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -3864,7 +3951,7 @@ span.before-red:before {
       -ms-flex-pack: justify;
           justify-content: space-between;
   color: #6eaf16;
-  font-family: PtSans;
+  font-family: PT Sans;
   font-size: 16px;
   font-weight: 400;
 }
@@ -3874,7 +3961,7 @@ span.before-red:before {
 .window .win .head {
   text-align: center;
   padding: 30px 0;
-  font-family: PtSans;
+  font-family: PT Sans;
   color: #121213;
   font-size: 30px;
   position: relative;
@@ -3951,7 +4038,7 @@ span.before-red:before {
 }
 .window .win .content .tovar .op .t,
 .window .win .content .tovar .op .pay {
-  font-family: PtSans;
+  font-family: PT Sans;
   color: #121213;
   font-size: 18px;
   font-weight: 400;
@@ -3996,6 +4083,8 @@ span.before-red:before {
   width: 35px;
   cursor: pointer;
   font-size: 30px;
+  font-weight: 100;
+  font-family: SANS-SERIF;
 }
 .window .win .content .tovar .op .num .i:hover {
   color: #fff;
@@ -4005,7 +4094,7 @@ span.before-red:before {
 .window .win .content .input {
   width: 100%;
   padding: 10px;
-  font-family: PtSans;
+  font-family: PT Sans;
   font-size: 16px;
   color: #121213;
   text-align: left;
@@ -4025,7 +4114,7 @@ span.before-red:before {
       -ms-flex-align: center;
           align-items: center;
   color: #fff;
-  font-family: PtSans;
+  font-family: PT Sans;
   font-size: 16px;
   background-color: #da0812;
   margin: 0 auto;
@@ -4045,7 +4134,7 @@ span.before-red:before {
 .window .win .content .btn-div .lost {
   cursor: pointer;
   color: #da0812;
-  font-family: PtSans;
+  font-family: PT Sans;
   font-size: 16px;
   text-decoration: underline;
 }
@@ -4062,7 +4151,7 @@ span.before-red:before {
 .window .win .soc-head {
   color: #121213;
   text-align: center;
-  font-family: PtSans;
+  font-family: PT Sans;
   font-size: 16px;
   text-align: center;
   padding-bottom: 30px;
@@ -4154,7 +4243,7 @@ span.before-red:before {
 }
 .compare .section1 .head-text,
 .compare .section1 .subhead {
-  font-family: AkzidenzGroteskPro;
+  font-family: Akzidenz-Grotesk Pro;
   color: #121213;
   font-size: 33.33px;
   font-weight: 700;
@@ -4285,7 +4374,7 @@ span.before-red:before {
   background: #da0812;
   font-size: 16.67px;
   font-weight: 400;
-  font-family: PtSans;
+  font-family: PT Sans;
   padding-left: 20px;
   padding-right: 20px;
   -ms-flex-negative: 0;
@@ -4326,7 +4415,7 @@ span.before-red:before {
 .compare .section1 .items .item .head {
   margin-top: 40px;
   color: #121213;
-  font-family: PtSans;
+  font-family: PT Sans;
   font-size: 25px;
   font-weight: 400;
   margin-bottom: 30px;
@@ -4352,7 +4441,7 @@ span.before-red:before {
       -ms-flex-direction: column;
           flex-direction: column;
   background: #2cad2c;
-  font-family: AkzidenzGroteskPro;
+  font-family: Akzidenz-Grotesk Pro;
   font-weight: 700;
   font-size: 25px;
 }
@@ -4389,7 +4478,7 @@ span.before-red:before {
   padding-top: 30px;
 }
 .head-t {
-  font-family: AkzidenzGroteskPro;
+  font-family: Akzidenz-Grotesk Pro;
   color: #111;
   font-size: 25px;
   font-weight: 700;
@@ -4526,7 +4615,7 @@ span.before-red:before {
   color: #121213;
   font-size: 15px;
   font-weight: 400;
-  font-family: PtSans;
+  font-family: PT Sans;
   white-space: nowrap;
 }
 .card .section1 .item .text .bottom .l .line1 span {
@@ -4542,7 +4631,7 @@ span.before-red:before {
   opacity: 0.7;
   font-size: 15px;
   font-weight: 400;
-  font-family: PtSans;
+  font-family: PT Sans;
 }
 .card .section1 .item .text .bottom .l .line2 span {
   margin-left: 30px;
@@ -4765,6 +4854,9 @@ span.before-red:before {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .contact_page .section1 .container .content .text {
   color: #fff;
@@ -4775,13 +4867,13 @@ span.before-red:before {
   padding-left: 30px;
 }
 .contact_page .section1 .container .content .text .line .head {
-  font-family: AkzidenzGroteskPro;
+  font-family: Akzidenz-Grotesk Pro;
   color: #fff;
   font-size: 20px;
   font-weight: 700;
 }
 .contact_page .section1 .container .content .text .line .subhead {
-  font-family: PtSans;
+  font-family: PT Sans;
   font-size: 17px;
   font-weight: 400;
   color: #fff;
@@ -4789,13 +4881,12 @@ span.before-red:before {
 .contact_page .section1 .container .content .message {
   background-image: url("../img/general/contactbg.png");
   background-position: center center;
-  width: 65%;
-}
-.contact_page .section1 .container .content .message background-size cover {
+  background-size: cover;
   margin-top: -30px;
+  width: 62%;
 }
 .contact_page .section1 .container .content .message .head {
-  font-family: AkzidenzGroteskPro;
+  font-family: Akzidenz-Grotesk Pro;
   font-size: 33.33px;
   font-weight: 700;
   margin-bottom: 30px;
@@ -4825,7 +4916,7 @@ span.before-red:before {
   color: #424242;
   font-weight: 400;
   line-height: 16.667px;
-  font-family: PtSans;
+  font-family: PT Sans;
   margin-top: 20px;
 }
 .contact_page .section1 .container .content .message .form .pretty .state label::after,
@@ -4833,11 +4924,11 @@ span.before-red:before {
   top: 0;
 }
 .contact_page .section1 .container .content .message .form .btn {
-  width: 119px;
+  width: 155px;
   -ms-flex-item-align: end;
       align-self: flex-end;
   margin-top: 20px;
-  font-family: PTSans;
+  font-family: PT Sans;
   font-size: 12.5px;
   cursor: pointer;
   height: 30px;
@@ -4845,6 +4936,7 @@ span.before-red:before {
   border-bottom: solid #da0812 1px;
   position: relative;
   margin-top: -20px;
+  padding-left: 35px;
 }
 .contact_page .section1 .container .content .message .form .btn:before {
   content: "";
@@ -4852,7 +4944,7 @@ span.before-red:before {
   width: 20px;
   height: 1px;
   top: 10px;
-  left: -40px;
+  left: 0;
   background-color: #da0812;
 }
 .contact_page .map {
@@ -4866,16 +4958,27 @@ span.before-red:before {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-flow: column nowrap;
-          flex-flow: column nowrap;
+      -ms-flex-direction: row;
+          flex-direction: row;
   font-size: 0.8rem;
   line-height: 1.5;
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
   width: 100%;
+}
+.srav .table .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
 }
 .srav .th {
   display: -webkit-box;
@@ -4938,9 +5041,11 @@ span.before-red:before {
   padding: 30px;
   background: #eff0f2;
   color: #121213;
-  font-family: PtSans;
+  font-family: PT Sans;
+  font-size: 17px;
+  height: 100px;
 }
-.srav .td font-size 17px:last-child {
+.srav .td box-sizing border-box:last-child {
   margin-right: 0;
 }
 .srav .td:first-child {
@@ -5021,8 +5126,41 @@ span.before-red:before {
   .m {
     padding: 0 20px;
   }
+  .articles .section1 .item .image .img {
+    height: 100%;
+  }
+  .card .section1 .item .text .bottom .r .btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .card .section1 .item .image img {
+    height: auto;
+  }
+  .srav .table {
+    overflow-y: scroll;
+  }
 }
 @media (max-width: 960px) {
+  .basket .section1 .table .cell .num {
+    font-size: 20px;
+  }
+  .basket .section1 .table .cell .form .n {
+    width: 70px;
+  }
+  .basket .section1 .send_to_email .sum .line .text1 {
+    padding-left: 20px;
+  }
+  .basket .section1 .table .cell .form .i {
+    width: 40px;
+  }
+  .basket .section1 .table .cell .form .i,
+  .basket .section1 .table .cell .form .n {
+    height: 40px;
+  }
   .index .section3 .more {
     display: none;
   }
@@ -5156,7 +5294,113 @@ span.before-red:before {
     width: 100%;
   }
 }
+@media (max-width: 600px) {
+  .basket .section1 .before_red_sh,
+  .card .section2 .bot,
+  .slide .container .head-text,
+  .slide .container .items {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .basket .section1 .send_to_email .send,
+  .basket .section1 .send_to_email .sum {
+    width: 100%;
+    max-width: 100%;
+  }
+  .basket .section1 .send_to_email .send {
+    margin-bottom: 30px;
+  }
+  .basket .section1 .send_to_email .sum .line .text1 {
+    padding-left: 0;
+  }
+  .basket .section1 .send2 .form {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .basket .section1 .send2 .form .left,
+  .basket .section1 .send2 .form .right {
+    padding: 0;
+  }
+  .basket .section1 .table .table-row,
+  .basket .section1 .table .table-head {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .basket .section1 .table .cell30 {
+    -webkit-box-flex: 0;
+        -ms-flex: none;
+            flex: none;
+    width: 100%;
+  }
+  .card .section1 .item,
+  .card .section2 .content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .card .section2 .content .right .image {
+    height: auto;
+    width: 100%;
+  }
+  .card .section2 .bot {
+    height: auto;
+  }
+  .card .section2 .bot .btn {
+    margin-bottom: 20px;
+  }
+}
 @media (max-width: 480px) {
+  .basket .section1 .send_to_email .send .form .subsc-btn {
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-left: -20px;
+  }
+  .basket .section1 .send_to_email .send .form .email {
+    padding-left: 10px;
+  }
+  .basket .section1 .send_to_email .sum .line {
+    margin-bottom: 10px;
+  }
+  .basket .section1 .send_to_email .sum .line .text1 {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+  .basket .section1 .send2 .btn {
+    width: 100%;
+  }
+  .basket .section1 .table .table-row,
+  .basket .section1 .table .table-head {
+    padding-bottom: 10px;
+  }
+  .basket .section1 .table .cell .form .i,
+  .basket .section1 .table .cell .form .n {
+    height: 25px;
+  }
+  .basket .section1 .table .cell .form .i {
+    width: 25px;
+  }
+  .basket .section1 .table .cell .form .n {
+    width: 50px;
+  }
+  .basket .section1 .table .cell .num {
+    font-size: 15px;
+  }
+  .basket .section1 .table .cell .close {
+    top: -130px;
+    right: 0;
+  }
+  .basket .section1 .table .cell10 {
+    -webkit-box-flex: 0;
+        -ms-flex: none;
+            flex: none;
+    width: 0;
+  }
   .articles .section1 .subscribe .in .form .email {
     width: 50%;
     padding-left: 10px;
@@ -5175,10 +5419,9 @@ span.before-red:before {
     width: 100%;
   }
   .articles .section1 .item .image {
-    height: 50%;
+    height: 300px;
   }
   .articles .section1 .item {
-    margin-bottom: 70%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;

@@ -13,7 +13,7 @@
         <link rel="stylesheet" href="https://use.typekit.net/wds2vlt.css">
 
         <!--[if (gt IE 9)|!(IE)]><!-->
-        <link href="static/css/main7sq3lu.min.css" rel="stylesheet" type="text/css">
+        <link href="static/css/mainioo0of.min.css" rel="stylesheet" type="text/css">
         <!--<![endif]-->
         <meta property="og:title" content="#{data.title}">
         <meta property="og:title" content="">
@@ -142,7 +142,7 @@
                                 </div>
                             </div>
                             <div class="right">
-                                <div class="show" v-if="menu2show==1">
+                                <div class="show1" v-if="menu2show==1">
                                     <div class="head-text">Широкий выбор1</div>
                                     <div class="btn item">Специальные пластичные смазки</div>
                                     <div class="btn item">Масла для ДВС</div>
@@ -156,7 +156,7 @@
                                     <div class="btn item">Пожаробезопасные гидравлические жидкости;</div>
                                     <div class="btn item">Компрессионные масла</div>
                                 </div>
-                                <div class="show" v-if="menu2show==2">
+                                <div class="show1" v-if="menu2show==2">
                                     <div class="head-text">Широкий выбор2</div>
                                     <div class="btn item">Специальные пластичные смазки</div>
                                     <div class="btn item">Масла для ДВС</div>
@@ -170,7 +170,7 @@
                                     <div class="btn item">Пожаробезопасные гидравлические жидкости;</div>
                                     <div class="btn item">Компрессионные масла</div>
                                 </div>
-                                <div class="show" v-if="menu2show==3">
+                                <div class="show1" v-if="menu2show==3">
                                     <div class="head-text">Широкий выбор3</div>
                                     <div class="btn item">Специальные пластичные смазки</div>
                                     <div class="btn item">Масла для ДВС</div>
@@ -184,7 +184,7 @@
                                     <div class="btn item">Пожаробезопасные гидравлические жидкости;</div>
                                     <div class="btn item">Компрессионные масла</div>
                                 </div>
-                                <div class="show" v-if="menu2show==4">
+                                <div class="show1" v-if="menu2show==4">
                                     <div class="head-text">Широкий выбор4</div>
                                     <div class="btn item">Специальные пластичные смазки</div>
                                     <div class="btn item">Масла для ДВС</div>
@@ -198,7 +198,7 @@
                                     <div class="btn item">Пожаробезопасные гидравлические жидкости;</div>
                                     <div class="btn item">Компрессионные масла</div>
                                 </div>
-                                <div class="show" v-if="menu2show==5">
+                                <div class="show1" v-if="menu2show==5">
                                     <div class="head-text">Широкий выбор5</div>
                                     <div class="btn item">Специальные пластичные смазки</div>
                                     <div class="btn item">Масла для ДВС</div>
@@ -212,7 +212,7 @@
                                     <div class="btn item">Пожаробезопасные гидравлические жидкости;</div>
                                     <div class="btn item">Компрессионные масла</div>
                                 </div>
-                                <div class="show" v-if="menu2show==6">
+                                <div class="show1" v-if="menu2show==6">
                                     <div class="head-text">Широкий выбор</div>
                                     <div class="btn item">Специальные пластичные смазки</div>
                                     <div class="btn item">Масла для ДВС</div>
@@ -231,6 +231,48 @@
                     </div>
                 </div>
             </header>
+            <div class="window" v-bind:class="{ 'show' : win2 }">
+                <div class="win-out" v-on:click="closeWindows"></div>
+                <div class="win">
+                    <div class="head">
+                        <div class="text">Обратный звонок</div>
+                        <div class="close" v-on:click="closeWindows"></div>
+                    </div>
+                    <div class="content">
+                        <input class="input" type="email" placeholder="Введите ваш E-mail">
+                        <input class="input" type="tel" placeholder="Введите ваш телефон">
+                        <div class="btn">Восстановить</div>
+                    </div>
+                </div>
+            </div>
+            <div class="window" v-bind:class="{ 'show' : win6 }">
+                <div class="win-out" v-on:click="closeWindows"></div>
+                <div class="win prod">
+                    <div class="head">
+                        <div class="text">Вы добавили товар в корзину</div>
+                        <div class="close" v-on:click="closeWindows"></div>
+                    </div>
+                    <div class="content">
+                        <div class="tovar">
+                            <img class="img" src="static/img/general/tovar1.png">
+                            <div class="op">
+                                <div class="t">Гидравлическое масло KATANA KISSAKI CLP 68</div>
+                                <div class="pay">6 432&nbsp;<span>P</span>
+                                </div>
+                                <div class="num">
+                                    <div class="i" v-on:click="win6minus">-</div>
+                                    <div class="nums">{{ win6num}}</div>
+                                    <div class="i" v-on:click="win6plus">+</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="btn-div">
+                            <div class="btn white">Продолжить покупки</div>
+                            <div class="btn">Перейти в корзину</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div class="main card">
                 <div class="container m">
                     <div class="top-menu">
@@ -270,11 +312,11 @@
                                     </div>
                                     <div class="b">
                                         <div class="l">
-                                            <div class="btn">
+                                            <div class="btn" v-on:click="showWin(6)">
                                                 <i class="fas fa-shopping-basket"></i>Купить</div>
                                         </div>
                                         <div class="r">
-                                            <div class="btn">Заказать консультацию технолога</div>
+                                            <div class="btn" v-on:click="showWin(2)">Заказать консультацию технолога</div>
                                         </div>
                                     </div>
                                 </div>
@@ -286,40 +328,90 @@
                     <div class="container">
                         <div class="head-t">Таблица KATANA KISSAKI CLP 68</div>
                         <div class="table">
-                            <div class="th">
-                                <div class="td">Индикатор</div>
-                                <div class="td">Метод измерения</div>
-                                <div class="td">Типичное масло HVLP 68</div>
-                                <div class="td">Sutorimu HVLP 68</div>
-                                <div class="td">Преимущества от использования</div>
+                            <div class="item">
+                                <div class="th">
+                                    <div class="td">Индикатор</div>
+                                </div>
+                                <div class="tr">
+                                    <div class="td">Кинематическая вязкость при 40 С, cS</div>
+                                </div>
+                                <div class="tr">
+                                    <div class="td">Кинематическая вязкость при 40 С, cS</div>
+                                </div>
+                                <div class="tr">
+                                    <div class="td">Кинематическая вязкость при 40 С, cS</div>
+                                </div>
+                                <div class="tr">
+                                    <div class="td">Кинематическая вязкость при 40 С, cS</div>
+                                </div>
                             </div>
-                            <div class="tr">
-                                <div class="td">Кинематическая вязкость при 40 С, cS</div>
-                                <div class="td">ASTM D445</div>
-                                <div class="td">68</div>
-                                <div class="td greenbg">445</div>
-                                <div class="td">Повышает динамические свойства</div>
+                            <div class="item">
+                                <div class="th">
+                                    <div class="td">Метод измерения</div>
+                                </div>
+                                <div class="tr">
+                                    <div class="td">ASTM D445</div>
+                                </div>
+                                <div class="tr">
+                                    <div class="td">ASTM D445</div>
+                                </div>
+                                <div class="tr">
+                                    <div class="td">ASTM D445</div>
+                                </div>
+                                <div class="tr">
+                                    <div class="td">ASTM D445</div>
+                                </div>
                             </div>
-                            <div class="tr">
-                                <div class="td">Кинематическая вязкость при 40 С, cS</div>
-                                <div class="td">ASTM D445</div>
-                                <div class="td">68</div>
-                                <div class="td">445</div>
-                                <div class="td">Повышает динамические свойства</div>
+                            <div class="item">
+                                <div class="th">
+                                    <div class="td">Типичное масло HVLP 68</div>
+                                </div>
+                                <div class="tr">
+                                    <div class="td">68</div>
+                                </div>
+                                <div class="tr">
+                                    <div class="td">68</div>
+                                </div>
+                                <div class="tr">
+                                    <div class="td">68</div>
+                                </div>
+                                <div class="tr">
+                                    <div class="td">68</div>
+                                </div>
                             </div>
-                            <div class="tr">
-                                <div class="td">Кинематическая вязкость при 40 С, cS</div>
-                                <div class="td">ASTM D445</div>
-                                <div class="td">68</div>
-                                <div class="td redbg">445</div>
-                                <div class="td">Повышает динамические свойства</div>
+                            <div class="item">
+                                <div class="th">
+                                    <div class="td">Sutorimu HVLP 68</div>
+                                </div>
+                                <div class="tr">
+                                    <div class="td greenbg">445</div>
+                                </div>
+                                <div class="tr">
+                                    <div class="td">445</div>
+                                </div>
+                                <div class="tr">
+                                    <div class="td redbg">445</div>
+                                </div>
+                                <div class="tr">
+                                    <div class="td">445</div>
+                                </div>
                             </div>
-                            <div class="tr">
-                                <div class="td">Кинематическая вязкость при 40 С, cS</div>
-                                <div class="td">ASTM D445</div>
-                                <div class="td">68</div>
-                                <div class="td">445</div>
-                                <div class="td">Повышает динамические свойства</div>
+                            <div class="item">
+                                <div class="th">
+                                    <div class="td">Преимущества от использования</div>
+                                </div>
+                                <div class="tr">
+                                    <div class="td">Повышает динамические свойства</div>
+                                </div>
+                                <div class="tr">
+                                    <div class="td">Повышает динамические свойства</div>
+                                </div>
+                                <div class="tr">
+                                    <div class="td">Повышает динамические свойства</div>
+                                </div>
+                                <div class="tr">
+                                    <div class="td">Повышает динамические свойства</div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -330,25 +422,39 @@
                         <div class="content">
                             <div class="left srav">
                                 <div class="table t2">
-                                    <div class="th">
-                                        <div class="td double">Индикатор</div>
-                                        <div class="td">Метод измерения</div>
+                                    <div class="item">
+                                        <div class="th">
+                                            <div class="td double">Индикатор</div>
+                                        </div>
+                                        <div class="tr">
+                                            <div class="td double">Кинематическая вязкость при 40 С, cS</div>
+                                        </div>
+                                        <div class="tr">
+                                            <div class="td double">Кинематическая вязкость при 40 С, cS</div>
+                                        </div>
+                                        <div class="tr">
+                                            <div class="td double">Кинематическая вязкость при 40 С, cS</div>
+                                        </div>
+                                        <div class="tr">
+                                            <div class="td double">Кинематическая вязкость при 40 С, cS</div>
+                                        </div>
                                     </div>
-                                    <div class="tr">
-                                        <div class="td double">Кинематическая вязкость при 40 С, cS</div>
-                                        <div class="td">40 С, cS</div>
-                                    </div>
-                                    <div class="tr">
-                                        <div class="td double">Кинематическая вязкость при 40 С, cS</div>
-                                        <div class="td triple">40 С, cS</div>
-                                    </div>
-                                    <div class="tr">
-                                        <div class="td double">Кинематическая вязкость при 40 С, cS</div>
-                                        <div class="td">40 С, cS</div>
-                                    </div>
-                                    <div class="tr">
-                                        <div class="td double">Кинематическая вязкость при 40 С, cS</div>
-                                        <div class="td">40 С, cS</div>
+                                    <div class="item">
+                                        <div class="th">
+                                            <div class="td">Метод измерения</div>
+                                        </div>
+                                        <div class="tr">
+                                            <div class="td">40 С, cS</div>
+                                        </div>
+                                        <div class="tr">
+                                            <div class="td triple">40 С, cS</div>
+                                        </div>
+                                        <div class="tr">
+                                            <div class="td">40 С, cS</div>
+                                        </div>
+                                        <div class="tr">
+                                            <div class="td">40 С, cS</div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -782,7 +888,7 @@
                                 </div>
                             </div>
                             <div class="menu">
-                                <div class="line"></div><a class="menu-item hover-red" href="#">Магазин</a><a class="menu-item hover-red" href="#">Партнерска</a><a class="menu-item hover-red" href="company.html">О компании</a><a class="menu-item hover-red" href="#">Команда</a>
+                                <div class="line"></div><a class="menu-item hover-red" href="#">Магазин</a><a class="menu-item hover-red" href="#">Партнерам</a><a class="menu-item hover-red" href="company.html">О компании</a><a class="menu-item hover-red" href="#">Команда</a>
                                 <a
                                 class="menu-item hover-red" href="#">Вакансии</a><a class="menu-item hover-red" href="reviews.html">Отзывы</a>
                             </div>
@@ -825,7 +931,7 @@
         </div>
 
 
-        <script src="static/js/main7sq3lu.min.js"></script>
+        <script src="static/js/mainioo0of.min.js"></script>
     </body>
 
 </html>
