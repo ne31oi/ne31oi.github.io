@@ -249,6 +249,9 @@ body {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
 }
+.dropdown-menu * {
+  overflow: none;
+}
 .katalog_page .section8 .container .aside .search .block .v-select .open-indicator:after {
   border-color: #eff0f2;
   border-style: solid;
@@ -374,6 +377,8 @@ body {
   background-size: 100%;
   background-position-y: 55%;
   background-repeat: no-repeat;
+  margin-top: 8px;
+  margin-bottom: 8px;
 }
 .header .logo,
 .header .menu-span {
@@ -388,7 +393,6 @@ body {
 }
 .header .menu-left {
   background-image: url("../img/general/menu2.svg");
-  background-size: 100%;
 }
 .header-menu1,
 .header-menu2 {
@@ -793,9 +797,12 @@ body {
   font-size: 12.5px;
   font-weight: 400;
   font-family: PT Sans;
+  background-color: #121212;
+}
+.footer .section {
+  background-color: #080808;
 }
 .footer .container {
-  background-color: #121212;
   height: auto;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -821,7 +828,7 @@ body {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
-  padding: 45px 30px;
+  padding: 65px 30px;
 }
 .footer .container .top {
   -webkit-box-orient: vertical;
@@ -847,6 +854,7 @@ body {
   background-image: url("../img/general/footer-map.png");
   background-position: center center;
   background-repeat: no-repeat;
+  background-size: 92%;
 }
 .footer .container .top .info .inform {
   display: -moz-flex;
@@ -985,7 +993,9 @@ body {
   color: #fff;
 }
 .index .section1 {
-  height: 861px;
+  min-height: 200px;
+  max-height: 840px;
+  height: calc(100vh - 100px);
   background-image: url("../img/general/index-head.png");
   background-position: center center;
   background-size: cover;
@@ -1118,7 +1128,7 @@ body {
 }
 .index .section2 {
   position: relative;
-  padding-bottom: 20px;
+  padding-bottom: 100px;
 }
 .index .section2 .container {
   -webkit-box-orient: vertical;
@@ -1132,6 +1142,17 @@ body {
   font-size: 30px;
   margin-top: 170px;
   margin-bottom: 70px;
+  position: relative;
+}
+.index .section2 h2:before {
+  background-color: #da0812;
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  bottom: -80px;
+  left: calc(50% - 6px);
+  z-index: 1;
 }
 .index .section2 .introduction {
   background-image: url("../img/general/index-banka.png");
@@ -2105,13 +2126,14 @@ span.before-red:before {
   position: relative;
 }
 .top-menu .right .btn:before {
-  content: "";
+  content: "+";
   position: absolute;
   width: 14px;
   height: 1px;
-  top: 50%;
+  top: calc(50% - 11px);
   left: 15px;
-  background-color: #da0812;
+  font-size: 17px;
+  color: #da0812;
   z-index: 10;
 }
 .top-menu .right .btn:hover {
@@ -5133,9 +5155,12 @@ span.before-red:before {
   .contact_page .section1 .container .content .message .form .btn {
     margin-top: 0;
   }
+  .footer .container .bottom .copy {
+    margin-left: 30px;
+  }
   .header,
   .m {
-    padding: 0 20px;
+    padding: 0 60px;
   }
   .articles .section1 .item .image .img {
     height: 100%;
@@ -5177,6 +5202,18 @@ span.before-red:before {
   }
 }
 @media (max-width: 960px) {
+  .index .section2 .introduction {
+    background-position: center top;
+    background-size: 50%;
+    padding-top: 340px;
+  }
+  .index .section2 h2:before {
+    bottom: -40px;
+  }
+  .index .section2 .introduction .left .in-item,
+  .index .section2 .introduction .right .in-item {
+    background-image: none;
+  }
   .compare .section1 .form {
     height: auto;
     -ms-flex-wrap: wrap;
@@ -5237,6 +5274,34 @@ span.before-red:before {
   }
   .index .section1 .submenu .submenu-item {
     width: 150px;
+  }
+  .index .section3 .top,
+  .ofcompany .top {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding-bottom: 10px;
+  }
+  .index .section3 .top .right,
+  .ofcompany .top .right {
+    margin-top: 20px;
+  }
+  .index .section3 .top .right .text,
+  .ofcompany .top .right .text {
+    padding: 20px;
+  }
+  .ofcompany .bottom .h2 {
+    margin-top: 0;
+  }
+  .footer .container .top .info .inform {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer .container .top .menus .info .logo {
+    margin-bottom: 60px;
   }
 }
 @media (max-width: 767px) {
@@ -5472,6 +5537,14 @@ span.before-red:before {
   }
 }
 @media (max-width: 600px) {
+  .header .container-menu .menu_big .menu_footer a {
+    font-size: 14px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  .index .section4 .container .text {
+    width: 100%;
+  }
   .window .win {
     position: absolute;
     top: 0;
@@ -5678,6 +5751,12 @@ span.before-red:before {
   .contact_page .section1 .container .head-t {
     font-size: 22px;
   }
+  .index .section2 .container {
+    padding-top: 40px;
+  }
+  .index .section2 h2:before {
+    bottom: -20px;
+  }
   .katalog_page .section10 .container .btn {
     font-size: 14px;
   }
@@ -5859,16 +5938,42 @@ span.before-red:before {
     margin: 0;
   }
   .index .section1 .submenu .submenu-item {
-    background-color: rgba(0,0,0,0.5);
+    margin: 0;
+    background-color: rgba(0,0,0,0.8);
+  }
+  .index .section1 .submenu .submenu-item:hover {
+    background-color: rgba(230,0,0,0.8);
   }
   .index .section2 h2 {
     margin-top: 0;
+    padding-bottom: 30px;
   }
   .index .section2 .introduction {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    background-size: 100%;
+    background-position: center top;
+    padding-top: 350px;
+  }
+  .index .section2 .introduction .left .in-item,
+  .index .section2 .introduction .right .in-item {
+    padding-right: 25px;
+  }
+  .index .section2 .introduction .in-item .head,
+  .index .section2 .introduction .in-item .text {
+    position: relative;
+    padding-left: 35px;
+  }
+  .index .section2 .introduction .in-item .head:before {
+    content: "\f00c";
+    font-family: "Font Awesome 5 Free";
+    content: "\f00c";
+    position: absolute;
+    top: 10px;
+    font-weight: 900;
+    left: 0;
   }
   .index .section2 .introduction .in-item {
     width: 100%;
@@ -5987,7 +6092,7 @@ span.before-red:before {
   .index .section1 .submenu .submenu-item:hover {
     margin-top: 0;
     height: 85px;
-    background: none !important;
+    background-image: none;
   }
   .index .section3 .top .left .head,
   .ofcompany .top .left .head {
