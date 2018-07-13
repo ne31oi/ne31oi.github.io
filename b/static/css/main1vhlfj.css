@@ -177,8 +177,8 @@ blockquote {
 }
 @font-face {
   font-family: 'PT Sans';
-  src: url("../PtSans/PTSans-Regular.eot");
-  src: url("../PtSans/PTSans-Regular.eot?#iefix") format('embedded-opentype'), url("../PtSans/PTSans-Regular.woff2") format('woff2'), url("../PtSans/PTSans-Regular.woff") format('woff'), url("../PtSans/PTSans-Regular.ttf") format('truetype'), url("../PtSans/PTSans-Regular.svg#PTSans-Regular") format('svg');
+  src: url("../fonts/PtSans/PTSans-Regular.eot");
+  src: url("../fonts/PtSans/PTSans-Regular.eot?#iefix") format('embedded-opentype'), url("../fonts/PtSans/PTSans-Regular.woff2") format('woff2'), url("../fonts/PtSans/PTSans-Regular.woff") format('woff'), url("../fonts/PtSans/PTSans-Regular.ttf") format('truetype'), url("../fonts/PtSans/PTSans-Regular.svg#PTSans-Regular") format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -717,7 +717,7 @@ body {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-size: 100% 100%;
+  background-size: auto 100%;
   background-position: center center;
   background-blend-mode: luminosity;
 }
@@ -1676,7 +1676,8 @@ body {
   margin-left: 20px;
 }
 .company .section3 .container .message .form .btn {
-  width: 119px;
+  width: 155px;
+  padding-left: 37px;
   -ms-flex-item-align: end;
       align-self: flex-end;
   margin-top: 20px;
@@ -1694,7 +1695,7 @@ body {
   width: 20px;
   height: 1px;
   top: 10px;
-  left: -40px;
+  left: 0;
   background-color: #da0812;
 }
 span.before-red {
@@ -3467,6 +3468,9 @@ span.before-red:before {
       -ms-flex-align: center;
           align-items: center;
 }
+.katalog_page .section8 .container .content .item .bottom .btn .basket img {
+  width: 50%;
+}
 .katalog_page .section8 .container .content .item .bottom .btn .basket .fa-shopping-basket {
   font-size: 22px;
 }
@@ -3916,9 +3920,10 @@ span.before-red:before {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  overflow-y: auto;
 }
 .window .win-out {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
@@ -3937,7 +3942,6 @@ span.before-red:before {
           flex-direction: column;
   z-index: 999;
   overflow-y: auto;
-  max-height: 100vh;
 }
 .window .win .thnx {
   padding: 0 30px;
@@ -4100,6 +4104,7 @@ span.before-red:before {
   text-align: left;
   margin-bottom: 20px;
   box-sizing: border-box;
+  border: 1px solid rgba(0,0,0,0.2);
 }
 .window .win .content .btn {
   width: 193px;
@@ -5087,6 +5092,9 @@ span.before-red:before {
 .index .section1 {
   padding: 0;
 }
+.compare .section1 .form .search input {
+  padding-right: 45px;
+}
 @media (max-width: 1280px) {
   .index .section2 .s1,
   .index .section2 .s2 {
@@ -5122,6 +5130,9 @@ span.before-red:before {
   }
 }
 @media (max-width: 1180px) {
+  .contact_page .section1 .container .content .message .form .btn {
+    margin-top: 0;
+  }
   .header,
   .m {
     padding: 0 20px;
@@ -5143,8 +5154,65 @@ span.before-red:before {
   .srav .table {
     overflow-y: scroll;
   }
+  .header .katalog_menu .content .left .item {
+    padding-left: 60px;
+  }
+  .header .katalog_menu .content .left .item .bg {
+    left: -45px;
+  }
+  .contact_page .section1 .container .content .message .form .pretty {
+    white-space: normal;
+  }
+  .katalog_page .section8 .container .aside {
+    width: 250px;
+  }
+  .katalog_page .section8 .container .content .item {
+    width: 49%;
+  }
+  .katalog_page .section4 .container .text .head {
+    font-size: 40px;
+  }
+  .katalog_page .section4 .container .form {
+    width: 500px;
+  }
 }
 @media (max-width: 960px) {
+  .compare .section1 .form {
+    height: auto;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .compare .section1 .form .vs2 {
+    width: 49%;
+    padding: 0;
+    margin: 0;
+  }
+  .compare .section1 .form .v-select {
+    width: 49%;
+    padding: 0;
+    margin: 0;
+  }
+  .compare .section1 .form .search {
+    width: calc(50% + 15px);
+    height: 50px;
+    margin-top: 20px;
+  }
+  .compare .section1 .form .btn {
+    height: 50px;
+    margin-top: 20px;
+  }
+  .compare .section1 .form .vs2 .v-select {
+    width: 100%;
+  }
+  .header .katalog_menu .content .right {
+    height: calc(100vh - 200px);
+    overflow-y: scroll;
+  }
+  .header .katalog_menu .content .left .item {
+    height: 70px;
+    padding-bottom: 20px;
+    font-size: 23px;
+  }
   .basket .section1 .table .cell .num {
     font-size: 20px;
   }
@@ -5172,19 +5240,128 @@ span.before-red:before {
   }
 }
 @media (max-width: 767px) {
-  .index .section3 .top .left {
+  .katalog_page .section4 .container .text .head {
+    font-size: 30px;
+  }
+  .katalog_page .section7 .head-text {
+    font-size: 40px;
+  }
+  .katalog_page .section10 .container {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .katalog_page .section10 .container .btn {
+    width: 32%;
+    margin-bottom: 10px;
+  }
+  .katalog_page .section8 .container .aside {
+    width: 200px;
+  }
+  .katalog_page .section8 .container .aside .search .block {
+    padding: 20px;
+  }
+  .katalog_page .section8 .container .aside .search .block .v-select .open-indicator {
+    background: #eff0f2;
+  }
+  .katalog_page .section8 .container .content .item .bottom {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .katalog_page .section8 .container .content .item .bottom .left,
+  .katalog_page .section8 .container .content .item .bottom .btn {
+    width: 100%;
+  }
+  .katalog_page .section8 .container .content .item .bottom .left {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0;
+    margin-bottom: 10px;
+  }
+  .header .katalog_menu .content .right {
+    margin: 0;
+  }
+  .header .katalog_menu .content .left .item {
+    font-size: 18px;
+  }
+  .katalog_page .section8 .container .content .pages .page .item {
+    width: 30px;
+    height: 40px;
+  }
+  .katalog_page .section8 .container .content .pages .link {
+    height: 40px;
+  }
+  .katalog_page .section4 .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contact_page .section1 .container .content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contact_page .section1 .container .content .text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+    padding-right: 20px;
+  }
+  .contact_page .section1 .container .content .message {
+    margin-top: 40px;
+    width: 100%;
+  }
+  .compare .section1 .items .item .img {
+    height: 50%;
+  }
+  .compare .section1 .items .item .head {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .company .section3 .container .req .content {
+    padding: 20px;
+  }
+  .header .katalog_menu .content .right .item {
+    height: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .header .katalog_menu .content .left .item {
+    padding-left: 20px;
+  }
+  .header .katalog_menu .content .left {
+    width: 100%;
+  }
+  .header .katalog_menu .content .right {
+    z-index: 10;
+    width: 65%;
+    margin-left: -55%;
+    height: calc(100vh - 128px);
+  }
+  .index .section3 .top .left,
+  .ofcompany .top .left {
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1;
   }
-  .index .section3 .bottom .h2 {
+  .index .section3 .bottom .h2,
+  .ofcompany .bottom .h2 {
     font-size: 35px;
     margin-top: 30px;
   }
   .top-header-text {
     margin-left: 85px;
   }
-  .index .section3 .bottom .h2:before {
+  .index .section3 .bottom .h2:before,
+  .ofcompany .bottom .h2:before {
     content: "";
     background-color: #da0812;
     position: absolute;
@@ -5295,6 +5472,110 @@ span.before-red:before {
   }
 }
 @media (max-width: 600px) {
+  .window .win {
+    position: absolute;
+    top: 0;
+  }
+  .reviews .section1 .item {
+    width: 100%;
+  }
+  .reviews .section2 .item {
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  .katalog_page .section7 .clients .item {
+    width: 45%;
+  }
+  .katalog_page .section2 .bottom .items {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .katalog_page .section2 .bottom .items .item {
+    width: 100%;
+  }
+  .katalog_page .section10 .container .btn {
+    width: 49%;
+  }
+  .katalog_page .section8 .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .katalog_page .section8 .container .aside {
+    width: 100%;
+  }
+  .contact_page .section1 .container .head-t {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  .contact_page .section1 .container .content .text {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .compare .section1 .items {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .compare .section1 .items .item {
+    margin: 0;
+    margin-top: 20px;
+  }
+  .company .section1 {
+    padding: 0;
+  }
+  .company .section1 .text {
+    padding: 30px;
+    margin-bottom: 1px;
+  }
+  .prem .items,
+  .company .section3 .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .company .section3 .container .req,
+  .company .section3 .container .message {
+    width: 100%;
+  }
+  .company .section3 .container .message .form .input label {
+    font-size: 10px;
+    text-indent: 1;
+  }
+  .company .section3 .container .message .form .input {
+    font-size: 10px;
+  }
+  .pretty .state label:after,
+  .pretty .state label:before {
+    top: 1px;
+  }
+  .company .section3 .container .message .form .input svg {
+    margin-right: 23px;
+  }
+  .prem .items .item {
+    width: auto;
+  }
+  .prem .h2:before {
+    left: -10px;
+    top: 70px;
+  }
+  .company .top-header-text {
+    padding-top: 100px;
+    padding-bottom: 150px;
+  }
+  .company .top-header-text::before {
+    top: 134px;
+  }
+  .header .katalog_menu .content {
+    padding-top: 30px;
+  }
   .basket .section1 .before_red_sh,
   .card .section2 .bot,
   .slide .container .head-text,
@@ -5336,6 +5617,9 @@ span.before-red:before {
             flex: none;
     width: 100%;
   }
+  .slide .container .item {
+    width: 100%;
+  }
   .card .section1 .item,
   .card .section2 .content {
     -webkit-box-orient: vertical;
@@ -5353,8 +5637,138 @@ span.before-red:before {
   .card .section2 .bot .btn {
     margin-bottom: 20px;
   }
+  .slide .container .head-text .text {
+    font-size: 43px;
+  }
+  .slide2 .head,
+  .slide2 .text {
+    margin: 0;
+  }
+  .card .section2 .content .left,
+  .card .section2 .content .right {
+    width: 100%;
+  }
+  .card .section2 .bot .btn {
+    margin-right: 0;
+  }
+  .card .section1 .item .text .bottom .t,
+  .card .section1 .item .text .bottom .b {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .card .section1 .item .text .bottom .l {
+    margin-bottom: 10px;
+    padding-right: 0;
+    width: auto;
+  }
+  .card .section1 .item .image img {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .card .section1 .item .text {
+    padding-left: 0;
+  }
+  .contact_page .map {
+    height: 400px;
+  }
 }
 @media (max-width: 480px) {
+  .contact_page .section1 .container .head-t {
+    font-size: 22px;
+  }
+  .katalog_page .section10 .container .btn {
+    font-size: 14px;
+  }
+  .katalog_page .section8 .container .content .item {
+    width: 100%;
+  }
+  .katalog_page .section8 .container .content {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .katalog_page .section4 .container .form {
+    width: 100vw;
+    padding: 30px;
+    height: 302px;
+  }
+  .window .win {
+    width: 90%;
+  }
+  .window .win .head {
+    font-size: 25px;
+  }
+  .window .win .head .close {
+    top: 20px;
+    right: 10px;
+  }
+  .katalog_page .section4 {
+    padding-bottom: 0;
+  }
+  .window .win .content .btn-div {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .window .win .content .tovar {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .window .win .content .tovar img {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .window .win .content .tovar .op {
+    width: 100%;
+  }
+  .window .win .content .btn-div .white {
+    margin-bottom: 20px;
+  }
+  .katalog_page .section8 .container .content .item {
+    width: 100%;
+  }
+  .katalog_page .section8 .container .content .pages .link {
+    width: 60px;
+  }
+  .katalog_page .section8 .container .content .pages .page .item {
+    width: 20px;
+    font-size: 20px;
+  }
+  .katalog_page .section7 .clients .item {
+    width: 100%;
+  }
+  .katalog_page .section3 .container {
+    padding-left: 0;
+  }
+  .compare .section1 .form .v-select,
+  .compare .section1 .form .vs2 {
+    width: 100%;
+  }
+  .compare .section1 .form .vs2 {
+    margin-top: 20px;
+  }
+  .compare .section1 .form .search {
+    width: 100%;
+    padding-right: 0;
+  }
+  .compare .section1 .form .search .fa-search {
+    right: 0;
+  }
+  .compare .section1 .items .item .img {
+    height: auto;
+    width: 80%;
+  }
+  .slide .container .head-text .text {
+    font-size: 32px;
+  }
+  .card .section1 .item .image img {
+    width: 100%;
+  }
   .basket .section1 .send_to_email .send .form .subsc-btn {
     padding-right: 10px;
     padding-left: 10px;
@@ -5473,20 +5887,23 @@ span.before-red:before {
   .index .section2 .in-btn {
     margin-top: 0;
   }
-  .index .section3 .top {
+  .index .section3 .top,
+  .ofcompany .top {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
     padding-bottom: 10px;
   }
-  .index .section3 .bottom .items {
+  .index .section3 .bottom .items,
+  .ofcompany .bottom .items {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .index .section3 .bottom .items .item {
+  .index .section3 .bottom .items .item,
+  .ofcompany .bottom .items .item {
     width: 100%;
     margin-bottom: 30px;
   }
@@ -5525,14 +5942,12 @@ span.before-red:before {
     padding-left: 30px;
     padding-right: 30px;
   }
-  .index .section3 .top .right {
+  .index .section3 .top .right,
+  .ofcompany .top .right {
     margin-top: 20px;
   }
   .index .section1 .submenu .submenu-item {
     width: 100%;
-  }
-  .header .container-menu {
-    margin-top: -300%;
   }
   .header .container-menu .menu_big .menu_content a {
     height: 110px;
@@ -5543,10 +5958,12 @@ span.before-red:before {
   .index .section2 .in-btn {
     width: 90%;
   }
-  .index .section3 .bottom .h2 {
+  .index .section3 .bottom .h2,
+  .ofcompany .bottom .h2 {
     font-size: 30px;
   }
-  .index .section3 .bottom .h2:before {
+  .index .section3 .bottom .h2:before,
+  .ofcompany .bottom .h2:before {
     width: 88px;
   }
   .index .section4 .container h2 {
@@ -5572,10 +5989,12 @@ span.before-red:before {
     height: 85px;
     background: none !important;
   }
-  .index .section3 .top .left .head {
+  .index .section3 .top .left .head,
+  .ofcompany .top .left .head {
     font-size: 40px;
   }
-  .index .section3 .top .left {
+  .index .section3 .top .left,
+  .ofcompany .top .left {
     padding-right: 0;
   }
   .index .section4 .container .form {
@@ -5587,7 +6006,8 @@ span.before-red:before {
   .footer .container .top .menus .menu {
     font-size: 10px;
   }
-  .index .section3 .top .right .text {
+  .index .section3 .top .right .text,
+  .ofcompany .top .right .text {
     padding: 20px;
   }
   .article .section1 .content .content-top {
