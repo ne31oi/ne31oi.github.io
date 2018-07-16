@@ -13,7 +13,7 @@
         <link rel="stylesheet" href="https://use.typekit.net/wds2vlt.css">
 
         <!--[if (gt IE 9)|!(IE)]><!-->
-        <link href="static/css/mainw41gi.min.css" rel="stylesheet" type="text/css">
+        <link href="static/css/mainpooho.min.css" rel="stylesheet" type="text/css">
         <!--<![endif]-->
         <meta property="og:title" content="#{data.title}">
         <meta property="og:title" content="">
@@ -263,30 +263,30 @@
                                             <div class="otr">{{demo3.value[0]}}</div>
                                             <div class="otr">{{demo3.value[1]}}</div>
                                         </div>
-                                    </div>
-                                    <div class="item">
-                                        <v-select v-model="select1" :options="['foo','bar']" placeholder="Сфера приминения"></v-select>
-                                        <div class="text">Класс вязкости</div>
-                                        <p-check color="danger">Вязкость 1</p-check>
-                                        <p-check color="danger">Вязкость 1</p-check>
-                                        <p-check color="danger">Вязкость 1</p-check>
-                                        <p-check color="danger">Вязкость 1</p-check>
-                                    </div>
-                                    <div class="item">
-                                        <v-select v-model="select1" :options="['foo','bar']" placeholder="Сфера приминения"></v-select>
-                                        <div class="text">Класс вязкости</div>
-                                        <p-check color="danger">Вязкость 1</p-check>
-                                        <p-check color="danger">Вязкость 1</p-check>
-                                        <p-check color="danger">Вязкость 1</p-check>
-                                        <p-check color="danger">Вязкость 1</p-check>
-                                    </div>
-                                    <div class="item">
-                                        <v-select v-model="select1" :options="['foo','bar']" placeholder="Сфера приминения"></v-select>
-                                        <div class="text">Класс вязкости</div>
-                                        <p-check color="danger">Вязкость 1</p-check>
-                                        <p-check color="danger">Вязкость 1</p-check>
-                                        <p-check color="danger">Вязкость 1</p-check>
-                                        <p-check color="danger">Вязкость 1</p-check>
+                                        <div class="item">
+                                            <v-select v-model="select1" :options="['foo','bar']" placeholder="Сфера приминения"></v-select>
+                                            <div class="text">Класс вязкости</div>
+                                            <p-check color="danger">Вязкость 1</p-check>
+                                            <p-check color="danger">Вязкость 1</p-check>
+                                            <p-check color="danger">Вязкость 1</p-check>
+                                            <p-check color="danger">Вязкость 1</p-check>
+                                        </div>
+                                        <div class="item">
+                                            <v-select v-model="select2" :options="['foo','bar']" placeholder="Сфера приминения"></v-select>
+                                            <div class="text">Класс вязкости</div>
+                                            <p-check color="danger">Вязкость 1</p-check>
+                                            <p-check color="danger">Вязкость 1</p-check>
+                                            <p-check color="danger">Вязкость 1</p-check>
+                                            <p-check color="danger">Вязкость 1</p-check>
+                                        </div>
+                                        <div class="item">
+                                            <v-select v-model="select3" :options="['foo','bar']" placeholder="Сфера приминения"></v-select>
+                                            <div class="text">Класс вязкости</div>
+                                            <p-check color="danger">Вязкость 1</p-check>
+                                            <p-check color="danger">Вязкость 1</p-check>
+                                            <p-check color="danger">Вязкость 1</p-check>
+                                            <p-check color="danger">Вязкость 1</p-check>
+                                        </div>
                                     </div>
                                     <div class="btns">
                                         <div class="btn clear">Сбросить</div>
@@ -294,7 +294,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="reklama">
+                            <div class="reklama" v-if="banner">
                                 <div class="btn more">Подробнее</div>
                                 <div class="btn name">KATANA HABAKi TO-4 10w</div>
                             </div>
@@ -308,7 +308,8 @@
                                 <div class="bottom">
                                     <div class="left">
                                         <div class="t">Цена партнера</div>
-                                        <div class="b">24 000 Р</div>
+                                        <div class="b">24 000 <span class="rouble">a</span>
+                                        </div>
                                     </div>
                                     <div class="btn">Подробнее
                                         <div class="basket" v-on:click="showWin(6)">
@@ -325,7 +326,8 @@
                                 <div class="bottom">
                                     <div class="left">
                                         <div class="t">Цена партнера</div>
-                                        <div class="b">24 000 Р</div>
+                                        <div class="b">24 000 <span class="rouble">a</span>
+                                        </div>
                                     </div>
                                     <div class="btn">Подробнее
                                         <div class="basket" v-on:click="showWin(6)">
@@ -342,7 +344,8 @@
                                 <div class="bottom">
                                     <div class="left">
                                         <div class="t">Цена партнера</div>
-                                        <div class="b">24 000 Р</div>
+                                        <div class="b">24 000 <span class="rouble">a</span>
+                                        </div>
                                     </div>
                                     <div class="btn">Подробнее
                                         <div class="basket" v-on:click="showWin(6)">
@@ -359,7 +362,8 @@
                                 <div class="bottom">
                                     <div class="left">
                                         <div class="t">Цена партнера</div>
-                                        <div class="b">24 000 Р</div>
+                                        <div class="b">24 000 <span class="rouble">a</span>
+                                        </div>
                                     </div>
                                     <div class="btn">Подробнее
                                         <div class="basket" v-on:click="showWin(6)">
@@ -376,7 +380,8 @@
                                 <div class="bottom">
                                     <div class="left">
                                         <div class="t">Цена партнера</div>
-                                        <div class="b">24 000 Р</div>
+                                        <div class="b">24 000 <span class="rouble">a</span>
+                                        </div>
                                     </div>
                                     <div class="btn">Подробнее
                                         <div class="basket" v-on:click="showWin(6)">
@@ -393,7 +398,8 @@
                                 <div class="bottom">
                                     <div class="left">
                                         <div class="t">Цена партнера</div>
-                                        <div class="b">24 000 Р</div>
+                                        <div class="b">24 000 <span class="rouble">a</span>
+                                        </div>
                                     </div>
                                     <div class="btn">Подробнее
                                         <div class="basket" v-on:click="showWin(6)">
@@ -410,7 +416,8 @@
                                 <div class="bottom">
                                     <div class="left">
                                         <div class="t">Цена партнера</div>
-                                        <div class="b">24 000 Р</div>
+                                        <div class="b">24 000 <span class="rouble">a</span>
+                                        </div>
                                     </div>
                                     <div class="btn">Подробнее
                                         <div class="basket" v-on:click="showWin(6)">
@@ -427,7 +434,8 @@
                                 <div class="bottom">
                                     <div class="left">
                                         <div class="t">Цена партнера</div>
-                                        <div class="b">24 000 Р</div>
+                                        <div class="b">24 000 <span class="rouble">a</span>
+                                        </div>
                                     </div>
                                     <div class="btn">Подробнее
                                         <div class="basket" v-on:click="showWin(6)">
@@ -444,7 +452,8 @@
                                 <div class="bottom">
                                     <div class="left">
                                         <div class="t">Цена партнера</div>
-                                        <div class="b">24 000 Р</div>
+                                        <div class="b">24 000 <span class="rouble">a</span>
+                                        </div>
                                     </div>
                                     <div class="btn">Подробнее
                                         <div class="basket" v-on:click="showWin(6)">
@@ -461,7 +470,8 @@
                                 <div class="bottom">
                                     <div class="left">
                                         <div class="t">Цена партнера</div>
-                                        <div class="b">24 000 Р</div>
+                                        <div class="b">24 000 <span class="rouble">a</span>
+                                        </div>
                                     </div>
                                     <div class="btn">Подробнее
                                         <div class="basket" v-on:click="showWin(6)">
@@ -478,7 +488,8 @@
                                 <div class="bottom">
                                     <div class="left">
                                         <div class="t">Цена партнера</div>
-                                        <div class="b">24 000 Р</div>
+                                        <div class="b">24 000 <span class="rouble">a</span>
+                                        </div>
                                     </div>
                                     <div class="btn">Подробнее
                                         <div class="basket" v-on:click="showWin(6)">
@@ -495,7 +506,8 @@
                                 <div class="bottom">
                                     <div class="left">
                                         <div class="t">Цена партнера</div>
-                                        <div class="b">24 000 Р</div>
+                                        <div class="b">24 000 <span class="rouble">a</span>
+                                        </div>
                                     </div>
                                     <div class="btn">Подробнее
                                         <div class="basket" v-on:click="showWin(6)">
@@ -753,10 +765,6 @@
                         <div class="menus">
                             <div class="info">
                                 <div class="logo"></div>
-                                <div class="inform">
-                                    <div>инн 123768999812397</div>
-                                    <div>огрн 128971239176</div>
-                                </div>
                             </div>
                             <div class="menu">
                                 <div class="line"></div><a class="menu-item hover-red" href="#">Магазин</a><a class="menu-item hover-red" href="#">Партнерам</a><a class="menu-item hover-red" href="company.html">О компании</a><a class="menu-item hover-red" href="#">Команда</a>
@@ -771,13 +779,9 @@
                         </div>
                         <div class="other">
                             <div class="info">
-                                <div class="text">Электронные платежи защищены
-                                    <br>Посмотреть <a class="red" href="">e-commerce rules</a>
-                                </div>
-                                <div class="pays">
-                                    <div class="pp pay"></div>
-                                    <div class="visa pay"></div>
-                                    <div class="mc pay"></div>
+                                <div class="inform">
+                                    <div>инн 123768999812397</div>
+                                    <div>огрн 128971239176</div>
                                 </div>
                             </div>
                             <div class="contact">
@@ -834,7 +838,7 @@
         </div>
 
 
-        <script src="static/js/mainw41gi.min.js"></script>
+        <script src="static/js/mainpooho.min.js"></script>
     </body>
 
 </html>
