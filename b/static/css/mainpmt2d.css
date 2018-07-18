@@ -238,6 +238,10 @@ body {
   color: #121212;
   cursor: pointer;
 }
+.win5 {
+  position: absolute;
+  top: 0;
+}
 #map {
   width: 100%;
   height: 100%;
@@ -2915,7 +2919,7 @@ span.before-red:before {
   font-size: 30px;
   cursor: pointer;
   font-weight: 100;
-  font-family: SANS-SERIF;
+  font-family: Roboto;
 }
 .basket .section1 .table .cell .form .n {
   width: 120px;
@@ -3313,7 +3317,7 @@ span.before-red:before {
 .katalog_page .section8 .container .aside .search .block .v-select .open-indicator::before {
   margin-top: 23px;
   border-color: #da0812;
-  border-width: 10px 3px 0 0;
+  border-width: 10px 3px 0 0 !important;
   margin-left: 10px;
   -webkit-transform: rotate(133deg) translate(-8px, 5px);
           transform: rotate(133deg) translate(-8px, 5px);
@@ -4206,7 +4210,7 @@ span.before-red:before {
   cursor: pointer;
   font-size: 30px;
   font-weight: 100;
-  font-family: SANS-SERIF;
+  font-family: Roboto;
 }
 .window .win .content .tovar .op .num .i:hover {
   color: #fff;
@@ -4976,6 +4980,9 @@ span.before-red:before {
 }
 .contact_page .section1 .container .content .message .form .pretty.p-default input:checked~.state label:after {
   background: #fff !important;
+}
+.basket .section1 .table .cell .form .i {
+  font-family: Roboto;
 }
 .contact_page .section1 .container .head-t {
   color: #fff;
@@ -6251,7 +6258,7 @@ span.before-red:before {
     padding-left: 20px;
   }
   .index .section2 .in-btn {
-    margin-top: 0;
+    margin-top: 70px;
   }
   .index .section3 .top,
   .ofcompany .top {
@@ -6428,6 +6435,7 @@ span.before-red:before {
   }
   .article .section1 .content .content-main .img {
     margin: 0;
+    margin-bottom: 20px;
     width: 100%;
   }
 }
