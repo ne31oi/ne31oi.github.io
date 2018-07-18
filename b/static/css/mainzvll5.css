@@ -183,7 +183,7 @@ blockquote {
   font-style: normal;
 }
 @font-face {
-  font-family: 'Akzidenz-Grotesk Pro';
+  font-family: 'Akzidenz-Grotesk Proa';
   src: url("../fonts/Akzidenz-Grotesk/AkzidenzGroteskPro-Regular.eot");
   src: url("../fonts/Akzidenz-Grotesk/AkzidenzGroteskPro-Regular.eot?#iefix") format('embedded-opentype'), url("../fonts/Akzidenz-Grotesk/AkzidenzGroteskPro-Regular.woff2") format('woff2'), url("../fonts/Akzidenz-Grotesk/AkzidenzGroteskPro-Regular.woff") format('woff'), url("../fonts/Akzidenz-Grotesk/AkzidenzGroteskPro-Regular.ttf") format('truetype'), url("../fonts/Akzidenz-Grotesk/AkzidenzGroteskPro-Regular.svg#AkzidenzGroteskPro-Regular") format('svg');
   font-weight: normal;
@@ -193,6 +193,19 @@ blockquote {
   font-family: 'webfontregular';
   src: url("../fonts/rouble/rouble-webfont-webfont.woff2") format('woff2'), url("../fonts/rouble/rouble-webfont-webfont.woff") format('woff');
   font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Akzidenz-Grotesk Pro';
+  src: url("../fonts/Akzidenz-Grotesk/AkzidenzGroteskPro-Cn.eot");
+  src: url("../fonts/Akzidenz-Grotesk/AkzidenzGroteskPro-Cn.eot?#iefix") format('embedded-opentype'), url("../fonts/Akzidenz-Grotesk/AkzidenzGroteskPro-Cn.woff2") format('woff2'), url("../fonts/Akzidenz-Grotesk/AkzidenzGroteskPro-Cn.woff") format('woff'), url("../fonts/Akzidenz-Grotesk/AkzidenzGroteskPro-Cn.ttf") format('truetype'), url("../fonts/Akzidenz-Grotesk/AkzidenzGroteskPro-Cn.svg#AkzidenzGroteskPro-Cn") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Roboto';
+  src: url("../fonts/Roboto/Roboto-Thin.ttf") format('truetype');
+  font-weight: 100;
   font-style: normal;
 }
 html,
@@ -404,8 +417,8 @@ body {
   background-size: 100%;
   background-position-y: 55%;
   background-repeat: no-repeat;
-  margin-top: 8px;
-  margin-bottom: 8px;
+  margin-top: 9px;
+  margin-bottom: 9px;
 }
 .header .logo,
 .header .menu-span {
@@ -873,8 +886,8 @@ body {
   display: flex;
 }
 .footer .container .top .menus .info .logo {
-  width: 200px;
-  height: 102px;
+  width: 60%;
+  height: 50%;
   background-image: url("../img/general/logo.png");
   background-size: 100%;
   background-position-y: 49%;
@@ -885,7 +898,7 @@ body {
   background-image: url("../img/general/footer-map.png");
   background-position: center center;
   background-repeat: no-repeat;
-  background-size: 92%;
+  background-size: 70%;
 }
 .footer .container .top .info .inform {
   display: -moz-flex;
@@ -1237,7 +1250,8 @@ body {
   font-family: Akzidenz-Grotesk Pro;
   color: #d7d8de;
   font-size: 25px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
+  margin-top: 40px;
 }
 .index .section2 .introduction .in-item .text {
   color: #d7d8de;
@@ -1470,6 +1484,7 @@ body {
   font-weight: 400;
   font-size: 16px;
   text-align: justify;
+  line-height: 30px;
 }
 .ofcompany .top .right {
   background-image: url("../img/general/photo1.png");
@@ -1523,10 +1538,10 @@ body {
   content: "";
   background-color: #da0812;
   position: absolute;
-  width: 288px;
+  width: 209px;
   height: 24px;
   top: 10px;
-  left: 250px;
+  left: 172px;
   z-index: -1;
 }
 .ofcompany .bottom .items {
@@ -3913,6 +3928,9 @@ span.before-red:before {
   bottom: 10px;
   right: 10px;
 }
+.v-select .open-indicator:before {
+  border-width: 1px 1px 0 0 !important;
+}
 .formi {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3944,7 +3962,7 @@ span.before-red:before {
   font-size: 30px;
   cursor: pointer;
   font-weight: 100;
-  font-family: SANS-SERIF;
+  font-family: Roboto;
 }
 .formi .n {
   width: 120px;
@@ -5144,6 +5162,9 @@ span.before-red:before {
   background: #2cad2c !important;
   color: #fff !important;
 }
+.katalog_page .section8 .container .content .item .bottom .left .b {
+  font-weight: 800;
+}
 .hover-red {
   position: relative;
   z-index: 10;
@@ -5424,7 +5445,8 @@ span.before-red:before {
             flex-direction: column;
   }
   .footer .container .top .menus .info .logo {
-    margin-bottom: 60px;
+    width: 100%;
+    height: 51%;
   }
   .katalog_page .section7 .clients .item {
     width: 32%;
@@ -5476,6 +5498,9 @@ span.before-red:before {
   }
 }
 @media (max-width: 767px) {
+  .footer .container .top .map {
+    background-size: 90%;
+  }
   .katalog_page .section4 .container .text .head {
     font-size: 30px;
   }
@@ -5603,10 +5628,10 @@ span.before-red:before {
     content: "";
     background-color: #da0812;
     position: absolute;
-    width: 223px;
+    width: 160px;
     height: 17px;
     top: 10px;
-    left: 193px;
+    left: 132px;
     z-index: -1;
   }
   .articles .section1 .item-left .image {
@@ -5928,6 +5953,10 @@ span.before-red:before {
   }
 }
 @media (max-width: 480px) {
+  .footer .container .top .menus .info .logo {
+    height: 100%;
+    width: 50%;
+  }
   .contact_page .section1 .container .head-t {
     font-size: 22px;
   }
@@ -6256,7 +6285,9 @@ span.before-red:before {
   }
   .index .section3 .bottom .h2:before,
   .ofcompany .bottom .h2:before {
-    width: 88px;
+    top: 7px;
+    left: 115px;
+    width: 130px;
   }
   .index .section4 .container h2 {
     font-size: 25px;
