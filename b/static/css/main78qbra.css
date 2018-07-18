@@ -250,7 +250,7 @@ body {
   display: none;
 }
 .v-select .dropdown-menu {
-  overflow-y: none !important;
+  overflow-y: hidden !important;
   border: none !important;
   border-radius: 0 !important;
 }
