@@ -13,7 +13,7 @@
         <link rel="stylesheet" href="https://use.typekit.net/wds2vlt.css">
 
         <!--[if (gt IE 9)|!(IE)]><!-->
-        <link href="static/css/main78qbra.min.css" rel="stylesheet" type="text/css">
+        <link href="static/css/main6ft05.min.css" rel="stylesheet" type="text/css">
         <!--<![endif]-->
         <meta property="og:title" content="#{data.title}">
         <meta property="og:title" content="">
@@ -244,44 +244,13 @@
                         </div>
                         <div class="content">
                             <div class="left">
-                                <div class="btn item" v-on:mouseover="menu2show=1">
+                                <div class="btn item" v-on:mouseover="menu2show=1" v-on:click="menu2show=(menu2show==1)?0:1">
                                     <div class="text">Производство и машиностроение</div>
                                     <img class="bg" src="static/img/general/katalog_bg1.png">
-                                    <div class="line"></div>
-                                    <div class="box"></div>
+                                    <div class="line" v-if="menu2show==1"></div>
+                                    <div class="box" v-if="menu2show==1"></div>
                                 </div>
-                                <div class="btn item" v-on:mouseover="menu2show=2">
-                                    <div class="text">Металлообработка</div>
-                                    <img class="bg" src="static/img/general/katalog_bg1.png">
-                                    <div class="line"></div>
-                                    <div class="box"></div>
-                                </div>
-                                <div class="btn item" v-on:mouseover="menu2show=3">
-                                    <div class="text">Пластичные смазки</div>
-                                    <img class="bg" src="static/img/general/katalog_bg1.png">
-                                    <div class="line"></div>
-                                    <div class="box"></div>
-                                </div>
-                                <div class="btn item" v-on:mouseover="menu2show=4">
-                                    <div class="text">Сельхозтехника</div>
-                                    <img class="bg" src="static/img/general/katalog_bg1.png">
-                                    <div class="line"></div>
-                                    <div class="box"></div>
-                                </div>
-                                <div class="btn item" v-on:mouseover="menu2show=5">
-                                    <div class="text">СТО</div>
-                                    <img class="bg" src="static/img/general/katalog_bg1.png">
-                                    <div class="line"></div>
-                                    <div class="box"></div>
-                                </div>
-                                <div class="btn item" v-on:mouseover="menu2show=6">
-                                    <div class="text">Транспорт, спецтехника, с/х техника</div>
-                                    <div class="line"></div>
-                                    <div class="box"></div>
-                                </div>
-                            </div>
-                            <div class="right" v-if="menu2show&gt;0">
-                                <div class="show1" v-if="menu2show==1">
+                                <div class="show1" v-if="mobile &amp;&amp; menu2show==1">
                                     <div class="head-text">Широкий выбор1</div>
                                     <div class="btn item">Специальные пластичные смазки</div>
                                     <div class="btn item">Масла для ДВС</div>
@@ -295,7 +264,122 @@
                                     <div class="btn item">Пожаробезопасные гидравлические жидкости;</div>
                                     <div class="btn item">Компрессионные масла</div>
                                 </div>
-                                <div class="show1" v-if="menu2show==2">
+                                <div class="btn item" v-on:mouseover="menu2show=2" v-on:click="menu2show=(menu2show==2)?0:2">
+                                    <div class="text">Металлообработка</div>
+                                    <img class="bg" src="static/img/general/katalog_bg1.png">
+                                    <div class="line" v-if="menu2show==2"></div>
+                                    <div class="box" v-if="menu2show==2"></div>
+                                </div>
+                                <div class="show1" v-if="mobile &amp;&amp; menu2show==2">
+                                    <div class="head-text">Широкий выбор1</div>
+                                    <div class="btn item">Специальные пластичные смазки</div>
+                                    <div class="btn item">Масла для ДВС</div>
+                                    <div class="btn item">Жидкость для нейтрализации выхлопных газов AdBlue;</div>
+                                    <div class="btn item">Масла для трансмиссий</div>
+                                    <div class="btn item">Антифризы</div>
+                                    <div class="btn item">Масла для навесного оборудования</div>
+                                    <div class="btn item">Универсальные трансмиссионные масла для тракторной и строительной техники</div>
+                                    <div class="btn item">Гидравлические жидкости</div>
+                                    <div class="btn item">Жидкости для автоматических трансмиссий и ГУР спецтехники</div>
+                                    <div class="btn item">Пожаробезопасные гидравлические жидкости;</div>
+                                    <div class="btn item">Компрессионные масла</div>
+                                </div>
+                                <div class="btn item" v-on:mouseover="menu2show=3" v-on:click="menu2show=(menu2show==3)?0:3">
+                                    <div class="text">Пластичные смазки</div>
+                                    <img class="bg" src="static/img/general/katalog_bg1.png">
+                                    <div class="line" v-if="menu2show==3"></div>
+                                    <div class="box" v-if="menu2show==3"></div>
+                                </div>
+                                <div class="show1" v-if="mobile &amp;&amp; menu2show==3">
+                                    <div class="head-text">Широкий выбор1</div>
+                                    <div class="btn item">Специальные пластичные смазки</div>
+                                    <div class="btn item">Масла для ДВС</div>
+                                    <div class="btn item">Жидкость для нейтрализации выхлопных газов AdBlue;</div>
+                                    <div class="btn item">Масла для трансмиссий</div>
+                                    <div class="btn item">Антифризы</div>
+                                    <div class="btn item">Масла для навесного оборудования</div>
+                                    <div class="btn item">Универсальные трансмиссионные масла для тракторной и строительной техники</div>
+                                    <div class="btn item">Гидравлические жидкости</div>
+                                    <div class="btn item">Жидкости для автоматических трансмиссий и ГУР спецтехники</div>
+                                    <div class="btn item">Пожаробезопасные гидравлические жидкости;</div>
+                                    <div class="btn item">Компрессионные масла</div>
+                                </div>
+                                <div class="btn item" v-on:mouseover="menu2show=4" v-on:click="menu2show=(menu2show==4)?0:4">
+                                    <div class="text">Сельхозтехника</div>
+                                    <img class="bg" src="static/img/general/katalog_bg1.png">
+                                    <div class="line" v-if="menu2show==4"></div>
+                                    <div class="box" v-if="menu2show==4"></div>
+                                </div>
+                                <div class="show1" v-if="mobile &amp;&amp; menu2show==4">
+                                    <div class="head-text">Широкий выбор1</div>
+                                    <div class="btn item">Специальные пластичные смазки</div>
+                                    <div class="btn item">Масла для ДВС</div>
+                                    <div class="btn item">Жидкость для нейтрализации выхлопных газов AdBlue;</div>
+                                    <div class="btn item">Масла для трансмиссий</div>
+                                    <div class="btn item">Антифризы</div>
+                                    <div class="btn item">Масла для навесного оборудования</div>
+                                    <div class="btn item">Универсальные трансмиссионные масла для тракторной и строительной техники</div>
+                                    <div class="btn item">Гидравлические жидкости</div>
+                                    <div class="btn item">Жидкости для автоматических трансмиссий и ГУР спецтехники</div>
+                                    <div class="btn item">Пожаробезопасные гидравлические жидкости;</div>
+                                    <div class="btn item">Компрессионные масла</div>
+                                </div>
+                                <div class="btn item" v-on:mouseover="menu2show=5" v-on:click="menu2show=(menu2show==5)?0:5">
+                                    <div class="text">СТО</div>
+                                    <img class="bg" src="static/img/general/katalog_bg1.png">
+                                    <div class="line" v-if="menu2show==5"></div>
+                                    <div class="box" v-if="menu2show==5"></div>
+                                </div>
+                                <div class="show1" v-if="mobile &amp;&amp; menu2show==5">
+                                    <div class="head-text">Широкий выбор1</div>
+                                    <div class="btn item">Специальные пластичные смазки</div>
+                                    <div class="btn item">Масла для ДВС</div>
+                                    <div class="btn item">Жидкость для нейтрализации выхлопных газов AdBlue;</div>
+                                    <div class="btn item">Масла для трансмиссий</div>
+                                    <div class="btn item">Антифризы</div>
+                                    <div class="btn item">Масла для навесного оборудования</div>
+                                    <div class="btn item">Универсальные трансмиссионные масла для тракторной и строительной техники</div>
+                                    <div class="btn item">Гидравлические жидкости</div>
+                                    <div class="btn item">Жидкости для автоматических трансмиссий и ГУР спецтехники</div>
+                                    <div class="btn item">Пожаробезопасные гидравлические жидкости;</div>
+                                    <div class="btn item">Компрессионные масла</div>
+                                </div>
+                                <div class="btn item" v-on:mouseover="menu2show=6" v-on:click="menu2show=(menu2show==6)?0:6">
+                                    <div class="text">Транспорт, спецтехника, с/х техника</div>
+                                    <div class="line" v-if="menu2show==6"></div>
+                                    <div class="box" v-if="menu2show==6"></div>
+                                </div>
+                                <div class="show1" v-if="mobile &amp;&amp; menu2show==6">
+                                    <div class="head-text">Широкий выбор1</div>
+                                    <div class="btn item">Специальные пластичные смазки</div>
+                                    <div class="btn item">Масла для ДВС</div>
+                                    <div class="btn item">Жидкость для нейтрализации выхлопных газов AdBlue;</div>
+                                    <div class="btn item">Масла для трансмиссий</div>
+                                    <div class="btn item">Антифризы</div>
+                                    <div class="btn item">Масла для навесного оборудования</div>
+                                    <div class="btn item">Универсальные трансмиссионные масла для тракторной и строительной техники</div>
+                                    <div class="btn item">Гидравлические жидкости</div>
+                                    <div class="btn item">Жидкости для автоматических трансмиссий и ГУР спецтехники</div>
+                                    <div class="btn item">Пожаробезопасные гидравлические жидкости;</div>
+                                    <div class="btn item">Компрессионные масла</div>
+                                </div>
+                            </div>
+                            <div class="right" v-if="menu2show&gt;0 &amp;&amp; !mobile">
+                                <div class="show1" v-if="!mobile &amp;&amp; menu2show==1">
+                                    <div class="head-text">Широкий выбор1</div>
+                                    <div class="btn item">Специальные пластичные смазки</div>
+                                    <div class="btn item">Масла для ДВС</div>
+                                    <div class="btn item">Жидкость для нейтрализации выхлопных газов AdBlue;</div>
+                                    <div class="btn item">Масла для трансмиссий</div>
+                                    <div class="btn item">Антифризы</div>
+                                    <div class="btn item">Масла для навесного оборудования</div>
+                                    <div class="btn item">Универсальные трансмиссионные масла для тракторной и строительной техники</div>
+                                    <div class="btn item">Гидравлические жидкости</div>
+                                    <div class="btn item">Жидкости для автоматических трансмиссий и ГУР спецтехники</div>
+                                    <div class="btn item">Пожаробезопасные гидравлические жидкости;</div>
+                                    <div class="btn item">Компрессионные масла</div>
+                                </div>
+                                <div class="show1" v-if="!mobile &amp;&amp; menu2show==2">
                                     <div class="head-text">Широкий выбор2</div>
                                     <div class="btn item">Специальные пластичные смазки</div>
                                     <div class="btn item">Масла для ДВС</div>
@@ -309,7 +393,7 @@
                                     <div class="btn item">Пожаробезопасные гидравлические жидкости;</div>
                                     <div class="btn item">Компрессионные масла</div>
                                 </div>
-                                <div class="show1" v-if="menu2show==3">
+                                <div class="show1" v-if="!mobile &amp;&amp; menu2show==3">
                                     <div class="head-text">Широкий выбор3</div>
                                     <div class="btn item">Специальные пластичные смазки</div>
                                     <div class="btn item">Масла для ДВС</div>
@@ -323,7 +407,7 @@
                                     <div class="btn item">Пожаробезопасные гидравлические жидкости;</div>
                                     <div class="btn item">Компрессионные масла</div>
                                 </div>
-                                <div class="show1" v-if="menu2show==4">
+                                <div class="show1" v-if="!mobile &amp;&amp; menu2show==4">
                                     <div class="head-text">Широкий выбор4</div>
                                     <div class="btn item">Специальные пластичные смазки</div>
                                     <div class="btn item">Масла для ДВС</div>
@@ -337,7 +421,7 @@
                                     <div class="btn item">Пожаробезопасные гидравлические жидкости;</div>
                                     <div class="btn item">Компрессионные масла</div>
                                 </div>
-                                <div class="show1" v-if="menu2show==5">
+                                <div class="show1" v-if="!mobile &amp;&amp; menu2show==5">
                                     <div class="head-text">Широкий выбор5</div>
                                     <div class="btn item">Специальные пластичные смазки</div>
                                     <div class="btn item">Масла для ДВС</div>
@@ -351,7 +435,7 @@
                                     <div class="btn item">Пожаробезопасные гидравлические жидкости;</div>
                                     <div class="btn item">Компрессионные масла</div>
                                 </div>
-                                <div class="show1" v-if="menu2show==6">
+                                <div class="show1" v-if="!mobile &amp;&amp; menu2show==6">
                                     <div class="head-text">Широкий выбор</div>
                                     <div class="btn item">Специальные пластичные смазки</div>
                                     <div class="btn item">Масла для ДВС</div>
@@ -528,7 +612,7 @@
         </div>
 
 
-        <script src="static/js/main78qbra.min.js"></script>
+        <script src="static/js/main6ft05.min.js"></script>
     </body>
 
 </html>
