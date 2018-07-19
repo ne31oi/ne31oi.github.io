@@ -214,6 +214,7 @@ body {
   color: #fff;
   font-family: PT Sans;
   font-weight: 400;
+  letter-spacing: 2px;
 }
 .rouble {
   font-family: 'webfontregular';
@@ -412,6 +413,7 @@ body {
 .header .menu-span {
   font-size: 12.5px;
   margin: 0 20px;
+  letter-spacing: 0;
 }
 .header .logo {
   width: 99px;
@@ -1298,9 +1300,10 @@ body {
   margin-top: 100px;
   background-color: #da0812;
   width: 430px;
-  padding: 12px 20px;
   font-family: Akzidenz-Grotesk Pro;
-  font-size: 20px;
+  padding: 12px 11px;
+  font-size: 21px;
+  letter-spacing: 2px;
   text-align: center;
 }
 .index .section2 .s1,
@@ -1376,9 +1379,11 @@ body {
   width: 375px;
   font-size: 30px;
   text-align: center;
+  font-family: Akzidenz-Grotesk Pro;
+  letter-spacing: 4px;
 }
 .index .section4 .container .box {
-  margin: 60px auto;
+  margin: 30px 0 41px 0;
   background-color: #da0812;
   width: 12px;
   height: 12px;
@@ -1393,7 +1398,7 @@ body {
   background-color: #121213;
   width: 630px;
   height: 352px;
-  padding: 100px 70px;
+  padding: 100px 100px;
   display: -moz-flex;
   display: -ms-flex;
   display: -o-flex;
@@ -1437,7 +1442,7 @@ body {
   border-color: #da0812;
 }
 .index .section4 .container .form .btn {
-  width: 156px;
+  width: 185px;
   -ms-flex-item-align: end;
       align-self: flex-end;
   margin-top: 20px;
@@ -1478,6 +1483,9 @@ body {
   bottom: 10px;
   right: 10px;
 }
+h2 {
+  letter-spacing: 7px;
+}
 .ofcompany {
   background: #eff0f2;
   padding-bottom: 80px;
@@ -1506,6 +1514,7 @@ body {
 }
 .ofcompany .top .left .head {
   font-family: Akzidenz-Grotesk Pro;
+  letter-spacing: 7px;
   font-size: 45.83px;
   font-weight: 700;
   margin-bottom: 20px;
@@ -1546,8 +1555,10 @@ body {
   font-family: PT Sans;
   color: #fff;
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 100;
   text-align: justify;
+  letter-spacing: 1px;
+  line-height: 30px;
 }
 .ofcompany .bottom {
   width: 100%;
@@ -1575,10 +1586,10 @@ body {
   content: "";
   background-color: #da0812;
   position: absolute;
-  width: 209px;
+  width: 288px;
   height: 24px;
   top: 10px;
-  left: 172px;
+  left: 249px;
   z-index: -1;
 }
 .ofcompany .bottom .items {
@@ -2249,6 +2260,24 @@ span.before-red:before {
       -ms-flex-direction: column;
           flex-direction: column;
 }
+.m .top-header-text {
+  position: relative;
+  z-index: 2;
+  margin-left: 40px;
+  font-family: Akzidenz-Grotesk Pro;
+  letter-spacing: 3px;
+}
+.m .top-header-text:before {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  bottom: 5px;
+  left: -35px;
+  font-size: 17px;
+  background: #da0812;
+  z-index: 10;
+}
 .btn {
   cursor: pointer;
 }
@@ -2699,9 +2728,6 @@ span.before-red:before {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-.articles .section1 .item-left .text {
-  padding-right: 50px;
 }
 .articles .section1 .item-right .image {
   -webkit-box-ordinal-group: 3;
@@ -4683,9 +4709,6 @@ span.before-red:before {
       -ms-flex-align: center;
           align-items: center;
 }
-.card .section1 .item .image img {
-  height: 90%;
-}
 .card .section1 .item .text {
   color: #121213;
   font-size: 17px;
@@ -5104,6 +5127,140 @@ span.before-red:before {
   height: 560px;
   width: 100%;
 }
+.contact_page .section1 .container .content .message {
+  padding: 10px 70px;
+}
+.reviews .section2 .item .text {
+  position: relative;
+  z-index: 20;
+}
+.reviews .section2 .item .img {
+  background: transparent;
+  background: -webkit-gradient(left bottom, left top, color-stop(0%, rgba(255,0,0,0.8)), color-stop(100%, rgba(0,0,0,0.1)));
+  background: -webkit-linear-gradient(bottom, rgba(255,0,0,0.8) 0%, rgba(0,0,0,0.1) 100%);
+  background: linear-gradient(to top, rgba(255,0,0,0.8) 0%, rgba(0,0,0,0.1) 100%);
+  display: block;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.header .container-menu .menu_big .menu_footer .line1 {
+  padding: 0 10px;
+}
+.company .m .top-header-text:before {
+  display: none;
+}
+.top-menu .left .link,
+.top-menu .left .last-link,
+.article .section1 .aside .aside-menu .item,
+.article .section1 .aside .aside-action .head,
+.article .section1 .aside .aside-action .item .text .t,
+.article .section1 .aside .aside-scsr .text,
+.article .section1 .aside .aside-scsr .input label,
+.article .section1 .content .content-main p:not(:last-child),
+.article .section1 .content .content-main .head,
+.basket .section1 .send_to_email .sum .line .text1,
+.basket .section1 .send_to_email .sum .line .big,
+.basket .section1 .send_to_email .sum .line .text2,
+.card .section1 .item .text .top,
+.card .section1 .item .text .bottom .r span,
+.srav .table *,
+.card .section2 .bot .btn,
+.card .section2 .bot .text,
+.card .section1 .item .text .bottom .l .line1 span,
+.card .section1 .item .text .bottom .l .line1,
+.card .section1 .item .text .bottom .l .line2,
+.card .section1 .item .text .bottom .l .line2 span,
+.company .section1 .text,
+.company .section3 .container .req .content,
+.footer .container .top .menus .menu .menu-item,
+.compare .section1 .form .btn,
+.compare .section1 .items .item .head,
+.contact_page .section1 .container .content .text *,
+.katalog_page .section10 .container .btn,
+.katalog_page .section8 .container .aside .search .head,
+.katalog_page .section8 *,
+.reviews .section1 .item .subhead,
+.pretty *,
+.header .container-menu .menu_big a {
+  letter-spacing: 0;
+}
+.article .section1 .content .content-main p:not(:last-child),
+.article .section1 .content .content-main .head,
+.articles .section1 .item .desc .text,
+.reviews .section2 .item {
+  line-height: 30px;
+}
+.articles .section1 .subscribe .in .text,
+.articles .section1 .subscribe .in .form .subsc-btn {
+  letter-spacing: 1px;
+}
+.compare .section1 .items .item .rating .num,
+.compare .section1 .items .item .rating .btn {
+  letter-spacing: 3px;
+}
+.article .section1 .aside .aside-scsr .head,
+.articles .section1 .show_more,
+.articles .section1 .subscribe .in .head,
+.basket .section1 .zakaz_head,
+.head-t,
+.katalog_page .section3 .container .head {
+  letter-spacing: 4px;
+}
+.article .section1 .content .content-top .head .h2,
+.company .section3 .container .req .head,
+.company .section3 .container .message .head {
+  letter-spacing: 5px;
+}
+.company .top-header-text .t {
+  letter-spacing: 6px;
+}
+.slide .container .head-text .text,
+.reviews .section2 .head-text {
+  letter-spacing: 7px;
+}
+.basket .section1 .table .cell .num {
+  letter-spacing: 0;
+  font-size: 24px;
+}
+.basket .section1 .table .cell .form .n {
+  width: 60px;
+}
+.basket .section1 .table .cell .text .head {
+  margin-bottom: 20px;
+}
+.basket .section1 .send2 .btn {
+  width: 150px;
+}
+.slide .container .item .text {
+  font-size: 13px;
+  line-height: 27px;
+}
+.company .section3 .container .req .content {
+  letter-spacing: 0;
+  font-size: 16px;
+  line-height: 17px;
+}
+.katalog_page .section4 .container .text .head {
+  letter-spacing: 8px;
+  line-height: 50px;
+}
+.katalog_page .section4 .container .text .subhead {
+  letter-spacing: 3.7px;
+}
+.company .section3 .container .message .form .btn,
+.contact_page .section1 .container .content .message .form .btn {
+  width: 187px;
+}
+.contact_page .section1 .container .content .message .form .btn {
+  margin-top: 20px;
+}
+.katalog_page .section4 .container .form .btn {
+  letter-spacing: 1px;
+  width: 178px;
+}
 .srav .table {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -5275,6 +5432,9 @@ span.before-red:before {
   right: 0;
   background-color: #000;
   z-index: 2;
+}
+.index .section4 .container .form .btn {
+  width: 196px;
 }
 .compare .section1 .form .search input {
   padding-right: 45px;
