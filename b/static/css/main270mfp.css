@@ -1176,6 +1176,8 @@ body {
   transition: height 0.5s, margin-top 0.5s;
   background-position: center center;
   background-size: 100%;
+  letter-spacing: 3px;
+  padding: 0 45px;
 }
 .index .section1 .submenu .submenu-item:hover {
   margin-top: -80px;
@@ -1217,6 +1219,8 @@ body {
   margin-top: 170px;
   margin-bottom: 70px;
   position: relative;
+  letter-spacing: 5px;
+  font-weight: bold;
 }
 .index .section2 h2:before {
   background-color: #da0812;
@@ -1279,9 +1283,12 @@ body {
 .index .section2 .introduction .in-item .head {
   font-family: Akzidenz-Grotesk Pro;
   color: #d7d8de;
-  font-size: 25px;
-  margin-bottom: 20px;
-  margin-top: 40px;
+  font-size: 28px;
+  margin-bottom: 40px;
+  margin-top: 15px;
+  letter-spacing: 2px;
+  font-weight: bold;
+  line-height: 30px;
 }
 .index .section2 .introduction .in-item .text {
   color: #d7d8de;
