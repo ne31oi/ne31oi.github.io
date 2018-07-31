@@ -3865,7 +3865,7 @@ span.before-red:before {
   opacity: 0;
 }
 .katalog_page .section7 .clients .item .hover:hover {
-  padding-top: 22px;
+  padding-top: 25px;
   opacity: 1;
 }
 .katalog_page .section7 .clients .item .hover .img {
@@ -5551,7 +5551,7 @@ h2 {
 .katalog_page .section8 .container .aside .search .head {
   cursor: pointer;
 }
-.katalog_page .section7 .clients .item .hover {
+.katalog_page .section7 .clients .item .hover:hover {
   top: 10px;
 }
 .katalog_page .section8 .container .aside .search .head:after {
@@ -5660,6 +5660,9 @@ h2 {
   }
   .katalog_page .section4 .container .form {
     width: 500px;
+  }
+  .katalog_page .section7 .clients .item .hover:hover {
+    padding-top: 45px;
   }
 }
 @media (max-width: 960px) {
@@ -5805,7 +5808,6 @@ h2 {
     padding-top: 60px;
   }
   .katalog_page .section7 .clients .item .hover .img {
-    margin-top: 10px;
     margin-bottom: 20px;
   }
   .katalog_page .section2 .bottom .items .item {
