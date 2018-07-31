@@ -3865,7 +3865,7 @@ span.before-red:before {
   opacity: 0;
 }
 .katalog_page .section7 .clients .item .hover:hover {
-  padding-top: 44px;
+  padding-top: 22px;
   opacity: 1;
 }
 .katalog_page .section7 .clients .item .hover .img {
@@ -4728,7 +4728,7 @@ span.before-red:before {
   padding-top: 30px;
 }
 .compare .section1 .form .v-select * {
-  font-size: 16px !important;
+  font-size: 14px !important;
 }
 .articles .section1 .container {
   margin-bottom: -30px;
@@ -5805,6 +5805,7 @@ h2 {
     padding-top: 60px;
   }
   .katalog_page .section7 .clients .item .hover .img {
+    margin-top: 10px;
     margin-bottom: 20px;
   }
   .katalog_page .section2 .bottom .items .item {
@@ -5848,6 +5849,9 @@ h2 {
   }
 }
 @media (max-width: 767px) {
+  .katalog_page .section7 .clients .item .hover .img {
+    margin-top: 14px;
+  }
   .footer .container .top .map {
     background-size: 90%;
   }
