@@ -1885,6 +1885,20 @@ span.before-red:before {
   left: 5px;
   z-index: -1;
 }
+.index .section2 .introduction .in-item .head {
+  margin-bottom: 30px;
+  height: 65px;
+  line-height: 25px;
+}
+.index .section2 .introduction .in-item .head table {
+  width: 100%;
+  height: 100%;
+}
+.index .section2 .introduction .in-item .head table td {
+  width: 100%;
+  height: 100%;
+  vertical-align: bottom;
+}
 .reviews .container {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
@@ -2688,10 +2702,9 @@ span.before-red:before {
 }
 .articles .section1 .item .image .img {
   background: transparent;
-  background: -webkit-gradient(left bottom, left top, color-stop(0%, rgba(255,0,0,0.8)), color-stop(100%, rgba(0,0,0,0.1)));
-  background: -webkit-linear-gradient(bottom, rgba(255,0,0,0.8) 0%, rgba(0,0,0,0.1) 100%);
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(255,0,0,0.8)), to(rgba(0,0,0,0.1)));
-  background: linear-gradient(to top, rgba(255,0,0,0.8) 0%, rgba(0,0,0,0.1) 100%);
+  background: -webkit-gradient(left bottom, left top, color-stop(0%, rgba(255,0,0,0.8)), color-stop(150px, rgba(0,0,0,0.1)));
+  background: -webkit-linear-gradient(bottom, rgba(255,0,0,0.8) 0%, rgba(0,0,0,0.1) 150px);
+  background: linear-gradient(to top, rgba(255,0,0,0.8) 0%, rgba(0,0,0,0.1) 150px);
   display: block;
   height: 100%;
   left: 0;
@@ -3246,6 +3259,16 @@ span.before-red:before {
           justify-content: center;
   width: 200px;
   margin-top: 10px;
+}
+.article .section1 .content .sub .icon .fab {
+  margin-left: 2px;
+}
+.card .section1 .item .text .bottom .r .btn {
+  text-transform: uppercase;
+  letter-spacing: 0;
+}
+.window .win {
+  letter-spacing: 0;
 }
 .basket .section1 .send_to_email .send .head,
 .basket .section1 .send2 .send .head {
@@ -3842,6 +3865,7 @@ span.before-red:before {
   opacity: 0;
 }
 .katalog_page .section7 .clients .item .hover:hover {
+  padding-top: 44px;
   opacity: 1;
 }
 .katalog_page .section7 .clients .item .hover .img {
@@ -4053,6 +4077,12 @@ span.before-red:before {
 .katalog_page .section4 .container .form .shur3 {
   bottom: 10px;
   right: 10px;
+}
+.katalog_page .section8 .container .aside .search .block .line .item {
+  width: 100%;
+}
+.vue-slider-component {
+  padding: 8px 0 !important;
 }
 .v-select .open-indicator:before {
   border-width: 1px 1px 0 0 !important;
@@ -4453,6 +4483,14 @@ span.before-red:before {
 .component-fade-leave-to {
   opacity: 0;
 }
+.index .v-select .selected-tag {
+  margin: 0 !important;
+  padding: 0 !important;
+  font-size: 12px !important;
+}
+.index .section4 .container .form .v-select .selected-tag {
+  margin-top: 5px !important;
+}
 .compare .section1 .head-text,
 .compare .section1 .subhead {
   font-family: Akzidenz-Grotesk Pro;
@@ -4688,6 +4726,9 @@ span.before-red:before {
   background: #fff;
   padding-bottom: 30px;
   padding-top: 30px;
+}
+.compare .section1 .form .v-select * {
+  font-size: 16px !important;
 }
 .articles .section1 .container {
   margin-bottom: -30px;
@@ -6491,14 +6532,16 @@ h2 {
     position: relative;
     padding-left: 35px;
   }
-  .index .section2 .introduction .in-item .head:before {
+  .index .section2 .introduction .in-item .head td span {
+    position: relative;
+  }
+  .index .section2 .introduction .in-item .head td span:before {
     content: "\f00c";
     font-family: "Font Awesome 5 Free";
-    content: "\f00c";
     position: absolute;
-    top: 10px;
+    top: 0;
     font-weight: 900;
-    left: 0;
+    left: -35px;
   }
   .index .section2 .introduction .in-item {
     width: 100%;
