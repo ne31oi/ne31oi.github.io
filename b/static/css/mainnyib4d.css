@@ -5668,6 +5668,7 @@ h2 {
 }
 @media (max-width: 960px) {
   .katalog_page .section7 .clients .item .hover:hover {
+    height: auto;
     padding-top: 44px;
   }
   .header,
@@ -5809,7 +5810,9 @@ h2 {
     width: 32%;
   }
   .katalog_page .section7 .clients .item .hover {
-    padding-top: 60px;
+    height: auto;
+    padding-top: 0;
+    padding-bottom: 10px;
   }
   .katalog_page .section7 .clients .item .hover .img {
     margin-bottom: 20px;
@@ -6234,6 +6237,7 @@ h2 {
   .katalog_page .section7 .clients .item .hover {
     height: auto;
     padding: 0;
+    padding-bottom: 10px;
   }
   .katalog_page .section7 .clients .item .image {
     margin-top: 24px;
