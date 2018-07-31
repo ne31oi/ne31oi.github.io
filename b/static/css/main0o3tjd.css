@@ -5492,6 +5492,9 @@ h2 {
   background: #2cad2c !important;
   color: #fff !important;
 }
+.katalog_page .section7 .clients .item .hover .img {
+  margin-top: -53px;
+}
 .katalog_page .section8 .container .content .item .bottom .left .b {
   font-weight: 800;
 }
@@ -5665,6 +5668,9 @@ h2 {
   .katalog_page .section4 .container .form {
     width: 500px;
   }
+  .katalog_page .section7 .clients .item .hover .img {
+    margin-top: -53px;
+  }
 }
 @media (max-width: 960px) {
   .katalog_page .section7 .clients .item .hover:hover {
@@ -5816,6 +5822,7 @@ h2 {
   }
   .katalog_page .section7 .clients .item .hover .img {
     margin-bottom: 20px;
+    margin-top: -9px;
   }
   .katalog_page .section2 .bottom .items .item {
     width: 30%;
@@ -5859,7 +5866,7 @@ h2 {
 }
 @media (max-width: 767px) {
   .katalog_page .section7 .clients .item .hover .img {
-    margin-top: 14px;
+    margin-top: -9px;
   }
   .footer .container .top .map {
     background-size: 90%;
@@ -6321,6 +6328,9 @@ h2 {
   }
   .contact_page .map {
     height: 400px;
+  }
+  .katalog_page .section7 .clients .item .hover .img {
+    margin-top: 15px;
   }
 }
 @media (max-width: 480px) {
