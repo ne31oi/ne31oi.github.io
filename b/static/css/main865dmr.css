@@ -5495,6 +5495,10 @@ h2 {
 .katalog_page .section8 .container .content .item .bottom .left .b {
   font-weight: 800;
 }
+.katalog_page .section7 .clients .item img {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
 .hover-red {
   position: relative;
   z-index: 10;
@@ -5661,11 +5665,11 @@ h2 {
   .katalog_page .section4 .container .form {
     width: 500px;
   }
-  .katalog_page .section7 .clients .item .hover:hover {
-    padding-top: 45px;
-  }
 }
 @media (max-width: 960px) {
+  .katalog_page .section7 .clients .item .hover:hover {
+    padding-top: 44px;
+  }
   .header,
   .m {
     padding: 0 20px;
@@ -6226,6 +6230,13 @@ h2 {
   .basket .section1 .send_to_email .sum {
     width: 100%;
     max-width: 100%;
+  }
+  .katalog_page .section7 .clients .item .hover {
+    height: auto;
+    padding: 0;
+  }
+  .katalog_page .section7 .clients .item .image {
+    margin-top: 24px;
   }
   .basket .section1 .send_to_email .send {
     margin-bottom: 30px;
