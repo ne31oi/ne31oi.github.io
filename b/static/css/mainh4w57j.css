@@ -2340,7 +2340,7 @@ span.before-red:before {
   height: 34px;
   font-size: 12px;
   background: none;
-  font-family: sans-serif;
+  font-family: PT sans;
   letter-spacing: 1px;
   text-shadow: none;
 }
