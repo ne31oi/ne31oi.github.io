@@ -2347,6 +2347,9 @@ span.before-red:before {
 .index .jq-selectbox__select:hover {
   background: none;
 }
+.jq-selectbox li {
+  font-family: PT Sans;
+}
 .index .jq-selectbox__trigger {
   width: 18px;
   height: 32px;
