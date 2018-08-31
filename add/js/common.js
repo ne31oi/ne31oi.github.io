@@ -49,7 +49,9 @@ if ($(window).width() < 760) { $('.header-sign').appendTo('ul.navbar-nav.mr-auto
 
 
 $(function() {
-    document.getElementById('videoTab1').play();
+    setTimeout(function() {
+        document.getElementById('videoTab1').play();
+    }, 100);
     var firstVideo = $('#home').find('video');
     firstVideo.attr('controls', 'controls');
     firstVideo.get(0).play();
