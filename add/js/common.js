@@ -54,18 +54,29 @@ $(function() {
     }, 1000);
     var firstVideo = $('#home').find('video');
     firstVideo.attr('controls', 'controls');
-    firstVideo.get(0).play();
+
 
     $('.nav-tabs').find('a').on('click', function() {
         var tabItem = $(this).attr('href');
         var itemVideo = $(tabItem).find('video').get(0);
 
         itemVideo.currentTime = 0;
+        itemVideo.pause();
         itemVideo.play();
+
+
     });
 
 });
 
+function startVideoIfNotStarted() {
+    $('#videoTab1').ready(function() {
+        window.setTimeout(function() {
+            $('#home').find('video').get(0).play()
+        }, 1000);
+    });
+}
+$(startVideoIfNotStarted);
 
 if ($(window).width() <= '768') {
 
