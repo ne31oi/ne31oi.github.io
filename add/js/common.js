@@ -5,39 +5,44 @@ $(document).ready(function() {
             top = $(id).offset().top;
         $('body,html').animate({ scrollTop: top }, 1000);
     });
+    setTimeout(function() {
+
+        $('.align-items-center.slide').slick({
+            infinite: true,
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            autoplay: true,
+            arrows: true,
+            adaptiveHeight: true,
+            responsive: [{ breakpoint: 1024, settings: { slidesToShow: 3, slidesToScroll: 3, infinite: true, dots: true } }, { breakpoint: 600, settings: { slidesToShow: 2, slidesToScroll: 2 } }, { breakpoint: 480, settings: { slidesToShow: 1, slidesToScroll: 1 } }]
+        });
+        $('#problems-slider').slick({
+            infinite: false,
+            slidesToShow: 2,
+            slidesToScroll: 2,
+            autoplay: false,
+            arrows: true,
+            dots: true,
+            responsive: [{
+                breakpoint: 1024,
+                settings: { slidesToShow: 2, slidesToScroll: 2, infinite: false, dots: true }
+            }, {
+                breakpoint: 769,
+                settings: { slidesToShow: 1, slidesToScroll: 1 }
+            }, {
+                breakpoint: 480,
+                settings: { slidesToShow: 1, slidesToScroll: 1 }
+            }]
+        });
+    }, 1)
 });
-$('.align-items-center.slide').slick({
-    infinite: true,
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    autoplay: true,
-    arrows: true,
-    adaptiveHeight: true,
-    responsive: [{ breakpoint: 1024, settings: { slidesToShow: 3, slidesToScroll: 3, infinite: true, dots: true } }, { breakpoint: 600, settings: { slidesToShow: 2, slidesToScroll: 2 } }, { breakpoint: 480, settings: { slidesToShow: 1, slidesToScroll: 1 } }]
-});
-$('#problems-slider').slick({
-    infinite: false,
-    slidesToShow: 2,
-    slidesToScroll: 2,
-    autoplay: false,
-    arrows: true,
-    dots: true,
-    responsive: [{
-        breakpoint: 1024,
-        settings: { slidesToShow: 2, slidesToScroll: 2, infinite: false, dots: true }
-    }, {
-        breakpoint: 769,
-        settings: { slidesToShow: 1, slidesToScroll: 1 }
-    }, {
-        breakpoint: 480,
-        settings: { slidesToShow: 1, slidesToScroll: 1 }
-    }]
-});
+
 $(document).ready(function() {
     $(window).scroll(function() { if ($(this).scrollTop() > 100) { $('.scrollToTop').fadeIn(); } else { $('.scrollToTop').fadeOut(); } });
     $('.scrollToTop').click(function() { $('html, body').animate({ scrollTop: 0 }, 800); return false; });
 });
-if ($(window).width() < 760) { $('.header-sign').appendTo('ul.navbar-nav.mr-auto'); }
+if ($(window).width() < 769) { $('.header-sign').appendTo('ul.navbar-nav.mr-auto');
+    $('.px1').remove(); }
 // $('button.btn.login').click(function(){
 // $('.login-popup').fadeIn('1000');
 // $('.log-pop-con').animate({ top: "10%"} , 1000);
@@ -49,9 +54,6 @@ if ($(window).width() < 760) { $('.header-sign').appendTo('ul.navbar-nav.mr-auto
 
 
 $(function() {
-    setTimeOut(function() {
-        document.getElementById('videoTab1').play();
-    }, 1000)
     var firstVideo = $('#home').find('video');
     firstVideo.attr('controls', 'controls');
     firstVideo.get(0).play();
@@ -101,7 +103,7 @@ if ($(window).width() <= '768') {
 
 
 // $('a#home-tab').click(function(){
-// 	$('div#myTabContent div#home').html('<span class="tabs-name">Ad on app launch </span><iframe src="01_Ads on startup_svg.html" width="340" height="674"></iframe>');
+//  $('div#myTabContent div#home').html('<span class="tabs-name">Ad on app launch </span><iframe src="01_Ads on startup_svg.html" width="340" height="674"></iframe>');
 // });
 
 
