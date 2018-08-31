@@ -100,6 +100,7 @@ nav a {
 
 .slide-box {
     position: relative;
+    height: 75px;
 }
 
 .slide-box img {
@@ -278,7 +279,8 @@ span.tabs-name {
     padding: 70px 50px;
     padding-bottom: 10px;
 }
-#intr .slick-dots li button:before{
+
+#intr .slick-dots li button:before {
     width: 10px;
     height: 10px;
     content: '';
@@ -286,13 +288,15 @@ span.tabs-name {
     opacity: 1;
     border-radius: 50%;
 }
-#intr .slick-dots li.slick-active button:before{
+
+#intr .slick-dots li.slick-active button:before {
     width: 13px;
     height: 13px;
     background: #029394;
     top: -1px;
     left: -1px;
 }
+
 #intr .partners .container {
     max-width: 100%
 }
@@ -308,9 +312,11 @@ span.tabs-name {
     color: #029394;
     font-size: 40px;
 }
-.none{
+
+.none {
     display: none!important;
 }
+
 #intr .slick-prev {
     left: -20px;
 }
@@ -324,15 +330,19 @@ span.tabs-name {
     opacity: 1;
     color: #fff;
 }
-#intr .slide-box{
+
+#intr .slide-box {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     -ms-align-items: flex-start;
     align-items: flex-start;
     padding-left: 20px;
+    height: auto;
 }
-.main-box-num{text-align: left;
+
+.main-box-num {
+    text-align: left;
     font-size: 18px;
     font-weight: bold;
     width: 80px;
@@ -340,6 +350,7 @@ span.tabs-name {
     position: relative;
     line-height: 20px;
 }
+
 .main-box-num:before {
     content: '';
     width: 40px;
@@ -592,9 +603,55 @@ ul.navbar-nav.mr-auto {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1025px) {
+    #intr .partners {
+        margin-left: -15px;
+        width: calc(100% + 30px);
+    }
     .main-block-cont {
-        width: 738px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    #intr .align-items-center .col-sm-4 {
+        -webkit-box-flex: 0;
+        max-width: 100%;
+        flex: 0 0 40%;
+    }
+    #intr .align-items-center .col-sm-8 {
+        -webkit-box-flex: 0;
+        flex: 0 0 60%;
+    }
+    .main-box-cont p {
+        margin-left: -80px;
+    }
+    #intr .slide-box {
+        padding: 0;
+    }
+}
+
+@media (max-width: 668px) {
+    .main-block h1 {
+        font-size: 30px;
+    }
+    .col-xs-0 {
+        display: none;
+    }
+    main h2 {
+        margin-bottom: 45px;
+    }
+
+    #intr .align-items-center .col-xs-12 {
+        -webkit-box-flex: 0;
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+    #intr .slick-prev {
+        left: -50px;
+    }
+    #intr .slick-next {
+        right: -30px;
     }
 }
 
