@@ -241,6 +241,7 @@ main h2 {
 }
 
 .main-box-cont {
+    padding-right: 15px;
     text-align: left;
 }
 
@@ -331,7 +332,7 @@ span.tabs-name {
 }
 
 #intr .slick-next {
-    right: -10px;
+    right: 0px;
 }
 
 #intr .slick-prev.slick-disabled:before,
@@ -642,11 +643,17 @@ ul.navbar-nav.mr-auto {
         margin-left: -80px;
     }
     #intr .slide-box {
-        padding: 0;
+        padding:0 10px;
     }
 }
 
 @media (max-width: 668px) {
+    .main-box-cont{
+        padding-right: 0;
+    }
+    #intr .slick-initialized .slick-slide{
+        padding: 5px;
+    }
     .main-block h1 {
         font-size: 30px;
     }
