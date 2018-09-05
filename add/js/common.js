@@ -53,14 +53,16 @@ if ($(window).width() < 769) { $('.header-sign').appendTo('ul.navbar-nav.mr-auto
 // });
 
 
+
 $(function() {
+
     var firstVideo = $('#home').find('video');
     firstVideo.attr('controls', 'controls');
     firstVideo.get(0).play();
 
-    $('.nav-tabs').find('a').on('click', function() {
-        var tabItem = $(this).attr('href');
-        var itemVideo = $(tabItem).find('video').get(0);
+    $('.nav-tabs').find('a').on('click', function () {
+        var tabItem     = $(this).attr('href');
+        var itemVideo   = $(tabItem).find('video').get(0);
 
         itemVideo.currentTime = 0;
         itemVideo.play();
@@ -69,37 +71,38 @@ $(function() {
 });
 
 
-if ($(window).width() <= '768') {
+if ($(window).width() <= '768'){
 
     $('.tab-content').slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        arrows: false,
-        fade: true,
-        asNavFor: '.nav.nav-tabs'
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows: false,
+      fade: true,
+      asNavFor: '.nav.nav-tabs'
     });
     $('.nav.nav-tabs').slick({
-        slidesToShow: 2,
-        slidesToScroll: 1,
-        asNavFor: '.tab-content',
-        dots: false,
-        centerMode: false,
-        focusOnSelect: true
+      slidesToShow: 2,
+      slidesToScroll: 1,
+      asNavFor: '.tab-content',
+      dots: false,
+      centerMode: false,
+      focusOnSelect: true
     });
 
-    $('.nav.nav-tabs').on('beforeChange', function(event, slick, currentSlide, nextSlide) {
+    $('.nav.nav-tabs').on('beforeChange', function(event, slick, currentSlide, nextSlide){
 
-        var tabItem = $('.nav.nav-tabs').find('[data-slick-index="' + nextSlide + '"]').find('a');
+        var tabItem     = $('.nav.nav-tabs').find('[data-slick-index="'+nextSlide+'"]').find('a');
         var tabItemHref = tabItem.attr('href');
-        var itemVideo = $(tabItemHref).find('video').get(0);
+        var itemVideo   = $(tabItemHref).find('video').get(0);
 
         $('.slick-slide .nav-link.active').removeClass('active');
         tabItem.addClass('active');
-        itemVideo.currentTime = 0;
+        //itemVideo.currentTime = 0;
         itemVideo.play();
     });
 
 }
+
 
 
 // $('a#home-tab').click(function(){
