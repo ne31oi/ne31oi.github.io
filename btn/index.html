@@ -59,23 +59,25 @@ body {
     <div id="btn_on" class="btn">
         <img src="img/on.png" alt="">
     </div>
+    <div id="cl" class="btn"></div>
     <script type="text/javascript">
     var on = document.getElementById('btn_on');
+    var cl = document.getElementById('cl');
     on.style.opacity = 1;
     /*on.onclick = function() {
     	console.log(1)
         on.style.opacity = (on.style.opacity == 1) ? 0 : 1;
     }*/
-    on.mousedown = function() {
+    cl.mousedown = function() {
         on.style.opacity = 0;
     }
-    on.ontouchstart = function() {
+    cl.ontouchstart = function() {
         on.style.opacity = 0;
     }
-    on.ontouchend = function() {
+    cl.ontouchend = function() {
         on.style.opacity = 1;
     }
-    on.mouseup = function() {
+    cl.mouseup = function() {
         on.style.opacity = 1;
     }
     </script>
