@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>btn</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 </head>
 <style type="text/css">
 * {
@@ -49,10 +49,6 @@ body {
     margin-top: 1px;
     transform: scale(1.01);
 }
-
-#btn_on:hover {
-    opacity: 0;
-}
 </style>
 
 <body>
@@ -63,6 +59,14 @@ body {
     <div id="btn_on" class="btn">
         <img src="img/on.png" alt="">
     </div>
+    <script type="text/javascript">
+    var on = document.getElementById('btn_on');
+    on.style.opacity = 1;
+    on.onclick = function() {
+    	console.log(1)
+        on.style.opacity = (on.style.opacity == 1) ? 0 : 1;
+    }
+    </script>
 </body>
 
 </html>
