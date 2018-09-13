@@ -11,6 +11,10 @@
           box-sizing: border-box;
 }
 
+ul {
+  list-style: none;
+}
+
 html {
   font-family: sans-serif;
   /* 1 */
@@ -444,7 +448,8 @@ body {
 
 .bg {
   position: fixed;
-  background-image: url(../img/general/bg.png);
+  background-image: url(../img/general/bg2.png);
+  background-size: 500px;
   top: 0;
   left: 0;
   width: 100%;
@@ -452,8 +457,35 @@ body {
   z-index: 1;
 }
 
+.who {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 40px;
+}
+
 .page__wrapper {
   min-height: 100%;
+}
+
+.type_item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 5px;
+}
+
+.type_item h4 {
+  min-width: 150px;
+  padding-right: 20px;
+  text-align: right;
+}
+
+.type_item .type_rating img {
+  margin-right: 20px;
 }
 
 * html .page__wrapper {
@@ -501,6 +533,7 @@ section {
 .scontainer {
   width: 100%;
   max-width: 640px;
+  position: relative;
 }
 
 .padding {
@@ -510,16 +543,80 @@ section {
           order: 99;
 }
 
+.who {
+  background-image: url(../img/general/sheep-cheese.jpg);
+  background-position: center 100%;
+  background-size: cover;
+  color: #fff;
+}
+
+.cheese_1 .color_svg {
+  -webkit-filter: sepia(70%) hue-rotate(604deg) saturate(267%);
+          filter: sepia(70%) hue-rotate(604deg) saturate(267%);
+}
+
+.cheese_2 .color_svg {
+  -webkit-filter: sepia(71%) hue-rotate(308deg) saturate(500%);
+          filter: sepia(71%) hue-rotate(308deg) saturate(500%);
+}
+
+.cheese_3 .color_svg {
+  -webkit-filter: sepia(45%) hue-rotate(71deg) saturate(345%);
+          filter: sepia(45%) hue-rotate(71deg) saturate(345%);
+}
+
+.cheese_4 .color_svg {
+  -webkit-filter: sepia(40%) hue-rotate(190deg) saturate(500%) brightness(119.2%);
+          filter: sepia(40%) hue-rotate(190deg) saturate(500%) brightness(119.2%);
+}
+
+.cheese_5 .color_svg {
+  -webkit-filter: sepia(65%) hue-rotate(336deg) saturate(400%) brightness(144.2%);
+          filter: sepia(65%) hue-rotate(336deg) saturate(400%) brightness(144.2%);
+}
+
+.cheese_6 .color_svg {
+  -webkit-filter: sepia(100%) hue-rotate(336deg) saturate(400%);
+          filter: sepia(100%) hue-rotate(336deg) saturate(400%);
+}
+
+.cheese_7 .color_svg {
+  -webkit-filter: sepia(100%) hue-rotate(336deg) saturate(400%);
+          filter: sepia(100%) hue-rotate(336deg) saturate(400%);
+}
+
+.cheese_8 .color_svg {
+  -webkit-filter: sepia(49%) hue-rotate(158deg) saturate(508%) brightness(118.2%);
+          filter: sepia(49%) hue-rotate(158deg) saturate(508%) brightness(118.2%);
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  -webkit-transition: opacity 1s;
+  transition: opacity 1s;
+}
+
+.fade-enter,
+.fade-leave-to {
+  opacity: 0;
+}
+
 .header {
   background-image: url(../img/general/bg.png);
-  background-position: center 100%;
   background-size: 400px;
+}
+
+.header,
+.footer {
+  background-position: center 100%;
   min-height: 250px;
   padding-bottom: 20px;
   padding-top: 20px;
+  width: 100%;
 }
 
-.header .logo {
+.header .logo,
+.footer .logo {
   position: absolute;
   z-index: 3;
   width: 100%;
@@ -531,15 +628,71 @@ section {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: 200px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-.header .logo img {
+.header .logo img,
+.footer .logo img {
   width: 250px;
 }
 
-.header .container {
+.header .logo .logo_text,
+.footer .logo .logo_text {
+  margin-top: -40px;
+  color: #fff;
+}
+
+.header .container,
+.footer .container {
   z-index: 4;
+}
+
+.footer {
+  background-size: cover;
+  background-image: url(../img/general/switzerland-swiss.jpg);
+}
+
+.dots {
+  -webkit-box-pack: center !important;
+      -ms-flex-pack: center !important;
+          justify-content: center !important;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 10px;
+}
+
+.dots .dot {
+  margin: 10px;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.dots .dot img {
+  width: 20px;
+  height: 20px;
+}
+
+.dots .dot_active img {
+  width: 40px;
+  height: 40px;
 }
 
 .right_element .first {
@@ -589,6 +742,15 @@ section {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+}
+
+.second .scontainer {
+  padding-left: 60px;
+}
+
+.first .scontainer,
+.second .scontainer {
+  padding-top: 40px;
 }
 
 .about {
