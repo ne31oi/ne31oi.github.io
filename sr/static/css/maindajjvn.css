@@ -688,17 +688,25 @@ section {
 .footer {
   background-size: cover;
   background-image: url(../img/general/switzerland-swiss.jpg);
-  min-height: 200px;
+  min-height: 600px;
+}
+
+.footer .logo img {
+  width: 650px;
+}
+
+.footer .logo {
+  top: 60px;
+  height: auto;
 }
 
 .dots {
   -webkit-box-pack: center !important;
       -ms-flex-pack: center !important;
           justify-content: center !important;
-  position: absolute;
+  margin-top: 20px;
+  margin-bottom: 20px;
   width: 100%;
-  left: 0;
-  bottom: 10px;
 }
 
 .dots .dot {
@@ -760,6 +768,10 @@ section {
   padding-right: 40px;
 }
 
+.right_element .second img {
+  margin-right: 200px;
+}
+
 .first {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
@@ -768,6 +780,7 @@ section {
 
 .first .scontainer {
   padding-right: 40px;
+  padding-top: 40px;
 }
 
 .first table {
@@ -794,11 +807,20 @@ section {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+  background-image: url(../img/general/bg3.png);
+  background-size: cover;
+  background-position: center center;
 }
 
 .second .scontainer {
   padding-left: 60px;
   padding-top: 40px;
+}
+
+.second img {
+  height: 500px;
+  margin-top: 100px;
+  margin-left: 200px;
 }
 
 .first .scontainer,
@@ -818,7 +840,7 @@ section {
 .about {
   min-height: 200px;
   padding-top: 50px;
-  padding-bottom: 20px;
+  padding-bottom: 40px;
   background-color: #fff;
   background-position: center 100%;
   background-size: cover;
@@ -839,7 +861,8 @@ section {
 }
 
 .about_bg_image {
-  margin-top: 20px;
+  margin-top: 40px;
+  margin-bottom: 40px;
   height: 400px;
   background-image: url(../img/general/image1.png);
   background-size: cover;
