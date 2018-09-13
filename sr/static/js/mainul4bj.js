@@ -164,7 +164,6 @@ var app = new Vue({
             }
         },
         click: function(b) {
-            console.log(b.target.nodeName)
             var x;
             if (b.target.nodeName == "IMG")
                 x = b.target.parentElement
