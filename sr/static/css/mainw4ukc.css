@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 /**
  * 1. Set default font family to sans-serif.
@@ -445,6 +446,7 @@ body {
   position: relative;
   font-family: 'PF DinText Pro';
   font-size: 16px;
+  overflow-x: hidden;
 }
 
 .bg {
@@ -572,6 +574,20 @@ section {
   -webkit-box-ordinal-group: 100;
       -ms-flex-order: 99;
           order: 99;
+  position: relative;
+}
+
+.padding .transl {
+  width: 40px;
+  height: 40px;
+  background: #fff;
+  z-index: 20;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  position: absolute;
+  top: auto;
+  left: calc(50% - 20px);
+  bottom: -20px;
 }
 
 .who {
@@ -773,6 +789,8 @@ section {
 }
 
 .dots .dot {
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
   margin: 10px;
   cursor: pointer;
   width: 40px;
@@ -791,6 +809,11 @@ section {
 .dots .dot img {
   width: 20px;
   height: 20px;
+}
+
+.dots .dot_active {
+  -webkit-filter: grayscale(0%);
+          filter: grayscale(0%);
 }
 
 .dots .dot_active img {
@@ -832,7 +855,7 @@ section {
 }
 
 .right_element .second img {
-  margin-right: 200px;
+  margin-right: 100px;
 }
 
 .first {
@@ -883,6 +906,17 @@ section {
   font-weight: 700;
 }
 
+.border {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  outline: 1px solid #fff;
+  outline-offset: -10px;
+  z-index: 99;
+}
+
 .second {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
@@ -900,7 +934,7 @@ section {
 .second img {
   height: 500px;
   margin-top: 100px;
-  margin-left: 200px;
+  margin-left: 100px;
 }
 
 .first .scontainer,
@@ -925,7 +959,6 @@ section {
 .about {
   min-height: 200px;
   padding-top: 50px;
-  padding-bottom: 40px;
   background-color: #fff;
   background-position: center 100%;
   background-size: cover;
@@ -973,6 +1006,51 @@ section {
   background-position: center 100%;
 }
 
+.bottom .left,
+.bottom .right {
+  overflow: hidden;
+  position: absolute;
+  bottom: 0;
+  height: 40px;
+}
+
+.bottom .left {
+  left: 0;
+  right: 50%;
+}
+
+.bottom .right {
+  left: 50%;
+  right: 0;
+}
+
+.bottom .left:before,
+.bottom .right:before {
+  content: "";
+  position: absolute;
+}
+
+.bottom .left:before,
+.bottom .right:before {
+  top: 0px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: #fff;
+  -webkit-transform-origin: 0 100%;
+          transform-origin: 0 100%;
+}
+
+.bottom .left:before {
+  -webkit-transform: skewX(45deg);
+          transform: skewX(45deg);
+}
+
+.bottom .right:before {
+  -webkit-transform: skewX(-45deg);
+          transform: skewX(-45deg);
+}
+
 .md4 {
   width: 33.3%;
 }
@@ -982,6 +1060,7 @@ section {
 }
 
 .md6 {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1007,4 +1086,155 @@ section {
 
 .bg-color {
   background-color: #fff;
+}
+
+.feed {
+  position: fixed;
+  right: 20px;
+  bottom: 40px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: orange;
+  z-index: 999;
+  cursor: pointer;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.2) 5px 5px 15px;
+          box-shadow: rgba(0, 0, 0, 0.2) 5px 5px 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.box {
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: -1;
+}
+
+.box .bbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  width: 320px;
+  min-height: 200px;
+  background: #fff;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.box .bbox input, .box .bbox textarea {
+  width: 240px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #000;
+  padding: 10px;
+  outline: none;
+  border-radius: 8px;
+  resize: none;
+}
+
+.box .bbox button {
+  padding: 10px 30px;
+  border-radius: 4px;
+  background: #112;
+  border: 1px solid #112;
+  color: #fff;
+  -webkit-transition: background .4s,color .4s;
+  transition: background .4s,color .4s;
+}
+
+.box .bbox button:hover {
+  background: #fff;
+  color: #112;
+}
+
+.box .bbox .logo {
+  position: relative;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.box .bbox .logo img {
+  width: 250px;
+}
+
+.box .bbox .logo_text {
+  position: absolute;
+  width: 100%;
+  bottom: 20px;
+  text-align: center;
+  left: 0;
+  color: #fff;
+}
+
+[class*='close-'] {
+  color: #777;
+  font: 14px/100% arial, sans-serif;
+  position: absolute;
+  right: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  text-shadow: 0 1px 0 #fff;
+  top: 5px;
+}
+
+.close-thik:after {
+  content: '✖';
+  /* UTF-8 symbol */
+}
+
+.show {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 999999;
+}
+
+@media screen and (max-width: 1280px) {
+  .container,
+  .scontainer,
+  .right_element .first .scontainer {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .right_element .second img,
+  .second img {
+    margin-right: 0;
+    margin-left: 0;
+  }
+  h2 {
+    font-size: 36px;
+  }
+  .padding {
+    height: 80px;
+  }
 }

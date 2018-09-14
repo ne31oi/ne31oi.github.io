@@ -1,6 +1,7 @@
 var app = new Vue({
     el: '#app',
     data: {
+        feedback: false,
         slider1_1: true,
         slider1_2: false,
         slider1_3: false,
@@ -27,6 +28,12 @@ var app = new Vue({
         slider8_3: false,
     },
     methods: {
+        fb: function(b) {
+            var f = document.getElementById('feed');
+            if (f.classList.contains('show')) {
+                f.classList.remove('show')
+            } else f.classList.add('show')
+        },
         slide1: function(b) {
             if (b == 1) {
                 this.slider1_1 = true;
