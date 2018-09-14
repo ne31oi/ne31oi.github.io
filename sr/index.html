@@ -12,7 +12,7 @@
         <meta name="HandheldFriendly" content="true">
 
         <!--[if (gt IE 9)|!(IE)]><!-->
-        <link href="static/css/maindajjvn.min.css" rel="stylesheet" type="text/css">
+        <link href="static/css/mainelwa5.min.css" rel="stylesheet" type="text/css">
         <!--<![endif]-->
         <meta property="og:title" content="#{data.title}">
         <meta property="og:title" content="">
@@ -48,20 +48,26 @@
                 <div class="md12">
                     <div class="container">
                         <div class="md12">
-                            <h2>Кто мы?</h2>
-                        </div>
-                        <div class="md12">
                             <ul class="about_ul">
                                 <li>
-                                    <img class="about_img" src="static/img/general/moo_bg.svg" alt="">
+                                    <img class="about_img big" src="static/img/general/cb.png" alt="">
                                 </li>
                                 <li>
-                                    <img class="about_img" src="static/img/general/milk_bg.svg" alt="">
+                                    <img class="about_img" src="static/img/general/link1.png" alt="">
                                 </li>
                                 <li>
-                                    <img class="about_img" src="static/img/general/chease_bg.svg" alt="">
+                                    <img class="about_img big" src="static/img/general/m.png" alt="">
+                                </li>
+                                <li>
+                                    <img class="about_img" src="static/img/general/link1.png" alt="">
+                                </li>
+                                <li>
+                                    <img class="about_img big" src="static/img/general/ca.png" alt="">
                                 </li>
                             </ul>
+                        </div>
+                        <div class="md12">
+                            <h2>Кто мы?</h2>
                         </div>
                         <div class="md12">
                             <p class="text">На протяжении многих лет люди стремятся понять природу молока, её важность и значение для жизни на Земле. Постоянно взаимодействуя с ведущими научными организациями мира, мы используем передовой опыт исследований, с целью создания
@@ -70,7 +76,7 @@
                                 торговой марки «Милдар». Сегодня это полутвердые и твердые сыры высочайших потребительских свойств, изготовленные на основе традиционных технологий, используемых в Швейцарии, Германии, Голландии, Италии и других странах,
                                 с применением личного исследовательского опыта и учетом вкусовых предпочтений наших соотечественников.</p>
                         </div>
-                        <div class="md12 about_bg_image"></div>
+                        <div class="md12 padding bg-color"></div>
                         <div class="md12">
                             <h2>Наша миссия</h2>
                         </div>
@@ -113,6 +119,15 @@
                                 </ul>
                             </div>
                         </div>
+                    </div>
+                </div>
+            </section>
+            <section class="bg-color">
+                <div class="md12">
+                    <div class="container lines">
+                        <div class="line"></div>
+                        <h2>Наши продукты</h2>
+                        <div class="line"></div>
                     </div>
                 </div>
             </section>
@@ -167,40 +182,45 @@
                             <div class="md12">
                                 <table>
                                     <tr class="head">
-                                        <td>Форма выпуска</td>
-                                        <td>Тип упаковки/покрытия</td>
-                                        <td>Вес</td>
-                                        <td>Вложение</td>
+                                        <td class="td1">Форма выпуска</td>
+                                        <td class="td2">Тип упаковки/покрытия</td>
+                                        <td class="td3">Вес</td>
+                                        <td class="td4">Вложение</td>
                                     </tr>
-                                    <tr>
-                                        <td>ГОЛОВА ФОРМЫ НИЗКИЙ ЦИЛИНДРЛАТЕКСНОЕ</td>
-                                        <td>Латексное</td>
-                                        <td>7,5-8кг</td>
-                                        <td>2 головы</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Сегмент фиксированого веса</td>
-                                        <td>Дой-пак с функцией перезакрывания.</td>
-                                        <td>0.22кг</td>
-                                        <td>10 шт.</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Нарезка слайсами</td>
-                                        <td>Подложка с перезакрываемой пленкой на клейкой основе.</td>
-                                        <td>0,15кг</td>
-                                        <td>15 шт.</td>
-                                    </tr>
+                                    <transition name="fade" mode="out-in">
+                                        <tr v-if="slider1_1">
+                                            <td class="td1">ГОЛОВА ФОРМЫ НИЗКИЙ ЦИЛИНДРЛАТЕКСНОЕ</td>
+                                            <td class="td2">Латексное</td>
+                                            <td class="td3">7,5-8кг</td>
+                                            <td class="td4">2 головы</td>
+                                        </tr>
+                                        <tr v-if="slider1_2">
+                                            <td class="td1">Сегмент фиксированого веса</td>
+                                            <td class="td2">Дой-пак с функцией перезакрывания.</td>
+                                            <td class="td3">0.22кг</td>
+                                            <td class="td4">10 шт.</td>
+                                        </tr>
+                                        <tr v-if="slider1_3">
+                                            <td class="td1">Нарезка слайсами</td>
+                                            <td class="td2">Подложка с перезакрываемой пленкой на клейкой основе.</td>
+                                            <td class="td3">0,15кг</td>
+                                            <td class="td4">15 шт.</td>
+                                        </tr>
+                                    </transition>
                                 </table>
                             </div>
                             <div class="md12 dots">
-                                <div class="dot dot_active dot1" v-on:click="slide1(1);click(event)">
-                                    <img src="static/img/general/icon-shape-wheel.svg">
-                                </div>
-                                <div class="dot dot2" v-on:click="slide1(2);click(event)">
-                                    <img src="static/img/general/icon-shape-wheel.svg">
-                                </div>
-                                <div class="dot dot3" v-on:click="slide1(3);click(event)">
-                                    <img src="static/img/general/icon-shape-wheel.svg">
+                                <div class="text">Выберите тип упаковки:</div>
+                                <div class="d">
+                                    <div class="dot dot_active dot1" v-on:click="slide1(1);click(event)">
+                                        <img src="static/img/general/icon-shape-wheel.svg">
+                                    </div>
+                                    <div class="dot dot2" v-on:click="slide1(2);click(event)">
+                                        <img src="static/img/general/icon-shape-wheel.svg">
+                                    </div>
+                                    <div class="dot dot3" v-on:click="slide1(3);click(event)">
+                                        <img src="static/img/general/icon-shape-wheel.svg">
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -269,40 +289,45 @@
                             <div class="md12">
                                 <table>
                                     <tr class="head">
-                                        <td>Форма выпуска</td>
-                                        <td>Тип упаковки/покрытия</td>
-                                        <td>Вес</td>
-                                        <td>Вложение</td>
+                                        <td class="td1">Форма выпуска</td>
+                                        <td class="td2">Тип упаковки/покрытия</td>
+                                        <td class="td3">Вес</td>
+                                        <td class="td4">Вложение</td>
                                     </tr>
-                                    <tr>
-                                        <td>ГОЛОВА ФОРМЫ НИЗКИЙ ЦИЛИНДРЛАТЕКСНОЕ</td>
-                                        <td>Латексное</td>
-                                        <td>7,5-8кг</td>
-                                        <td>2 головы</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Сегмент фиксированого веса</td>
-                                        <td>Дой-пак с функцией перезакрывания.</td>
-                                        <td>0.22кг</td>
-                                        <td>10 шт.</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Нарезка слайсами</td>
-                                        <td>Подложка с перезакрываемой пленкой на клейкой основе.</td>
-                                        <td>0,15кг</td>
-                                        <td>15 шт.</td>
-                                    </tr>
+                                    <transition name="fade" mode="out-in">
+                                        <tr v-if="slider2_1">
+                                            <td class="td1">ГОЛОВА ФОРМЫ НИЗКИЙ ЦИЛИНДРЛАТЕКСНОЕ</td>
+                                            <td class="td2">Латексное</td>
+                                            <td class="td3">7,5-8кг</td>
+                                            <td class="td4">2 головы</td>
+                                        </tr>
+                                        <tr v-if="slider2_2">
+                                            <td class="td1">Сегмент фиксированого веса</td>
+                                            <td class="td2">Дой-пак с функцией перезакрывания.</td>
+                                            <td class="td3">0.22кг</td>
+                                            <td class="td4">10 шт.</td>
+                                        </tr>
+                                        <tr v-if="slider2_3">
+                                            <td class="td1">Нарезка слайсами</td>
+                                            <td class="td2">Подложка с перезакрываемой пленкой на клейкой основе.</td>
+                                            <td class="td3">0,15кг</td>
+                                            <td class="td4">15 шт.</td>
+                                        </tr>
+                                    </transition>
                                 </table>
                             </div>
                             <div class="md12 dots">
-                                <div class="dot dot_active dot1" v-on:click="slide2(1);click(event)">
-                                    <img src="static/img/general/icon-shape-wheel.svg">
-                                </div>
-                                <div class="dot dot2" v-on:click="slide2(2);click(event)">
-                                    <img src="static/img/general/icon-shape-wheel.svg">
-                                </div>
-                                <div class="dot dot3" v-on:click="slide2(3);click(event)">
-                                    <img src="static/img/general/icon-shape-wheel.svg">
+                                <div class="text">Выберите тип упаковки:</div>
+                                <div class="d">
+                                    <div class="dot dot_active dot1" v-on:click="slide2(1);click(event)">
+                                        <img src="static/img/general/icon-shape-wheel.svg">
+                                    </div>
+                                    <div class="dot dot2" v-on:click="slide2(2);click(event)">
+                                        <img src="static/img/general/icon-shape-wheel.svg">
+                                    </div>
+                                    <div class="dot dot3" v-on:click="slide2(3);click(event)">
+                                        <img src="static/img/general/icon-shape-wheel.svg">
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -372,40 +397,45 @@
                             <div class="md12">
                                 <table>
                                     <tr class="head">
-                                        <td>Форма выпуска</td>
-                                        <td>Тип упаковки/покрытия</td>
-                                        <td>Вес</td>
-                                        <td>Вложение</td>
+                                        <td class="td1">Форма выпуска</td>
+                                        <td class="td2">Тип упаковки/покрытия</td>
+                                        <td class="td3">Вес</td>
+                                        <td class="td4">Вложение</td>
                                     </tr>
-                                    <tr>
-                                        <td>ГОЛОВА ФОРМЫ НИЗКИЙ ЦИЛИНДРЛАТЕКСНОЕ</td>
-                                        <td>Латексное</td>
-                                        <td>7,5-8кг</td>
-                                        <td>2 головы</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Сегмент фиксированого веса</td>
-                                        <td>Дой-пак с функцией перезакрывания.</td>
-                                        <td>0.22кг</td>
-                                        <td>10 шт.</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Нарезка слайсами</td>
-                                        <td>Подложка с перезакрываемой пленкой на клейкой основе.</td>
-                                        <td>0,15кг</td>
-                                        <td>15 шт.</td>
-                                    </tr>
+                                    <transition name="fade" mode="out-in">
+                                        <tr v-if="slider3_1">
+                                            <td class="td1">ГОЛОВА ФОРМЫ НИЗКИЙ ЦИЛИНДРЛАТЕКСНОЕ</td>
+                                            <td class="td2">Латексное</td>
+                                            <td class="td3">7,5-8кг</td>
+                                            <td class="td4">2 головы</td>
+                                        </tr>
+                                        <tr v-if="slider3_2">
+                                            <td class="td1">Сегмент фиксированого веса</td>
+                                            <td class="td2">Дой-пак с функцией перезакрывания.</td>
+                                            <td class="td3">0.22кг</td>
+                                            <td class="td4">10 шт.</td>
+                                        </tr>
+                                        <tr v-if="slider3_3">
+                                            <td class="td1">Нарезка слайсами</td>
+                                            <td class="td2">Подложка с перезакрываемой пленкой на клейкой основе.</td>
+                                            <td class="td3">0,15кг</td>
+                                            <td class="td4">15 шт.</td>
+                                        </tr>
+                                    </transition>
                                 </table>
                             </div>
                             <div class="md12 dots">
-                                <div class="dot dot_active dot1" v-on:click="slide3(1);click(event)">
-                                    <img src="static/img/general/icon-shape-wheel.svg">
-                                </div>
-                                <div class="dot dot2" v-on:click="slide3(2);click(event)">
-                                    <img src="static/img/general/icon-shape-wheel.svg">
-                                </div>
-                                <div class="dot dot3" v-on:click="slide3(3);click(event)">
-                                    <img src="static/img/general/icon-shape-wheel.svg">
+                                <div class="text">Выберите тип упаковки:</div>
+                                <div class="d">
+                                    <div class="dot dot_active dot1" v-on:click="slide3(1);click(event)">
+                                        <img src="static/img/general/icon-shape-wheel.svg">
+                                    </div>
+                                    <div class="dot dot2" v-on:click="slide3(2);click(event)">
+                                        <img src="static/img/general/icon-shape-wheel.svg">
+                                    </div>
+                                    <div class="dot dot3" v-on:click="slide3(3);click(event)">
+                                        <img src="static/img/general/icon-shape-wheel.svg">
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -476,40 +506,45 @@
                             <div class="md12">
                                 <table>
                                     <tr class="head">
-                                        <td>Форма выпуска</td>
-                                        <td>Тип упаковки/покрытия</td>
-                                        <td>Вес</td>
-                                        <td>Вложение</td>
+                                        <td class="td1">Форма выпуска</td>
+                                        <td class="td2">Тип упаковки/покрытия</td>
+                                        <td class="td3">Вес</td>
+                                        <td class="td4">Вложение</td>
                                     </tr>
-                                    <tr>
-                                        <td>ГОЛОВА ФОРМЫ НИЗКИЙ ЦИЛИНДРЛАТЕКСНОЕ</td>
-                                        <td>Латексное</td>
-                                        <td>7,5-8кг</td>
-                                        <td>2 головы</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Сегмент фиксированого веса</td>
-                                        <td>Дой-пак с функцией перезакрывания.</td>
-                                        <td>0.22кг</td>
-                                        <td>10 шт.</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Нарезка слайсами</td>
-                                        <td>Подложка с перезакрываемой пленкой на клейкой основе.</td>
-                                        <td>0,15кг</td>
-                                        <td>15 шт.</td>
-                                    </tr>
+                                    <transition name="fade" mode="out-in">
+                                        <tr v-if="slider4_1">
+                                            <td class="td1">ГОЛОВА ФОРМЫ НИЗКИЙ ЦИЛИНДРЛАТЕКСНОЕ</td>
+                                            <td class="td2">Латексное</td>
+                                            <td class="td3">7,5-8кг</td>
+                                            <td class="td4">2 головы</td>
+                                        </tr>
+                                        <tr v-if="slider4_2">
+                                            <td class="td1">Сегмент фиксированого веса</td>
+                                            <td class="td2">Дой-пак с функцией перезакрывания.</td>
+                                            <td class="td3">0.22кг</td>
+                                            <td class="td4">10 шт.</td>
+                                        </tr>
+                                        <tr v-if="slider4_3">
+                                            <td class="td1">Нарезка слайсами</td>
+                                            <td class="td2">Подложка с перезакрываемой пленкой на клейкой основе.</td>
+                                            <td class="td3">0,15кг</td>
+                                            <td class="td4">15 шт.</td>
+                                        </tr>
+                                    </transition>
                                 </table>
                             </div>
                             <div class="md12 dots">
-                                <div class="dot dot_active dot1" v-on:click="slide4(1);click(event)">
-                                    <img src="static/img/general/icon-shape-wheel.svg">
-                                </div>
-                                <div class="dot dot2" v-on:click="slide4(2);click(event)">
-                                    <img src="static/img/general/icon-shape-wheel.svg">
-                                </div>
-                                <div class="dot dot3" v-on:click="slide4(3);click(event)">
-                                    <img src="static/img/general/icon-shape-wheel.svg">
+                                <div class="text">Выберите тип упаковки:</div>
+                                <div class="d">
+                                    <div class="dot dot_active dot1" v-on:click="slide4(1);click(event)">
+                                        <img src="static/img/general/icon-shape-wheel.svg">
+                                    </div>
+                                    <div class="dot dot2" v-on:click="slide4(2);click(event)">
+                                        <img src="static/img/general/icon-shape-wheel.svg">
+                                    </div>
+                                    <div class="dot dot3" v-on:click="slide4(3);click(event)">
+                                        <img src="static/img/general/icon-shape-wheel.svg">
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -579,40 +614,45 @@
                             <div class="md12">
                                 <table>
                                     <tr class="head">
-                                        <td>Форма выпуска</td>
-                                        <td>Тип упаковки/покрытия</td>
-                                        <td>Вес</td>
-                                        <td>Вложение</td>
+                                        <td class="td1">Форма выпуска</td>
+                                        <td class="td2">Тип упаковки/покрытия</td>
+                                        <td class="td3">Вес</td>
+                                        <td class="td4">Вложение</td>
                                     </tr>
-                                    <tr>
-                                        <td>ГОЛОВА ФОРМЫ НИЗКИЙ ЦИЛИНДРЛАТЕКСНОЕ</td>
-                                        <td>Латексное</td>
-                                        <td>7,5-8кг</td>
-                                        <td>2 головы</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Сегмент фиксированого веса</td>
-                                        <td>Дой-пак с функцией перезакрывания.</td>
-                                        <td>0.22кг</td>
-                                        <td>10 шт.</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Нарезка слайсами</td>
-                                        <td>Подложка с перезакрываемой пленкой на клейкой основе.</td>
-                                        <td>0,15кг</td>
-                                        <td>15 шт.</td>
-                                    </tr>
+                                    <transition name="fade" mode="out-in">
+                                        <tr v-if="slider5_1">
+                                            <td class="td1">ГОЛОВА ФОРМЫ НИЗКИЙ ЦИЛИНДРЛАТЕКСНОЕ</td>
+                                            <td class="td2">Латексное</td>
+                                            <td class="td3">7,5-8кг</td>
+                                            <td class="td4">2 головы</td>
+                                        </tr>
+                                        <tr v-if="slider5_2">
+                                            <td class="td1">Сегмент фиксированого веса</td>
+                                            <td class="td2">Дой-пак с функцией перезакрывания.</td>
+                                            <td class="td3">0.22кг</td>
+                                            <td class="td4">10 шт.</td>
+                                        </tr>
+                                        <tr v-if="slider5_3">
+                                            <td class="td1">Нарезка слайсами</td>
+                                            <td class="td2">Подложка с перезакрываемой пленкой на клейкой основе.</td>
+                                            <td class="td3">0,15кг</td>
+                                            <td class="td4">15 шт.</td>
+                                        </tr>
+                                    </transition>
                                 </table>
                             </div>
                             <div class="md12 dots">
-                                <div class="dot dot_active dot1" v-on:click="slide5(1);click(event)">
-                                    <img src="static/img/general/icon-shape-wheel.svg">
-                                </div>
-                                <div class="dot dot2" v-on:click="slide5(2);click(event)">
-                                    <img src="static/img/general/icon-shape-wheel.svg">
-                                </div>
-                                <div class="dot dot3" v-on:click="slide5(3);click(event)">
-                                    <img src="static/img/general/icon-shape-wheel.svg">
+                                <div class="text">Выберите тип упаковки:</div>
+                                <div class="d">
+                                    <div class="dot dot_active dot1" v-on:click="slide5(1);click(event)">
+                                        <img src="static/img/general/icon-shape-wheel.svg">
+                                    </div>
+                                    <div class="dot dot2" v-on:click="slide5(2);click(event)">
+                                        <img src="static/img/general/icon-shape-wheel.svg">
+                                    </div>
+                                    <div class="dot dot3" v-on:click="slide5(3);click(event)">
+                                        <img src="static/img/general/icon-shape-wheel.svg">
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -682,40 +722,45 @@
                             <div class="md12">
                                 <table>
                                     <tr class="head">
-                                        <td>Форма выпуска</td>
-                                        <td>Тип упаковки/покрытия</td>
-                                        <td>Вес</td>
-                                        <td>Вложение</td>
+                                        <td class="td1">Форма выпуска</td>
+                                        <td class="td2">Тип упаковки/покрытия</td>
+                                        <td class="td3">Вес</td>
+                                        <td class="td4">Вложение</td>
                                     </tr>
-                                    <tr>
-                                        <td>ГОЛОВА ФОРМЫ НИЗКИЙ ЦИЛИНДРЛАТЕКСНОЕ</td>
-                                        <td>Латексное</td>
-                                        <td>7,5-8кг</td>
-                                        <td>2 головы</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Сегмент фиксированого веса</td>
-                                        <td>Дой-пак с функцией перезакрывания.</td>
-                                        <td>0.22кг</td>
-                                        <td>10 шт.</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Нарезка слайсами</td>
-                                        <td>Подложка с перезакрываемой пленкой на клейкой основе.</td>
-                                        <td>0,15кг</td>
-                                        <td>15 шт.</td>
-                                    </tr>
+                                    <transition name="fade" mode="out-in">
+                                        <tr v-if="slider6_1">
+                                            <td class="td1">ГОЛОВА ФОРМЫ НИЗКИЙ ЦИЛИНДРЛАТЕКСНОЕ</td>
+                                            <td class="td2">Латексное</td>
+                                            <td class="td3">7,5-8кг</td>
+                                            <td class="td4">2 головы</td>
+                                        </tr>
+                                        <tr v-if="slider6_2">
+                                            <td class="td1">Сегмент фиксированого веса</td>
+                                            <td class="td2">Дой-пак с функцией перезакрывания.</td>
+                                            <td class="td3">0.22кг</td>
+                                            <td class="td4">10 шт.</td>
+                                        </tr>
+                                        <tr v-if="slider6_3">
+                                            <td class="td1">Нарезка слайсами</td>
+                                            <td class="td2">Подложка с перезакрываемой пленкой на клейкой основе.</td>
+                                            <td class="td3">0,15кг</td>
+                                            <td class="td4">15 шт.</td>
+                                        </tr>
+                                    </transition>
                                 </table>
                             </div>
                             <div class="md12 dots">
-                                <div class="dot dot_active dot1" v-on:click="slide6(1);click(event)">
-                                    <img src="static/img/general/icon-shape-wheel.svg">
-                                </div>
-                                <div class="dot dot2" v-on:click="slide6(2);click(event)">
-                                    <img src="static/img/general/icon-shape-wheel.svg">
-                                </div>
-                                <div class="dot dot3" v-on:click="slide6(3);click(event)">
-                                    <img src="static/img/general/icon-shape-wheel.svg">
+                                <div class="text">Выберите тип упаковки:</div>
+                                <div class="d">
+                                    <div class="dot dot_active dot1" v-on:click="slide6(1);click(event)">
+                                        <img src="static/img/general/icon-shape-wheel.svg">
+                                    </div>
+                                    <div class="dot dot2" v-on:click="slide6(2);click(event)">
+                                        <img src="static/img/general/icon-shape-wheel.svg">
+                                    </div>
+                                    <div class="dot dot3" v-on:click="slide6(3);click(event)">
+                                        <img src="static/img/general/icon-shape-wheel.svg">
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -785,40 +830,45 @@
                             <div class="md12">
                                 <table>
                                     <tr class="head">
-                                        <td>Форма выпуска</td>
-                                        <td>Тип упаковки/покрытия</td>
-                                        <td>Вес</td>
-                                        <td>Вложение</td>
+                                        <td class="td1">Форма выпуска</td>
+                                        <td class="td2">Тип упаковки/покрытия</td>
+                                        <td class="td3">Вес</td>
+                                        <td class="td4">Вложение</td>
                                     </tr>
-                                    <tr>
-                                        <td>ГОЛОВА ФОРМЫ НИЗКИЙ ЦИЛИНДРЛАТЕКСНОЕ</td>
-                                        <td>Латексное</td>
-                                        <td>7,5-8кг</td>
-                                        <td>2 головы</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Сегмент фиксированого веса</td>
-                                        <td>Дой-пак с функцией перезакрывания.</td>
-                                        <td>0.22кг</td>
-                                        <td>10 шт.</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Нарезка слайсами</td>
-                                        <td>Подложка с перезакрываемой пленкой на клейкой основе.</td>
-                                        <td>0,15кг</td>
-                                        <td>15 шт.</td>
-                                    </tr>
+                                    <transition name="fade" mode="out-in">
+                                        <tr v-if="slider7_1">
+                                            <td class="td1">ГОЛОВА ФОРМЫ НИЗКИЙ ЦИЛИНДРЛАТЕКСНОЕ</td>
+                                            <td class="td2">Латексное</td>
+                                            <td class="td3">7,5-8кг</td>
+                                            <td class="td4">2 головы</td>
+                                        </tr>
+                                        <tr v-if="slider7_2">
+                                            <td class="td1">Сегмент фиксированого веса</td>
+                                            <td class="td2">Дой-пак с функцией перезакрывания.</td>
+                                            <td class="td3">0.22кг</td>
+                                            <td class="td4">10 шт.</td>
+                                        </tr>
+                                        <tr v-if="slider7_3">
+                                            <td class="td1">Нарезка слайсами</td>
+                                            <td class="td2">Подложка с перезакрываемой пленкой на клейкой основе.</td>
+                                            <td class="td3">0,15кг</td>
+                                            <td class="td4">15 шт.</td>
+                                        </tr>
+                                    </transition>
                                 </table>
                             </div>
                             <div class="md12 dots">
-                                <div class="dot dot_active dot1" v-on:click="slide7(1);click(event)">
-                                    <img src="static/img/general/icon-shape-wheel.svg">
-                                </div>
-                                <div class="dot dot2" v-on:click="slide7(2);click(event)">
-                                    <img src="static/img/general/icon-shape-wheel.svg">
-                                </div>
-                                <div class="dot dot3" v-on:click="slide7(3);click(event)">
-                                    <img src="static/img/general/icon-shape-wheel.svg">
+                                <div class="text">Выберите тип упаковки:</div>
+                                <div class="d">
+                                    <div class="dot dot_active dot1" v-on:click="slide7(1);click(event)">
+                                        <img src="static/img/general/icon-shape-wheel.svg">
+                                    </div>
+                                    <div class="dot dot2" v-on:click="slide7(2);click(event)">
+                                        <img src="static/img/general/icon-shape-wheel.svg">
+                                    </div>
+                                    <div class="dot dot3" v-on:click="slide7(3);click(event)">
+                                        <img src="static/img/general/icon-shape-wheel.svg">
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -888,40 +938,45 @@
                             <div class="md12">
                                 <table>
                                     <tr class="head">
-                                        <td>Форма выпуска</td>
-                                        <td>Тип упаковки/покрытия</td>
-                                        <td>Вес</td>
-                                        <td>Вложение</td>
+                                        <td class="td1">Форма выпуска</td>
+                                        <td class="td2">Тип упаковки/покрытия</td>
+                                        <td class="td3">Вес</td>
+                                        <td class="td4">Вложение</td>
                                     </tr>
-                                    <tr>
-                                        <td>ГОЛОВА ФОРМЫ НИЗКИЙ ЦИЛИНДРЛАТЕКСНОЕ</td>
-                                        <td>Латексное</td>
-                                        <td>7,5-8кг</td>
-                                        <td>2 головы</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Сегмент фиксированого веса</td>
-                                        <td>Дой-пак с функцией перезакрывания.</td>
-                                        <td>0.22кг</td>
-                                        <td>10 шт.</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Нарезка слайсами</td>
-                                        <td>Подложка с перезакрываемой пленкой на клейкой основе.</td>
-                                        <td>0,15кг</td>
-                                        <td>15 шт.</td>
-                                    </tr>
+                                    <transition name="fade" mode="out-in">
+                                        <tr v-if="slider8_1">
+                                            <td class="td1">ГОЛОВА ФОРМЫ НИЗКИЙ ЦИЛИНДРЛАТЕКСНОЕ</td>
+                                            <td class="td2">Латексное</td>
+                                            <td class="td3">7,5-8кг</td>
+                                            <td class="td4">2 головы</td>
+                                        </tr>
+                                        <tr v-if="slider8_2">
+                                            <td class="td1">Сегмент фиксированого веса</td>
+                                            <td class="td2">Дой-пак с функцией перезакрывания.</td>
+                                            <td class="td3">0.22кг</td>
+                                            <td class="td4">10 шт.</td>
+                                        </tr>
+                                        <tr v-if="slider8_3">
+                                            <td class="td1">Нарезка слайсами</td>
+                                            <td class="td2">Подложка с перезакрываемой пленкой на клейкой основе.</td>
+                                            <td class="td3">0,15кг</td>
+                                            <td class="td4">15 шт.</td>
+                                        </tr>
+                                    </transition>
                                 </table>
                             </div>
                             <div class="md12 dots">
-                                <div class="dot dot_active dot1" v-on:click="slide8(1);click(event)">
-                                    <img src="static/img/general/icon-shape-wheel.svg">
-                                </div>
-                                <div class="dot dot2" v-on:click="slide8(2);click(event)">
-                                    <img src="static/img/general/icon-shape-wheel.svg">
-                                </div>
-                                <div class="dot dot3" v-on:click="slide8(3);click(event)">
-                                    <img src="static/img/general/icon-shape-wheel.svg">
+                                <div class="text">Выберите тип упаковки:</div>
+                                <div class="d">
+                                    <div class="dot dot_active dot1" v-on:click="slide8(1);click(event)">
+                                        <img src="static/img/general/icon-shape-wheel.svg">
+                                    </div>
+                                    <div class="dot dot2" v-on:click="slide8(2);click(event)">
+                                        <img src="static/img/general/icon-shape-wheel.svg">
+                                    </div>
+                                    <div class="dot dot3" v-on:click="slide8(3);click(event)">
+                                        <img src="static/img/general/icon-shape-wheel.svg">
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -943,14 +998,21 @@
                 <div class="md12">
                     <div class="logo">
                         <img src="static/img/general/g91.png" alt="">
-                        <div class="logo_text">МОЛОКО – ОСНОВА ЖИЗНИ</div>
+                        <div class="logo_text">
+                            <div>Группа компаний «СПЕKТР»</div>
+                            <div>Адрес: Санкт-Петербург, ул. Софийская, д.8, корп.1, лит. Б</div>
+                            <div>Телефон: <a href="tel:+78124481101">+7 (812) 448-11-01 </a>
+                            </div>
+                            <div>E-mail: <a href="mailto:spectr@milkexim.ru">spectr@milkexim.ru </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
         </main>
 
         <script src="https://cdn.jsdelivr.net/npm/vue"></script>
-        <script src="static/js/maindajjvn.min.js" type="text/javascript"></script>
+        <script src="static/js/mainelwa5.min.js" type="text/javascript"></script>
     </body>
 
 </html>
