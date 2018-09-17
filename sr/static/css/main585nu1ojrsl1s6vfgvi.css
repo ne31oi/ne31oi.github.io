@@ -762,9 +762,9 @@ section {
 .header .logo,
 .footer .logo {
   position: absolute;
-  z-index: 3;
+  z-index: 133;
   width: 100%;
-  top: 20px;
+  top: 40px;
   left: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -784,7 +784,7 @@ section {
 
 .header .logo img,
 .footer .logo img {
-  width: 250px;
+  width: 350px;
 }
 
 .header .logo .logo_text,
@@ -795,7 +795,7 @@ section {
 
 .header .container,
 .footer .container {
-  z-index: 4;
+  z-index: 254;
 }
 
 .footer {
