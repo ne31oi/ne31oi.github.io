@@ -204,6 +204,7 @@ h2:after {
   width: 307px;
   height: 52px;
   padding: 10px;
+  font-size: 25px;
 }
 .ideal .subtext {
   color: #000;
@@ -281,7 +282,7 @@ h2:after {
 .popular {
   background: #d6ebed;
   padding-top: 64px;
-  padding-bottom: 80px;
+  padding-bottom: 20px;
 }
 .popular .multiple-items {
   width: calc(100% - 60px);
@@ -354,6 +355,9 @@ h2:after {
   background: #fff;
   padding-top: 40px;
   padding-bottom: 20px;
+}
+.master .content {
+  margin-top: 60px;
 }
 .master .content .left {
   display: -webkit-box;
@@ -552,7 +556,7 @@ h2:after {
   border: none;
 }
 .skidka .right .input label {
-  font-size: 17px;
+  font-size: 15px;
   margin-bottom: 10px;
 }
 .skidka .right .subtext {
@@ -592,7 +596,7 @@ h2:after {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 23px;
+  font-size: 25px;
   margin-bottom: 10px;
 }
 .map .place_box .logo img {
