@@ -30,9 +30,7 @@ var app = new Vue({
     methods: {
         fb: function(b) {
             var f = document.getElementById('feed');
-            if (f.classList.contains('show')) {
-                f.classList.remove('show')
-            } else f.classList.add('show')
+            if (f.classList.contains('show')) { f.classList.remove('show') } else f.classList.add('show')
         },
         slide1: function(b) {
             if (b == 1) {
@@ -171,6 +169,7 @@ var app = new Vue({
             }
         },
         click: function(b) {
+            console.log(1)
             var x;
             if (b.target.nodeName == "IMG")
                 x = b.target.parentElement
