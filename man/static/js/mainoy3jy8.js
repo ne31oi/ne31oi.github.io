@@ -34,6 +34,20 @@
              }
          }]
      });
+
+     window.pp1 = function() {
+         $('.popup1').show();
+         $('.popups').show();
+     }
+     window.pp2 = function() {
+         $('.popup2').show();
+         $('.popups').show();
+     }
+     $('.popups').hide();
+     $('.close').click(function() {
+         $('.popup').hide();
+         $('.popups').hide();
+     });
      ymaps.ready(init);
 
      function init() {
