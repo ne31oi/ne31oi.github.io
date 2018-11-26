@@ -27,6 +27,7 @@ body {
   height: 100%;
   font-family: 'Lato';
   font-weight: normal;
+  overflow-x: hidden;
 }
 * {
   margin: 0;
@@ -529,7 +530,7 @@ h2:after {
   padding: 50px;
 }
 .skidka .right .text {
-  font-weight: 600px;
+  font-weight: 600;
   font-size: 22px;
   margin-bottom: 50px;
 }
@@ -612,4 +613,316 @@ h2:after {
 .footer {
   background: #6ec9c6;
   color: #fff;
+}
+@media (max-width: 768px) {
+  .container {
+    padding: 0 10px;
+  }
+  .header .header_left {
+    display: none;
+  }
+  .header .logo {
+    text-align: left;
+  }
+  .header .header_right,
+  .header .header_center {
+    width: 50%;
+  }
+  .header .small_btn {
+    margin-right: 0;
+  }
+  .content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .content .left,
+  .content .right {
+    width: 80%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .image-box {
+    margin: 0 auto;
+  }
+  .material .blocks {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .popular .multiple-items .slide-box {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+  .material .blocks .block {
+    margin: 20px 0;
+  }
+}
+@media (max-width: 480px) {
+  .nobr {
+    display: none;
+  }
+  .header .logo {
+    font-size: 15px;
+  }
+  .header .logo img {
+    width: 48px;
+  }
+  .header .header_phone {
+    font-size: 17px;
+  }
+  .header .container {
+    height: auto;
+  }
+  .small_btn {
+    font-size: 9px;
+    border-radius: 7px;
+    padding: 8px 17px;
+  }
+  .ideal {
+    padding-top: 0;
+  }
+  .ideal .head {
+    font-size: 42px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+  .ideal .subhead {
+    font-size: 24px;
+    margin-bottom: 14px;
+  }
+  .ideal .form .text {
+    font-size: 20px;
+  }
+  .ideal .form .phone {
+    width: 295px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .btn,
+  .ideal .form .phone {
+    max-width: 295px;
+  }
+  .popular .multiple-items .slide-box .text {
+    font-size: 16px;
+  }
+  .slick-next,
+  .portfolio .slider .slider-for .slick-next {
+    right: -35px;
+  }
+  .slick-prev,
+  .portfolio .slider .slider-for .slick-prev {
+    left: -35px;
+  }
+  .ideal .subtext {
+    font-size: 7px;
+    width: 230px;
+  }
+  .search .blocks {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .search .blocks .block {
+    width: 100%;
+  }
+  .portfolio .slider {
+    width: 230px;
+  }
+  .master .content .left .item {
+    width: 100%;
+    margin-right: 0;
+  }
+  .content .left,
+  .content .right {
+    width: 100%;
+  }
+  h2 {
+    font-size: 25px;
+    margin-top: 15px;
+  }
+  h2:after {
+    top: 100%;
+  }
+  .search .subhead {
+    font-size: 16px;
+  }
+  .search .blocks .block .block_img {
+    margin: 20px auto 20px auto;
+  }
+  .search .blocks .block .block_text {
+    max-width: 100%;
+  }
+  .search {
+    padding: 0 0 20px 0;
+  }
+  .image-box img {
+    width: 100%;
+  }
+  .footer .logo img {
+    width: 64px;
+  }
+  .skidka .container,
+  .master .container {
+    padding: 0;
+  }
+  .image-box {
+    padding: 10px;
+    width: 100%;
+  }
+  .skidka .left,
+  .skidka .right {
+    padding: 0;
+  }
+  .master h2,
+  .master .content .left {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .master .content .right {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+  }
+  .master .content {
+    margin-top: 0;
+  }
+  .master .content .left {
+    margin-top: 20px;
+  }
+  .master .content .left .text .head {
+    font-size: 18px;
+  }
+  .master .content .left .text .subtext {
+    font-size: 12px;
+  }
+  .master .content .left .text {
+    margin-top: 0;
+  }
+  .search .blocks .block .block_img {
+    width: 176px;
+    height: 176px;
+  }
+  .search .blocks .block .block_img img {
+    height: 120px;
+  }
+  .popular .multiple-items .slide-box .image {
+    width: 220px;
+    height: 230px;
+  }
+  .popular .multiple-items .slide-box {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    width: 244px;
+    height: 336px;
+  }
+  .popular .multiple-items .slide-box .st {
+    font-size: 35px;
+  }
+  .popular .multiple-items {
+    margin: 20px auto;
+  }
+  .popular .subtext {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .master {
+    padding-top: 0;
+  }
+  .master .content .left .item .number {
+    width: 69px;
+    height: 69px;
+    font-size: 23px;
+  }
+  .master .content .left .item .number:after {
+    top: calc(50% - 8px);
+    border: 8px solid transparent;
+    border-left: 15px solid #f50057;
+  }
+  .portfolio {
+    padding-top: 0;
+    padding-bottom: 30px;
+  }
+  .portfolio .slider .slider1 {
+    padding: 0;
+  }
+  .portfolio .slider .slider-for .slide-box {
+    width: 217px;
+    height: 217px;
+  }
+  .portfolio .slider .slider1 {
+    margin-bottom: 10px;
+  }
+  .portfolio .slider .slider-nav .slide-box {
+    width: 35px;
+    height: 35px;
+    padding: 2px;
+  }
+  .material {
+    padding-top: 0;
+  }
+  .material .blocks {
+    margin: 0;
+  }
+  .skidka {
+    padding-top: 40px;
+  }
+  .material .blocks .block,
+  .material .blocks .block img {
+    width: 80%;
+  }
+  .map .place_box .text {
+    font-size: 15px;
+  }
+  .skidka .left .image-box,
+  .skidka .right .image-box {
+    height: auto;
+  }
+  .skidka .right .image-box {
+    padding: 10px;
+  }
+  .skidka .right .text {
+    font-size: 16px;
+    margin-bottom: 25px;
+  }
+  .skidka .right .input {
+    padding: 0;
+  }
+  .skidka .right .subtext {
+    font-size: 12px;
+    margin: 10px;
+  }
+  .map {
+    padding: 0;
+  }
+  .map .place_box {
+    width: 100%;
+    bottom: 100px;
+    max-width: 340px;
+  }
+  .map .place_box .image img {
+    width: 244px;
+  }
+  .map .place_box .logo {
+    font-size: 17px;
+  }
 }

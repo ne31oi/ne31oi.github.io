@@ -18,7 +18,21 @@
          infinite: true,
          arrows: true,
          slidesToShow: 3,
-         slidesToScroll: 1
+         slidesToScroll: 1,
+         responsive: [{
+             breakpoint: 769,
+             settings: {
+                 slidesToShow: 1,
+                 slidesToScroll: 1,
+                 infinite: true,
+             }
+         }, {
+             breakpoint: 480,
+             settings: {
+                 slidesToShow: 1,
+                 slidesToScroll: 1
+             }
+         }]
      });
      ymaps.ready(init);
 
