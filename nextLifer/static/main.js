@@ -24,7 +24,7 @@ var mainArray = [{
         'longitude': 37.57
     },
     'type': 'parcellocker',
-    'code': 1
+    'code': 2
 }];
 
 //функция на клик кнопки в балуне
@@ -34,7 +34,8 @@ function ymaps_balloon_click(code) {
 ymaps.ready(function() {
     var myMap = new ymaps.Map('yandexMap', {
             center: [55.751574, 37.573856],
-            zoom: 9
+            zoom: 9,
+            controls: ['zoomControl']
         }, {
             searchControlProvider: 'yandex#search'
         }),
