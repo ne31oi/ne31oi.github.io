@@ -1,12 +1,14 @@
 .gfield>div.ginput_container>input.medium {
     width: 100%
 }
-.slick-slide2{
+
+.slick-slide2 {
     position: absolute;
     left: 0;
     top: 0;
-    height: 468px!important;
+    height: 468px !important;
 }
+
 @media screen and (max-width: 600px) {
     li[class*="column-count-"] {
         width: 100% !important
@@ -4884,9 +4886,7 @@ header.main .primary-bar {
     height: 80px
 }
 
-header.main.has-custom-nav {
-    height: 128px
-}
+header.main.has-custom-nav {}
 
 header.main.has-custom-nav .secondary-bar {
     height: 48px
@@ -4901,7 +4901,7 @@ body {
 }
 
 body.has-custom-nav {
-    padding-top: 128px
+    padding-top: 60px
 }
 
 @media (max-width: 1199px) {
@@ -4913,16 +4913,14 @@ body.has-custom-nav {
         height: 60px
     }
 
-    header.main.has-custom-nav {
-        height: 108px
-    }
+    header.main.has-custom-nav {}
 
     body {
         padding-top: 60px
     }
 
     body.has-custom-nav {
-        padding-top: 108px
+        padding-top: 60px
     }
 }
 
@@ -4998,7 +4996,7 @@ header.main .progress-bar {
     width: 0;
     max-width: 100%;
     position: absolute;
-    top: calc(100% - 2px);
+    top: 0;
     left: 0;
     transition: width 50ms ease-in
 }
@@ -5187,9 +5185,9 @@ header.main.h-hidden {
 }
 
 header.main.h-hidden.has-custom-nav {
-    -webkit-transform: translateY(calc(-100% + 47px)) !important;
-    -ms-transform: translateY(calc(-100% + 47px)) !important;
-    transform: translateY(calc(-100% + 47px)) !important
+    -webkit-transform: translateY(-100%) !important;
+    -ms-transform: translateY(-100%) !important;
+    transform: translateY(-100%) !important
 }
 
 .custom-nav-wrapper:after {
@@ -8994,8 +8992,7 @@ body.mobile-nav-active .mobile-menu-wrapper {
     margin: 0
 }
 
-.entry li {
-}
+.entry li {}
 
 .entry ul li:before {
     content: "•";
@@ -9408,10 +9405,15 @@ body.mobile-nav-active .mobile-menu-wrapper {
     width: 60px
 }
 
-@media (max-width: 1199px) {
-    .entry .gallery {
-        margin: 2.1em -10%
-    }
+.slide.slick-slide.slick-slide2 {
+    width: 100% !important;
+    height: 468px;
+}
+
+.slide.slick-slide.slick-slide2 img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover;
 }
 
 @media (max-width: 991px) {
@@ -9419,6 +9421,29 @@ body.mobile-nav-active .mobile-menu-wrapper {
         margin: 2.1em 0
     }
 }
+
+@media (max-width: 767px) {
+    .hs-form-checkbox-display {
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        -ms-align-items: flex-start;
+        align-items: flex-start;
+        justify-content: center;
+
+    }
+
+    .hbspt-form form.hs-form fieldset div.hs-form-field input.hs-input[type=checkbox] {
+        height: 13px !important;
+        width: auto;
+        margin: 0;
+        margin-top: -13px;
+        margin-left: -5px;
+    }
+}
+
 
 @media (max-width: 767px) {
     .entry .gallery {
@@ -9594,15 +9619,18 @@ p.ciw+p {
     display: table;
     clear: both
 }
-.ciw-col{
-	width: 100%;
-	height: 480px;
+
+.ciw-col {
+    width: 100%;
+    height: 480px;
 }
-.ciw-col img{
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
+
+.ciw-col img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
+
 .ciw .ciw-col-left {
     float: left
 }

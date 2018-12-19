@@ -739,8 +739,6 @@ function nextSlide2() {
         nextSlide.style.transition = '';
     }, 500);
     indexSlide2 = next;
-    console.log(slide)
-
 }
 function prevSlide2() {
     var slide = document.querySelector('#slick-slide2' + indexSlide2);
@@ -764,7 +762,6 @@ function prevSlide2() {
         nextSlide.style.transition = '';
     }, 500);
     indexSlide2 = next;
-    console.log(slide)
 }
 function nextSlide() {
     var slide = document.getElementById('1-box-slide-' + indexSlide);
