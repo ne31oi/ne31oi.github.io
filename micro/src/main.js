@@ -35,6 +35,7 @@ function next() {
                 active = true;
                 scheme1.classList.add('green');
                 setTimeout(function() { scheme1.classList.remove('micro_opacity'); }, 500)
+                scheme1.classList.remove('shake');
                 timeActive(500);
                 break;
             case 3:
