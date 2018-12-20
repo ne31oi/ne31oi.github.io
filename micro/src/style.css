@@ -9,7 +9,7 @@
 
 #micro_content {
     width: 400px;
-    height: 400px;
+    height: 200px;
     display: flex;
     justify-content: center;
     -ms-align-items: center;
