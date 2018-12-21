@@ -1,3 +1,16 @@
+body * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 #micro_main {
     width: 100%;
     height: 100%;
@@ -8,14 +21,28 @@
 }
 
 #micro_content {
-    width: 400px;
+    width: 500px;
     height: 200px;
     display: flex;
-    justify-content: center;
-    -ms-align-items: center;
+    justify-content: space-between;
     align-items: center;
     position: relative;
 
+}
+
+#phones {
+    display: flex;
+    flex-direction: column;
+}
+
+#phones div {
+    margin: 20px 0;
+}
+
+#phones div #b,
+#phones div #c,
+#phones div #d {
+    transform: translate(-160px, -40px);
 }
 
 #micro_content * {
@@ -27,6 +54,7 @@
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
+    z-index: 999;
 }
 
 .btns button {
@@ -41,7 +69,8 @@
 .micro_svg,
 .micro_svg svg {
     width: 64px;
-    background: #fff;
+    position: relative;
+    z-index: 5
 }
 
 .red * {
@@ -56,8 +85,35 @@
     opacity: 0;
 }
 
+#micro_phone svg {
+    height: 64px;
+}
+
 .micro_opacity {
     opacity: .2;
+}
+
+.rp5 {
+    fill: #fff;
+}
+
+#lines1,
+#lines2,
+#lines3 {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: -2px;
+    left: 0;
+    z-index: 2;
+}
+
+#lines1 {
+    left: -76px;
+}
+
+#lines1 .rp5 {
+    r: 22px;
 }
 
 #micro_scheme1,
@@ -121,5 +177,77 @@ rect.noanim {
     40%,
     60% {
         transform: translate3d(2px, 0, 0);
+    }
+}
+
+rect.rprect {
+    fill: none;
+}
+
+circle.rpcircle {
+    fill: #00BFFF;
+    opacity: 0.3;
+}
+
+svg>.rpcircle:last-child {
+    fill: #00BFFF;
+    opacity: .5;
+}
+
+.rp1 {
+    animation: ripple1 1s linear infinite;
+}
+
+@keyframes ripple1 {
+    0% {
+        transform: scale(3.5);
+        opacity: 0.3;
+    }
+
+    100% {
+        transform: scale(4.5);
+        opacity: 0.0;
+    }
+}
+
+.rp2 {
+    animation: ripple2 1s linear infinite;
+}
+
+@keyframes ripple2 {
+    0% {
+        transform: scale(2.5);
+    }
+
+    100% {
+        transform: scale(3.5);
+    }
+}
+
+.rp3 {
+    animation: ripple3 1s linear infinite;
+}
+
+@keyframes ripple3 {
+    0% {
+        transform: scale(1.5);
+    }
+
+    100% {
+        transform: scale(2.5);
+    }
+}
+
+.rp4 {
+    animation: ripple4 1s linear infinite;
+}
+
+@keyframes ripple4 {
+    0% {
+        transform: scale(0.5);
+    }
+
+    100% {
+        transform: scale(1.5);
     }
 }
