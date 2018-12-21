@@ -1,0 +1,130 @@
+.zakaz_form_wrap {
+	font-family: opensans, sans-serif;
+	color: #444;
+	line-height: 1.5625;
+}
+.zakaz_form_wrap * {
+	outline: none;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+#zakaz{
+	width: 100%; text-align: left; border-style: outset; border-width:medium; border-color: #ff6279; padding:10px;font-style: normal; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px;
+	margin-bottom: 20px;
+}
+#zakaz .form_group {
+	display: block;
+	margin: 5px auto;
+	width: 100%;
+	height: 37px;
+	padding: 0 15px;
+}
+.botBut{
+	color: #fff;
+	font-weight: bold;
+	text-transform: uppercase;
+	background: #c01f37;
+	border: none;
+	-webkit-border-radius: 8px;
+	   -moz-border-radius: 8px;
+			border-radius: 8px;
+	max-width: 350px;
+	width: 80%;
+	padding: 1% 2%;
+	font-size: 18px;
+	text-align:center;
+	padding: 20px 20px;
+	display:block;
+	margin:auto;
+	text-decoration:none;
+	opacity: 1;
+}
+.botBut:hover {
+	background-color: #e60628!important;
+	-webkit-transition: all .2s;
+	-o-transition: all .2s;
+	-moz-transition: all .2s;
+	transition: all .2s;
+	cursor: pointer;
+}
+.order-form{
+	margin-top: 10px
+}
+.text_timer{
+	text-align: center; padding: 10px 10px;
+}
+#clock {
+	width: 295px;
+	display: block;
+	margin: 0 auto;
+	max-width: 100%;
+}
+#clock .units {
+	font-size: 50px;
+	background: #eee;
+	margin: 0px 10px;
+	vertical-align: middle;
+	padding: 3px 5px;
+}
+#clock b {
+	font-size: 40px;
+	vertical-align: middle;
+	font-weight: 100;
+}
+@media all and (max-width: 400px) {
+	#clock .units {
+		font-size: 40px;
+		margin: 0px 5px;
+		padding: 3px 3px;
+	}
+}
+
+.zakaz_form_wrap .time {
+	display: block;
+	text-align: center;
+	width: 295px;
+	margin: 0px auto 10px;
+	font-size: 0;
+	max-width: 100%;
+}
+.zakaz_form_wrap .time span {
+	color: #f00;
+	font-weight: 100;
+	font-size: 12px;
+	display: inline-block;
+	width: 30%;
+}
+.zakaz_form_wrap .time .hour {
+	text-align: left;
+	padding-left: 22px;
+}
+.zakaz_form_wrap .time .sec {
+	text-align: right;
+	margin-left: 10px;
+}
+.zakaz_form_wrap .image {
+	text-align: center;
+}
+.zakaz_form_wrap .prod_ph {
+	width: auto;
+	max-width: 80%
+}
+.zakaz_form_wrap .old_price {
+	font-size: 25px;
+	text-decoration: line-through;
+	vertical-align: middle;
+	padding: 0 25px;
+}
+.zakaz_form_wrap .new_price {
+	font-size: 35px;
+	font-weight: bold;
+	color: #f00;
+	vertical-align: middle;
+	padding: 0 25px;
+}
+.zakaz_form_wrap .price {
+	margin: 20px auto;
+}
