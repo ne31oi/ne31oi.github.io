@@ -60,7 +60,7 @@ function dd() {
 }
 
 function next() {
-    if (step < 8 && !active) {
+    if (step < 7 && !active) {
         active = true;
         dd();
         switch (step) {
