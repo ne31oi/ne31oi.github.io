@@ -149,18 +149,19 @@ p.speech:after {
 
 #l2,
 #l3 {
+    top: 12px;
     left: -20px;
 }
 
 #l2 svg,
 #l3 svg {
-    width: 140px;
+    //width: 140px;
 
 }
 
 #l2 svg rect,
 #l3 svg rect {
-    width: 100px;
+    //width: 100px;
 }
 
 #phones,
@@ -197,10 +198,10 @@ p.speech:after {
 }
 
 #l2 {
-    left: -52px;
-    top: 16px;
-    z-index: 1;
-    transform: rotate(-38deg);
+    //left: -52px;
+    //top: 16px;
+    //z-index: 1;
+    //transform: rotate(-38deg);
 }
 
 #l3 {
