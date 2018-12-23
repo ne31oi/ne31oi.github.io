@@ -17,6 +17,14 @@ body {
 .text {
     position: relative;
     z-index: 10;
+    color: #999;
+}
+
+#micro_phone #b,
+#micro_phone #c,
+#micro_phone #d {
+    transform: translate(-160px, -40px);
+    opacity: 0;
 }
 
 div.speech {
@@ -24,7 +32,7 @@ div.speech {
     top: 40px;
     z-index: 9;
     transition: transform .5s !important;
-    transform: translate(-0,-0) scale(1);
+    transform: translate(-0, -0) scale(1);
 }
 
 #speech2 {
@@ -33,22 +41,23 @@ div.speech {
 
 #speech3 {
     left: 206px;
-    top: 35px;
+    top: 25px;
 }
-div.speech.off{
-    transform: translate(-15px,20px) scale(0);
+
+div.speech.off {
+    transform: translate(-15px, 20px) scale(0);
 }
 
 p.speech {
     position: relative;
     font-size: 9px;
-    padding: 2px 4px;
+    padding: 3px 5px;
     text-align: center;
     background-color: #fff;
     border: 2px solid #000;
     -webkit-border-radius: 30px;
     -moz-border-radius: 30px;
-    border-radius: 30px;
+    border-radius: 12px;
     -webkit-box-shadow: 2px 2px 4px #888;
     -moz-box-shadow: 2px 2px 4px #888;
     box-shadow: 2px 2px 4px #888;
@@ -60,7 +69,7 @@ p.speech:before {
     width: 0;
     height: 0;
     left: 15px;
-    top: 16px;
+    bottom: -10px;
     border: 5px solid;
     border-color: #000 transparent transparent #000;
 }
@@ -71,7 +80,7 @@ p.speech:after {
     width: 0;
     height: 0;
     left: 17px;
-    top: 15px;
+    bottom: -4px;
     border: 3px solid;
     border-color: #fff transparent transparent #fff;
 }
@@ -86,6 +95,14 @@ p.speech:after {
     flex-direction: column;
 }
 
+#micro_cloud svg {
+    fill: #00BFFF;
+}
+
+#text_wifi {
+    position: relative;
+}
+
 #micro_content {
     width: 500px;
     height: 200px;
@@ -94,6 +111,11 @@ p.speech:after {
     align-items: center;
     position: relative;
 
+}
+
+.l {
+    width: 100%;
+    position: absolute;
 }
 
 #phones {
@@ -115,9 +137,35 @@ p.speech:after {
     transition: fill .5s, opacity .5s;
 }
 
+#l1 {
+    top: -3px;
+    left: -18px;
+}
+
+#l2,
+#l3 {
+    left: -20px;
+}
+
+#l2 svg,
+#l3 svg {
+    width: 140px;
+
+}
+
+#l2 svg rect,
+#l3 svg rect {
+    width: 100px;
+}
+
+#phones,
+#micro_cloud {
+    background: #fff;
+}
+
 .btns {
     position: absolute;
-    bottom: 0;
+    bottom: -100px;
     left: 50%;
     transform: translateX(-50%);
     z-index: 999;
@@ -139,8 +187,43 @@ p.speech:after {
     z-index: 5
 }
 
+#text_wifi {
+    margin-top: -25px;
+}
+
+#l2 {
+    left: -52px;
+    top: 16px;
+    z-index: 1;
+    transform: rotate(-38deg);
+}
+
+#l3 {
+    left: -52px;
+    top: 4px;
+    z-index: 1;
+    transform: rotate(36deg);
+}
+
 .red * {
     fill: red !important;
+    opacity: .5;
+}
+
+#speech4 {
+    color: red;
+}
+
+#text4 {
+    position: absolute;
+    top: -21px;
+    transform: rotate(-38deg);
+}
+
+#text5 {
+    position: absolute;
+    top: 45px;
+    transform: rotate(38deg)
 }
 
 .green * {
