@@ -285,7 +285,7 @@ p.speech:after {
     width: 48px;
 }
 
-@media (max-width: 410px) {
+@media (max-width: 510px) {
     #micro_content {
         transform: scale(.8);
     }

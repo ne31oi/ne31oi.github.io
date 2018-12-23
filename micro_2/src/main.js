@@ -56,7 +56,7 @@ function random(min, max) {
     return rand;
 }
 
-var debag = true;
+var debag = false;
 
 function dd() {
     if (debag) {
