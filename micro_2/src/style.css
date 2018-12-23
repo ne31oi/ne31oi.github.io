@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:700');
+
 body * {
     padding: 0;
     margin: 0;
@@ -9,6 +11,69 @@ body {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.text {
+    position: relative;
+    z-index: 10;
+}
+
+div.speech {
+    position: absolute;
+    top: 40px;
+    z-index: 9;
+    transition: transform .5s !important;
+    transform: translate(-0,-0) scale(1);
+}
+
+#speech2 {
+    left: 100px;
+}
+
+#speech3 {
+    left: 206px;
+    top: 35px;
+}
+div.speech.off{
+    transform: translate(-15px,20px) scale(0);
+}
+
+p.speech {
+    position: relative;
+    font-size: 9px;
+    padding: 2px 4px;
+    text-align: center;
+    background-color: #fff;
+    border: 2px solid #000;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+    -webkit-box-shadow: 2px 2px 4px #888;
+    -moz-box-shadow: 2px 2px 4px #888;
+    box-shadow: 2px 2px 4px #888;
+}
+
+p.speech:before {
+    content: ' ';
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: 15px;
+    top: 16px;
+    border: 5px solid;
+    border-color: #000 transparent transparent #000;
+}
+
+p.speech:after {
+    content: ' ';
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: 17px;
+    top: 15px;
+    border: 3px solid;
+    border-color: #fff transparent transparent #fff;
 }
 
 #micro_main {
@@ -18,6 +83,7 @@ body {
     justify-content: center;
     -ms-align-items: center;
     align-items: center;
+    flex-direction: column;
 }
 
 #micro_content {
@@ -112,8 +178,21 @@ body {
     left: -76px;
 }
 
+#lines2 {
+    left: 25px;
+}
+
+#lines3 {
+    left: 133px;
+}
+
 #lines1 .rp5 {
     r: 22px;
+}
+
+#svg_22,
+#svg_23 {
+    fill: #fff !important;
 }
 
 #micro_scheme1,
@@ -185,7 +264,9 @@ rect.rprect {
 }
 
 circle.rpcircle {
-    fill: #00BFFF;
+    fill: none;
+    stroke: #00BFFF;
+    stroke-width: 2;
     opacity: 0.3;
 }
 
