@@ -34,7 +34,6 @@ function getArray(array) {
 
 function timeActive(time) {
     setTimeout(function() { active = false }, time)
-
 }
 ls[0].innerHTML = rect;
 ls[1].innerHTML = rect2;
@@ -232,9 +231,10 @@ function prev() {
                 break;
             case 9:
                 document.getElementById('text_wifi').classList.add('micro_hide');
+
+                clearInterval(phone2_anim);
                 document.querySelector('#phones #phone1 #d').classList.add('micro_hide');
                 document.querySelector('#phones #phone1 #b').classList.add('micro_hide');
-                clearInterval(phone2_anim);
                 break;
 
         }

@@ -19,9 +19,7 @@ body {
     z-index: 10;
     color: #999;
     text-shadow: -1px -1px 1px rgba(255, 255, 255, 0.2),
-        /* наверх и влево */
         1px 1px 1px rgba(255, 255, 255, 0.2),
-        /* вниз и вправо */
         1px 1px 1px rgba(255, 255, 255, 0.7);
 }
 
@@ -39,7 +37,18 @@ div.speech {
     transition: transform .5s !important;
     transform: translate(-0, -0) scale(1);
 }
-
+.wt p{
+    position: absolute;
+    top: 160px;
+    font-size: 10px;
+    text-align: center;
+}
+.wt3 p{
+    padding-left: 5px;
+}
+.wt5 p{
+    padding-right: 25px;
+}
 #speech2 {
     left: 100px;
 }
@@ -155,13 +164,13 @@ p.speech:after {
 
 #l2 svg,
 #l3 svg {
-    //width: 140px;
+    /*width: 140px;*/
 
 }
 
 #l2 svg rect,
 #l3 svg rect {
-    //width: 100px;
+    /*width: 100px;*/
 }
 
 #phones,
@@ -198,10 +207,10 @@ p.speech:after {
 }
 
 #l2 {
-    //left: -52px;
+    /*left: -52px;
     //top: 16px;
     //z-index: 1;
-    //transform: rotate(-38deg);
+    //transform: rotate(-38deg);*/
 }
 
 #l3 {
