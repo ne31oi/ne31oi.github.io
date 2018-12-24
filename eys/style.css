@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:700');
+
+body * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    flex-direction: column;
+}
+
+.line {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.icon {
+    border-radius: 4px;
+    width: 145px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: flex-start;
+    color: #fff;
+}
+
+.icon .i {
+    display: flex;
+    justify-content: center;
+    -ms-align-items: center;
+    align-items: center;
+    width: 40px;
+    height: 30px;
+}
+
+.icon .t {
+    display: flex;
+    justify-content: flex-start;
+    -ms-align-items: center;
+    align-items: center;
+    width: 100%;
+    height: 30px;
+}
+
+.vk {
+    background-color: #4e73a0;
+}
+
+.facebook {
+    background-color: #405a9a;
+}
+
+.odnoklassniki {
+    background-color: #e37121;
+}
+
+.twitter {
+    background-color: #3cadef;
+}
+
+.telegram {
+    background-color: #6fa9de;
+}
+
+.pinterest {
+    background-color: #b9001e;
+}
+
+.viber {
+    background-color: #79519f;
+}
+
+.whatsapp {
+    background-color: #70bc4e;
+}
+
+@media (max-width: 600px) {
+    .block {
+        width: 300px;
+    }
+}
