@@ -18,7 +18,7 @@ var rect = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 55 25" with="55
     cloud = document.getElementById('micro_cloud'),
     ripple = '<svg xmlns="http://www.w3.org/2000/svg" height="100%" width="100%"><defs> <g id="anims">  <circle class="rp1 rpcircle" r="1em" />  <circle class="rp2 rpcircle" r="1em" />  <circle class="rp3 rpcircle" r="1em" />  <circle class="rp4 rpcircle" r="1em" /> </g></defs><rect class="rprect" height="100%" width="100%" /><use xlink:href="#anims" x="50%" y="50%"/><circle class="rp5" r="0.5em" cx="50%" cy="50%" /></svg>',
     texts = ['text1', 'text2', 'text3', 'text4', 'text5'],
-    speech = ['speech1', 'speech2', 'speech3', 'speech4'],
+    speech = ['speech1', 'speech2', 'speech3', 'speech4', 'speech5', 'speech6'],
     phone2_anim;
 scheme1.innerHTML = scheme_svg;
 scheme2.innerHTML = scheme_svg;
@@ -100,10 +100,17 @@ function next() {
             case 4:
                 scheme1.classList.remove('shake');
                 scheme2.classList.add('green');
+                speech[0].classList.add('off');
+                speech[1].classList.add('off');
+                clearInterval(speech1_anim);
                 setTimeout(function() {
+                    speech_fn(4)
                     scheme2.classList.remove('micro_opacity');
                     speech2_anim = setInterval(function() {
-                        speech_fn(1)
+                        setTimeout(function() {
+                            speech_fn(4)
+                        }, 100)
+                        speech_fn(5)
                     }, 2300);
                 }, 500)
                 setTimeout(function() {
@@ -113,6 +120,14 @@ function next() {
                 timeActive(1000);
                 break;
             case 5:
+                clearInterval(speech2_anim);
+                speech[0].classList.add('off');
+                speech[1].classList.add('off');
+                setTimeout(function() {
+                    speech1_anim = setInterval(function() {
+                        speech_fn(1)
+                    }, 2300);
+                }, 500)
                 scheme1.classList.add('red');
                 clearInterval(speech1_anim);
                 lines[0].classList.add('micro_hide');
@@ -120,7 +135,6 @@ function next() {
                 break;
             case 6:
                 phone.classList.add('green');
-
                 setTimeout(function() {
                     phone.classList.remove('micro_opacity');
                     lines[2].classList.remove('micro_hide');
@@ -197,18 +211,37 @@ function prev() {
                 active = true;
                 scheme1.classList.remove('shake');
                 scheme2.classList.remove('green');
+                speech[0].classList.add('off');
+                speech[1].classList.add('off');
                 clearInterval(speech2_anim);
+                clearInterval(speech1_anim);
                 texts[0].classList.add('micro_hide');
                 lines[1].classList.add('micro_hide');
-                setTimeout(function() { scheme2.classList.add('micro_opacity'); }, 500)
+                setTimeout(function() {
+                    scheme2.classList.add('micro_opacity');
+                    speech_fn(0)
+                    speech1_anim = setInterval(function() { speech_fn(0) }, 2300);
+                }, 500)
                 break;
             case 6:
                 scheme1.classList.remove('red');
+
+                clearInterval(speech1_anim);
                 setTimeout(function() {
-                    speech_fn(0);
+                    scheme2.classList.remove('micro_opacity');
+                    speech_fn(4)
+                    speech2_anim = setInterval(function() {
+                        setTimeout(function() {
+                            speech_fn(4)
+                        }, 100)
+                        speech_fn(5)
+                    }, 2300);
+                }, 500)
+                setTimeout(function() {
+                    //speech_fn(0);
                     lines[0].classList.remove('micro_hide');
                     texts[0].classList.remove('micro_hide');
-                    speech1_anim = setInterval(function() { speech_fn(0) }, 2300);
+                    //speech1_anim = setInterval(function() { speech_fn(0) }, 2300);
                 }, 500);
                 timeActive(1000);
                 break;

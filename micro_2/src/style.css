@@ -32,7 +32,7 @@ body {
 
 div.speech {
     position: absolute;
-    top: 40px;
+    bottom: 140px;
     z-index: 9;
     transition: transform .5s !important;
     transform: translate(-0, -0) scale(1);
@@ -49,13 +49,14 @@ div.speech {
 .wt5 p{
     padding-right: 25px;
 }
-#speech2 {
+#speech2,#speech6 {
     left: 100px;
 }
 
 #speech3 {
     left: 206px;
     top: 25px;
+    bottom: auto;
 }
 
 div.speech.off {
