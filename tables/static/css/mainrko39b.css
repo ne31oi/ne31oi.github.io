@@ -1,0 +1,507 @@
+/* normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+html {
+  font-family: sans-serif /* 1 */;
+  -ms-text-size-adjust: 100% /* 2 */;
+  -webkit-text-size-adjust: 100% /* 2 */;
+}
+body {
+  margin: 0;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+audio,
+canvas,
+progress,
+video {
+  display: inline-block /* 1 */;
+  vertical-align: baseline /* 2 */;
+}
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+[hidden],
+template {
+  display: none;
+}
+a {
+  background-color: transparent;
+}
+a:active,
+a:hover {
+  outline: 0;
+}
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+b,
+strong {
+  font-weight: bold;
+}
+dfn {
+  font-style: italic;
+}
+mark {
+  background: #ff0;
+  color: #000;
+}
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sup {
+  top: -0.5em;
+}
+sub {
+  bottom: -0.25em;
+}
+img {
+  border: 0;
+}
+svg:not(:root) {
+  overflow: hidden;
+}
+figure {
+  margin: 0;
+}
+hr {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  height: 0;
+}
+pre {
+  overflow: auto;
+}
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit /* 1 */;
+  font: inherit /* 2 */;
+  margin: 0 /* 3 */;
+}
+fieldset {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+button {
+  overflow: visible;
+}
+button,
+select {
+  text-transform: none;
+}
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button /* 2 */;
+  cursor: pointer /* 3 */;
+}
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+input {
+  line-height: normal;
+}
+input[type="checkbox"],
+input[type="radio"] {
+  -webkit-box-sizing: border-box /* 1 */;
+          box-sizing: border-box /* 1 */;
+  padding: 0 /* 2 */;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+input[type="search"] {
+  -webkit-appearance: textfield /* 1 */;
+  -webkit-box-sizing: content-box /* 2 */;
+  box-sizing: content-box;
+}
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+legend {
+  border: 0 /* 1 */;
+  padding: 0 /* 2 */;
+}
+textarea {
+  overflow: auto;
+}
+optgroup {
+  font-weight: bold;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+td,
+th {
+  padding: 0;
+}
+blockquote {
+  margin: 0;
+}
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500");
+html,
+body {
+  height: 100%;
+}
+.page__wrapper {
+  min-height: 100%;
+  margin-bottom: -50px;
+}
+* html .page__wrapper {
+  height: 100%;
+}
+.page__buffer {
+  height: 50px;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+}
+body * {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+input {
+  outline: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+  width: 100%;
+}
+.login {
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+.login .login_block {
+  width: 600px;
+  height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #a1dbff; /* Old browsers */
+  background: -webkit-linear-gradient(#a1dbff 0%, #cbebff 10%, #fff 40%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#a1dbff), color-stop(10%, #cbebff), color-stop(40%, #fff));
+  background: linear-gradient(#a1dbff 0%, #cbebff 10%, #fff 40%);
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+.login .login_block:before {
+  content: '';
+  position: absolute;
+  background: #4a6099;
+  width: 100%;
+  left: 0;
+  top: 0;
+  height: 10px;
+  z-index: 2;
+}
+.login .login_block .login_form {
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.login .login_block .login_form .login_input_line {
+  margin-bottom: 10px;
+  font-size: 12px;
+}
+.login .login_block .login_form label {
+  width: 150px;
+  display: inline-block;
+  text-align: right;
+  margin-right: 10px;
+}
+.login .login_block .login_form button {
+  padding: 2px;
+}
+.login .login_block .login_form input {
+  background: #fff;
+}
+.login .login_block .login_footer {
+  position: absolute;
+  background: #4a6099;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  height: 40px;
+  z-index: 2;
+  font-size: 16px;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding-left: 10px;
+  color: #f1fbff;
+}
+.page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+.btn {
+  cursor: pointer;
+  background: #4a6099;
+  color: #fff;
+  padding: 5px 10px;
+}
+.btn:hover {
+  background: #536cac;
+}
+.close {
+  cursor: pointer;
+  position: absolute;
+  display: block;
+  padding: 10px;
+  top: 0;
+  right: 0;
+  color: #444;
+}
+.close:hover {
+  color: #666;
+}
+#help_info {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(255,255,255,0.3);
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+#help_info .block {
+  position: relative;
+  width: 400px;
+  min-height: 300px;
+  background: #fff;
+  -webkit-box-shadow: 0 2px 4px 0 rgba(0,0,0,0.1);
+          box-shadow: 0 2px 4px 0 rgba(0,0,0,0.1);
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+#help_info .block .main {
+  color: #000;
+  padding: 10px;
+}
+#help_info .block .footer {
+  width: 100%;
+  background: #eee;
+  padding: 10px;
+}
+#help_info .block .btn {
+  float: right;
+}
+header {
+  width: 100%;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: #fff;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #4a6099;
+  padding: 5px 0;
+}
+header .logo {
+  padding-left: 50px;
+  width: 100%;
+}
+header .user {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: none;
+      flex-wrap: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+header .user .avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+}
+header .user .avatar img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+header .user .name {
+  padding: 0 10px;
+  white-space: nowrap;
+}
+header .info {
+  display: none;
+  position: absolute;
+  max-width: 160px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  top: calc(100% + 5px);
+  z-index: 10;
+  right: 0;
+  background: #4a6099;
+  color: #fff;
+  padding: 5px;
+}
+header .info div {
+  text-align: right;
+  padding: 5px;
+  min-width: 110px;
+}
+header .info div a {
+  display: block;
+}
+header .help,
+header .settings,
+header .exit,
+header .user {
+  cursor: pointer;
+  position: relative;
+}
+header .help,
+header .settings,
+header .exit {
+  padding: 0 10px;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+header .help i,
+header .settings i,
+header .exit i {
+  font-size: 24px;
+}
+header .help .fa-sort-down,
+header .settings .fa-sort-down,
+header .exit .fa-sort-down {
+  font-size: 15px;
+  margin-top: -5px;
+}
