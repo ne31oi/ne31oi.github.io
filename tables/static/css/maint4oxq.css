@@ -344,6 +344,7 @@ a {
   top: 0;
   right: 0;
   color: #444;
+  z-index: 9;
 }
 .close:hover {
   color: #666;
@@ -362,6 +363,7 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  z-index: 9;
 }
 #help_info .block {
   position: relative;
