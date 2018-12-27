@@ -28,11 +28,11 @@ jQuery(document).ready(function($) {
             mask: '+{7}(000)000-00-00'
         };
         var mask = new IMask(element, maskOptions);
-        var element = document.getElementById('email');
-        var maskOptions = {
+        var element2 = document.getElementById('email');
+        var maskOptions2 = {
             mask: /[a-zA-Z0-9._%-]+@[a-zA-Z0-9-]+\.[a-zA-Z]{2,4}/
         };
-        var mask = new IMask(element, maskOptions);
+        var mask2 = new IMask(element, maskOptions);
     }
     try {
         initMap();
