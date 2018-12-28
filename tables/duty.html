@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html class="no-js" lang="ru">
-    <!--include ../components/footer/footer.pug-->
 
     <head>
         <meta charset="utf-8">
@@ -77,32 +76,46 @@
                 </div>
             </div>
         </header>
-        <main>
+        <main class="r">
             <div class="first_line">
-                <div class="left">
-                    <div class="back">
-                        < <span>Вернуться</span>
-                    </div>
+                <div class="btns">
+                    <button class="btn">Создать наряд</button>
                 </div>
-                <div class="right">
-                    <div class="back"> <span>Сохранить</span>
-                    </div>
+                <div class="see">
+                    <select>
+                        <option value="select1">Все наряды</option>
+                        <option value="select2">Создано</option>
+                        <option value="select7">Передано</option>
+                        <option value="select8">Закрыто</option>
+                        <option value="select9">Аннулировано</option>
+                    </select>
+                </div>
+                <div class="search">
+                    <input type="text" placeholder="ID наряда">
+                    <button>Поиск</button>
+                </div>
+                <div class="pages"><i class="fas fa-arrow-circle-left"></i><span> 1-250 </span><i class="fas fa-arrow-circle-right"></i>
+                    <select>
+                        <option value="select1">10</option>
+                        <option value="select2">25</option>
+                        <option value="select3">50</option>
+                        <option value="select4">100</option>
+                        <option value="select5" selected="selected">250</option>
+                    </select>
+                </div>
+                <div class="webi">
+                    <button class="btn">Web интерфейс</button>
                 </div>
             </div>
             <div class="second_line">
-                <div class="left"></div>
-                <div class="right">
-                    <h2>Настройки</h2>
-                    <div class="tabs">
-                        <div class="tab on">Основные</div>
-                        <div class="tab">Печать</div>
-                        <div class="tab">Импорт</div>
-                        <div class="tab">Экспорт</div>
-                        <div class="tab">Подверждение</div>
-                    </div>
-                </div>
+                <div id="table4"></div>
             </div>
         </main>
+        <div>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jexcel/1.5.7/js/jquery.jexcel.js"></script>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jexcel/1.5.7/css/jquery.jexcel.css" type="text/css" />
+        </div>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 
 
         <script src="static/js/main4hkd1a.min.js"></script>
