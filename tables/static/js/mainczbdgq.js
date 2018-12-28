@@ -47,126 +47,56 @@ $(document).ready(function() {
                 if (data.node.type == 'scheme') {
                     return "scheme-icon";
                 } else
+                if (data.node.type == 'service') {
+                    return "service-icon";
+                } else
                 if (data.node.isFolder()) {
                     return "dot3-icon";
                 } else {
-                    return "dot-icon";
+                    var obj = '';
+                    if (data.node.type.indexOf('con_obj') > -1) {
+                        obj = "dot2-icon";
+                    } else obj = "dot-icon";
+                    var tt = '';
+                    ['obj_work', 'obj_project', 'obj_test', 'obj_not', 'obj_obs', 'obj_ogr', 'obj_neo', 'obj_deact'].forEach(function(item) {
+                        if (data.node.type.indexOf(item) > -1) {
+                            tt = item;
+                        }
+                    })
+                    return obj + " " + tt;
                 }
             },
             source: [
-                { title: "Node 1", key: "1", type: 'scheme' },
+                { title: "Cхема", key: "1", type: 'scheme' },
+                { title: "Сервис", key: "2", type: 'service' },
                 {
-                    title: "Folder 2",
-                    key: "2",
-                    folder: true,
-                    children: [
-                        { title: "Node 2.1", key: "3", myOwnAttr: "abc" },
-                        { title: "Node 2.2", key: "4" }
-                    ]
-                },
-                {
-                    title: "Folder 2",
+                    title: "Группа объектов",
                     key: "3",
                     folder: true,
                     children: [
-                        { title: "Node 2.1", key: "3", myOwnAttr: "abc", type: 'scheme' },
-                        {
-                            title: "Folder 2",
-                            key: "2",
-                            folder: true,
-                            children: [
-                                { title: "Node 2.1", key: "3", myOwnAttr: "abc" },
-                                {
-                                    title: "Folder 2",
-                                    key: "2",
-                                    folder: true,
-                                    children: [
-                                        { title: "Node 2.1", key: "3", myOwnAttr: "abc" },
-                                        {
-                                            title: "Folder 2",
-                                            key: "2",
-                                            folder: true,
-                                            children: [
-                                                { title: "Node 2.1", key: "3", myOwnAttr: "abc" },
-                                                {
-                                                    title: "Folder 2",
-                                                    key: "2",
-                                                    folder: true,
-                                                    children: [
-                                                        { title: "Node 2.1", key: "3", myOwnAttr: "abc" },
-                                                        {
-                                                            title: "Folder 2",
-                                                            key: "2",
-                                                            folder: true,
-                                                            children: [
-                                                                { title: "Node 2.1", key: "3", myOwnAttr: "abc" },
-                                                                {
-                                                                    title: "Folder 2",
-                                                                    key: "2",
-                                                                    folder: true,
-                                                                    children: [
-                                                                        { title: "Node 2.1", key: "3", myOwnAttr: "abc" },
-                                                                        {
-                                                                            title: "Folder 2",
-                                                                            key: "2",
-                                                                            folder: true,
-                                                                            children: [
-                                                                                { title: "Node 2.1", key: "3", myOwnAttr: "abc" },
-                                                                                {
-                                                                                    title: "Folder 2",
-                                                                                    key: "2",
-                                                                                    folder: true,
-                                                                                    children: [
-                                                                                        { title: "Node 2.1", key: "3", myOwnAttr: "abc" },
-                                                                                        {
-                                                                                            title: "Folder 2",
-                                                                                            key: "2",
-                                                                                            folder: true,
-                                                                                            children: [
-                                                                                                { title: "Node 2.1", key: "3", myOwnAttr: "abc" },
-                                                                                                {
-                                                                                                    title: "Folder 2",
-                                                                                                    key: "2",
-                                                                                                    folder: true,
-                                                                                                    children: [
-                                                                                                        { title: "Node 2.1", key: "3", myOwnAttr: "abc" },
-                                                                                                        {
-                                                                                                            title: "Folder 2",
-                                                                                                            key: "2",
-                                                                                                            folder: true,
-                                                                                                            children: [
-                                                                                                                { title: "Node 2.1", key: "3", myOwnAttr: "abc" },
-                                                                                                                {
-                                                                                                                    title: "Folder 2",
-                                                                                                                    key: "2",
-                                                                                                                    folder: true,
-                                                                                                                    children: [
-                                                                                                                        { title: "Node 2.1", key: "3", myOwnAttr: "abc" },
-                                                                                                                        { title: "Node 2.2", key: "4" }
-                                                                                                                    ]
-                                                                                                                }
-                                                                                                            ]
-                                                                                                        }
-                                                                                                    ]
-                                                                                                }
-                                                                                            ]
-                                                                                        }
-                                                                                    ]
-                                                                                }
-                                                                            ]
-                                                                        }
-                                                                    ]
-                                                                }
-                                                            ]
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
+                        { title: "Объект в работе", key: "3", myOwnAttr: "abc", type: 'obj_work' },
+                        { title: "Объект проектируемый", key: "3", myOwnAttr: "abc", type: 'obj_project' },
+                        { title: "Объект тестовый", key: "3", myOwnAttr: "abc", type: 'obj_test' },
+                        { title: "Объект недоступен", key: "3", myOwnAttr: "abc", type: 'obj_not' },
+                        { title: "Обследование", key: "3", myOwnAttr: "abc", type: 'obj_obs' },
+                        { title: "Ограничен", key: "3", myOwnAttr: "abc", type: 'obj_ogr' },
+                        { title: "Неопределен", key: "3", myOwnAttr: "abc", type: 'obj_neo' },
+                        { title: "Деактивирован", key: "3", myOwnAttr: "abc", type: 'obj_deact' },
+                    ]
+                },
+                {
+                    title: "Группа связанных объектов",
+                    key: "4",
+                    folder: true,
+                    children: [
+                        { title: "Объект в работе", key: "3", myOwnAttr: "abc", type: 'con_obj_work' },
+                        { title: "Объект проектируемый", key: "3", myOwnAttr: "abc", type: 'con_obj_project' },
+                        { title: "Объект тестовый", key: "3", myOwnAttr: "abc", type: 'con_obj_test' },
+                        { title: "Объект недоступен", key: "3", myOwnAttr: "abc", type: 'con_obj_not' },
+                        { title: "Обследование", key: "3", myOwnAttr: "abc", type: 'con_obj_obs' },
+                        { title: "Ограничен", key: "3", myOwnAttr: "abc", type: 'con_obj_ogr' },
+                        { title: "Неопределен", key: "3", myOwnAttr: "abc", type: 'con_obj_neo' },
+                        { title: "Деактивирован", key: "3", myOwnAttr: "abc", type: 'con_obj_deact' },
                     ]
                 }
             ],
@@ -293,16 +223,16 @@ $(document).ready(function() {
                     label.innerHTML = '<i class="far fa-envelope top" ><div class="tooltip ">Отправить заявку</div></i> <i class="far fa-edit"><div class="tooltip ">Редактировать заявку</div></i><i class="far fa-copy"><div class="tooltip ">Копировать заявку</div></i><i class="fas fa-download"><div class="tooltip ">Сохранить заявку в PDF</div></i>'
 
                     $('#' + instance[0].id + ' #row-' + row + ' .fa-envelope').click(function() {
-                        console.log('send',row)
+                        console.log('send', row)
                     })
                     $('#' + instance[0].id + ' #row-' + row + ' .fa-edit').click(function() {
-                        console.log('edit',row)
+                        console.log('edit', row)
                     })
                     $('#' + instance[0].id + ' #row-' + row + ' .fa-copy').click(function() {
-                        console.log('copy',row)
+                        console.log('copy', row)
                     })
                     $('#' + instance[0].id + ' #row-' + row + ' .fa-download').click(function() {
-                        console.log('download',row)
+                        console.log('download', row)
                     })
                 }
 
@@ -327,16 +257,16 @@ $(document).ready(function() {
                     label.innerHTML = '<i class="far fa-eye top" ><div class="tooltip ">Посмотерть наряд</div></i><i class="fas fa-download"><div class="tooltip ">Сохранить наряд в PDF</div></i><i class="far fa-eye top" ><div class="tooltip ">Посмотерть заявку</div></i><i class="fas fa-download"><div class="tooltip ">Сохранить заявку в PDF</div></i>'
 
                     $('#' + instance[0].id + ' #row-' + row + ' .fa-envelope').click(function() {
-                        console.log('send',row)
+                        console.log('send', row)
                     })
                     $('#' + instance[0].id + ' #row-' + row + ' .fa-edit').click(function() {
-                        console.log('edit',row)
+                        console.log('edit', row)
                     })
                     $('#' + instance[0].id + ' #row-' + row + ' .fa-copy').click(function() {
-                        console.log('copy',row)
+                        console.log('copy', row)
                     })
                     $('#' + instance[0].id + ' #row-' + row + ' .fa-download').click(function() {
-                        console.log('download',row)
+                        console.log('download', row)
                     })
                 }
 
@@ -348,4 +278,38 @@ $(document).ready(function() {
 
 
 
+
+
+
 });
+
+function anichange(objName) {
+    if ($(objName).css('display') == 'none') {
+        $(objName).animate({ height: 'show' }, 400);
+    } else {
+        $(objName).animate({ height: 'hide' }, 200);
+    }
+}
+var id_menu = new Array('sub_menu_1', 'sub_menu_2', 'sub_menu_3');
+startList = function allclose() {
+    for (i = 0; i < id_menu.length; i++) {
+        if (document.getElementById(id_menu[i]))
+            document.getElementById(id_menu[i]).style.display = "none";
+    }
+}
+
+function openMenu(id) {
+    for (i = 0; i < id_menu.length; i++) {
+        if (id != id_menu[i]) {
+            if (document.getElementById(id_menu[i]))
+                document.getElementById(id_menu[i]).style.display = "none";
+        }
+    }
+    if (document.getElementById(id))
+        if (document.getElementById(id).style.display == "block") {
+            document.getElementById(id).style.display = "none";
+        } else {
+            document.getElementById(id).style.display = "block";
+        }
+}
+window.onload = startList;

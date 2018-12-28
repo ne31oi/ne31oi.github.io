@@ -12,7 +12,7 @@
         <meta name="HandheldFriendly" content="true">
 
         <!--[if (gt IE 9)|!(IE)]><!-->
-        <link href="static/css/main4hkd1a.min.css" rel="stylesheet" type="text/css">
+        <link href="static/css/mainczbdgq.min.css" rel="stylesheet" type="text/css">
         <!--<![endif]-->
         <meta property="og:title" content="#{data.title}">
         <meta property="og:title" content="">
@@ -83,20 +83,30 @@
                         < <span>Вернуться</span>
                     </div>
                 </div>
-                <div class="right">
-                    <div class="webi">
-                        <button class="btn">Web интерфейс</button>
-                    </div>
-                </div>
+                <div class="right"></div>
             </div>
             <div class="second_line">
                 <div class="left"></div>
+                <div class="shab"><a href="#" onclick="anichange('#divId'); return false"><i class="fas fa-bars"></i> Шаблоны нарядов</a>
+                    <div id="divId" style="display: none">
+                        <textarea></textarea>
+                    </div>
+                </div>
                 <div class="right">
                     <h2>Информация о наряде</h2>
                     <div class="line_flex">
                         <label>Номер заявки</label>
                         <input class="id">
+                        <label>Дата</label>
                         <input type='text' class="datepicker-here date" data-position="right top" />
+                        <label>Состояние</label>
+                        <select>
+                            <option value="select10">Все наряды</option>
+                            <option value="select11">Создано</option>
+                            <option value="select12">Передано</option>
+                            <option value="select13">Закрыто</option>
+                            <option value="select14">Аннулировано</option>
+                        </select>
                     </div>
                     <div class="line_flex">
                         <div class="tabs">
@@ -108,13 +118,28 @@
                         <div class="tab_item tab_item1">
                             <div class="line_flex">
                                 <label>Сервис</label>
-                                <input>
+                                <select>
+                                    <option value="select1">тип</option>
+                                    <option value="select1">тип</option>
+                                    <option value="select1">тип</option>
+                                    <option value="select1">тип</option>
+                                </select>
                                 <label>Тип заявки</label>
-                                <input>
+                                <select>
+                                    <option value="select1">тип</option>
+                                    <option value="select1">тип</option>
+                                    <option value="select1">тип</option>
+                                    <option value="select1">тип</option>
+                                </select>
                             </div>
                             <div class="line_flex">
                                 <label>Срочность</label>
-                                <input>
+                                <select>
+                                    <option value="select1">тип</option>
+                                    <option value="select1">тип</option>
+                                    <option value="select1">тип</option>
+                                    <option value="select1">тип</option>
+                                </select>
                             </div>
                             <h2>Заявку выписал сотрудник</h2>
                             <div class="line_flex">
@@ -143,7 +168,8 @@
                                 <label>Рабочее место</label>
                                 <input>
                             </div>
-                            <h2>Информация о заявке</h2>
+                            <h2>Информация наряда
+                </h2>
                             <div class="line_flex">
                                 <label>Абонент</label>
                                 <input>
@@ -152,24 +178,53 @@
                             </div>
                             <div class="line_flex">
                                 <label>Подразделение абонента</label>
-                                <input>
+                                <input class="big">
                             </div>
                             <div class="line_flex">
                                 <label>Адрес неисправности</label>
-                                <input>
+                                <select class="big">
+                                    <option value="select1">тип</option>
+                                    <option value="select1">тип</option>
+                                    <option value="select1">тип</option>
+                                    <option value="select1">тип</option>
+                                </select>
                             </div>
                             <div class="line_flex">
                                 <label>Помещение</label>
-                                <input class="big">
+                                <select class="big">
+                                    <option value="select1">тип</option>
+                                    <option value="select1">тип</option>
+                                    <option value="select1">тип</option>
+                                    <option value="select1">тип</option>
+                                </select>
                             </div>
                             <h2>Вид неисправности</h2>
                             <div class="line_flex">
                                 <label>Вид работы/ тип неисправности</label>
-                                <input class="big">
+                                <select class="big">
+                                    <option value="select1">тип</option>
+                                    <option value="select1">тип</option>
+                                    <option value="select1">тип</option>
+                                    <option value="select1">тип</option>
+                                </select>
                             </div>
                             <div class="line_flex">
                                 <label>Описание неисправности</label>
                                 <textarea class="big"></textarea>
+                            </div>
+                            <div class="line_flex">
+                                <div class="table">
+                                    <div class="row">
+                                        <div class="td">Путь до ресурса</div>
+                                        <div class="td">Ресурс</div>
+                                        <div class="td">Перейти в Web Интерфейс</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="td">test</div>
+                                        <div class="td">test</div>
+                                        <div class="td">test</div>
+                                    </div>
+                                </div>
                             </div>
                             <div class="line_flex">
                                 <button class="btn">Изменить наряд</button>
@@ -186,7 +241,7 @@
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 
 
-        <script src="static/js/main4hkd1a.min.js"></script>
+        <script src="static/js/mainczbdgq.min.js"></script>
     </body>
 
 </html>
