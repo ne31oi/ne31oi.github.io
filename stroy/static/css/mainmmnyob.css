@@ -212,6 +212,17 @@ body * {
   width: 100%;
   max-width: 860px;
 }
+.line {
+  height: 1px;
+  margin: 0 auto;
+  background: #ff822e;
+  position: absolute;
+  margin-bottom: -50px;
+  left: 11%;
+  z-index: 0;
+  top: 88px;
+  width: 78%;
+}
 .page {
   display: -moz-flex;
   display: -ms-flex;
@@ -239,6 +250,7 @@ body * {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  position: relative;
 }
 header {
   position: fixed;
@@ -336,6 +348,7 @@ footer .container .phone {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  position: relative;
 }
 .blocks p {
   font-size: 20px;
@@ -346,6 +359,35 @@ footer .container .phone {
 }
 .blocks .block img {
   width: 100%;
+}
+.blocks .block:first-child .num {
+  position: relative;
+  z-index: 2;
+}
+.blocks .block:first-child .num:before {
+  position: absolute;
+  height: 1px;
+  background: #fff;
+  z-index: 1;
+  top: 50%;
+  width: 100%;
+  content: '';
+  left: -100%;
+}
+.blocks .block:last-child .num {
+  position: relative;
+  z-index: 2;
+}
+.blocks .block:last-child .num:before {
+  position: absolute;
+  height: 1px;
+  background: #fff;
+  z-index: 1;
+  top: 50%;
+  width: 100%;
+  content: '';
+  left: auto;
+  right: -100%;
 }
 button {
   font-size: 20px;
@@ -754,6 +796,9 @@ main.pb a button {
   }
 }
 @media (max-width: 768px) {
+  .line {
+    display: none;
+  }
   .container {
     padding-left: 20px;
     padding-right: 20px;

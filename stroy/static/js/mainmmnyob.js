@@ -15,7 +15,15 @@ jQuery(document).ready(function($) {
     $("a.scroll").click(function() {
         var elementClick = $(this).attr("href");
         var destination = $(elementClick).offset().top;
-        if ($.browser && $.browser.safari) {
+        var ua = navigator.userAgent.toLowerCase();
+        var s =false
+        if (ua.indexOf('safari') != -1) {
+            if (ua.indexOf('chrome') > -1) {
+            } else {
+                s = true // Safari
+            }
+        }
+        if (s) {
             $('body').animate({ scrollTop: destination }, 1100); //1100 - скорость
         } else {
             $('html').animate({ scrollTop: destination }, 1100);
