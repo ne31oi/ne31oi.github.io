@@ -431,7 +431,7 @@
                   </div>
                 </div>
                 <div class="feedback__col">
-                  <form class="order__form" action="" method="post" id="order-form">
+                  <form class="order__form" onsubmit="sendMail(); return false;" id="order-form">
                     <div class="order__form-input-container">
                       <input class="order__form-input" placeholder="  +7 (___) ___ - __ - __" name="phone" type="text" placeholder="">
                       <img class="form-input-marker" src="img/phone2_logo.png" alt="телефон">
@@ -472,6 +472,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
         <script src="js/map.js"></script>
         <script src="js/script.min.js"></script>
 </body>
