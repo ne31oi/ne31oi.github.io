@@ -1,0 +1,59 @@
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  background-color: #be1e2d; 
+  color: #fff;
+
+  font-family: 'Kurale', serif;
+  font-size: 18px;
+
+  width: 265px;
+  height: 50px;
+
+  @include phonesXs() {
+    font-size: 12px;
+    width: 160px;
+    height: 30px;
+  }
+
+  // line-height: 48px;
+  letter-spacing: 1px;
+  outline: none;
+  // border: 2px solid #fff;
+  // box-sizing: content-box;
+  // transition: 0.2s;
+  
+  text-decoration: none;
+  margin: 0 auto;
+  cursor: pointer;
+
+
+  &:hover {
+    opacity: 0.6;  
+  }
+
+  // &:active {
+  //     background: #000;
+  // }
+}
+
+.btn_about-teacher {
+  margin-bottom: 50px;
+}
+
+.btn_stage {
+  background-color: #fff;
+  color: #be1e2d;
+  margin-bottom: 40px; 
+}
+
+.btn_form {
+  background: rgba(255,255,255,0);
+  color: #fff;
+  outline: 0;
+  border: 3px solid #fff;
+  margin: 0;
+}
+

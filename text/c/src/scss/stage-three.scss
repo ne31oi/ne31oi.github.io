@@ -1,0 +1,56 @@
+.stage__text__top_stage-three {
+  font-family: 'Kurale', serif;
+  font-size: 18px;
+
+  @include phonesXs() {
+    font-size: 15px;
+    max-width: 245px;    
+  }
+
+  & > span {
+    display: block;
+  }
+
+  & > span:first-child {
+    margin-bottom: 50px;
+  }
+}
+
+.children-text {
+  display: flex;
+  margin-top: 20px;
+
+  @include phonesXs() {
+    flex-direction: column;
+  }
+  
+}
+
+.children-text__left,
+.children-text__right {
+  width: 50%;
+
+  @include phonesXs() {
+    width: 95%;
+    margin: 0 auto;
+  }
+}
+
+.children-text__left__bottom { 
+  font-family: 'Kurale', serif;
+  font-size: 18px;
+  text-align: center;
+
+  @include phonesXs() {
+    font-size: 14px;
+    max-width: 98%;
+    margin: 0 auto;
+    margin-bottom: 15px;    
+  }
+}
+
+.stage-three > .container > .hours {
+  @include phonesXs() {
+    margin-top: 30px;
+  }
+}
