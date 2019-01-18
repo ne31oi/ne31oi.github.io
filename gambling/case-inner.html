@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Wallie gambling Case</title>
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+</head>
+<body>
+<div class="overlay"></div>
+<header class="header">
+    <div class="container">
+        <div class="header_title">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="img/logo.png" alt="logo">
+                </a>
+            </div>
+            <div class="box-btn">
+                <div class="btn-wrap">
+                    <a href="#" class="btn btn-effect">ДОКУМЕНТАЦИЯ ДЛЯ ИНВЕСТОРОВ <span></span></a>
+                    <a href="#" class="btn-yellow btn-effect">СТАТЬ СОВЛАДЕЛЬЦЕМ <span></span></a>
+                </div>
+            </div>
+            <div class="btn-mobile-nav">
+                <a href="javascript:void(0);">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>
+            </div>
+        </div>
+        <nav class="nav">
+            <div class="balance">
+                <span>демо баланс:</span><span class="the-sum">50.00 ETH</span>
+            </div>
+            <ul class="list">
+                <li class="list_item">
+                    <a href="index.html" class="active">
+                        <span>играть в</span>
+                        <span class="text-yellow">ETH BOX</span>
+                    </a>
+                </li>
+                <li class="list_item">
+                    <a href="slots.html">
+                        <span>играть в</span>
+                        <span class="text-yellow">СЛОТЫ</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div class="label-box">
+        <p>ПРОГРЕССИВНЫЙ ДЖЕКПОТ: 10.025 ETH</p>
+    </div>
+</header>
+<section class="case">
+    <div class="wrapper-spin">
+        <div class="pointer-selected">
+            <img src="img/pointer-selected.png" alt="img">
+        </div>
+        <div class="wrapper-spin-scroll">
+            <ul class="list" id="spinner">
+                <li class="list_item">
+                    <div class="item-cell">
+                        <div class="icon">
+                            <img src="img/icon/diamond-blue.png" alt="img">
+                        </div>
+                        <p>Приз</p>
+                        <strong class="text-blue">0.01 ETH</strong>
+                        <ul class="inner-list list-blue">
+                            <li>
+                                <i></i>
+                            </li>
+                            <li>
+                                <i></i>
+                            </li>
+                            <li>
+                                <i></i>
+                            </li>
+                            <li>
+                                <i></i>
+                            </li>
+                            <li>
+                                <i></i>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="list_item">
+                    <div class="item-cell">
+                        <div class="icon">
+                            <img src="img/icon/diamond-orange.png" alt="img">
+                        </div>
+                        <p>Приз</p>
+                        <strong class="text-orange">0.1 ETH</strong>
+                        <ul class="inner-list list-orange">
+                            <li>
+                                <i></i>
+                            </li>
+                            <li>
+                                <i></i>
+                            </li>
+                            <li>
+                                <i></i>
+                            </li>
+                            <li>
+                                <i></i>
+                            </li>
+                            <li>
+                                <i></i>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="list_item">
+                    <div class="item-cell">
+                        <div class="icon">
+                            <img src="img/icon/diamond-green.png" alt="img">
+                        </div>
+                        <p>Приз</p>
+                        <strong class="text-green">1 ETH</strong>
+                        <ul class="inner-list list-green">
+                            <li>
+                                <i></i>
+                            </li>
+                            <li>
+                                <i></i>
+                            </li>
+                            <li>
+                                <i></i>
+                            </li>
+                            <li>
+                                <i></i>
+                            </li>
+                            <li>
+                                <i></i>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="list_item">
+                    <div class="item-cell">
+                        <div class="icon">
+                            <img src="img/icon/diamond-violet.png" alt="img">
+                        </div>
+                        <p>Приз</p>
+                        <strong class="text-violet">3 ETH</strong>
+                        <ul class="inner-list list-violet">
+                            <li>
+                                <i></i>
+                            </li>
+                            <li>
+                                <i></i>
+                            </li>
+                            <li>
+                                <i></i>
+                            </li>
+                            <li>
+                                <i></i>
+                            </li>
+                            <li>
+                                <i></i>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="list_item">
+                    <div class="item-cell">
+                        <div class="icon">
+                            <img src="img/icon/diamond-yellow.png" alt="img">
+                        </div>
+                        <p>Приз</p>
+                        <strong class="text-yellow">10 ETH</strong>
+                        <ul class="inner-list list-yellow">
+                            <li>
+                                <i></i>
+                            </li>
+                            <li>
+                                <i></i>
+                            </li>
+                            <li>
+                                <i></i>
+                            </li>
+                            <li>
+                                <i></i>
+                            </li>
+                            <li>
+                                <i></i>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="list_item">
+                    <div class="item-cell">
+                        <div class="icon">
+                            <img src="img/icon/diamond-blue.png" alt="img">
+                        </div>
+                        <p>Приз</p>
+                        <strong class="text-blue">0.01 ETH</strong>
+                        <ul class="inner-list list-blue">
+                            <li>
+                                <i></i>
+                            </li>
+                            <li>
+                                <i></i>
+                            </li>
+                            <li>
+                                <i></i>
+                            </li>
+                            <li>
+                                <i></i>
+                            </li>
+                            <li>
+                                <i></i>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="list_item">
+                    <div class="item-cell">
+                        <div class="icon">
+                            <img src="img/icon/diamond-orange.png" alt="img">
+                        </div>
+                        <p>Приз</p>
+                        <strong class="text-orange">0.1 ETH</strong>
+                        <ul class="inner-list list-orange">
+                            <li>
+                                <i></i>
+                            </li>
+                            <li>
+                                <i></i>
+                            </li>
+                            <li>
+                                <i></i>
+                            </li>
+                            <li>
+                                <i></i>
+                            </li>
+                            <li>
+                                <i></i>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="list_item">
+                    <div class="item-cell">
+                        <div class="icon">
+                            <img src="img/icon/diamond-green.png" alt="img">
+                        </div>
+                        <p>Приз</p>
+                        <strong class="text-green">1 ETH</strong>
+                        <ul class="inner-list list-green">
+                            <li>
+                                <i></i>
+                            </li>
+                            <li>
+                                <i></i>
+                            </li>
+                            <li>
+                                <i></i>
+                            </li>
+                            <li>
+                                <i></i>
+                            </li>
+                            <li>
+                                <i></i>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="list_item">
+                    <div class="item-cell">
+                        <div class="icon">
+                            <img src="img/icon/diamond-violet.png" alt="img">
+                        </div>
+                        <p>Приз</p>
+                        <strong class="text-violet">3 ETH</strong>
+                        <ul class="inner-list list-violet">
+                            <li>
+                                <i></i>
+                            </li>
+                            <li>
+                                <i></i>
+                            </li>
+                            <li>
+                                <i></i>
+                            </li>
+                            <li>
+                                <i></i>
+                            </li>
+                            <li>
+                                <i></i>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="list_item">
+                    <div class="item-cell">
+                        <div class="icon">
+                            <img src="img/icon/diamond-yellow.png" alt="img">
+                        </div>
+                        <p>Приз</p>
+                        <strong class="text-yellow">10 ETH</strong>
+                        <ul class="inner-list list-yellow">
+                            <li>
+                                <i></i>
+                            </li>
+                            <li>
+                                <i></i>
+                            </li>
+                            <li>
+                                <i></i>
+                            </li>
+                            <li>
+                                <i></i>
+                            </li>
+                            <li>
+                                <i></i>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="list_item">
+                    <div class="item-cell">
+                        <div class="icon">
+                            <img src="img/icon/diamond-blue.png" alt="img">
+                        </div>
+                        <p>Приз</p>
+                        <strong class="text-blue">0.01 ETH</strong>
+                        <ul class="inner-list list-blue">
+                            <li>
+                                <i></i>
+                            </li>
+                            <li>
+                                <i></i>
+                            </li>
+                            <li>
+                                <i></i>
+                            </li>
+                            <li>
+                                <i></i>
+                            </li>
+                            <li>
+                                <i></i>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+    <div class="container">
+        <div class="case_content">
+            <div class="case-spin">
+                <div class="case-spin_box-btn">
+                    <a href="#"><span>ОТКРЫТЬ <b>ЗА 0.3 ETH</b></span></a>
+                    <div class="box-media">
+                        <img src="img/case-opem.png" alt="img">
+                    </div>
+                </div>
+            </div>
+            <div class="frame-case">
+                <div class="frame-case_title">
+                    <h2>Внутри <span class="text-blue">CLASSICBOX</span> может быть</h2>
+                </div>
+                <ul class="list">
+                    <li class="list_item">
+                        <div class="item-cell">
+                            <div class="icon">
+                                <img src="img/icon/diamond-blue.png" alt="img">
+                            </div>
+                            <p>Приз</p>
+                            <strong class="text-blue">0.01 ETH</strong>
+                            <ul class="inner-list list-blue">
+                                <li>
+                                    <i></i>
+                                </li>
+                                <li>
+                                    <i></i>
+                                </li>
+                                <li>
+                                    <i></i>
+                                </li>
+                                <li>
+                                    <i></i>
+                                </li>
+                                <li>
+                                    <i></i>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="list_item">
+                        <div class="item-cell">
+                            <div class="icon">
+                                <img src="img/icon/diamond-orange.png" alt="img">
+                            </div>
+                            <p>Приз</p>
+                            <strong class="text-orange">0.1 ETH</strong>
+                            <ul class="inner-list list-orange">
+                                <li>
+                                    <i></i>
+                                </li>
+                                <li>
+                                    <i></i>
+                                </li>
+                                <li>
+                                    <i></i>
+                                </li>
+                                <li>
+                                    <i></i>
+                                </li>
+                                <li>
+                                    <i></i>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="list_item">
+                        <div class="item-cell">
+                            <div class="icon">
+                                <img src="img/icon/diamond-green.png" alt="img">
+                            </div>
+                            <p>Приз</p>
+                            <strong class="text-green">1 ETH</strong>
+                            <ul class="inner-list list-green">
+                                <li>
+                                    <i></i>
+                                </li>
+                                <li>
+                                    <i></i>
+                                </li>
+                                <li>
+                                    <i></i>
+                                </li>
+                                <li>
+                                    <i></i>
+                                </li>
+                                <li>
+                                    <i></i>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="list_item">
+                        <div class="item-cell">
+                            <div class="icon">
+                                <img src="img/icon/diamond-violet.png" alt="img">
+                            </div>
+                            <p>Приз</p>
+                            <strong class="text-violet">3 ETH</strong>
+                            <ul class="inner-list list-violet">
+                                <li>
+                                    <i></i>
+                                </li>
+                                <li>
+                                    <i></i>
+                                </li>
+                                <li>
+                                    <i></i>
+                                </li>
+                                <li>
+                                    <i></i>
+                                </li>
+                                <li>
+                                    <i></i>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="list_item">
+                        <div class="item-cell">
+                            <div class="icon">
+                                <img src="img/icon/diamond-yellow.png" alt="img">
+                            </div>
+                            <p>Приз</p>
+                            <strong class="text-yellow">10 ETH</strong>
+                            <ul class="inner-list list-yellow">
+                                <li>
+                                    <i></i>
+                                </li>
+                                <li>
+                                    <i></i>
+                                </li>
+                                <li>
+                                    <i></i>
+                                </li>
+                                <li>
+                                    <i></i>
+                                </li>
+                                <li>
+                                    <i></i>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="wrap-timer">
+                <div class="timer-title">
+                    <h2>ДО ЗАПУСКА WALLIE GAMBLING</h2>
+                </div>
+                <div id='clock' class="timer">
+                    <span id='RemainsFullDays'></span>
+                    <span id='RemainsFullHours'></span>
+                    <span id='RemainsMinutes'></span>
+                    <span id='lastSec'></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<footer class="footer">
+    <div class="container">
+        <p>© Wallie Gambling LTD, 2019</p>
+    </div>
+</footer>
+<!--SCRIPT-->
+<script type="text/javascript" src="js/main.js"></script>
+<script language='javascript'>
+    // TIMER
+    function fulltime ()   {
+        var time=new Date();
+        var newYear=new Date("april,11,2019,22:22:00");
+        var totalRemains=(newYear.getTime()-time.getTime());
+        if (totalRemains>1){
+            var RemainsSec = (parseInt(totalRemains/1000));
+            var RemainsFullDays=(parseInt(RemainsSec/(24*60*60)));
+            var secInLastDay=RemainsSec-RemainsFullDays*24*3600;
+            var RemainsFullHours=(parseInt(secInLastDay/3600));
+            if (RemainsFullHours<10){RemainsFullHours="0"+RemainsFullHours};
+            var secInLastHour=secInLastDay-RemainsFullHours*3600;
+            var RemainsMinutes=(parseInt(secInLastHour/60));
+            if (RemainsMinutes<10){RemainsMinutes="0"+RemainsMinutes};
+            var lastSec=secInLastHour-RemainsMinutes*60;
+            if (lastSec<10){lastSec="0"+lastSec};
+            document.getElementById("RemainsFullDays").innerHTML=RemainsFullDays+"<span class='Rem'> Дней</span>";
+            document.getElementById("RemainsFullHours").innerHTML=RemainsFullHours+"<span class='Rem'> Часов</span>";
+            document.getElementById("RemainsMinutes").innerHTML=RemainsMinutes+"<span class='Rem'> Минут</span>";
+            document.getElementById("lastSec").innerHTML=lastSec+"<span class='Rem'> Секунд</span>";
+            setTimeout('fulltime()',10)
+        }
+        else{
+            document.getElementById("clock").innerHTML="";
+        }
+    }
+    //END TIMER
+</script>
+<script language='javascript'>fulltime();</script>
+</body>
+</html>
