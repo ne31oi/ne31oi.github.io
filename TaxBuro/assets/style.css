@@ -19344,9 +19344,9 @@ textarea {
 }
 
 textarea {
-    padding-top: 5px;
-    height: 100px;
-    resize: none;
+    padding-top: 5px !important;
+    height: 100px !important;
+    resize: none !important;
 }
 
 button {
