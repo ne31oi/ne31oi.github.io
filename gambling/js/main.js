@@ -87,10 +87,11 @@ $(document).ready(function() {
             if (lottot) {
                 var a = Math.floor(Math.random() * (100 - 30)) + 30;
                 lottot = false
+                var iw = window.innerWidth<961
                 for (var i = 0; i <= a; i++) {
                     var z = (a == i) ? 1000 : (a - i) < 3 ? 300 : (a - i) < 7 ? 220 : (a - i) < 12 ? 180 : (a - i) < 17 ? 150 : 80;
                     carusel.animate({
-                            left: '-=190',
+                            left: iw?'-=138':'-=190',
                         }, z, (i !== a) ? "linear" : "easeOutSine",
                         function() {
                             try {
@@ -98,7 +99,7 @@ $(document).ready(function() {
                                 audio.currentTime = 0
                                 audio.play()
                             } catch (n) { console.log(n) }
-                            if (carusel.css("left") == '-1900px') {
+                            if ((!iw &&carusel.css("left") == '-1900px')||(iw &&carusel.css("left") == '-1380px')) {
                                 carusel.css({
                                     left: '0px'
                                 });
