@@ -78,6 +78,7 @@ $(document).ready(function() {
             $('#spinner .list_item:nth-child(' + i + ')').clone().appendTo(carusel);
         }
         var audio = document.getElementById('audio') // new Audio('crate_scroll.wav');
+        audio.volume = 0.1
         //audio.type = 'audio/wav';
         var lottot = true
 
