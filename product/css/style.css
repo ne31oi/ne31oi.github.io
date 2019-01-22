@@ -257,6 +257,7 @@ textarea {
     width: 25px;
     height: 34px;
     cursor: pointer;
+    z-index: 9999;
 }
 
 @media (min-width: 768px) {
@@ -272,15 +273,17 @@ textarea {
     background: #c2c2c2;
     display: inline-block;
 }
-.header-container .header-logo{
-  opacity: 0;
+
+.header-container .header-logo {
+    opacity: 0;
 }
-.header-container .mobile-logo{
-  opacity: 0;
+
+.header-container .mobile-logo {
+    opacity: 0;
 }
 
 .new_logo {
-  position: absolute;
+    position: absolute;
     z-index: 9;
     left: 50%;
     transform: translateX(-50%);
@@ -308,6 +311,16 @@ textarea {
     width: 100%;
     z-index: 100;
     mix-blend-mode: difference;
+}
+
+@media (max-width: 768px) {
+    .header_new {
+        display: none;
+    }
+
+    .header-wrap{
+      opacity: 1
+    }
 }
 
 @media (max-width: 992px) {
@@ -543,6 +556,10 @@ textarea {
 
 .nav-show {
     left: 0;
+}
+
+.main-banner .main-title {
+    z-index: 6;
 }
 
 .bars,
