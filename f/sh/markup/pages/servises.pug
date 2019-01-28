@@ -1,0 +1,100 @@
+doctype html
+html(class="no-js", lang="ru")
+
+    include ../components/head/head.pug
+    include ../components/example/example.pug
+    include ../components/footer/footer.pug
+    include ../components/form/form.pug
+    include ../components/header/header.pug
+
+    head
+        +head(head.defaults)
+    body.page.servises
+        |%=symbols=%
+        +header(true)
+        .header_head
+            .container
+                .block_w_border
+                    h1 Услуги
+        main
+            .container
+                .col30.mm
+                    .ser
+                        .mm_head 
+                            .t Услуги
+                            .imgs
+                                img(src="static/img/general/pattern.svg", alt="")
+                                img(src="static/img/general/pattern.svg", alt="")
+                                img(src="static/img/general/pattern.svg", alt="")
+                                img(src="static/img/general/pattern.svg", alt="")                         
+                        ul.mm_items
+                            li.mm_item.active 
+                                a(href="") Суть приворота
+                            li.mm_item 
+                                a(href="") Приворот жены
+                            li.mm_item 
+                                a(href="") Привлечение любви
+                            li.mm_item  
+                                a(href="") Сильная шаманская магия
+                            li.mm_item 
+                                a(href="") Очищение энергетики человека
+                            li.mm_item 
+                                a(href="") Похудение с помощью магии
+                            li.mm_item 
+                                a(href="") Родовое проклятие, порчи
+                            li.mm_item 
+                                a(href="") Родовые проклятия
+                            li.mm_item 
+                                a(href="") Печать одиночества
+                            li.mm_item 
+                                a(href="") Негативные программы
+                            li.mm_item 
+                                a(href="") Подготовка к заговорам
+                            li.mm_item 
+                                a(href="") Магия денег
+                            li.mm_item  
+                                a(href="") Мандала
+                    .ser
+                        .mm_head 
+                            .t Книги
+                            .imgs
+                                img(src="static/img/general/pattern.svg", alt="")
+                                img(src="static/img/general/pattern.svg", alt="")
+                                img(src="static/img/general/pattern.svg", alt="")
+                                img(src="static/img/general/pattern.svg", alt="")
+                        .mm_books
+                            a(href="").mm_book
+                                img(src="static/img/general/001.png", alt="")
+                                .mm_book_text Name
+                            a(href="").mm_book
+                                img(src="static/img/general/002.png", alt="")
+                                .mm_book_text Name
+                            a(href="").mm_book
+                                img(src="static/img/general/003.png", alt="")
+                                .mm_book_text Name
+                            a(href="").mm_book
+                                img(src="static/img/general/004.png", alt="")
+                                .mm_book_text Name
+                            a(href="").mm_book
+                                img(src="static/img/general/005.png", alt="")
+                                .mm_book_text Name
+                            a(href="").mm_book
+                                img(src="static/img/general/006.png", alt="")
+                                .mm_book_text Name
+                        
+                    
+                .col70.right_panel
+                    h3 Связаться с нами можно по телефону:
+                    p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed posuere sem ipsum, vitae faucibus tortor gravida ut. Nunc aliquam, odio eget ultrices commodo, augue urna dictum elit, sit amet pharetra quam risus nec arcu. Nam posuere maximus leo, id finibus nisi dictum sed. Curabitur massa purus, vestibulum at lacinia id, maximus vitae purus. Praesent sodales nec leo sit amet viverra. Morbi eleifend magna diam, ac hendrerit urna varius a. Praesent eleifend neque non vulputate aliquet. Cras et mauris sed nisi lacinia accumsan. Vestibulum eget sem consectetur, placerat nunc sed, viverra velit. Fusce quam sem, blandit a nisl a, dignissim posuere nibh. Mauris dolor arcu, aliquet eget faucibus at, maximus feugiat orci. Pellentesque quam turpis, tempor ac lectus quis, rhoncus eleifend turpis. Proin facilisis quis purus ac pretium.
+                    h3 Lorem Ipsum dolor
+                    p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed posuere sem ipsum, vitae faucibus tortor gravida ut. Nunc aliquam, odio eget ultrices commodo, augue urna dictum elit, sit amet pharetra quam risus nec arcu. Nam posuere maximus leo, id finibus nisi dictum sed. Curabitur massa purus, vestibulum at lacinia id, maximus vitae purus. Praesent sodales nec leo sit amet viverra. Morbi eleifend magna diam, ac hendrerit urna varius a. Praesent eleifend neque non vulputate aliquet. Cras et mauris sed nisi lacinia accumsan. Vestibulum eget sem consectetur, placerat nunc sed, viverra velit. Fusce quam sem, blandit a nisl a, dignissim posuere nibh. Mauris dolor arcu, aliquet eget faucibus at, maximus feugiat orci. Pellentesque quam turpis, tempor ac lectus quis, rhoncus eleifend turpis. Proin facilisis quis purus ac pretium.Interdum et malesuada fames ac ante ipsum primis in faucibus.
+                    img(src="static/img/general/servises.png", alt="")
+                    p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed posuere sem ipsum, vitae faucibus tortor gravida ut. Nunc aliquam, odio eget ultrices commodo, augue urna dictum elit, sit amet pharetra quam risus nec arcu. Nam posuere maximus leo, id finibus nisi dictum sed. Curabitur massa purus, vestibulum at lacinia id, maximus vitae purus. Praesent sodales nec leo sit amet viverra. Morbi eleifend magna diam, ac hendrerit urna varius a. Praesent eleifend neque non vulputate aliquet. Cras et mauris sed nisi lacinia accumsan. Vestibulum eget sem consectetur, placerat nunc sed, viverra velit. Fusce quam sem, blandit a nisl a, dignissim posuere nibh. Mauris dolor arcu, aliquet eget faucibus at, maximus feugiat orci. Pellentesque quam turpis, tempor ac lectus quis, rhoncus eleifend turpis. Proin facilisis quis purus ac pretium.Interdum et malesuada fames ac ante ipsum primis in faucibus.
+        +form()
+        +footer()
+
+        script(src='%=static=%js/separate-js/svg4everybody.min.js')
+        script svg4everybody();
+
+        //- Main scripts. You can replace it, but I recommend you to leave it here
+        script(src='%=static=%js/main%=hash=%%=min=%.js')

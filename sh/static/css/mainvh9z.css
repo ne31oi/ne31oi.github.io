@@ -530,8 +530,11 @@ main {
 .col70,
 .col80,
 .col90,
-.col100,
-flex-shrink 0 {
+.col100 {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+.col10 {
   width: 10%;
 }
 .col20 {

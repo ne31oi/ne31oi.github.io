@@ -1,0 +1,25 @@
+mixin form(data)
+	.form
+		.container
+			.block_w_border
+				.left
+					.header-text форма обращения:
+					.inputs_line
+						input(type="text" placeholder="Ваше имя")#name
+						input(type="email" placeholder="Электронная почта")#email
+					.inputs_line
+						input(type="text" placeholder="Место жительства")#address
+						input(type="text" placeholder="Ваш возраст")#age
+					.inputs_line
+						input(type="text" placeholder="Повод обращения")#povod
+					.inputs_line
+						textarea(type="text" placeholder="Сообщение")#msg
+					.inputs_line
+						button Отправить
+						.texts
+							.text работаю до результата 
+							.text опыт 25 лет
+				.right
+
+			img(src="static/img/general/sham.png", alt="").sham
+
