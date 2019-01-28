@@ -8535,7 +8535,9 @@ div[itemprop="articleBody"]>.content_text_blog_none {
 .text_03_main_white a {
     color: #fff;
 }
-
+.text_03_main_white a:hover{
+    color: #fff !important;
+}
 .text_01_main_white li {
     line-height: 24px;
 }
