@@ -173,7 +173,7 @@ template {
 }
 @font-face {
   font-family: 'GothamPro Light';
-  src: url("../fonts/GOTHAMPRO-LIGHT.ttf");
+  src: url("../fonts/GothamProLight.ttf");
 }
 @font-face {
   font-family: 'GothamPro LightItalic';
@@ -189,7 +189,7 @@ template {
 }
 @font-face {
   font-family: 'GothamPro';
-  src: url("../fonts/GOTHAMPRO.ttf");
+  src: url("../fonts/GothamPro.ttf");
 }
 @font-face {
   font-family: 'GothamProNarrow Bold';
@@ -201,7 +201,7 @@ template {
 }
 @font-face {
   font-family: 'RitalinExtraBold';
-  src: url("../fonts/OFONT.RU_RITALINEXTRABOLD.ttf");
+  src: url("../fonts/RitalinExtraBold.ttf");
 }
 @font-face {
   font-family: 'Ritabd';
