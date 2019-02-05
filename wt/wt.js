@@ -5,7 +5,7 @@ WorkTimer = function(id, dates, options) {
 WorkTimer.prototype = {
     init: function(id, dates, options) {
         var self = this;
-        self.container = document.getElementById(id)
+        self.container = document.getElementById(id);
         if (self.container) {
             self.currentTime = new Date();
             self.options = {
@@ -21,30 +21,30 @@ WorkTimer.prototype = {
                 },
                 speed: options && options.speen ? options.speen : 500
 
-            }
+            };
             self.dates = [
-                { text: "Пн", start: "9:00", end: "18:00", work: true },
-                { text: "Вт", start: "9:00", end: "18:00", work: true },
-                { text: "Ср", start: "9:00", end: "18:00", work: true },
-                { text: "Чт", start: "9:00", end: "18:00", work: true },
-                { text: "Пт", start: "9:00", end: "18:00", work: true },
-                { text: "Cб", start: "9:00", end: "18:00", work: true },
-                { text: "Вс", start: "9:00", end: "18:00", work: true },
-            ]
+                { text: "Пн", start: "10:00", end: "19:00", work: true },
+                { text: "Вт", start: "10:00", end: "19:00", work: true },
+                { text: "Ср", start: "10:00", end: "19:00", work: true },
+                { text: "Чт", start: "10:00", end: "19:00", work: true },
+                { text: "Пт", start: "10:00", end: "19:00", work: true },
+                { text: "Cб", start: "10:00", end: "19:00", work: true },
+                { text: "Вс", start: "10:00", end: "19:00", work: true },
+            ];
             if (dates)
                 dates.forEach(function(date, i) {
                     if (date[0]) {
-                        self.dates[i].start = date[0]
-                        self.dates[i].end = date[1]
-                    } else if (date[0] == false) {
+                        self.dates[i].start = date[0];
+                        self.dates[i].end = date[1];
+                    } else if (date[0] === false) {
                         self.dates[i].work = false;
                     }
-                })
+                });
             self.msc_time = Date.now() + (new Date().getTimezoneOffset() / 60) * 3600000 + 3 * 3600000;
-            self.diff_day = 1;
+            self.diff_day = 0;
             self.close = false;
-            self.initStyle()
-            self.initDraw()
+            self.initStyle();
+            self.initDraw();
             self.show = true;
 
             document.querySelector("#" + id + " .wt_day_arrow").addEventListener("click", function() {
@@ -61,10 +61,10 @@ WorkTimer.prototype = {
         }
     },
     getMSC: function(data, type) {
-        var options = { timeZone: "Europe/Moscow" }
+        var options = { timeZone: "Europe/Moscow" };
         if (type)
-            options[type] = 'numeric'
-        return data.toLocaleString('ru-RU', options)
+            options[type] = 'numeric';
+        return data.toLocaleString('ru-RU', options);
     },
     initStyle: function() {
         var self = this;
@@ -94,83 +94,95 @@ WorkTimer.prototype = {
     },
     initDraw: function() {
         var self = this,
-            inner = '';
+            inner = '',
+            next_work_day;
         if (!self.container.classList.contains("WorkTimer_main")) self.container.classList.add("WorkTimer_main");
         var current_day = '<div class="wt_day_clock">' + self.options.icons.clock + '</div><div class="wt_day_arrow">' + self.options.icons.arrow + '</div>',
-            day = (self.getMSC(self.currentTime.getDay(), 'day')) == 0 ? 6 : (self.getMSC(self.currentTime.getDay(), 'day') - 1);
+            day = (self.getMSC(self.currentTime.getDay(), 'day')) === 0 ? 6 : (self.getMSC(self.currentTime.getDay(), 'day') - 1);
         var current_day_start = self.dates[day].start.split(':'),
             current_day_end = self.dates[day].end.split(':');
         if (self.dates[day].work && (parseInt(self.getMSC(self.currentTime, 'hour')) >= parseInt(current_day_start[0]) && parseInt(self.getMSC(self.currentTime, 'minute')) >= parseInt(current_day_start[1] || 0)) && (parseInt(self.getMSC(self.currentTime, 'hour')) <= parseInt(current_day_end[0]) && parseInt(self.getMSC(self.currentTime, 'minute')) >= parseInt(current_day_end[1] || 0))) {
             current_day += '<div class="wt_day_work">Cегодня ' + self.dates[day].start + ' - ' + self.dates[day].end + '</div>';
             self.close = false;
         } else {
-            next_work_day = ((day) == 6) ? 0 : (day + 1);
-            var nwd = false
+            next_work_day = day;
+            if (self.dates[day].work) {
+                if (parseInt(self.getMSC(self.currentTime, 'hour')) <= parseInt(current_day_start[0])) {
+                    self.diff_day = 0;
+                } else if (parseInt(self.getMSC(self.currentTime, 'hour')) >= parseInt(current_day_end[0])) {
+                    self.diff_day = 1;
+                    next_work_day = ((next_work_day) == 6) ? 0 : (next_work_day + 1);
+                }
+            }
+            var nwd = false;
             for (var i = 0; i < self.dates.length; i++) {
                 if (!nwd) {
                     if (self.dates[next_work_day].work) {
                         nwd = true;
-                        if (next_work_day == day && parseInt(self.getMSC(self.currentTime, 'hour')) <= parseInt(current_day_start[0])) {
-                            self.diff_day = 0
+                        if (next_work_day == day) {
+                            if (parseInt(self.getMSC(self.currentTime, 'hour')) <= parseInt(current_day_start[0])) {
+                                self.diff_day = 0;
+                            } else if (parseInt(self.getMSC(self.currentTime, 'hour')) >= parseInt(current_day_end[0])) {
+                                self.diff_day = 1;
+                                next_work_day++;
+                            }
                         }
                     } else {
                         next_work_day = ((next_work_day) == 6) ? 0 : (next_work_day + 1);
-                        self.diff_day++
+                        self.diff_day++;
                     }
                 }
             }
-
             if (parseInt(self.getMSC(self.currentTime, 'hour')) >= parseInt(current_day_start[0]) && parseInt(self.getMSC(self.currentTime, 'minute')) >= parseInt(current_day_start[1] || 0))
-                current_day += '<div class="wt_day_work">Закрыто, откроемся в ' + self.dates[next_work_day].text + ' в ' + self.dates[next_work_day].start + '</div>'
-            else current_day += '<div class="wt_day_work">Закрыто, откроемся сегодня в ' + self.dates[next_work_day].start + '</div>'
+                current_day += '<div class="wt_day_work"><span style="color:red;">Закрыто</span>, откроемся в ' + self.dates[next_work_day].text + ' в ' + self.dates[next_work_day].start + '</div>';
+            else current_day += '<div class="wt_day_work"><span style="color:red;">Закрыто</span>, откроемся сегодня в ' + self.dates[next_work_day].start + '</div>';
             self.close = true;
-
         }
         var d = new Date();
         if (self.close) {
             d.setDate(new Date(new Date(self.msc_time).getDate() + self.diff_day));
-            d.setHours(parseInt(current_day_start[0]))
+            d.setHours(parseInt(current_day_start[0]));
         } else
-            d.setHours(parseInt(current_day_end[0]))
-        d.setMinutes(0)
-        d.setSeconds(0)
+            d.setHours(parseInt(current_day_end[0]));
+        d.setMinutes(0);
+        d.setSeconds(0);
         self.dates.forEach(function(date, i) {
             var time = '<div class="wt_day_dayoff">' + self.options.icons.dayoff + '</div>';
             if (date.work) {
-                time = '<div class="wt_day_start">' + date.start + '</div><div class="wt_day_end">' + date.end + '</div>'
+                time = '<div class="wt_day_start">' + date.start + '</div><div class="wt_day_end">' + date.end + '</div>';
             }
-            inner += '<div class = "wt_day' + (!date.work ? " wt_dayoff" : "") + (i == day ? " wt_active_day" : "") + '"><div class="wt_day_head">' + date.text + '</div><div class="wt_day_line"></div>' + time + '</div>'
-        })
+            inner += '<div class = "wt_day' + (!date.work ? " wt_dayoff" : "") + (i == day ? " wt_active_day" : "") + '"><div class="wt_day_head">' + date.text + '</div><div class="wt_day_line"></div>' + time + '</div>';
+        });
         var diff_day = parseInt((d - self.msc_time) / (24 * 3600000)),
             diff_hour = parseInt(((d - self.msc_time) - (diff_day * (24 * 3600000))) / 3600000),
-            diff_minutes = Math.floor((((d - self.msc_time) - (diff_day * (24 * 3600000)) - diff_hour * 3600000)) / 60000)+1,
-            timer = '<div class = "wt_timer">До ' + (self.close ? 'открытия' : 'закрытия') + ' ' + (diff_day == 0 ? "" : (" " + diff_day + " д.")) + (diff_hour == 0 ? "" : (" " + diff_hour + " ч.")) + (diff_minutes == 0 ? "" : (" " + diff_minutes + " м.")) + ' </div>'
+            diff_minutes = Math.floor((((d - self.msc_time) - (diff_day * (24 * 3600000)) - diff_hour * 3600000)) / 60000) + 1,
+            timer = '<div class = "wt_timer">До ' + (self.close ? 'открытия' : 'закрытия') + ' ' + (diff_day === 0 ? "" : (" " + diff_day + " д.")) + (diff_hour === 0 ? "" : (" " + diff_hour + " ч.")) + (diff_minutes === 0 ? "" : (" " + diff_minutes + " м.")) + ' </div>';
         self.container.innerHTML = current_day + '<div class = "wt_week">' + inner + '</div>' + timer;
         setInterval(function() {
             self.msc_time = Date.now() + (new Date().getTimezoneOffset() / 60) * 3600000 + 3 * 3600000;
             var d = new Date();
             if (self.close) {
                 d.setDate(new Date(new Date(self.msc_time).getDate() + self.diff_day));
-                d.setHours(parseInt(current_day_start[0]))
+                d.setHours(parseInt(current_day_start[0]));
             } else
-                d.setHours(parseInt(current_day_end[0]))
-            d.setMinutes(0)
-            d.setSeconds(0)
+                d.setHours(parseInt(current_day_end[0]));
+            d.setMinutes(0);
+            d.setSeconds(0);
             var diff_day = parseInt((d - self.msc_time) / (24 * 3600000)),
-            diff_hour = parseInt(((d - self.msc_time) - (diff_day * (24 * 3600000))) / 3600000),
-            diff_minutes = Math.floor((((d - self.msc_time) - (diff_day * (24 * 3600000)) - diff_hour * 3600000)) / 60000)+1;
-            document.querySelector('.wt_timer').innerHTML = 'До ' + (self.close ? 'открытия' : 'закрытия') + ' ' + (diff_day == 0 ? "" : (" " + diff_day + " д.")) + (diff_hour == 0 ? "" : (" " + diff_hour + " ч.")) + (diff_minutes == 0 ? "" : (" " + diff_minutes + " м.")) + ' '
-        },10000)
+                diff_hour = parseInt(((d - self.msc_time) - (diff_day * (24 * 3600000))) / 3600000),
+                diff_minutes = Math.floor((((d - self.msc_time) - (diff_day * (24 * 3600000)) - diff_hour * 3600000)) / 60000) + 1;
+            document.querySelector('.wt_timer').innerHTML = 'До ' + (self.close ? 'открытия' : 'закрытия') + ' ' + (diff_day === 0 ? "" : (" " + diff_day + " д.")) + (diff_hour === 0 ? "" : (" " + diff_hour + " ч.")) + (diff_minutes === 0 ? "" : (" " + diff_minutes + " м.")) + ' ';
+        }, 10000);
     }
 
-}
+};
 var dates = [
-    ["14:00", "22:00"],
-    ["14:00", "15:00"],
-    [false],
-    [false],
-    [false, "16:00"],
-    [false],
+    ["10:00", "19:00"],
+    ["10:00", "19:00"],
+    ["10:00", "19:00"],
+    ["10:00", "19:00"],
+    ["10:00", "19:00"],
+    ["10:00", "19:00"],
     [false]
-]
-var wt1 = new WorkTimer('wt1', dates)
+];
+var wt1 = new WorkTimer('wt1', dates);
