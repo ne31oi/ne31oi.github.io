@@ -51,7 +51,7 @@ Cards.prototype = {
                             }, 500)
                         } else {
                             self.shiffle();
-                            i++;
+                            j++;
                         }
                     }, 500);
                 }, 1000);
