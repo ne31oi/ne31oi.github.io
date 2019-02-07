@@ -24,14 +24,14 @@ Cards.prototype = {
             if (getCookie('cardNumber')) {
                 var el = self.cards[0],
                     number = getCookie('cardNumber'),
-                    i = 0;
+                    j = 0;
                 setTimeout(function() {
                     self.shiffle();
                     var cardsL = self.cards.length,
                         cardsW = parseInt(self.container.style.width) - parseInt(self.cards[0].style.left) - parseInt(self.cards[0].style.width),
                         cardsMargin = cardsW / cardsL;
                     interval = setInterval(function() {
-                        if (i == 3) {
+                        if (j == 3) {
                             clearInterval(interval);
                             setTimeout(function() {
                                 self.cards[0].style.left = self.options.cardLeft + "px";
@@ -47,7 +47,7 @@ Cards.prototype = {
                                     el.innerHTML += '<div class="imgCard bgi' + number + '"></div>'
                                     el.style.transform = 'translateY(-50%) translateX(-50%) scale(1.8) rotateY(-180deg)';
                                     el.style.left = "50%";
-                                }, 1000)
+                                }, 1500)
                             }, 500)
                         } else {
                             self.shiffle();
