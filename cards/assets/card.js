@@ -38,7 +38,7 @@ Cards.prototype = {
                                     cardsW = parseInt(self.container.style.width) - parseInt(self.cards[0].style.left) - parseInt(self.cards[0].style.width),
                                     cardsMargin = cardsW / cardsL;
                                 for (var i = 0; i < cardsL; i++) {
-                                    console.log(i, self.cards[i].style.left)
+                                    console.log(i, self.cards[i].style.left,parseInt(self.cards[0].style.left) + cardsMargin * i + 'px')
                                     self.cards[i].style.left = parseInt(self.cards[0].style.left) + cardsMargin * i + 'px';
                                 }
                                 setTimeout(function() {
