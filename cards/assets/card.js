@@ -8,8 +8,8 @@ Cards.prototype = {
         self.container = document.getElementById(id);
         self.options = {
             cardLeft: 50,
-            cardsW: 600,
-            cardW: 136
+            cardsW: 900,
+            cardW: 204
         };
         self.ready = false;
         if (self.container) {

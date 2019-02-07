@@ -6,8 +6,8 @@
 }
 
 #cards {
-    width: 600px;
-    height: 400px;
+    width: 900px;
+    height: 600px;
     background-color: #adcba1;
     margin: 0 auto;
     position: relative;
@@ -18,7 +18,7 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%) scale(1);
-    height: 200px;
+    height: 300px;
     border: 1px solid #000;
     border-radius: 10px;
     cursor: pointer;
