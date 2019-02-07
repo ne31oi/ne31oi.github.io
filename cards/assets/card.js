@@ -11,6 +11,7 @@ Cards.prototype = {
             cardsW: 600,
             cardW: 100
         };
+        self.ready = false;
         if (self.container) {
             self.container.style.width = self.options.cardsW + "px";
             self.cards = document.querySelectorAll('.card');
@@ -20,8 +21,18 @@ Cards.prototype = {
                 card.style.width = self.options.cardW + "px";
                 card.style.zIndex = '1';
             });
-            if (window.getCookie('cardNumber')) {
-
+            if (getCookie('cardNumber')) {
+                var el = self.cards[0],
+                    number = getCookie('cardNumber')
+                el.style.transition = 'none';
+                el.style.zIndex = 3
+                var bg = document.getElementById('bg');
+                bg.style.transition = 'none';
+                bg.style.zIndex = '2';
+                bg.style.opacity = 1;
+                el.innerHTML += '<div class="imgCard bgi' + number + '"></div>'
+                el.style.transform = 'translateY(-50%) scale(1.2) rotateY(-180deg)';
+                el.style.left = self.options.cardLeft + 'px';
             } else {
                 var i = 0;
                 setTimeout(function() {
@@ -29,12 +40,14 @@ Cards.prototype = {
                     interval = setInterval(function() {
                         if (i == 3) {
                             clearInterval(interval);
-                            self.start()
+                            setTimeout(function() {
+                                self.start()
+                            }, 500)
                         } else {
                             self.shiffle();
                             i++;
                         }
-                    }, 1500);
+                    }, 500);
                 }, 1000);
             }
         }
@@ -49,10 +62,10 @@ Cards.prototype = {
         var cardsL = self.cards.length,
             cardsW = parseInt(self.container.style.width) - parseInt(self.cards[0].style.left) - parseInt(self.cards[0].style.width),
             cardsMargin = cardsW / cardsL;
-
         for (var i = 0; i < cardsL; i++) {
             self.cards[i].style.left = parseInt(self.cards[0].style.left) + cardsMargin * i + 'px';
         }
+        self.ready = true;
     },
     shiffle: function() {
         var self = this,
@@ -62,15 +75,60 @@ Cards.prototype = {
         setTimeout(function() {
             self.cards[0].style.zIndex = '1';
             self.cards[0].style.left = current_left;
-        }, 500)
+        }, 300)
+    },
+    click: function(el) {
+        var self = this;
+        if (self.ready && el.id) {
+            self.random = Math.floor(Math.random() * (78 - 1 + 1)) + 1;
+            self.random = (self.random < 10) ? ('0' + self.random) : self.random
+            el.style.transform = 'translateY(-50%) scale(1.2) '
+            el.style.zIndex = '3';
+            el.classList.remove('cardhover');
+            var bg = document.getElementById('bg');
+            bg.style.zIndex = '2';
+            bg.style.opacity = 1;
+            el.innerHTML += '<div class="imgCard bgi' + self.random + '"></div>'
+            setCookie('cardNumber', self.random, 1)
+            el.onclick = '';
+            setTimeout(function() {
+                el.style.transform = 'translateY(-50%) scale(1.2) rotateY(-180deg)';
+
+            }, 500)
+            setTimeout(function() {
+                el.style.left = self.options.cardLeft + 'px';
+            }, 1000)
+
+        }
     }
 
 
 
 };
-window.getCookie = function(name) {
-    var match = document.cookie.match(new RegExp('(^| )' + name + '=([^;]+)'));
-    if (match) return match[2];
-};
+
+function setCookie(cookieName, cookieValue, nDays) {
+    var today = new Date();
+    var expire = new Date();
+    if (nDays == null || nDays == 0)
+        nDays = 1;
+    expire.setTime(today.getTime() + 3600000 * 24 * nDays);
+    document.cookie = cookieName + "=" + escape(cookieValue) +
+        ";expires=" + expire.toGMTString() +
+        ";path=/";
+
+}
+
+
+function getCookie(c_name) {
+    var i, x, y, ARRcookies = document.cookie.split(";");
+    for (i = 0; i < ARRcookies.length; i++) {
+        x = ARRcookies[i].substr(0, ARRcookies[i].indexOf("="));
+        y = ARRcookies[i].substr(ARRcookies[i].indexOf("=") + 1);
+        x = x.replace(/^\s+|\s+$/g, "");
+        if (x == c_name) {
+            return unescape(y);
+        }
+    }
+}
 
 var wt1 = new Cards('cards');

@@ -4,36 +4,74 @@
     outline: 0;
     box-sizing: border-box;
 }
-#cards{
-	width: 600px;
-	height: 400px;
-	background-color: #adcba1;
-	margin: 0 auto;
-	position: relative;
+
+#cards {
+    width: 600px;
+    height: 400px;
+    background-color: #adcba1;
+    margin: 0 auto;
+    position: relative;
+    perspective: 1000;
 }
-.card{
-	position: absolute;
-	top: 50%;
-	transform: translateY(-50%);
-	height: 200px;
-	border: 1px solid #000;
-	border-radius: 10px;
-	background: #fff;
-	cursor: pointer;
-	left: 50px;
-	padding: 10px;
-	transition: top .3s,left 1s;
+
+.card {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) scale(1);
+    height: 200px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    cursor: pointer;
+    left: 50px;
+    padding: 10px;
+    transition: top .3s, left .3s, transform .5s;
+    transform-style: preserve-3d;
 }
-.cardhover:hover{
-	top: calc(50% - 10px);
+
+.cardhover:hover {
+    top: calc(50% - 10px);
 }
-.innerBackCard{
-	width: 100%;
-	height: 100%;
-	border: 1px solid #000;
-	border-radius: 10px;
-	background: #eee;
+
+#bg {
+    background-color: inherit;
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1s;
 }
+
+.innerBackCard {
+    width: 100%;
+    height: 100%;
+    border: 1px solid #000;
+    border-radius: 10px;
+    background: #eee;
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    border-radius: 10px;
+}
+
+.imgCard {
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: rotateY(180deg);
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    -webkit-background-size: cover;
+    background-size: cover;
+    border-radius: 10px;
+}
+
 .bgi01 {
     background-image: url(img/Image01.jpg);
 }

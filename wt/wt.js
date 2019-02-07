@@ -102,8 +102,8 @@ WorkTimer.prototype = {
             day = (self.getMSC(self.currentTime.getDay(), 'day')) === 0 ? 6 : (self.getMSC(self.currentTime.getDay(), 'day') - 1);
         var current_day_start = self.dates[day].start.split(':'),
             current_day_end = self.dates[day].end.split(':');
-        current_day_start[0] = parseInt(current_day_start[0]) == 0 ? 60 : current_day_start[0];
-        current_day_end[0] = parseInt(current_day_end[0]) == 0 ? 60 : current_day_end[0];
+        //current_day_start[1] = parseInt(current_day_start[1]) == 0 ? 60 : current_day_start[1];
+        current_day_end[1] = parseInt(current_day_end[1]) == 0 ? 60 : current_day_end[1];
 
         function pp() {
             next_work_day = day;
@@ -144,9 +144,11 @@ WorkTimer.prototype = {
                 current_day += '<div class="wt_day_work">Cегодня ' + self.dates[day].start + ' - ' + self.dates[day].end + '</div>';
                 self.close = false;
             } else {
+                console.log(1)
                 pp();
             }
         } else {
+            console.log(2)
             pp();
         }
         var d = new Date();
