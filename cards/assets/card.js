@@ -9,7 +9,7 @@ Cards.prototype = {
         self.options = {
             cardLeft: 50,
             cardsW: 600,
-            cardW: 100
+            cardW: 136
         };
         self.ready = false;
         if (self.container) {
@@ -23,16 +23,36 @@ Cards.prototype = {
             });
             if (getCookie('cardNumber')) {
                 var el = self.cards[0],
-                    number = getCookie('cardNumber')
-                el.style.transition = 'none';
-                el.style.zIndex = 3
-                var bg = document.getElementById('bg');
-                bg.style.transition = 'none';
-                bg.style.zIndex = '2';
-                bg.style.opacity = 1;
-                el.innerHTML += '<div class="imgCard bgi' + number + '"></div>'
-                el.style.transform = 'translateY(-50%) scale(1.2) rotateY(-180deg)';
-                el.style.left = self.options.cardLeft + 'px';
+                    number = getCookie('cardNumber');
+                setTimeout(function() {
+                    self.shiffle();
+                    interval = setInterval(function() {
+                        if (i == 3) {
+                            clearInterval(interval);
+                            setTimeout(function() {
+                                self.cards[0].style.left = self.options.cardLeft + "px";
+                                for (var i = 0; i < cardsL; i++) {
+                                    self.cards[i].style.left = parseInt(self.cards[0].style.left) + cardsMargin * i + 'px';
+                                }
+                                setTimeout(function() {
+                                    var el = document.getElementById(getCookie('cardId'));
+                                    el.style.zIndex = 3
+                                    var bg = document.getElementById('bg');
+                                    bg.style.zIndex = 2;
+                                    bg.style.opacity = 1;
+                                    el.innerHTML += '<div class="imgCard bgi' + number + '"></div>'
+                                    el.style.transform = 'translateY(-50%) translateX(-50%) scale(1.8) rotateY(-180deg)';
+                                    el.style.left = "50%";
+                                }, 1000)
+                            }, 500)
+                        } else {
+                            self.shiffle();
+                            i++;
+                        }
+                    }, 500);
+                }, 1000);
+
+
             } else {
                 var i = 0;
                 setTimeout(function() {
@@ -82,23 +102,20 @@ Cards.prototype = {
         if (self.ready && el.id) {
             self.random = Math.floor(Math.random() * (78 - 1 + 1)) + 1;
             self.random = (self.random < 10) ? ('0' + self.random) : self.random
-            el.style.transform = 'translateY(-50%) scale(1.2) '
+            el.style.transform = 'translateY(-50%) translateX(-50%) scale(1.8) '
             el.style.zIndex = '3';
+            el.style.left = "50%";
             el.classList.remove('cardhover');
             var bg = document.getElementById('bg');
             bg.style.zIndex = '2';
             bg.style.opacity = 1;
             el.innerHTML += '<div class="imgCard bgi' + self.random + '"></div>'
             setCookie('cardNumber', self.random, 1)
+            setCookie('cardId', el.id, 1)
             el.onclick = '';
             setTimeout(function() {
-                el.style.transform = 'translateY(-50%) scale(1.2) rotateY(-180deg)';
-
+                el.style.transform = 'translateY(-50%) translateX(-50%) scale(1.8) rotateY(-180deg)';
             }, 500)
-            setTimeout(function() {
-                el.style.left = self.options.cardLeft + 'px';
-            }, 1000)
-
         }
     }
 

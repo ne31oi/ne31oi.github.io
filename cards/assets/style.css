@@ -47,9 +47,12 @@
 .innerBackCard {
     width: 100%;
     height: 100%;
-    border: 1px solid #000;
+    border: .5px solid #000;
+    background-image: url('img/bg.jpg');
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
     border-radius: 10px;
-    background: #eee;
     backface-visibility: hidden;
     position: absolute;
     top: 0;
