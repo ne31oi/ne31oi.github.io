@@ -27,17 +27,18 @@ Cards.prototype = {
                     j = 0;
                 setTimeout(function() {
                     self.shiffle();
-                    var cardsL = self.cards.length,
-                        cardsW = parseInt(self.container.style.width) - parseInt(self.cards[0].style.left) - parseInt(self.cards[0].style.width),
-                        cardsMargin = cardsW / cardsL;
+
                     interval = setInterval(function() {
                         if (j == 3) {
                             clearInterval(interval);
                             setTimeout(function() {
                                 self.cards[0].style.left = self.options.cardLeft + "px";
                                 console.log(self.cards[0].style.left)
+                                var cardsL = self.cards.length,
+                                    cardsW = parseInt(self.container.style.width) - parseInt(self.cards[0].style.left) - parseInt(self.cards[0].style.width),
+                                    cardsMargin = cardsW / cardsL;
                                 for (var i = 0; i < cardsL; i++) {
-                                	 console.log(i,self.cards[i].style.left)
+                                    console.log(i, self.cards[i].style.left)
                                     self.cards[i].style.left = parseInt(self.cards[0].style.left) + cardsMargin * i + 'px';
                                 }
                                 setTimeout(function() {
