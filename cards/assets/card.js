@@ -23,7 +23,8 @@ Cards.prototype = {
             });
             if (getCookie('cardNumber')) {
                 var el = self.cards[0],
-                    number = getCookie('cardNumber');
+                    number = getCookie('cardNumber'),
+                    i = 0;
                 setTimeout(function() {
                     self.shiffle();
                     interval = setInterval(function() {
