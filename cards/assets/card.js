@@ -27,6 +27,9 @@ Cards.prototype = {
                     i = 0;
                 setTimeout(function() {
                     self.shiffle();
+                    var cardsL = self.cards.length,
+                        cardsW = parseInt(self.container.style.width) - parseInt(self.cards[0].style.left) - parseInt(self.cards[0].style.width),
+                        cardsMargin = cardsW / cardsL;
                     interval = setInterval(function() {
                         if (i == 3) {
                             clearInterval(interval);
