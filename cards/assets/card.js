@@ -35,7 +35,9 @@ Cards.prototype = {
                             clearInterval(interval);
                             setTimeout(function() {
                                 self.cards[0].style.left = self.options.cardLeft + "px";
+                                console.log(self.cards[0].style.left)
                                 for (var i = 0; i < cardsL; i++) {
+                                	 console.log(i,self.cards[i].style.left)
                                     self.cards[i].style.left = parseInt(self.cards[0].style.left) + cardsMargin * i + 'px';
                                 }
                                 setTimeout(function() {
