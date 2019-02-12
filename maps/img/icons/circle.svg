@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="17" viewBox="0 0 17 17">
+    <defs>
+        <path id="a" d="M366 525.5a8.5 8.5 0 1 1 17 0 8.5 8.5 0 0 1-17 0z"/>
+        <clipPath id="b">
+            <use fill="#fff" xlink:href="#a"/>
+        </clipPath>
+    </defs>
+    <g transform="translate(-366 -517)" fill="#fff">
+        <use xlink:href="#a"/>
+        <use fill-opacity="0" stroke="#ff8000" stroke-miterlimit="50" stroke-width="6" clip-path="url(&quot;#b&quot;)" xlink:href="#a"/>
+    </g>
+</svg>

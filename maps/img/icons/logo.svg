@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="200" height="50" viewBox="0 0 200 50">
+    <defs>
+        <path id="a" d="M186 124.2V75h49.2v49.2z"/>
+        <path id="b" d="M238.5 124.2V75H386v49.2z"/>
+        <path id="c" d="M208 88h4.8v24.3h-2.4v-22h-3.8z"/>
+        <path id="d" d="M260.5 96l-2.7 5.7h5.4zm.2-3.3l7.3 15.7h-1.7l-2.5-5.2H257l-2.4 5.2h-1.8l7.4-15.7z"/>
+        <path id="e" d="M272 108.4h-1.6V92.7h7.9v1.5H272z"/>
+        <path id="f" d="M282.1 94.2v5.3h2.7c1.1 0 1.9-.1 2.4-.3.5-.2.9-.5 1.2-.9.3-.4.4-.9.4-1.5 0-.5-.1-1-.4-1.4-.3-.4-.7-.7-1.1-.9-.4-.2-1.2-.3-2.3-.3h-2.9zm-1.5-1.5h3.1c1.8 0 3 .1 3.6.2.9.2 1.6.7 2.2 1.4.6.7.9 1.5.9 2.6 0 1-.3 1.9-.8 2.6-.5.7-1.3 1.1-2.3 1.4-.7.2-2 .3-4 .3h-1.1v7.3h-1.6z"/>
+        <path id="g" d="M293.5 92.7h9v1.5h-7.4v4.9h7.4v1.5h-7.4v6.2h7.4v1.5h-8.9V92.7z"/>
+        <path id="h" d="M306.8 108.4h-1.6V92.7h7.9v1.5h-6.3z"/>
+        <path id="i" d="M321.6 96l-2.7 5.7h5.4zm.1-3.3l7.3 15.7h-1.7l-2.5-5.2H318l-2.4 5.2h-1.8l7.4-15.7z"/>
+        <path id="j" d="M329.9 94.2v-1.5h8.6v1.5H335v14.2h-1.6V94.2z"/>
+        <path id="k" d="M348.4 93.8c-1.2 0-2.3.3-3.3.9-1 .6-1.9 1.4-2.4 2.4-.6 1-.9 2.2-.9 3.4 0 1.9.6 3.4 1.9 4.7 1.3 1.3 2.9 1.9 4.7 1.9 1.2 0 2.3-.3 3.4-.9 1-.6 1.8-1.4 2.4-2.4.6-1 .9-2.2.9-3.4 0-1.2-.3-2.4-.9-3.4-.6-1-1.4-1.8-2.5-2.4-1-.5-2.2-.8-3.3-.8zm-.1-1.5c2.4 0 4.4.8 6 2.4 1.6 1.6 2.4 3.5 2.4 5.9 0 2.3-.8 4.2-2.4 5.8-1.6 1.6-3.5 2.4-5.8 2.4s-4.3-.8-5.9-2.4c-1.6-1.6-2.4-3.5-2.4-5.8 0-1.5.4-2.9 1.1-4.2.7-1.3 1.7-2.3 3-3 1.2-.7 2.5-1.1 4-1.1z"/>
+        <path id="l" d="M361.4 94.2v5.3h2.7c1.1 0 1.9-.1 2.4-.3.5-.2.9-.5 1.2-.9.3-.4.4-.9.4-1.5 0-.5-.1-1-.4-1.4-.3-.4-.7-.7-1.1-.9-.4-.2-1.2-.3-2.3-.3zm-1.6-1.5h3.1c1.8 0 3 .1 3.6.2.9.2 1.6.7 2.2 1.4.6.7.9 1.5.9 2.6 0 1-.3 1.9-.8 2.6-.6.7-1.3 1.1-2.3 1.4-.7.2-2 .3-4 .3h-1.1v7.3h-1.6V92.7z"/>
+    </defs>
+    <use fill="#ff8000" xlink:href="#a" transform="translate(-186 -75)"/>
+    <use fill="#006dd9" xlink:href="#b" transform="translate(-186 -75)"/>
+    <use fill="#fff" xlink:href="#c" transform="translate(-186 -75)"/>
+    <use fill="#fff" xlink:href="#d" transform="translate(-186 -75)"/>
+    <use fill="#fff" xlink:href="#e" transform="translate(-186 -75)"/>
+    <use fill="#fff" xlink:href="#f" transform="translate(-186 -75)"/>
+    <use fill="#fff" xlink:href="#g" transform="translate(-186 -75)"/>
+    <use fill="#fff" xlink:href="#h" transform="translate(-186 -75)"/>
+    <use fill="#fff" xlink:href="#i" transform="translate(-186 -75)"/>
+    <use fill="#fff" xlink:href="#j" transform="translate(-186 -75)"/>
+    <use fill="#fff" xlink:href="#k" transform="translate(-186 -75)"/>
+    <use fill="#fff" xlink:href="#l" transform="translate(-186 -75)"/>
+</svg>

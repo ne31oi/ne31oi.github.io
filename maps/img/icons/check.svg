@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="10" height="8" viewBox="0 0 10 8">
+    <defs>
+        <path id="a" d="M586.47 692l-4.998 4.998-1.942-1.942-1.53 1.53 3.472 3.472L588 693.53z"/>
+    </defs>
+    <use fill="#222" xlink:href="#a" transform="translate(-578 -692)"/>
+</svg>

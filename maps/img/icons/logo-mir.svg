@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="53" height="16" viewBox="0 0 53 16">
+    <defs>
+        <path id="a" d="M880.442 3732.175l-3.302 7.155h-.33v-8.715h-4.697v14.751h3.981c1.046 0 2-.605 2.44-1.56l3.303-7.154h.33v8.714h4.697v-14.75h-3.981c-1.064 0-2 .605-2.44 1.559"/>
+        <path id="b" d="M862.83 3732.56l-1.964 6.789h-.33l-1.963-6.789a2.67 2.67 0 0 0-2.569-1.945h-4.696v14.751h4.696v-8.714h.33l2.68 8.714h3.357l2.678-8.714h.33v8.714h4.698v-14.75h-4.679a2.67 2.67 0 0 0-2.568 1.944"/>
+        <path id="c" d="M888.864 3737.33v8.055h4.678v-4.715h5.046a5.005 5.005 0 0 0 4.733-3.358h-14.457z"/>
+        <path id="e" d="M898.606 3730.615h-10.403a7.37 7.37 0 0 0 7.247 6.037h8.073c.073-.33.092-.66.092-1.01.018-2.77-2.239-5.027-5.01-5.027"/>
+        <linearGradient id="d" x1="888.21" x2="903.63" y1="3733.64" y2="3733.64" gradientUnits="userSpaceOnUse">
+            <stop offset=".01" stop-color="#00a7e3"/>
+            <stop offset=".34" stop-color="#009edc"/>
+            <stop offset=".87" stop-color="#0085c9"/>
+            <stop offset="1" stop-color="#007ec4"/>
+        </linearGradient>
+    </defs>
+    <use fill="#20aa4d" xlink:href="#a" transform="translate(-851 -3730)"/>
+    <use fill="#20aa4d" xlink:href="#b" transform="translate(-851 -3730)"/>
+    <use fill="#20aa4d" xlink:href="#c" transform="translate(-851 -3730)"/>
+    <use fill="url(#d)" xlink:href="#e" transform="translate(-851 -3730)"/>
+</svg>

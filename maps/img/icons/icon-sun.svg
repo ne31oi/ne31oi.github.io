@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="16" viewBox="0 0 17 16">
+    <defs>
+        <path id="a" d="M1104.037 984.133V982h1.444v2.133z"/>
+        <path id="b" d="M1104.037 998v-2.133h1.444V998z"/>
+        <path id="c" d="M1110.704 989.252h2.133v1.444h-2.133z"/>
+        <path id="d" d="M1098.866 990.748h-2.133v-1.444h2.133z"/>
+        <path id="e" d="M1108.636 985.128l1.508-1.508 1.02 1.02-1.507 1.509z"/>
+        <path id="f" d="M1099.809 986.149l-1.509-1.508 1.021-1.021 1.509 1.508z"/>
+        <path id="g" d="M1098.456 995.463l1.508-1.508 1.021 1.021-1.508 1.508z"/>
+        <path id="h" d="M1109.657 993.955l1.508 1.508-1.021 1.021-1.508-1.508z"/>
+        <path id="i" d="M1100.382 989.972a4.389 4.389 0 1 1 8.777 0 4.389 4.389 0 0 1-8.777 0z"/>
+    </defs>
+    <use fill="#fa0" xlink:href="#a" transform="translate(-1096 -982)"/>
+    <use fill="#fa0" xlink:href="#b" transform="translate(-1096 -982)"/>
+    <use fill="#fa0" xlink:href="#c" transform="translate(-1096 -982)"/>
+    <use fill="#fa0" xlink:href="#d" transform="translate(-1096 -982)"/>
+    <use fill="#fa0" xlink:href="#e" transform="translate(-1096 -982)"/>
+    <use fill="#fa0" xlink:href="#f" transform="translate(-1096 -982)"/>
+    <use fill="#fa0" xlink:href="#g" transform="translate(-1096 -982)"/>
+    <use fill="#fa0" xlink:href="#h" transform="translate(-1096 -982)"/>
+    <use fill="#fa0" xlink:href="#i" transform="translate(-1096 -982)"/>
+</svg>
