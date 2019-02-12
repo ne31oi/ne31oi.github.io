@@ -40,8 +40,6 @@ $(function() {
                 setTimeout(function() {
                     try {
                         window.myMap.setBounds(boundss, { checkZoomRange: true });
-                        //map.setBounds(bounds,);
-                        console.log(coordes)
                     } catch (e) {}
                 }, 400)
             }
@@ -716,7 +714,7 @@ $(function() {
             } else {
                 setTimeout(function() {
                     bb();
-                }, 500)
+                }, 600)
             }
         }
         bb();
