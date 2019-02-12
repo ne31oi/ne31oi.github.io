@@ -714,7 +714,7 @@ $(function() {
             } else {
                 setTimeout(function() {
                     bb();
-                }, 600)
+                }, 400)
             }
         }
         bb();
