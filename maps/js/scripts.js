@@ -681,6 +681,54 @@ $(function() {
                 }
             }
         }
+        var clusterer = new ymaps.Clusterer()
+        clusterer.createCluster = function(center, geoObjects) {
+            var cluster = ymaps.Clusterer.prototype.createCluster.call(this, center, geoObjects);
+            cluster.events.add('click', function(e) {
+                ymaps.geocode(cluster.properties.get('geoObjects')[0].geometry._coordinates, { results: 1 })
+                    .then(function(res) {
+                        var city = res.geoObjects.get(0).properties.get('metaDataProperty.GeocoderMetaData.AddressDetails.Country.AdministrativeArea.SubAdministrativeArea.Locality.LocalityName');
+                        switch (city) {
+                            case 'Владивосток':
+                                city = '#vl'
+                                break;
+                            case 'Магадан':
+                                city = '#mg'
+                                break;
+                            case 'Находка':
+                                city = '#nh'
+                                break;
+                            case 'Уссурийск':
+                                city = '#us'
+                                break;
+                            case 'Якутск':
+                                city = '#ya'
+                                break;
+                            default:
+                                city = '#all'
+                                break;
+                        }
+                        $('a[href="' + city + '"]').parent('li').addClass('active').siblings('li').removeClass('active');
+                        $(city).fadeIn().addClass('active').siblings('.tab').hide().removeClass('active');
+
+                    });
+            });
+            return cluster;
+        };
+        geoObjects = [];
+        var getPointOptions = function() {
+            return {
+                preset: 'islands#violetIcon'
+            };
+        }
+        var getPointData = function(index) {
+            return {
+                balloonContentHeader: index,
+                balloonContentBody: '',
+                balloonContentFooter: '',
+                clusterCaption: index
+            };
+        }
         for (var i = 0; i < b.length; i++) {
             var adrs = b[i];
             ymaps.geocode(adrs, {
@@ -692,22 +740,33 @@ $(function() {
 
                 firstGeoObject.options.set('preset', 'islands#darkBlueDotIconWithCaption');
                 // Получаем строку с адресом и выводим в иконке геообъекта.
-                firstGeoObject.properties.set('iconCaption', firstGeoObject.getAddressLine());
-                firstGeoObject.id = 0;
+                firstGeoObject.properties.set('iconCaption');
 
                 // Добавляем первый найденный геообъект на карту.
+                var x = new ymaps.Placemark(coords, getPointOptions())
+                clusterer.add(x)
                 myMap.geoObjects.add(firstGeoObject);
+                //geoObjects.push(firstGeoObject);
                 // Масштабируем карту на область видимости геообъекта.
-                myMap.setBounds(bounds, {
+                /*myMap.setBounds(bounds, {
                     // Проверяем наличие тайлов на данном масштабе.
                     checkZoomRange: true
-                });
+                });*/
             });
         }
         var r = false
+        clusterer.options.set({
+            gridSize: 80,
+            clusterDisableClickZoom: false
+        });
+        clusterer.events.add(['onclick'], function(e) {
+            console.log(e)
+        })
 
         function bb() {
             if (window.myMap.geoObjects.getBounds()) {
+                window.myMap.geoObjects.removeAll();
+                myMap.geoObjects.add(clusterer);
                 window.myMap.setBounds(window.myMap.geoObjects.getBounds());
                 r = true;
                 document.getElementById('ymaps').style.opacity = 1;
