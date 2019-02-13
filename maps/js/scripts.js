@@ -671,6 +671,7 @@ $(function() {
             center: [55.76, 37.64],
             zoom: 7
         });
+
         var a = $('.points__tab');
         var b = [];
         for (var i = 0; i < a.length; i++) {
@@ -741,9 +742,40 @@ $(function() {
                 firstGeoObject.options.set('preset', 'islands#darkBlueDotIconWithCaption');
                 // Получаем строку с адресом и выводим в иконке геообъекта.
                 firstGeoObject.properties.set('iconCaption');
-
+                firstGeoObject.options.set('iconImageSize', [0, 0]);
+                firstGeoObject.options.set('iconLayout', 'default#image')
                 // Добавляем первый найденный геообъект на карту.
                 var x = new ymaps.Placemark(coords, getPointOptions())
+                x.events.add("click", function(e) {
+                    ymaps.geocode(e.originalEvent.target.geometry._coordinates, { results: 1 })
+                    .then(function(res) {
+                        var city = res.geoObjects.get(0).properties.get('metaDataProperty.GeocoderMetaData.AddressDetails.Country.AdministrativeArea.SubAdministrativeArea.Locality.LocalityName');
+                        switch (city) {
+                            case 'Владивосток':
+                                city = '#vl'
+                                break;
+                            case 'Магадан':
+                                city = '#mg'
+                                break;
+                            case 'Находка':
+                                city = '#nh'
+                                break;
+                            case 'Уссурийск':
+                                city = '#us'
+                                break;
+                            case 'Якутск':
+                                city = '#ya'
+                                break;
+                            default:
+                                city = '#all'
+                                break;
+                        }
+                        $('a[href="' + city + '"]').parent('li').addClass('active').siblings('li').removeClass('active');
+                        $(city).fadeIn().addClass('active').siblings('.tab').hide().removeClass('active');
+
+                    });
+                    
+                });
                 clusterer.add(x)
                 myMap.geoObjects.add(firstGeoObject);
                 //geoObjects.push(firstGeoObject);
@@ -763,11 +795,13 @@ $(function() {
             console.log(e)
         })
 
+
         function bb() {
             if (window.myMap.geoObjects.getBounds()) {
                 window.myMap.geoObjects.removeAll();
-                myMap.geoObjects.add(clusterer);
+                window.myMap.geoObjects.add(clusterer);
                 window.myMap.setBounds(window.myMap.geoObjects.getBounds());
+
                 r = true;
                 document.getElementById('ymaps').style.opacity = 1;
             } else {
