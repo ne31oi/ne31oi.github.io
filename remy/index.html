@@ -16,7 +16,49 @@
                 <h1><span>R</span>EMY KITCHEN BAKERY</h1>
                 <h2>Совместный проект Александра Оганезова <br>и бренд-шефа Глена Баллиса</h2>
             </div>
-            <div class="menu"></div>
+            <nav>
+                <ul id="main">
+                    <li>Меню
+                        <ul class="drop">
+                            <div>
+                                <li><a href="">Основное</a></li>
+                                <li><a href="">Завтраки</a></li>
+                                <li><a href="">Пекарня</a></li>
+                                <li><a href="">Бар</a></li>
+                            </div>
+                        </ul>
+                    </li>
+                    <li>О ресторане<ul class="drop">
+                            <div>
+                                <li><a href="">Основное</a></li>
+                                <li><a href="">Завтраки</a></li>
+                                <li><a href="">Пекарня</a></li>
+                                <li><a href="">Бар</a></li>
+                            </div>
+                        </ul>
+                    </li>
+                    <li>Новости
+                        <ul class="drop">
+                            <div>
+                                <li><a href="">Основное</a></li>
+                                <li><a href="">Завтраки</a></li>
+                                <li><a href="">Пекарня</a></li>
+                                <li><a href="">Бар</a></li>
+                            </div>
+                        </ul>
+                    </li>
+                    <li>Контакты
+                        <ul class="drop">
+                            <div>
+                                <li><a href="">Основное</a></li>
+                                <li><a href="">Завтраки</a></li>
+                                <li><a href="">Пекарня</a></li>
+                                <li><a href="">Бар</a></li>
+                            </div>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
         </div>
         <div class="row aic">
             <div class="p30 flex">
@@ -83,13 +125,13 @@
             </div>
         </div>
         <div class="row img18">
-            <div class="p30 flex ">
+            <div class="p30 flex i181">
                 <div class="col flex">
                     <div class="h30 flex"><img src="assets/img/img18.png" alt="" class="img"></div>
                     <div class="h60 flex"><img src="assets/img/img19.png" alt="" class="img"></div>
                 </div>
             </div>
-            <div class="p60 flex ">
+            <div class="p60 flex i182">
                 <div class="col flex">
                     <div class="h60 flex">
                         <div class="p50 flex"><img src="assets/img/img20.png" alt="" class="img"></div>
@@ -156,6 +198,18 @@
             </div>
         </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@11.0.2/dist/lazyload.min.js"></script>
+    <script>
+    // Set the options to make LazyLoad self-initialize
+    window.lazyLoadOptions = {
+        elements_selector: ".lazy",
+        // ... more custom settings?
+    };
+    // Listen to the initialization event and get the instance of LazyLoad
+    window.addEventListener('LazyLoad::Initialized', function(event) {
+        window.lazyLoadInstance = event.detail.instance;
+    }, false);
+    </script>
 </body>
 
 </html>
