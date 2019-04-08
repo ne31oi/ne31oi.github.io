@@ -712,7 +712,6 @@
         function send(id) {
             var message = (document.getElementById('name').value ? ('Имя: ' + document.getElementById('name').value) : "") + (document.getElementById('phone').value ? ('<br>Телефон: ' + document.getElementById('phone').value) : "") + (document.getElementById('message').value ? ('<br>Сообщение: ' + document.getElementById('message').value) : '') + '<br>Выбраны: ';
             for (var i = 0; i < items.length - 1; i++) {
-                console.log(document.getElementById('cb' + i).checked);
                 if (document.getElementById('cb' + i).checked) {
                     var r = items[i].innerText.match(/(Gid:....)/, '')
                     message += r[0] + " ";
