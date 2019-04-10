@@ -116,8 +116,8 @@
                 </h3>
                 <div class="success">
                     <ul class="list_info">
-                        <li><strong>Ф.И.O.: <?php echo $_POST["name"] {?></strong></li>
-                        <li><strong>Телефон: <?php echo $_POST["phone"] {?></strong></li>
+                        <li><strong>Ф.И.O.: <?php echo $_POST["name"] ?></strong></li>
+                        <li><strong>Телефон: <?php echo $_POST["phone"] ?></strong></li>
                     </ul>
                     <br /><span id="submit"></span>
                 </div>
