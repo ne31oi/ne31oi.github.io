@@ -3,8 +3,9 @@
     header("Content-Type: text/html; charset=utf-8");
     if($_SERVER["REQUEST_METHOD"] == "GET")
     exit;
-
-    $email = "mail@email.ru"; //------ тут почта
+    $headers = "Заявка с сайта ".$_POST["page"]."\r\n";
+    $headers .= "Content-type: text/html; charset=\"utf-8\"";
+    $email = "one@pesam.ru"; //------ тут почта
     $title = "Заявка с сайта ".$_POST["page"];
     $text = "Name: ".$_POST["name"]."\nPhone: ".$_POST["phone"]."\nОткуда пришел: ".$_POST["referrer"]."\nСтраница заявки: ".$_POST["page"]."\n".$_POST["utms"];
     ?>

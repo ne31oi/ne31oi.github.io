@@ -62,11 +62,11 @@ $(document).ready(function() {
     $(".order_form").submit(function() {
         document.getElementById('referrer').value = document.referrer;
         document.getElementById('page').value = window.location;
-        var utm_source = getParameterByName('utm_source') ? ('utm_source=' + getParameterByName(utm_source) + '\n') : "";
-        var utm_medium = getParameterByName('utm_medium') ? ('utm_medium=' + getParameterByName(utm_medium) + '\n') : "";
-        var utm_campaign = getParameterByName('utm_campaign') ? ('utm_campaign=' + getParameterByName(utm_campaign) + '\n') : "";
-        var utm_content = getParameterByName('utm_content') ? ('utm_content=' + getParameterByName(utm_content) + '\n') : "";
-        var utm_term = getParameterByName('utm_term') ? ('utm_term=' + getParameterByName(utm_term)) : "";
+        var utm_source = getParameterByName('utm_source') ? ('utm_source=' + getParameterByName('utm_source') + '\n') : "";
+        var utm_medium = getParameterByName('utm_medium') ? ('utm_medium=' + getParameterByName('utm_medium') + '\n') : "";
+        var utm_campaign = getParameterByName('utm_campaign') ? ('utm_campaign=' + getParameterByName('utm_campaign') + '\n') : "";
+        var utm_content = getParameterByName('utm_content') ? ('utm_content=' + getParameterByName('utm_content') + '\n') : "";
+        var utm_term = getParameterByName('utm_term') ? ('utm_term=' + getParameterByName('utm_term')) : "";
         document.getElementById('utms').value = utm_source + utm_medium + utm_campaign + utm_content + utm_term;
         if ($(this).find("input[name='name']").val() == "" && $(this).find("input[name='phone']").val() == "") {
             alert("Введите Ваши имя и телефон");
