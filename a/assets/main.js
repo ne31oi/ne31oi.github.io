@@ -29,6 +29,12 @@ function checkForm() {
         if (!(check(element) && element.value.length > 0) || !check(element)) {
             var label = element.parentElement;
             label.classList.add('vx_has-error-with-message');
+        } else {
+            var spinner = document.getElementById('spinner');
+            if (spinner) {
+                spinner.style.display = 'flex';
+                setTimeout(function() { spinner.style.display = ''; }, 3000);
+            }
         }
     });
 }

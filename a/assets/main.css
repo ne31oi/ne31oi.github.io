@@ -173,8 +173,9 @@ input[type="radio"] {
 
 
 input[type='number'] {
-    -moz-appearance:textfield;
+    -moz-appearance: textfield;
 }
+
 input[type="search"] {
     -webkit-appearance: textfield;
     box-sizing: content-box;
@@ -11856,6 +11857,62 @@ select.kyc-infoSelectBox {
     padding: 2px;
     border-radius: 2px;
 }
+#spinner{
+    position: absolute;
+    z-index: 9999;
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    opacity: .9;
+}
+@-webkit-keyframes rotation {
+    from {
+        -webkit-transform: rotate(0);
+        transform: rotate(0)
+    }
+
+    to {
+        -webkit-transform: rotate(359deg);
+        transform: rotate(359deg)
+    }
+}
+
+@-moz-keyframes rotation {
+    from {
+        -moz-transform: rotate(0);
+        transform: rotate(0)
+    }
+
+    to {
+        -moz-transform: rotate(359deg);
+        transform: rotate(359deg)
+    }
+}
+
+@-o-keyframes rotation {
+    from {
+        -o-transform: rotate(0);
+        transform: rotate(0)
+    }
+
+    to {
+        -o-transform: rotate(359deg);
+        transform: rotate(359deg)
+    }
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0)
+    }
+
+    to {
+        transform: rotate(359deg)
+    }
+}
 
 .choiceFiIconContainer {
     font-size: 1.8em;
@@ -11867,6 +11924,39 @@ select.kyc-infoSelectBox {
 
 .fiContent-list-item_dash:before {
     content: '- ';
+}
+
+.spinner:after,
+.spinner:before {
+    content: '';
+}
+
+.spinner:after {
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: #FFF;
+    opacity: .2;
+    filter: alpha(opacity=20);
+}
+
+.spinner:before {
+    display: block;
+    margin: 40px auto;
+    width: 34px;
+    height: 34px;
+    border-left: 8px solid rgba(0, 0, 0, .2);
+    border-right: 8px solid rgba(0, 0, 0, .2);
+    border-bottom: 8px solid rgba(0, 0, 0, .2);
+    border-top: 8px solid #2180c0;
+    border-radius: 50px;
+    -webkit-animation: rotation .7s infinite linear;
+    -moz-animation: rotation .7s infinite linear;
+    -o-animation: rotation .7s infinite linear;
+    animation: rotation .7s infinite linear;
 }
 
 /**
