@@ -1,0 +1,14 @@
+@media (max-width: 767px) {
+    .faq {
+        padding-top: 45px;
+    }
+    .faq__item_title {
+        font-size: 20px;
+    }
+    .faq__item_text, .faq__item_text * {
+        font-size: 14px;
+    }
+    .faq__item_text {
+        margin-bottom: 25px;
+    }
+}

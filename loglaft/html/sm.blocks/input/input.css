@@ -1,0 +1,8 @@
+@media (max-width: 991px) {
+    .input__text_lineform, .input__text_lineformphone {
+        width: 220px;
+    }
+    .input__button_lineform {
+        width: 250px;
+    }
+}

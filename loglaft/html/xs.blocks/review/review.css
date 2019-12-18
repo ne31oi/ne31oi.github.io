@@ -1,0 +1,33 @@
+@media (max-width: 767px) {
+    .review__name {
+        left: 120px;
+        top: inherit;
+        bottom: 45px;
+    }
+    .review__item {
+        margin-top: 35px;
+    }
+    .reviewModal iframe {
+        width: 100%;
+    }
+    .reviewModal {
+        width: 100%;
+    }
+    .review__region {
+        left: 120px;
+        top: inherit;
+        bottom: 30px;
+    }
+}
+@media (max-width: 320px) {
+    .review__name {
+        left: 110px;
+        top: inherit;
+        bottom: 35px;
+    }
+    .review__region {
+        left: 110px;
+        top: inherit;
+        bottom: 20px;
+    }
+}

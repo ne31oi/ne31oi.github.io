@@ -1,0 +1,20 @@
+@media (max-width: 767px) {
+    .input__text_topformmail, .input__text_topformphone, .input__button_topform {
+        width: 90%;
+    }
+    .input__text_lineform, .input__text_lineformphone {
+        width: 90%;
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 15px;
+    }
+    .input__button_lineform {
+        width: 90%;
+    }
+    .input__text_modalform {
+        width: 100%;
+    }
+    .input__button_modalform {
+        width: 100%;
+    }
+}

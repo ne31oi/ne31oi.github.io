@@ -1,0 +1,37 @@
+.viktor {
+    background: url("viktor2.jpg") center 0 no-repeat;
+    height: 878px;
+    padding-top: 95px;
+}
+.viktor__quote {
+    position: relative;
+    color: #fff;
+    font-family: 'circe-light';
+    font-size: 20px;
+}
+.viktor__quote:before {
+    display: block;
+    position: absolute;
+    content: "";
+    width: 46px;
+    height: 34px;
+    background: url("quote.png") 0 0 no-repeat;
+    top: 0;
+    left: -73px;
+}
+.viktor__quote:after {
+    display: block;
+    content: "";
+    width: 225px;
+    height: 5px;
+    background: linear-gradient(to right, #2a96bf, #2ec59c);
+    margin-top: 45px;
+    margin-bottom: 85px;
+}
+.viktor__text {
+    padding-left: 40px;
+    background: url("check.png") 0 0 no-repeat;
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 15px;
+}

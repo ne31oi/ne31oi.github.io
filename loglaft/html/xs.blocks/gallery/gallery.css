@@ -1,0 +1,8 @@
+@media (max-width: 767px) {
+    .gallery {
+        padding-top: 70px;
+    }
+    .gallery__filteritem {
+        margin-bottom: 10px;
+    }
+}

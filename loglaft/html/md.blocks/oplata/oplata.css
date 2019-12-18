@@ -1,0 +1,8 @@
+@media (max-width: 1199px) {
+    .oplata__tablehead {
+        font-size: 18px;
+    }
+    .oplata__tableitem {
+        padding: 30px 15px;
+    }
+}

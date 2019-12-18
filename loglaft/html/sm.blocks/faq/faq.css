@@ -1,0 +1,11 @@
+@media (max-width: 991px) {
+    .faq__item_title {
+        font-size: 26px;
+    }
+    .faq__item_text * {
+        font-size: 16px;
+    }
+    .faq__item_text {
+        font-size: 16px;
+    }
+}

@@ -1,0 +1,16 @@
+@media (max-width: 1199px) {
+    .menu__item {
+        font-size: 11px;
+    }
+}
+@media (min-width: 1024px) and (max-width: 1199px) {
+    .menu_fixed {
+        position: fixed;
+        top: 0;
+        width: 100%!important;
+        z-index: 15;
+        background-color: #fff;
+        padding: 4px 4.8% 0!important;
+        left: 0;
+    }
+}

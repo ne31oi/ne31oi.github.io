@@ -1,0 +1,45 @@
+.policy-form-text{
+    display: block;
+    position: relative;
+    width: 100%;
+    margin: 5px auto;
+    color: #fff;
+}
+.policy-form-text a{
+    text-decoration: none;
+    color: #fff;
+    border-bottom:1px solid #fff;
+}
+.policy-form-text a:hover{
+    text-decoration: none;
+    color: #5bffc7;
+    border-bottom:1px solid #5bffc7;
+}
+.topform .policy-form-text{
+    margin: -32px auto 12px;
+}
+.lineform .policy-form-text{
+    color: #000;
+    margin: 15px auto 0;
+    font-size: 15px;
+}
+.lineform .policy-form-text a{
+    color:#000;
+    border-bottom: 1px solid #000;
+}
+.lineform .policy-form-text a:hover{
+    color:#675d5d;
+    border-bottom: 1px solid #675d5d;
+}
+.lineform_modal .policy-form-text{
+    color: #fff;
+    font-size: 13px;
+}
+.lineform_modal .policy-form-text a{
+    color: #fff;
+    border-bottom: 1px solid #fff;
+}
+.lineform_modal .policy-form-text a:hover{
+    color: #fff;
+    border-bottom: 1px solid #fff;
+}

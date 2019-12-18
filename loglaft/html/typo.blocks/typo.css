@@ -1,0 +1,34 @@
+@font-face {
+    font-family: 'Circe';
+    src: url('Circe-Regular.eot?#iefix') format('embedded-opentype'), url('Circe-Regular.woff') format('woff'), url('Circe-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Circe-Bold';
+    src: url('Circe-Bold.eot?#iefix') format('embedded-opentype'), url('Circe-Bold.woff') format('woff'), url('Circe-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Circe-ExtraBold';
+    src: url('Circe-ExtraBold.eot?#iefix') format('embedded-opentype'), url('Circe-ExtraBold.woff') format('woff'), url('Circe-ExtraBold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Circe-Light';
+    src: url('Circe-Light.eot?#iefix') format('embedded-opentype'), url('Circe-Light.woff') format('woff'), url('Circe-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Circe-ExtraLight';
+    src: url('Circe-ExtraLight.eot?#iefix') format('embedded-opentype'), url('Circe-ExtraLight.woff') format('woff'), url('Circe-ExtraLight.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}

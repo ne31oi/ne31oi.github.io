@@ -1,0 +1,29 @@
+{
+  "name": "BrandMaker landing template",
+  "version": "0.1.0",
+  "description": "start template",
+  "homepage": "https://bitbucket.org/brandmakerruteam/template-landing",
+  "authors": [
+    "Lihachev Alexey"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "fancybox": "^2.1.5",
+    "jquery-validation": "~1.14.0",
+    "bootstrap": "~3.3.5",
+    "jquery_lazyload": "~1.9.1",
+    "slick-carousel": "^1.8.0",
+    "turn.js": "*"
+  },
+  "devDependencies": {
+    "jquery.maskedinput": "jquery-maskedinput#~1.4.1"
+  }
+}

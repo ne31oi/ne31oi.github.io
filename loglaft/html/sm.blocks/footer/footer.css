@@ -1,0 +1,24 @@
+@media (max-width: 991px) {
+    .footer {
+        padding: 50px 0;
+    }
+    .footer__table {
+        margin-bottom: 50px;
+    }
+    .footer__tableitem .headline__30_bold, .footer__tableitem .headline__24_bold {
+        font-size: 17px;
+    }
+
+    .footer__maplink {
+        font-size: 17px;
+    }
+    .footer__maillink {
+        height: 20px;
+    }
+    .footer__brand img {
+        display: inline;
+    }
+    .footer__socials {
+        float: left !important;
+    }
+}

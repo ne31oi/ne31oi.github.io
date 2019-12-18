@@ -1,0 +1,24 @@
+@media (max-width: 767px) {
+    .points__body {
+        margin-top: 50px;
+    }
+    .points__body:after {
+        margin-top: 60px;
+    }
+    .point__item {
+        padding: 0;
+        padding-top: 20px;
+        position: static;
+        color: #000;
+    }
+    .point__item_text,
+    .point__item_title {
+        color: #000000;
+    }
+    .point__item_title {
+        margin-bottom: 5px;
+    }
+    .point__item__container {
+        margin-bottom: 40px;
+    }
+}

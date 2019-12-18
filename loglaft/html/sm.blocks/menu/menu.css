@@ -1,0 +1,22 @@
+@media (max-width: 991px) {
+    .menu {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .menu__item {
+        font-size: 12px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+@media (min-width: 768px) and(max-width: 1023px) {
+    .menu_fixed {
+        position: fixed;
+        top: 0;
+        width: 100%!important;
+        z-index: 15;
+        background-color: #fff;
+        padding: 4px 5.4% 0;
+        left: 0;
+    }
+}

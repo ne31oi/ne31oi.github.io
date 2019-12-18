@@ -1,0 +1,9 @@
+@media (max-width: 1199px) {
+    .footer__tableitem .headline__30_bold {
+        font-size: 24px;
+    }
+    .footer__brand img {
+        display: block;
+        margin: 0 auto;
+    }
+}

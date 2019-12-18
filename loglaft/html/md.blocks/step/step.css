@@ -1,0 +1,17 @@
+@media (max-width: 1199px) {
+    .step__info {
+        font-size: 13px;
+        top: 150px;
+    }
+    .step__info span {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    .step__item_title {
+        top: 10px;
+        font-size: 26px;
+    }
+    .step__item_title span {
+        font-size: 60px;
+    }
+}

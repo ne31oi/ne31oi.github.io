@@ -1,0 +1,8 @@
+@media (max-width: 767px) {
+    .map__img {
+        margin-top: 20px;
+    }
+    .map {
+        padding-top: 50px;
+    }
+}

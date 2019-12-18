@@ -1,0 +1,11 @@
+.message {
+    width: 700px;
+    padding: 30px 30px;
+    box-sizing: border-box;
+    background-color: #55a5d1;
+}
+.message__text {
+    color: #fff;
+    font-size: 30px;
+    font-family: 'circe-bold';
+}

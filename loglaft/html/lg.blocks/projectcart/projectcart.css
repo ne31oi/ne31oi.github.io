@@ -1,0 +1,126 @@
+.projectcart {
+    background-color: #edf4f5;
+    font-family: 'circe';
+}
+.projectcart * {
+    font-family: 'circe';
+}
+.projectcart__photo_unactive:first-child {
+    padding-left: 0;
+}
+.projectcart__photo_unactive:last-child {
+    padding-right: 0;
+}
+.projectcart__photo_unactive {
+    position: relative;
+}
+.projectcart__photo_unactive:after {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    content: "";
+    position: absolute;
+    display: block;
+    z-index: 15;
+    background-color: rgba(0,0,0,0.7);
+}
+.projectcart__photo_unactive:last-child:after {
+    left: 15px;
+}
+.projectcart__photo_unactive:first-child:after {
+    right: 15px;
+}
+.projectcart__photo_unactivebody {
+    position: relative;
+    overflow: hidden;
+}
+.projectcart_info {
+    margin-top: 35px;
+}
+.projectcart__region {
+    color: #9898a1;
+    font-size: 20px;
+    font-family: 'circe';
+}
+.projectcart__title {
+    font-size: 30px;
+    font-family: 'circe-bold';
+    color: #2a8fc5;
+    margin-bottom: 20px;
+}
+.projectcart__infoleft {
+    width: 320px;
+    border-bottom: 1px dotted #000;
+    height: 22px;
+    margin-bottom: 10px;
+}
+.projectcart__subtitle {
+    font-size: 20px;
+    font-family: 'circe-bold';
+    color: #000;
+    background-color: #edf4f5;
+    display: inline-block;
+}
+.projectcart__inforight {
+    font-family: 'circe';
+    color: #000;
+    font-size: 20px;
+}
+.projectcrat__price {
+    color: #9898a1;
+    font-size: 20px;
+    font-family: 'circe';
+    margin-top: 35px;
+    display: none!important;
+}
+.projectcrat__price:last-child {
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+.projectcrat__price span {
+    color: #000;
+    font-size: 48px;
+    font-family: 'circe-bold';
+}
+.projectcrat__price img {
+    height: 40px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: -8px;
+}
+.projectcart_form {
+    background-color: #2a8fc5;
+    padding-top: 85px;
+}
+.projectcart__photo {
+    position: relative;
+}
+.projectcart__prev {
+    position: absolute;
+    top: 50%;
+    left: -40px;
+    width: 67px;
+    height: 67px;
+    margin-top: -33px;
+    cursor: pointer;
+    background: url("arrow_left.png") 0 0 no-repeat;
+    z-index: 20;
+}
+.projectcart__next {
+    position: absolute;
+    top: 50%;
+    right: -40px;
+    width: 67px;
+    height: 67px;
+    margin-top: -33px;
+    cursor: pointer;
+    background: url("arrow_right.png") 0 0 no-repeat;
+    z-index: 20;
+}
+.headline__30_extrawhite {
+    font-family: 'circe-extrabold';
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #fff;
+}

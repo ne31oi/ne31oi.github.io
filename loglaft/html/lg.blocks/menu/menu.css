@@ -1,0 +1,95 @@
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 28px;
+    border-bottom: 2px solid #ececec;
+    margin-bottom: 60px;
+}
+.menu__item {
+    font-family: 'circe-extrabold'!important;
+    font-size: 12px;
+    cursor: pointer;
+    text-transform: uppercase;
+    color: #868691!important;
+    padding: 12px 0;
+    text-decoration: none;
+    margin-bottom: -2px;
+    border-bottom: 2px solid transparent;
+    box-sizing: border-box;
+    position: relative;
+}
+.menu__item a{
+    font-family: 'circe-extrabold'!important;
+    font-size: 12px;
+    cursor: pointer;
+    text-transform: uppercase;
+    color: #868691!important;
+    text-decoration: none;
+}
+.menu__item:hover, .menu__item_active, .menu__item:active, .menu__item:focus {
+    border-bottom: 2px solid #2a8fc5;
+    color: #2a8fc5;
+    text-decoration: none;
+}
+.menu__item_second_level {
+    position: absolute;
+    display: none;
+    top: 100%;
+    background: #ffffff;
+    left: 0;
+    width: 250px;
+    z-index: 10;
+    font-family: 'circe-extrabold'!important;
+}
+.menu__item_second_level > a, .menu__item_second_level > span, .menu__item_second_level > a.menu__item {
+    font-size: 13px;
+    width: 100%;
+    display: block;
+    padding-left: 15px;
+    line-height: 35px;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: #868691!important;
+    text-decoration: none !important;
+    font-family: 'circe-bold'!important;
+}
+.menu__item_second_level > a.menu__item{
+    padding: 0 0 0 15px;
+}
+.menu__item_second_level > a:not(:last-child), .menu__item_second_level > span:not(:last-child) {
+    border-bottom: 1px solid #9E9E9E;
+}
+.menu__item_arrow:hover .menu__item_second_level {
+    display: block;
+}
+@media (min-width: 769px) {
+    .menu__item_arrow:hover .menu__item_second_level {
+        display: block!important;
+    }
+    .menu__item_second_level {
+        border: 1px solid #868694;
+    }
+}
+@media (min-width: 1200px) and (max-width: 1399px){
+        .menu_fixed {
+            position: fixed;
+            top: 0;
+            width: 100%!important;
+            z-index: 15;
+            background-color: #fff;
+            padding: 4px 6.4% 0!important;
+            left: 0;
+        }
+}
+@media (min-width:1400px) {
+    .menu_fixed {
+        position: fixed;
+        top: 0;
+        width: 100%!important;
+        z-index: 15;
+        background-color: #fff;
+        padding: 4px 13% 0!important;
+        left: 0;
+    }
+}

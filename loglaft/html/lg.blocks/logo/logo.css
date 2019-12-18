@@ -1,0 +1,16 @@
+.logo {
+    color: #fff;
+    margin-top: 45px;
+}
+.logo__title {
+    color: #fff;
+    font-size: 52px;
+    font-family: 'Russo One', sans-serif;
+    margin-right: 15px;
+}
+.logo__text {
+    color: #fff;
+    font-size: 18px;
+    line-height: 1;
+    padding-top: 5px;
+}

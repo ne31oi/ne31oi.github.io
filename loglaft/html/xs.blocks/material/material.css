@@ -1,0 +1,21 @@
+@media (max-width: 767px) {
+    .material__title {
+        font-size: 28px;
+        top: 50px;
+    }
+    .material__filter {
+        top: 110px;
+    }
+    .material__filteritem {
+        font-size: 16px;
+        margin: 0 15px;
+        margin-bottom: 10px;
+    }
+    .material__slide_list {
+        margin-top: 210px;
+        font-size: 18px;
+    }
+    .material__pager {
+        bottom: 20px;
+    }
+}

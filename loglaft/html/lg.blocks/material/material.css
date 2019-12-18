@@ -1,0 +1,107 @@
+.material {
+    position: relative;
+}
+.material__head {
+    position: relative;
+}
+.material__title {
+    color: #fff;
+    position: absolute;
+    top: 90px;
+    left: 0;
+    z-index: 5;
+    font-size: 44px;
+    font-family: 'circe-bold';
+}
+.material__slide {
+    width: 100%;
+    height: 642px;
+    position: relative;
+    z-index: 1;
+}
+.material__filter {
+    position: absolute;
+    top: 195px;
+    left: 0;
+    z-index: 5;
+}
+.material__slide_first {
+    background: url("material3.jpg") center 0 no-repeat;
+}
+.material__slide_second {
+    background: url("material2.jpg") center 0 no-repeat;
+}
+.material__slide_third {
+    background: url("material1.jpg") center 0 no-repeat;
+}
+.material__filteritem {
+    display: inline-block;
+    vertical-align: middle;
+    color: #fff;
+    font-size: 19px;
+    margin: 0 23px;
+    border-bottom: 1px dotted #fff;
+    cursor: pointer;
+}
+.material__filteritem:first-child {
+    margin-left: 0;
+}
+.material__filteritem:last-child {
+    margin-right: 0;
+}
+.material__filteritem:hover {
+    border-color: transparent;
+}
+.material__filteritem_active {
+    padding: 10px 15px;
+    border: 2px solid #fff;
+    border-radius: 40px;
+    font-family: 'circe-bold';
+    cursor: inherit;
+}
+.material__filteritem_active:hover {
+    border-color: #fff;
+}
+.material__slide_list {
+    font-size: 20px;
+    color: #fff;
+    margin-top: 265px;
+}
+.material__slide_list span, .material__slide_list li {
+    color: #fff;
+}
+.material__slide_list ul {
+    margin-top: 10px;
+}
+.material__pager {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 85px;
+    z-index: 5;
+}
+.material__pageritem {
+    display: inline-block;
+    vertical-align: middle;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #fff;
+    cursor: pointer;
+    margin: 0 6px;
+}
+.material__pageritem:first-child {
+    margin-left: 0;
+}
+.material__pageritem:last-child {
+    margin-right: 0;
+}
+.material__pageritem_active {
+    width: 15px;
+    height: 15px;
+    box-sizing: border-box;
+    background: none;
+    cursor: inherit;
+    border-radius: 50%;
+    border: 2px solid #fff;
+}

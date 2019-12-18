@@ -1,0 +1,21 @@
+@media (max-width: 991px) {
+    .other {
+        padding-top: 70px;
+    }
+    .other__title {
+        font-size: 14px;
+    }
+    .other__button {
+        font-size: 14px;
+        width: 130px;
+        height: 35px;
+        line-height: 35px;
+        margin-top: -17px;
+    }
+    .other__titile_2 {
+        margin-top: -30px;
+    }
+    .other__block {
+        margin-bottom: 60px;
+    }
+}

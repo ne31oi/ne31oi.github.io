@@ -1,0 +1,21 @@
+@media (max-width: 767px) {
+    .step__item_title {
+        font-size: 16px;
+        left: 25px;
+    }
+    .step__item_title span {
+        font-size: 36px;
+    }
+    .step__info {
+        top: inherit;
+        left: 25px;
+        right: 30px;
+        bottom: 20px;
+    }
+    .step__info span {
+        font-size: 26px;
+    }
+    .step__info p {
+        font-size: 14px;
+    }
+}
