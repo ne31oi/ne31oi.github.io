@@ -5,6 +5,7 @@
     padding-top: 28px;
     border-bottom: 2px solid #ececec;
     margin-bottom: 60px;
+    max-width: 100%;
 }
 .menu__item {
     font-family: 'circe-extrabold'!important;

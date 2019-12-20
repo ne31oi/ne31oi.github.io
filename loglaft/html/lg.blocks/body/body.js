@@ -50,4 +50,19 @@ $(function() {
         var messLightbox = $('#message_spam');
         lightboxShow(messLightbox);
     }
+    $('#grid_gallery__btn').on('click',
+        function() {
+            $('.grid_gallery__item--hide').show();
+
+            function getCoords(elem) {
+                var box = elem.getBoundingClientRect();
+
+                return {
+                    top: box.top + pageYOffset,
+                };
+            }
+            $('html,body').stop().animate({ scrollTop: getCoords($('.grid_gallery__item--hide')[0]).top - 200 }, 1000);
+            e.preventDefault();
+        }
+    );
 });
