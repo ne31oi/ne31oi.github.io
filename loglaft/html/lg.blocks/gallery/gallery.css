@@ -242,9 +242,8 @@
 }
 
 .grid_gallery a {
-
-    height: 250px;
-
+    height: 180px;
+    padding: 7px;
 }
 
 #grid_gallery__btn {

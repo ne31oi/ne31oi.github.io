@@ -62,7 +62,6 @@ $(function() {
                 };
             }
             $('html,body').stop().animate({ scrollTop: getCoords($('.grid_gallery__item--hide')[0]).top - 200 }, 1000);
-            e.preventDefault();
         }
     );
 });
