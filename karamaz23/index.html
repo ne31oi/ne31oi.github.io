@@ -5,7 +5,7 @@
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width,initial-scale=1'>
     <title>Svelte app</title>
-    <link rel='icon' type='image/png' href='/favicon.png'>
+    <link rel='icon' type='image/png' href='/favicon.webp'>
     <link rel="stylesheet" href="animate.css">
 </head>
 
@@ -70,52 +70,52 @@
     ];
     //Выберите неисправность и получите рекомендации по ремонту авто!
     var defect = [
-        { text: 'Пробуксовка <br>(слабая динамика)', image: 'img/recomend1.png' },
-        { text: 'Рывки, удары при езде или переключении передач', image: 'img/recomend2.png' },
-        { text: 'Отсутствие движения вперед или назад', image: 'img/recomend3.png' },
-        { text: 'Шум при работе (скрип,треск,скрежет грохот, свист, стук и т.д)', image: 'img/recomend4.png' },
-        { text: 'Аварийный индикатор горит или мигает', image: 'img/recomend5.png' },
-        { text: 'Не срабатывание определенной передачи', image: 'img/recomend6.png' },
-        { text: 'Утечка рабочей жидкости Изменение цвета жидкости', image: 'img/recomend7.png' },
-        { text: 'Другие проблемы в работе коробки передач', image: 'img/recomend8.png' }
+        { text: 'Пробуксовка <br>(слабая динамика)', image: 'img/recomend1.webp' },
+        { text: 'Рывки, удары при езде или переключении передач', image: 'img/recomend2.webp' },
+        { text: 'Отсутствие движения вперед или назад', image: 'img/recomend3.webp' },
+        { text: 'Шум при работе (скрип,треск,скрежет грохот, свист, стук и т.д)', image: 'img/recomend4.webp' },
+        { text: 'Аварийный индикатор горит или мигает', image: 'img/recomend5.webp' },
+        { text: 'Не срабатывание определенной передачи', image: 'img/recomend6.webp' },
+        { text: 'Утечка рабочей жидкости Изменение цвета жидкости', image: 'img/recomend7.webp' },
+        { text: 'Другие проблемы в работе коробки передач', image: 'img/recomend8.webp' }
     ];
     //Смотрите фото нашего сервиса! Чай и кофе для наших клиентов бесплатно
     var fotos = [
-        'img/photo1.png',
-        'img/photo2.png',
-        'img/photo3.png',
-        'img/photo4.png',
-        'img/photo5.png',
-        'img/photo6.png',
-        'img/photo1.png',
-        'img/photo1.png',
-        'img/photo1.png',
+        'img/photo1.webp',
+        'img/photo2.webp',
+        'img/photo3.webp',
+        'img/photo4.webp',
+        'img/photo5.webp',
+        'img/photo6.webp',
+        'img/photo1.webp',
+        'img/photo1.webp',
+        'img/photo1.webp',
     ];
     //Примеры
     var primers = [{
             problem: 'отсутсвие движения',
-            image: 'img/primer1.png',
+            image: 'img/primer1.webp',
             auto: 'Daewoo Espero',
             res: 'Замена вала распределения и синхронизаторов первой скорости',
             cen: '15 000 ₽'
         },
         {
             problem: 'отсутсвие движения',
-            image: 'img/primer2.png',
+            image: 'img/primer2.webp',
             auto: 'Daewoo Espero',
             res: 'Замена вала распределения и синхронизаторов первой скорости',
             cen: '15 000 ₽'
         },
         {
             problem: 'отсутсвие движения',
-            image: 'img/primer1.png',
+            image: 'img/primer1.webp',
             auto: 'Daewoo Espero',
             res: 'Замена вала распределения и синхронизаторов первой скорости',
             cen: '15 000 ₽'
         },
         {
             problem: 'отсутсвие движения',
-            image: 'img/primer2.png',
+            image: 'img/primer2.webp',
             auto: 'Daewoo Espero',
             res: 'Замена вала распределения и синхронизаторов первой скорости',
             cen: '15 000 ₽'
@@ -125,13 +125,13 @@
 
     //Видео
     var videos = [{
-            url: '',
+            url: 'https://youtu.be/msCd4vkRGTw',
             name: 'Василий Иванович Бунша',
             text: 'Текстовая составляющая видео:',
             text2: 'Все было очень круто'
         },
         {
-            url: '',
+            url: 'https://youtu.be/dCt1CZtrgxo',
             name: 'Василий Иванович Бунша',
             text: 'Текстовая составляющая видео:',
             text2: 'Все было очень круто'
@@ -152,38 +152,38 @@
 
     //Персонал
     var masters = [{
-            img: 'img/master1.png',
+            img: 'img/master1.webp',
             name: 'Иван Иванов',
             type: 'Мастер',
             text: 'Более 10 лет специализируется на ремонте DSG'
         },
         {
-            img: 'img/master1.png',
+            img: 'img/master1.webp',
             name: 'Иван Иванов',
             type: 'Мастер',
             text: 'Более 10 лет специализируется на ремонте DSG'
         },
         {
-            img: 'img/master1.png',
+            img: 'img/master1.webp',
             name: 'Иван Иванов',
             type: 'Мастер',
             text: 'Более 10 лет специализируется на ремонте DSG'
         },
         {
-            img: 'img/master1.png',
+            img: 'img/master1.webp',
             name: 'Иван Иванов',
             type: 'Мастер',
             text: 'Более 10 лет специализируется на ремонте DSG'
         },
 
         {
-            img: 'img/master1.png',
+            img: 'img/master1.webp',
             name: 'Иван Иванов',
             type: 'Мастер',
             text: 'Более 10 лет специализируется на ремонте DSG'
         },
         {
-            img: 'img/master1.png',
+            img: 'img/master1.webp',
             name: 'Иван Иванов',
             type: 'Мастер',
             text: 'Более 10 лет специализируется на ремонте DSG'
@@ -191,22 +191,22 @@
     ];
     //Сертификаты
     var serts = [
-        'img/sert1.png',
-        'img/sert2.png',
-        'img/sert2.png',
-        'img/sert1.png',
+        'img/sert1.webp',
+        'img/sert2.webp',
+        'img/sert2.webp',
+        'img/sert1.webp',
     ];
     //Смотрите фото нашего сервиса! Чай и кофе для наших клиентов бесплатно
     var fotos2 = [
-        'img/p1.png',
-        'img/p2.png',
-        'img/p3.png',
-        'img/p4.png',
-        'img/p5.png',
-        'img/p6.png',
-        'img/p1.png',
-        'img/p1.png',
-        'img/p1.png',
+        'img/p1.webp',
+        'img/p2.webp',
+        'img/p3.webp',
+        'img/p4.webp',
+        'img/p5.webp',
+        'img/p6.webp',
+        'img/p1.webp',
+        'img/p1.webp',
+        'img/p1.webp',
     ];
     window.popup = 0;
     </script>
