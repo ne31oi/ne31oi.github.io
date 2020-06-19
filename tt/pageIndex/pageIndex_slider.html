@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width" initial-scale="1" maximum-scale="1">
+    <title>Think Travel Tech</title>
+    <link rel="icon" href="../img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/circle.css">
+    <script src="../js/common-app.js"></script>
+    <script src="../js/app.js"></script>
+    <script src="../js/jquery.pixlayout.0.9.8.js"></script>
+  </head>
+  <!-- http://jade-lang.com/reference/mixins/-->
+  <body>
+    <div class="page-wrap">
+      <header class="header header__index">
+        <div class="justifyed vertical-center"><a href="" class="header__logo">
+            <picture>
+              <source srcset="../img/logo--header-white.svg" media="(max-width: 1023px)" title="Think Travel Tech"><img src="../img/logo--header-white.svg" alt="Логотип" title="Think Travel Tech">
+            </picture></a>
+          <div class="header__index__right">
+            <ul class="header__index__nav">
+              <li><a href="">Разбор</a></li>
+              <li><a href="">Интервью</a></li>
+              <li><a href="">Стартап</a></li>
+              <li><a href="">Решение</a></li>
+              <li><a href="" class="light_el">Экспертиза</a></li>
+              <li><a href="" class="light_el">О нас</a></li>
+              <li><a href="" class="light_el">EN</a></li>
+            </ul>
+            <form action="" method="post" class="main-form header__search">
+              <input type="text" name="search" autocomplete="off" placeholder="Поиск" class="inp required">
+              <button type="submit" class="button-submit js--toggle-search">
+                <svg>
+                  <use xlink:href="../img/sprite.svg#search2"></use>
+                </svg>
+              </button>
+            </form><span title="Меню" class="header__hamburger js--toggle-menu"></span>
+          </div>
+        </div>
+        <div class="header__menu js--close-menu"><a href="../pageIndex/pageIndex.html" class="header__logo"><img src="../img/logo--header.svg" alt="Логотип" title="Think Travel Tech"></a>
+          <ul class="header__nav js--close-menu">
+            <li class="js--close-menu">
+              <form action="" method="post" class="main-form header__search">
+                <input type="text" placeholder="Поиск" name="search" autocomplete="off" class="inp required">
+                <button type="submit" class="button-submit js--toggle-search">
+                  <svg>
+                    <use xlink:href="../img/sprite.svg#search2"></use>
+                  </svg>
+                </button>
+              </form>
+            </li>
+            <li class="js--close-menu"><a href="">Разбор</a></li>
+            <li class="js--close-menu"><a href="">Интервью</a></li>
+            <li class="js--close-menu"><a href="">Стартап</a></li>
+            <li class="js--close-menu"><a href="">Решение</a></li>
+            <li class="js--close-menu"><a href="" class="light_el">Экспертиза</a></li>
+            <li class="js--close-menu"><a href="" class="light_el">О нас</a></li>
+            <li class="js--close-menu">
+              <ul class="header__social social">
+                <li><a href="" class="footer__social__link">
+                    <svg>
+                      <use xlink:href="../img/sprite.svg#facebook"></use>
+                    </svg></a></li>
+                <li><a href="" class="footer__social__link">
+                    <svg>
+                      <use xlink:href="../img/sprite.svg#in"></use>
+                    </svg></a></li>
+                <li><a href="" class="footer__social__link">
+                    <svg>
+                      <use xlink:href="../img/sprite.svg#li"></use>
+                    </svg></a></li>
+              </ul>
+            </li>
+            <li class="js--close-menu"><a href="" class="light_el">En</a></li>
+          </ul>
+        </div>
+      </header><!-- В background вставлять изображене из первого слайда -->
+      <section style="background-image: url(../img/img--slider-1.jpg)" class="promo"><!-- В opacity вставлять прозрачность для оверлея из первого слайда -->
+        <div style="opacity:0.2" class="promo__overlay"></div>
+        <div class="promo__slider_img">
+          <div class="promo__img">
+            <div style="opacity:0.2" class="promo__img__overlay"></div><img data-lazy="../img/img--slider-1.jpg" src="../img/img--slider-1.jpg" alt="Слайдер">
+          </div>
+          <div class="promo__img">
+            <div style="opacity:0.4" class="promo__img__overlay"></div><img data-lazy="../img/img--slider-2.jpg" src="../img/img--slider-2.jpg" alt="Слайдер">
+          </div>
+          <div class="promo__img">
+            <div style="opacity:0.6" class="promo__img__overlay"></div><img data-lazy="../img/img--slider-3.jpg" src="../img/img--slider-3.jpg" alt="Слайдер">
+          </div>
+          <div class="promo__img">
+            <div style="opacity:0.8" class="promo__img__overlay"></div><img data-lazy="../img/img--slider-4.jpg" src="../img/img--slider-4.jpg" alt="Слайдер">
+          </div>
+          <div class="promo__img">
+            <div style="opacity:0.2" class="promo__img__overlay"></div><img data-lazy="../img/img--slider-1.jpg" src="../img/img--slider-1.jpg" alt="Слайдер">
+          </div>
+        </div>
+        <div class="promo__slider_content">
+          <div class="promo__content">
+            <h1>Explore The World of Mediterranean in 2020</h1>
+            <p>Finding the Best Places to Watch Underwater Life</p><a href="" class="btn btn-l">Find out more</a>
+          </div>
+          <div class="promo__content">
+            <h1> Слайд 2</h1>
+            <p>Finding the Best Places to Watch Underwater Life</p><a href="" class="btn btn-l">Find out more</a>
+          </div>
+          <div class="promo__content">
+            <h1>Слайд 3</h1>
+            <p>Finding the Best Places to Watch Underwater Life</p><a href="" class="btn btn-l">Find out more</a>
+          </div>
+          <div class="promo__content">
+            <h1>Слайд 4</h1>
+            <p>Finding the Best Places to Watch Underwater Life</p><a href="" class="btn btn-l">Find out more</a>
+          </div>
+          <div class="promo__content">
+            <h1>Слайд 5</h1>
+            <p>Finding the Best Places to Watch Underwater Life</p><a href="" class="btn btn-l">Find out more</a>
+          </div>
+        </div>
+        <!--.promo__nav_wrap-->
+        <!--    .promo__nav-->
+        <!--        .promo__nav__el-->
+        <!--            img(src="../img/img--slider-nav-1.jpg" alt="Навигация для слайдера")-->
+        <!--        .promo__nav__el-->
+        <!--            img(src="../img/img--slider-nav-2.jpg" alt="Навигация для слайдера")-->
+        <!--        .promo__nav__el-->
+        <!--            img(src="../img/img--slider-nav-3.jpg" alt="Навигация для слайдера")-->
+        <!--        .promo__nav__el-->
+        <!--            img(src="../img/img--slider-nav-4.jpg" alt="Навигация для слайдера")-->
+        <!--        .promo__nav__el-->
+        <!--            img(src="../img/img--slider-nav-1.jpg" alt="Навигация для слайдера")-->
+        <!--        .promo__nav__el-->
+        <!--            img(src="../img/img--slider-nav-2.jpg" alt="Навигация для слайдера")-->
+        <!--        .promo__nav__el-->
+        <!--            img(src="../img/img--slider-nav-3.jpg" alt="Навигация для слайдера")-->
+        <!--        .promo__nav__el-->
+        <!--            img(src="../img/img--slider-nav-4.jpg" alt="Навигация для слайдера")-->
+      </section>
+      <section class="news last-news">
+        <div class="width-wrap">
+          <h2>Last news</h2>
+          <ul class="news__list">
+            <li class="news__el">
+              <div class="news__img"><img src="../img/img--news-1.jpg" alt="Изобржене для новости"><a href="" class="news__read">read more</a></div><a href="" class="news__title">Технологии блокчейн: факты            и перспективы для туристической отрасли</a>
+              <ul class="tags">
+                <li class="tags__el"><a href="" class="tags__link">travel tech</a></li>
+                <li class="tags__el"><a href="" class="tags__link">новости</a></li>
+              </ul>
+            </li>
+            <li class="news__el">
+              <div class="news__img"><img src="../img/img--news-2.jpg" alt="Изобржене для новости"><a href="" class="news__read">read more</a></div><a href="" class="news__title">Малазийцы упростили получение             виз для бизнеса в рыбацкой отрасли</a>
+              <ul class="tags">
+                <li class="tags__el"><a href="" class="tags__link">малайзия</a></li>
+              </ul>
+            </li>
+            <li class="news__el">
+              <div class="news__img"><img src="../img/img--news-3.jpg" alt="Изобржене для новости"><a href="" class="news__read">read more</a></div><a href="" class="news__title">Технологии блокчейн: факты             и перспективы для туристической отрасли</a>
+              <ul class="tags">
+                <li class="tags__el"><a href="" class="tags__link">новости</a></li>
+              </ul>
+            </li>
+            <li class="news__el">
+              <div class="news__img"><img src="../img/img--news-4.jpg" alt="Изобржене для новости"><a href="" class="news__read">read more</a></div><a href="" class="news__title">Прага увеличит объем туристов             на 10% в 2020 году</a>
+              <ul class="tags">
+                <li class="tags__el"><a href="" class="tags__link">travel tech</a></li>
+                <li class="tags__el"><a href="" class="tags__link">новости</a></li>
+              </ul>
+            </li>
+            <li class="news__el">
+              <div class="news__img"><img src="../img/img--news-5.jpg" alt="Изобржене для новости"><a href="" class="news__read">read more</a></div><a href="" class="news__title">Психологи утверждают, что             регулярные путешествия к морю повышают жизненный тонус</a>
+              <ul class="tags">
+                <li class="tags__el"><a href="" class="tags__link">travel tech</a></li>
+              </ul>
+            </li>
+            <li class="news__el">
+              <div class="news__img"><img src="../img/img--news-6.jpg" alt="Изобржене для новости"><a href="" class="news__read">read more</a></div><a href="" class="news__title">Индия сообщила о предоставлении             кредита под 0,1% для малого и среднего бизнеса</a>
+              <ul class="tags">
+                <li class="tags__el"><a href="" class="tags__link">новости</a></li>
+                <li class="tags__el"><a href="" class="tags__link">финансы</a></li>
+              </ul>
+            </li>
+          </ul>
+          <div class="post">
+            <div class="post__img"><img src="../img/img--post.jpg" alt="Описание фото"></div>
+            <div class="post__content"><a href="" class="post__content__title"><strong>Технологии блокчейн: факты и             перспективы для туристической отрасли</strong></a>
+              <p>Мы&nbsp;уже спокойно воспринимаем, что многие процессы при работе даже со столь чувствительной информацией перешли в&nbsp;он-лайн пространство и опираются на&nbsp;самые разные ИТ-решения.</p>
+              <p>Для нас это значит возможность максимально оперативной обработки данных и&nbsp;их&nbsp;консолидация, для клиента&nbsp;&mdash; сокращение сроков ожидания получения визы.</p><a href="" class="btn__share">
+                <svg class="btn__share__icon">
+                  <use xlink:href="../img/sprite.svg#facebook"></use>
+                </svg><span>поделиться на facebook</span></a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="news">
+        <div class="width-wrap">
+          <h2>Food in different countries</h2>
+          <div class="mobile-slider_wrap">
+            <ul class="news__list mobile-slider">
+              <li class="news__el">
+                <div class="news__img"><img src="../img/img--news-1.jpg" alt="Изобржене для новости"><a href="" class="news__read">read more</a></div><a href="" class="news__title">Технологии блокчейн: факты            и перспективы для туристической отрасли</a>
+                <ul class="tags">
+                  <li class="tags__el"><a href="" class="tags__link">travel tech</a></li>
+                  <li class="tags__el"><a href="" class="tags__link">новости</a></li>
+                </ul>
+              </li>
+              <li class="news__el">
+                <div class="news__img"><img src="../img/img--news-2.jpg" alt="Изобржене для новости"><a href="" class="news__read">read more</a></div><a href="" class="news__title">Малазийцы упростили получение             виз для бизнеса в рыбацкой отрасли</a>
+                <ul class="tags">
+                  <li class="tags__el"><a href="" class="tags__link">малайзия</a></li>
+                </ul>
+              </li>
+              <li class="news__el">
+                <div class="news__img"><img src="../img/img--news-3.jpg" alt="Изобржене для новости"><a href="" class="news__read">read more</a></div><a href="" class="news__title">Технологии блокчейн: факты             и перспективы для туристической отрасли Технологии блокчейн: факты             и перспективы для туристической отрасли</a>
+                <ul class="tags">
+                  <li class="tags__el"><a href="" class="tags__link">новости</a></li>
+                </ul>
+              </li>
+              <li class="news__el">
+                <div class="news__img"><img src="../img/img--news-4.jpg" alt="Изобржене для новости"><a href="" class="news__read">read more</a></div><a href="" class="news__title">Прага увеличит объем туристов             на 10% в 2020 году</a>
+                <ul class="tags">
+                  <li class="tags__el"><a href="" class="tags__link">travel tech</a></li>
+                  <li class="tags__el"><a href="" class="tags__link">новости</a></li>
+                </ul>
+              </li>
+              <li class="news__el">
+                <div class="news__img"><img src="../img/img--news-5.jpg" alt="Изобржене для новости"><a href="" class="news__read">read more</a></div><a href="" class="news__title">Психологи утверждают, что             регулярные путешествия к морю повышают жизненный тонус</a>
+                <ul class="tags">
+                  <li class="tags__el"><a href="" class="tags__link">travel tech</a></li>
+                </ul>
+              </li>
+              <li class="news__el">
+                <div class="news__img"><img src="../img/img--news-6.jpg" alt="Изобржене для новости"><a href="" class="news__read">read more</a></div><a href="" class="news__title">Индия сообщила о предоставлении             кредита под 0,1% для малого и среднего бизнеса</a>
+                <ul class="tags">
+                  <li class="tags__el"><a href="" class="tags__link">новости</a></li>
+                  <li class="tags__el"><a href="" class="tags__link">финансы</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div><a href="" class="news__all btn">смотреть все</a>
+        </div>
+      </section>
+      <section class="news">
+        <div class="width-wrap">
+          <h2>Travel Tech</h2>
+          <div class="mobile-slider_wrap">
+            <ul class="news__list mobile-slider">
+              <li class="news__el">
+                <div class="news__img"><img src="../img/img--news-1.jpg" alt="Изобржене для новости"><a href="" class="news__read">read more</a></div><a href="" class="news__title">Технологии блокчейн: факты            и перспективы для туристической отрасли</a>
+                <ul class="tags">
+                  <li class="tags__el"><a href="" class="tags__link">travel tech</a></li>
+                  <li class="tags__el"><a href="" class="tags__link">новости</a></li>
+                </ul>
+              </li>
+              <li class="news__el">
+                <div class="news__img"><img src="../img/img--news-2.jpg" alt="Изобржене для новости"><a href="" class="news__read">read more</a></div><a href="" class="news__title">Малазийцы упростили получение             виз для бизнеса в рыбацкой отрасли</a>
+                <ul class="tags">
+                  <li class="tags__el"><a href="" class="tags__link">малайзия</a></li>
+                </ul>
+              </li>
+              <li class="news__el">
+                <div class="news__img"><img src="../img/img--news-3.jpg" alt="Изобржене для новости"><a href="" class="news__read">read more</a></div><a href="" class="news__title">Технологии блокчейн: факты             и перспективы для туристической отрасли</a>
+                <ul class="tags">
+                  <li class="tags__el"><a href="" class="tags__link">новости</a></li>
+                </ul>
+              </li>
+              <li class="news__el">
+                <div class="news__img"><img src="../img/img--news-4.jpg" alt="Изобржене для новости"><a href="" class="news__read">read more</a></div><a href="" class="news__title">Прага увеличит объем туристов             на 10% в 2020 году</a>
+                <ul class="tags">
+                  <li class="tags__el"><a href="" class="tags__link">travel tech</a></li>
+                  <li class="tags__el"><a href="" class="tags__link">новости</a></li>
+                </ul>
+              </li>
+              <li class="news__el">
+                <div class="news__img"><img src="../img/img--news-5.jpg" alt="Изобржене для новости"><a href="" class="news__read">read more</a></div><a href="" class="news__title">Психологи утверждают, что             регулярные путешествия к морю повышают жизненный тонус</a>
+                <ul class="tags">
+                  <li class="tags__el"><a href="" class="tags__link">travel tech</a></li>
+                </ul>
+              </li>
+              <li class="news__el">
+                <div class="news__img"><img src="../img/img--news-6.jpg" alt="Изобржене для новости"><a href="" class="news__read">read more</a></div><a href="" class="news__title">Индия сообщила о предоставлении             кредита под 0,1% для малого и среднего бизнеса</a>
+                <ul class="tags">
+                  <li class="tags__el"><a href="" class="tags__link">новости</a></li>
+                  <li class="tags__el"><a href="" class="tags__link">финансы</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="post"><a href="" class="post__img"><img src="../img/img--post2.jpg" alt="Описание фото"></a>
+            <div class="post__content"><a href="" class="post__content__title"><strong> Технологии блокчейн: факты и             перспективы для туристической отрасли</strong></a>
+              <p>Мы&nbsp;уже спокойно воспринимаем, что многие процессы при работе даже со столь чувствительной информацией перешли в&nbsp;он-лайн пространство и опираются на&nbsp;самые разные ИТ-решения.</p>
+              <p>Для нас это значит возможность максимально оперативной обработки данных и&nbsp;их&nbsp;консолидация, для клиента&nbsp;&mdash; сокращение сроков ожидания получения визы.</p><a href="" class="news__read">read more</a>
+            </div>
+          </div><a href="" class="news__all btn">смотреть все</a>
+        </div>
+      </section>
+      <section class="news">
+        <div class="width-wrap">
+          <h2>Work and travel</h2>
+          <div class="mobile-slider_wrap">
+            <ul class="news__list mobile-slider">
+              <li class="news__el">
+                <div class="news__img"><img src="../img/img--news-1.jpg" alt="Изобржене для новости"><a href="" class="news__read">read more</a></div><a href="" class="news__title">Технологии блокчейн: факты            и перспективы для туристической отрасли</a>
+                <ul class="tags">
+                  <li class="tags__el"><a href="" class="tags__link">travel tech</a></li>
+                  <li class="tags__el"><a href="" class="tags__link">новости</a></li>
+                </ul>
+              </li>
+              <li class="news__el">
+                <div class="news__img"><img src="../img/img--news-2.jpg" alt="Изобржене для новости"><a href="" class="news__read">read more</a></div><a href="" class="news__title">Малазийцы упростили получение             виз для бизнеса в рыбацкой отрасли</a>
+                <ul class="tags">
+                  <li class="tags__el"><a href="" class="tags__link">малайзия</a></li>
+                </ul>
+              </li>
+              <li class="news__el">
+                <div class="news__img"><img src="../img/img--news-3.jpg" alt="Изобржене для новости"><a href="" class="news__read">read more</a></div><a href="" class="news__title">Технологии блокчейн: факты             и перспективы для туристической отрасли</a>
+                <ul class="tags">
+                  <li class="tags__el"><a href="" class="tags__link">новости</a></li>
+                </ul>
+              </li>
+              <li class="news__el">
+                <div class="news__img"><img src="../img/img--news-4.jpg" alt="Изобржене для новости"><a href="" class="news__read">read more</a></div><a href="" class="news__title">Прага увеличит объем туристов             на 10% в 2020 году</a>
+                <ul class="tags">
+                  <li class="tags__el"><a href="" class="tags__link">travel tech</a></li>
+                  <li class="tags__el"><a href="" class="tags__link">новости</a></li>
+                </ul>
+              </li>
+              <li class="news__el">
+                <div class="news__img"><img src="../img/img--news-5.jpg" alt="Изобржене для новости"><a href="" class="news__read">read more</a></div><a href="" class="news__title">Психологи утверждают, что             регулярные путешествия к морю повышают жизненный тонус</a>
+                <ul class="tags">
+                  <li class="tags__el"><a href="" class="tags__link">travel tech</a></li>
+                </ul>
+              </li>
+              <li class="news__el">
+                <div class="news__img"><img src="../img/img--news-6.jpg" alt="Изобржене для новости"><a href="" class="news__read">read more</a></div><a href="" class="news__title">Индия сообщила о предоставлении             кредита под 0,1% для малого и среднего бизнеса</a>
+                <ul class="tags">
+                  <li class="tags__el"><a href="" class="tags__link">новости</a></li>
+                  <li class="tags__el"><a href="" class="tags__link">финансы</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div><a href="" class="news__all btn">смотреть все</a>
+        </div>
+      </section>
+      <section class="news">
+        <div class="width-wrap">
+          <h2>Traveling Business Russia</h2>
+          <div class="post"><a href="" class="post__img"><img src="../img/img--post3.jpg" alt="Описание фото"></a>
+            <div class="post__content"><a href="" class="post__content__title"><strong> Технологии блокчейн: факты и             перспективы для туристической отрасли</strong></a>
+              <p>Мы&nbsp;уже спокойно воспринимаем, что многие процессы при работе даже со столь чувствительной информацией перешли в&nbsp;он-лайн пространство и опираются на&nbsp;самые разные ИТ-решения.</p>
+              <p>Для нас это значит возможность максимально оперативной обработки данных и&nbsp;их&nbsp;консолидация, для клиента&nbsp;&mdash; сокращение сроков ожидания получения визы.</p><a href="" class="news__read">read more</a>
+            </div>
+          </div>
+          <div class="mobile-slider_wrap">
+            <ul class="news__list mobile-slider">
+              <li class="news__el">
+                <div class="news__img"><img src="../img/img--news-1.jpg" alt="Изобржене для новости"><a href="" class="news__read">read more</a></div><a href="" class="news__title">Технологии блокчейн: факты            и перспективы для туристической отрасли</a>
+                <ul class="tags">
+                  <li class="tags__el"><a href="" class="tags__link">travel tech</a></li>
+                  <li class="tags__el"><a href="" class="tags__link">новости</a></li>
+                </ul>
+              </li>
+              <li class="news__el">
+                <div class="news__img"><img src="../img/img--news-2.jpg" alt="Изобржене для новости"><a href="" class="news__read">read more</a></div><a href="" class="news__title">Малазийцы упростили получение             виз для бизнеса в рыбацкой отрасли</a>
+                <ul class="tags">
+                  <li class="tags__el"><a href="" class="tags__link">малайзия</a></li>
+                </ul>
+              </li>
+              <li class="news__el">
+                <div class="news__img"><img src="../img/img--news-3.jpg" alt="Изобржене для новости"><a href="" class="news__read">read more</a></div><a href="" class="news__title">Технологии блокчейн: факты             и перспективы для туристической отрасли</a>
+                <ul class="tags">
+                  <li class="tags__el"><a href="" class="tags__link">новости</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="news">
+        <div class="width-wrap">
+          <h2>Last videos from the journeys</h2>
+          <div class="video__slider">
+            <div class="video__slider__left">
+              <div class="video__slider__el"><a href="" class="video__slider__img"><img src="../img/img--video-1.jpg" alt="Описание видео"></a>
+                <div class="video__slider__content"><span class="video__slider__title">Dinner at 35 feet yacht with dolphins                             and sunset breeze in French Riviera</span>
+                  <ul class="tags">
+                    <li class="tags__el"><a href="" class="tags__link">путешествия</a></li>
+                    <li class="tags__el"><a href="" class="tags__link">еда</a></li>
+                  </ul>
+                </div>
+                <div class="video__slider__icon">
+                  <svg>
+                    <use xlink:href="../img/sprite.svg#triangle"></use>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="video__slider__right">
+              <div class="video__slider__el"><a href="" class="video__slider__img"><img src="../img/RbyRfo.jpg" alt="Описание видео"></a>
+                <div class="video__slider__content"><span class="video__slider__title">Технологии блокчейн: факты                     и перспективы для туристической отрасли</span>
+                  <ul class="tags">
+                    <li class="tags__el"><a href="" class="tags__link">travel tech</a></li>
+                    <li class="tags__el"><a href="" class="tags__link">новости</a></li>
+                    <li class="tags__el"><a href="" class="tags__link">travel tech</a></li>
+                    <li class="tags__el"><a href="" class="tags__link">новости</a></li>
+                    <li class="tags__el"><a href="" class="tags__link">travel tech</a></li>
+                    <li class="tags__el"><a href="" class="tags__link">новости</a></li>
+                    <li class="tags__el"><a href="" class="tags__link">travel tech</a></li>
+                    <li class="tags__el"><a href="" class="tags__link">новости</a></li>
+                  </ul>
+                </div>
+                <div class="video__slider__icon">
+                  <svg>
+                    <use xlink:href="../img/sprite.svg#triangle"></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="video__slider__el"><a href="" class="video__slider__img"><img src="../img/qb9D2w.jpg" alt="Описание видео"></a>
+                <div class="video__slider__content"><span class="video__slider__title">Полет над вечерней Францией                     на воздушном шаре</span>
+                  <ul class="tags">
+                    <li class="tags__el"><a href="" class="tags__link">travel tech</a></li>
+                    <li class="tags__el"><a href="" class="tags__link">видеогид</a></li>
+                  </ul>
+                </div>
+                <div class="video__slider__icon">
+                  <svg>
+                    <use xlink:href="../img/sprite.svg#triangle"></use>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="news margin-news">
+        <div class="width-wrap">
+          <h2>Популярные статьи</h2>
+          <div class="mobile-slider_wrap">
+            <ul class="news__list">
+              <li class="news__el">
+                <div class="news__link"><a href="" class="news__img"><img src="../img/img--news-1.jpg" alt="Изобржене для новости"></a>
+                  <div class="news__content"><a href="" class="news__title">Далай Лама посетит остров Крит с духовной лекцией</a>
+                    <div class="news__data"><a href="" class="news__category">Разбор</a><span class="news__delimiter">|</span><a href="" class="news__publish">Сегодня</a></div>
+                    <div class="news__read_wrap"><a href="" class="news__read">читать</a></div>
+                  </div><a data-fancybox href="https://www.youtube.com/watch?v=_sI_Ps7JSEk" class="video__slider__icon">
+                    <svg>
+                      <use xlink:href="../img/sprite.svg#triangle"></use>
+                    </svg></a>
+                </div>
+              </li>
+              <li class="news__el">
+                <div class="news__link"><a href="" class="news__img"><img src="../img/img--news-2.jpg" alt="Изобржене для новости"></a>
+                  <div class="news__content"><a href="" class="news__title">В Москве построят 5 новых                     80-этажных небоскребов</a>
+                    <div class="news__data"><a href="" class="news__category">Разбор</a><span class="news__delimiter">|</span><a href="" class="news__publish">Сегодня</a></div>
+                    <div class="news__read_wrap"><a href="" class="news__read">читать</a></div>
+                  </div>
+                </div>
+              </li>
+              <li class="news__el">
+                <div class="news__link"><a href="" class="news__img"><img src="../img/img--news-3.jpg" alt="Изобржене для новости"></a>
+                  <div class="news__content"><a href="" class="news__title">Туристический маркетплейс                    взорвал интернет. Обзор с Михаилом Игнатьевым.</a>
+                    <div class="news__data"><a href="" class="news__category">Разбор</a><span class="news__delimiter">|</span><a href="" class="news__publish">Сегодня</a></div>
+                    <div class="news__read_wrap"><a href="" class="news__read">читать</a></div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div><a href="" class="news__all btn">смотреть все</a>
+        </div>
+      </section>
+      <section class="pdf">
+        <div class="width-wrap">
+          <h2 class="text-center">Get PDF checklist from Mikhail Ignatiev <i>"How to save time and money, getting visa"</i>
+          </h2>
+          <form action="../js/ajax/send.php" method="post" class="main-form">
+            <input type="hidden" name="backurl" value="https://www.youtube.com/"><span class="form__title">Enter your email and I will send you the checklist</span>
+            <div class="justifyed">
+              <input type="text" name="mail" placeholder="your email" class="inp inp-mail required">
+              <button type="submit" class="btn js--form-submit">Get pdf checklist</button>
+            </div><span class="form__notification">By clicking "Get PDF Checklist" you are agree to the <a href="">Terms and Conditions</a></span>
+          </form>
+        </div>
+      </section><!-- Этот скрипт на сервере всегда вырезать -->
+      <!--script() $(function(){$.pixlayout({src: "../img/temp/main.jpg",opacity: 0.5,top:-334,left: 0,center: false,clip: true,show: false});});-->
+      <div class="psevdofooter"></div>
+      <footer class="footer">
+        <div class="width-wrap justifyed vertical-center">
+          <div class="footer__aside">
+            <div class="footer__info"><a href="" class="footer__logo">
+                <svg>
+                  <use xlink:href="../img/sprite.svg#logo"></use>
+                </svg></a>
+              <div class="footer__copyright"><span>Think Travel Tech</span><span>©   2020. All rights reserved</span></div>
+            </div>
+            <ul class="footer__nav">
+              <li><a href="">О нас</a></li>
+              <li><a href="">Михаил Игнатьев</a></li>
+              <li><a href="">Экспертиза</a></li>
+              <li><a href="">Новости</a></li>
+              <li><a href="">Контакты</a></li>
+              <li><a href="">Политика конфиденциальности</a></li>
+              <li><a href="">Условия использования</a></li>
+            </ul>
+          </div>
+          <ul class="footer__social social">
+            <li><a href="" class="footer__social__link">
+                <svg>
+                  <use xlink:href="../img/sprite.svg#facebook"></use>
+                </svg></a></li>
+            <li><a href="" class="footer__social__link">
+                <svg>
+                  <use xlink:href="../img/sprite.svg#in"></use>
+                </svg></a></li>
+            <li><a href="" class="footer__social__link">
+                <svg>
+                  <use xlink:href="../img/sprite.svg#li"></use>
+                </svg></a></li>
+          </ul>
+          <div class="footer__aside"><a href="" class="footer__made footer-logo">
+              <div class="circle"></div>
+              <div class="circle"></div></a></div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
