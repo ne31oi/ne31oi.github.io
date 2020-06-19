@@ -3068,6 +3068,10 @@
     font-weight: 800;
     font-style: normal
 }
+@font-face {
+  font-family: 'Gilroy-UltraLightItalic';
+  src: url('../fonts/UltraLightItalic.woff') format('woff');
+}
 
 html * {
     max-height: 999999px;
@@ -11863,6 +11867,7 @@ a.news__all.btn:hover {
 .article ol li,
 .article p,
 .article span,
+.michail__text p,
 .article ul li {
     display: block;
     font-size: 20px
@@ -11871,6 +11876,7 @@ a.news__all.btn:hover {
 .article a,
 .article p,
 .article span,
+.michail__text p,
 .article ul li {
     line-height: 28px;
     margin-bottom: 28px;
@@ -11882,6 +11888,7 @@ a.news__all.btn:hover {
     .article a,
     .article ol li,
     .article p,
+    .michail__text p,
     .article span,
     .article ul li {
         font-size: 18px;
@@ -11895,6 +11902,7 @@ a.news__all.btn:hover {
     .article a,
     .article ol li,
     .article p,
+    .michail__text p,
     .article span,
     .article ul li {
         font-size: 16px;
@@ -11908,6 +11916,7 @@ a.news__all.btn:hover {
     .article a,
     .article ol li,
     .article p,
+    .michail__text p,
     .article span,
     .article ul li {
         font-size: 14px;
@@ -14426,7 +14435,7 @@ a.news__all.btn:hover {
 }
 
 .article>ul li {
-    text-indent: 55px;
+    text-indent: 35px;
     list-style: none !important;
     position: relative;
 }
@@ -14439,7 +14448,7 @@ a.news__all.btn:hover {
     content: '';
     border-radius: 50%;
     left: 0;
-    top: 10px;
+    top: 9px;
 }
 
 @media (max-width: 1440px) {
@@ -14551,22 +14560,39 @@ a.news__all.btn:hover {
 }
 
 .article .big_text {
-    letter-spacing: 2px;
-    font-weight: bold;
-    margin-bottom: 24px;
-    font-size: 30px;
+    font-size: 24px;
 }
 
 @media (max-width: 1440px) {
     .article .big_text {
-        letter-spacing: 1.7px;
-        margin-bottom: 24px;
-        font-size: 23px;
+        font-size: 21px;
     }
 }
 
 @media (max-width: 1023px) {
     .article .big_text {
+        font-size: 17px;
+    }
+}
+.article .big_text {
+    letter-spacing: 2px;
+    font-weight: bold;
+    margin-bottom: 24px;
+    font-size: 30px;
+    line-height: 37px;
+}
+
+@media (max-width: 1440px) {
+    .article .so_big_text {
+        letter-spacing: 1.7px;
+        margin-bottom: 24px;
+        font-size: 23px;
+        line-height: 28px;
+    }
+}
+
+@media (max-width: 1023px) {
+    .article .so_big_text {
         font-size: 17px;
         line-height: 21px;
         letter-spacing: 1.5px;
@@ -14581,64 +14607,171 @@ a.news__all.btn:hover {
 .numbers__el {
     width: max-content;
     margin-bottom: 48px;
+    max-width: 100%;
 }
-.numbers__val{
-	padding-bottom: 5px;
+
+.numbers__val {
+    padding-bottom: 5px;
 
 }
-.numbers{
-	padding: 88px 0 135px;
+
+.numbers {
+    padding: 88px 0 135px;
 }
-.michail{
-	    padding-top: 150px;
+
+.michail {
+    padding-top: 150px;
 }
-.michail__header{
-	    color: #132334;
+
+.michail__header {
+    color: #132334;
     font-size: 40px;
     text-align: center;
     margin-bottom: 60px;
     font-weight: bold;
     letter-spacing: 2.2px;
 }
-.michail__subheader{
-	color:#132334;
-	font-size: 22px;
+
+.michail__subheader {
+    color: #132334;
+    font-size: 22px;
     margin-bottom: 50px;
     font-weight: bold;
 }
-.michail__quote{
-	position: relative;
-	font-style: italic;
-	margin-left: 65px;
-	border-left: 1px solid #c2c2c2;
-	padding-left: 32px;
-	font-size: 17px;
-	margin-bottom: 55px;	
+
+.michail__quote {
+    position: relative;
+    font-style: italic;
+    margin-left: 65px;
+    border-left: 1px solid #c2c2c2;
+    padding-left: 32px;
+    font-size: 17px;
+    margin-bottom: 55px;
+    font-family: Gilroy-UltraLightItalic;
 }
-.michail__quote:after,.michail__quote:before{
-	position: absolute;
-	content: ' ';
-	top: 4px;
+.michail__quote p{
+	font-family: Gilroy-UltraLightItalic;
+}
+.michail__quote:after,
+.michail__quote:before {
+    position: absolute;
+    content: ' ';
+    top: 4px;
     width: 10px;
     height: 26px;
-	background: #132334;
+    background: #132334;
 }
-.michail__quote:after{
-	left: -40px;
+
+.michail__quote:after {
+    left: -40px;
 }
-.michail__quote:before{
-	left: -60px;
+
+.michail__quote:before {
+    left: -60px;
 }
-.michail__quote p:not(:last-child){
-	margin-bottom: 20px;	
+
+.michail__quote p:not(:last-child) {
+    margin-bottom: 20px;
 }
-.michail__text p{
-	font-size: 17px;
+
+.michail__text p {
+    font-size: 17px;
 }
-.michail__text p:not(:last-child){
-	margin-bottom: 20px;
+
+.michail__text p:not(:last-child) {
+    margin-bottom: 20px;
 }
-.michail-wrap{
-	width: 100%;
-    max-width: 1200px;
+
+.michail-wrap {
+    width: 100%;
+}
+
+@media (max-width: 1023px) {
+    .michail {
+        padding-top: 24px;
+    }
+
+    .michail__header {
+        font-size: 18px;
+        letter-spacing: 1.3px;
+        margin-bottom: 22px;
+        text-align: left;
+    }
+
+    .michail__subheader {
+        font-size: 14px;
+        margin-bottom: 22px;
+        line-height: 19px;
+    }
+
+    .michail__quote-wrap {
+        position: relative;
+    }
+
+    .michail__quote-wrap:after {
+        content: "";
+        position: absolute;
+        width: 1px;
+        background: #c2c2c2;
+        top: 32px;
+        left: 11px;
+        height: calc(100% - 32px);
+    }
+
+    .michail__quote {
+        padding-left: 0;
+        margin-left: 36px;
+        border-left: none;
+        margin-bottom: 22px;
+    }
+
+    .michail__quote:after,
+    .michail__quote:before {
+        top: 0;
+        width: 8px;
+        height: 16px;
+    }
+
+    .michail__quote:after {
+        left: -24px;
+    }
+
+    .michail__quote:before {
+        left: -34px;
+    }
+
+    .michail__quote p,
+    .michail__text p {
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .numbers {
+        padding: 0 0 30px;
+    }
+
+    .numbers__val {
+        font-size: 30px;
+        line-height: 50px;
+        padding-bottom: 0;
+    }
+
+    .numbers__el {
+        width: 100%;
+        margin-bottom: 3px;
+        text-align: left;
+    }
+
+    .numbers__content span {
+        width: 100%;
+        max-width: initial;
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .numbers__content:before {
+        width: 100%;
+        height: 5px;
+    }
+
 }
