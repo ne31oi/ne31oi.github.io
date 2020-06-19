@@ -1,9 +1,0 @@
-@media (max-width: 767px) {
-    .project__info_price span {
-        font-size: 22px;
-    }
-    .project__info_price span img {
-        height: 18px;
-        width: 13px;
-    }
-}

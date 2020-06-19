@@ -1,8 +1,0 @@
-@media (max-width: 991px) {
-    .material__title, .material__filter {
-        left: 15px;
-    }
-    .material__pageritem:first-child {
-        margin-left: 15px;
-    }
-}

@@ -1,8 +1,0 @@
-@media (max-width: 767px) {
-    .proizv__thumb {
-        display: none;
-    }
-    .proizv__slider_next, .proizv__slider_prev {
-        top: 55px;
-    }
-}
