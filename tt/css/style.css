@@ -3068,9 +3068,10 @@
     font-weight: 800;
     font-style: normal
 }
+
 @font-face {
-  font-family: 'Gilroy-UltraLightItalic';
-  src: url('../fonts/UltraLightItalic.woff') format('woff');
+    font-family: 'Gilroy-UltraLightItalic';
+    src: url('../fonts/UltraLightItalic.woff') format('woff');
 }
 
 html * {
@@ -14551,6 +14552,10 @@ a.news__all.btn:hover {
     }
 }
 
+.numbers__wrap {
+    margin: 0 auto;
+}
+
 @media (max-width: 1023px) {
     .article h3 {
         font-size: 20px;
@@ -14574,6 +14579,7 @@ a.news__all.btn:hover {
         font-size: 17px;
     }
 }
+
 .article .so_big_text {
     letter-spacing: 2px;
     font-weight: bold;
@@ -14602,6 +14608,8 @@ a.news__all.btn:hover {
 
 .numbers__list {
     flex-direction: column;
+    width: max-content;
+    margin: 0 auto;
 }
 
 .numbers__el {
@@ -14649,9 +14657,11 @@ a.news__all.btn:hover {
     margin-bottom: 55px;
     font-family: Gilroy-UltraLightItalic;
 }
-.michail__quote p{
-	font-family: Gilroy-UltraLightItalic;
+
+.michail__quote p {
+    font-family: Gilroy-UltraLightItalic;
 }
+
 .michail__quote:after,
 .michail__quote:before {
     position: absolute;
