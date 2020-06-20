@@ -14707,20 +14707,20 @@ a.news__all.btn:hover {
 
 @media (max-width: 1023px) {
     .michail {
-        padding-top: 24px;
+        padding-top: 33px;
     }
 
     .michail__header {
-        font-size: 18px;
+        font-size: 23px;
         letter-spacing: 1.3px;
-        margin-bottom: 22px;
+        margin-bottom: 24px;
         text-align: left;
     }
 
     .michail__subheader {
         font-size: 14px;
         margin-bottom: 22px;
-        line-height: 30px;
+        line-height: 24px;
     letter-spacing: 1.8px;
     }
 
@@ -14772,7 +14772,7 @@ a.news__all.btn:hover {
     }
 
     .numbers {
-        padding: 0 0 30px;
+        padding: 44px 0 49px;
     }
 
     .numbers__val {
