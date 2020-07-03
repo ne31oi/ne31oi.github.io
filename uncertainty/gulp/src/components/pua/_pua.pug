@@ -1,0 +1,60 @@
+<div id="dashboard">
+    <div class="card">
+        <div class="card-header header-elements-inline">
+        </div>
+        <div class="card-body">
+            <div class="row">
+                <div class="col-md-2">
+                    <div class="form-group">
+                        <label class="d-block">Select Exchange</label>
+                        <select class="form-control exchange">
+                            <option value="0">Binance</option>
+                            <option value="1">Bittrex</option>
+                            <option value="2">Okex</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="form-group">
+                        <label class="d-block">Select Base</label>
+                        <div class="">
+                            <select class="form-control select-icons baseBinance baseBinance_istands">
+                                <option value="0" data-icon="Bitcoin.svg.png">BTC</option>
+                                <option value="1" data-icon="tether.svg">USDT </option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <table id="table">
+                    <th>
+                        <tr class="th">
+                            <td class="color_bg1">1 min update</td>
+                            <td class="center_td color_bg1">17:27:32</td>
+                            <td rowspan="2" class="center_td color_bg1">Price current </td>
+                            <td rowspan="2" class="center_td color_bg1">Price close 24h ch% </td>
+                            <td colspan="7" class="center_td color_bg1">1D </td>
+                        </tr>
+                        <tr class="th">
+                            <td class="color_bg1">Ticker</td>
+                            <td class="color_bg1">Coin</td>
+                            <td>AVG 3D buys, %</td>
+                            <td>AVG 4D buys, %</td>
+                            <td>AVG 7D buys, %</td>
+                            <td class="center_td">Bought</td>
+                            <td class="center_td">Sold</td>
+                            <td>PUA Pumps for the last 3 months</td>
+                            <td>At least 2 pumps probability for the next 30 days</td>
+                        </tr>
+                    </th>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/blockui.min.js"></script>
+<script src="js/interactions.min.js"></script>
+<script src="js/select2.min.js"></script>
+<script src="js/form_select2.js"></script>
+<script src="js/pua.js"></script>
